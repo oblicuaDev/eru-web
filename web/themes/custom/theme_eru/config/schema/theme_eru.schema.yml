@@ -1,0 +1,5 @@
+# Schema for the configuration files of the RADIX_SUBTHEME_NAME theme.
+
+ero.settings:
+  type: theme_settings
+  label: 'eru settings'
