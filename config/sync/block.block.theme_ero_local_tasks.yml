@@ -1,0 +1,22 @@
+uuid: 4e2ad422-88cb-441c-8c1f-273d2629c46e
+langcode: en
+status: true
+dependencies:
+  theme:
+    - theme_ero
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: theme_ero_local_tasks
+theme: theme_ero
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }
