@@ -1,6 +1,9 @@
 Installation process
 
-- Clone this project
+- Clone this project "git clone https://github.com/programarf/eru.git eru"
+- cd eru
+- clone vm "git clone https://github.com/geerlingguy/drupal-vm.git vm"
+- cp config.yml vm
 - cd vm
 - type "vagrant up"
 - type "vagrant ssh"
