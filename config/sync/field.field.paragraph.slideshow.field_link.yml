@@ -1,0 +1,23 @@
+uuid: 505ddb60-8cc7-49e5-8886-c98f06f9bfe8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link
+    - paragraphs.paragraphs_type.slideshow
+  module:
+    - link
+id: paragraph.slideshow.field_link
+field_name: field_link
+entity_type: paragraph
+bundle: slideshow
+label: Link
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link
