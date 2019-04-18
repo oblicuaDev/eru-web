@@ -1,14 +1,14 @@
-uuid: dbd16ea2-431d-4183-80b9-940565d92986
+uuid: 595c1183-84a0-4eb4-954f-5a1f6926a419
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_description
-    - paragraphs.paragraphs_type.slideshow
-id: paragraph.slideshow.field_description
+    - paragraphs.paragraphs_type.slides
+id: paragraph.slides.field_description
 field_name: field_description
 entity_type: paragraph
-bundle: slideshow
+bundle: slides
 label: Description
 description: ''
 required: true

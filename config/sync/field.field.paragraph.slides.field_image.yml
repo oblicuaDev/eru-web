@@ -1,18 +1,18 @@
-uuid: d929b85e-4f29-451b-8c1a-845509ec1f10
+uuid: 802ac7e7-e50a-4ff6-a3c4-ec47d19c8063
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_image
     - media.type.image
-    - paragraphs.paragraphs_type.slideshow
-id: paragraph.slideshow.field_image
+    - paragraphs.paragraphs_type.slides
+id: paragraph.slides.field_image
 field_name: field_image
 entity_type: paragraph
-bundle: slideshow
+bundle: slides
 label: Image
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''

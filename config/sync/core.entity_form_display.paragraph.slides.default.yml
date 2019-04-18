@@ -1,0 +1,72 @@
+uuid: edabc9e3-0336-4ec3-bd27-9a3ecdf880ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slides.field_description
+    - field.field.paragraph.slides.field_external_link
+    - field.field.paragraph.slides.field_image
+    - field.field.paragraph.slides.field_link
+    - field.field.paragraph.slides.field_title
+    - paragraphs.paragraphs_type.slides
+  module:
+    - entity_browser_entity_form
+    - inline_entity_form
+    - link
+id: paragraph.slides.default
+targetEntityType: paragraph
+bundle: slides
+mode: default
+content:
+  field_description:
+    weight: 2
+    settings:
+      size: 160
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_external_link:
+    weight: 4
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_image:
+    weight: 0
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: image
+    type: inline_entity_form_complex
+    region: content
+  field_link:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_title:
+    weight: 1
+    settings:
+      size: 100
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

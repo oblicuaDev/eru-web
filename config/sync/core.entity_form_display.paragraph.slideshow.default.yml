@@ -3,69 +3,26 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.slideshow.field_description
-    - field.field.paragraph.slideshow.field_external_link
-    - field.field.paragraph.slideshow.field_image
-    - field.field.paragraph.slideshow.field_link
-    - field.field.paragraph.slideshow.field_title
+    - field.field.paragraph.slideshow.field_slides
     - paragraphs.paragraphs_type.slideshow
   module:
-    - entity_browser_entity_form
-    - inline_entity_form
-    - link
+    - paragraphs
 id: paragraph.slideshow.default
 targetEntityType: paragraph
 bundle: slideshow
 mode: default
 content:
-  field_description:
-    weight: 2
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_external_link:
-    weight: 4
-    settings:
-      display_label: true
-    third_party_settings: {  }
-    type: boolean_checkbox
-    region: content
-  field_image:
+  field_slides:
+    type: entity_reference_paragraphs
     weight: 0
     settings:
-      form_mode: default
-      label_singular: ''
-      label_plural: ''
-      allow_new: true
-      allow_existing: true
-      match_operator: CONTAINS
-      override_labels: false
-      collapsible: false
-      collapsed: false
-      allow_duplicate: false
-    third_party_settings:
-      entity_browser_entity_form:
-        entity_browser_id: image
-    type: inline_entity_form_complex
-    region: content
-  field_link:
-    weight: 3
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: slides
     third_party_settings: {  }
-    type: link_default
-    region: content
-  field_title:
-    weight: 1
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
     region: content
 hidden:
   created: true

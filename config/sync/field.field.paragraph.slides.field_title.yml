@@ -1,14 +1,14 @@
-uuid: 3103e313-96a5-455e-b3f0-119fbfc77685
+uuid: 2cde1225-f408-404e-93f6-cdbc944023a4
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_title
-    - paragraphs.paragraphs_type.slideshow
-id: paragraph.slideshow.field_title
+    - paragraphs.paragraphs_type.slides
+id: paragraph.slides.field_title
 field_name: field_title
 entity_type: paragraph
-bundle: slideshow
+bundle: slides
 label: Title
 description: ''
 required: true
