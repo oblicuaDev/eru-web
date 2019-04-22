@@ -25,7 +25,7 @@ libraries-override:
   radix/bootstrap: false
 
 ckeditor_stylesheets:
-  - assets/css/eru_radix.style.css
+  - assets/css/eru_radix1.style.css
 
 component-libraries:
   theme_eru:

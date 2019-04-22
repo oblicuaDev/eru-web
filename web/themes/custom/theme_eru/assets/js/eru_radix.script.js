@@ -17578,8 +17578,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/edwinmesa/Documents/erovm/eru/web/themes/custom/theme_eru/src/js/eru_radix.script.js */"./src/js/eru_radix.script.js");
-module.exports = __webpack_require__(/*! /Users/edwinmesa/Documents/erovm/eru/web/themes/custom/theme_eru/src/sass/eru_radix.style.scss */"./src/sass/eru_radix.style.scss");
+__webpack_require__(/*! /Users/edwinmesa/Documents/my-project/proyect_eru/eru/web/themes/custom/theme_eru/src/js/eru_radix.script.js */"./src/js/eru_radix.script.js");
+module.exports = __webpack_require__(/*! /Users/edwinmesa/Documents/my-project/proyect_eru/eru/web/themes/custom/theme_eru/src/sass/eru_radix.style.scss */"./src/sass/eru_radix.style.scss");
 
 
 /***/ })

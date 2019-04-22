@@ -7,7 +7,7 @@
  | for your application. See https://github.com/JeffreyWay/laravel-mix.
  |
  */
-const proxy = 'http://eru.test';
+const proxy = 'http://local.eru.com';
 const mix = require('laravel-mix');
 
 /*
