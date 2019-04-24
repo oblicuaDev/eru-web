@@ -32,5 +32,6 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
+  field_longdesc: true
   thumbnail: true
   uid: true

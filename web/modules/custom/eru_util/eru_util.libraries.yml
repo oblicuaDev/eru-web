@@ -1,0 +1,6 @@
+eru_util.slide:
+  js:
+    js/slide.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupalSettings

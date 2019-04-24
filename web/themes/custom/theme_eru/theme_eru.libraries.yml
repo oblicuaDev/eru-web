@@ -4,7 +4,10 @@ style:
     theme:
       assets/css/eru_radix.style.css: {}
   js:
+    node_modules/popper.js/dist/umd/popper.min.js: {}
+    node_modules/bootstrap/dist/js/bootstrap.min.js: {}
     assets/js/eru_radix.script.js: {}
   dependencies:
     - core/jquery
     - core/drupal
+    - radix/bootstrap
