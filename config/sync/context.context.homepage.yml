@@ -1,0 +1,85 @@
+uuid: 2c909ca6-d4ae-46eb-b280-3509ac696785
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+name: homepage
+label: Homepage
+group: null
+description: Homepage
+requireAllConditions: false
+disabled: false
+conditions:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: 0
+    uuid: b3bde7f2-8410-4c5b-8293-8bd22567bb9f
+    context_mapping: {  }
+reactions:
+  blocks:
+    blocks:
+      68d825e9-5438-4489-ab97-b92353e59bd4:
+        id: system_main_block
+        label: 'Main page content'
+        provider: system
+        label_display: 0
+        region: content
+        weight: '-1'
+        context_mapping: {  }
+        theme: theme_eru
+        css_class: ''
+        unique: 0
+        context_id: homepage
+        uuid: 68d825e9-5438-4489-ab97-b92353e59bd4
+      17a1d413-9664-4d9b-b178-2dc573860306:
+        id: 'system_menu_block:main'
+        label: 'Main navigation'
+        provider: system
+        label_display: 0
+        level: '1'
+        depth: '0'
+        region: navbar_branding
+        weight: '-10'
+        context_mapping: {  }
+        theme: theme_eru
+        css_class: ''
+        unique: 0
+        context_id: homepage
+        uuid: 17a1d413-9664-4d9b-b178-2dc573860306
+      e2db2f64-840b-4bbe-815c-78a0351aa154:
+        id: 'views_block:all_the_news-block_2'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '1'
+        context_mapping: {  }
+        theme: theme_eru
+        css_class: 'col-6 float-left'
+        unique: 0
+        context_id: homepage
+        uuid: e2db2f64-840b-4bbe-815c-78a0351aa154
+      cc5e5c9f-ff6e-4b6b-bcfa-5d01517a6fd6:
+        id: 'views_block:all_the_news-block_1'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: theme_eru
+        css_class: 'col-6 float-left'
+        unique: 0
+        context_id: homepage
+        uuid: cc5e5c9f-ff6e-4b6b-bcfa-5d01517a6fd6
+    id: blocks
+    saved: false
+    uuid: 59e959d7-aef7-4fa0-bf1d-68e63f45a11c
+    include_default_blocks: 0
+weight: 0
