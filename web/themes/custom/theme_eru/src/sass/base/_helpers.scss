@@ -1,0 +1,11 @@
+.display-none-controllers{
+  ol,a{
+    display: none;
+  }
+  #carouselButtons{
+    display: none;
+  }
+  .d-md-block{
+    display: none !important;
+  }
+}

@@ -71,18 +71,19 @@
             <img src="{{ img_url }}" class="d-block w-100" alt="{{ img_alt }}" {% if img_longdesc %} longdesc="{{ img_longdesc }}" {% endif %}>
             <div class="carousel-caption d-none d-md-block">
                <h5>
-                 <a href="{{ item['#paragraph'].field_link.0.url }}" 
+                 <a href="{{ item['#paragraph'].field_link.0.url }}"
                     {% if item['#paragraph'].field_external_link.value == 1 %}
                     target="_blank" class="alert-leave-page"
                     {% endif %}>
                     {{ item['#paragraph'].field_title.value }}
+                    <span class="element-invisible">Abre en una nueva ventana</span>
                  </a>
                </h5>
                <p> {{ item['#paragraph'].field_description.value }} </p>
             </div>
           </div>
           {% endif %}
-        {% endfor %}  
+        {% endfor %}
       </div>
       <a class="carousel-control-prev" href="#eru-slide" role="button" {#data-slide="prev"#}>
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>

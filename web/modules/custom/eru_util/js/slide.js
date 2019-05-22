@@ -37,10 +37,13 @@
         $('.carousel').carousel('next');
       });
 
+      //Remueve la funcionalidad de slider en las vista news
+      //$('.display-none-controllers .carousel').carousel('dispose');
+      $('.display-none-controllers .carousel').removeClass('carousel');
+
     }
   };
 })(jQuery, Drupal, drupalSettings);
 
 jQuery('.alert-leave-page').click(function (event) {
-  alert('Serà redirigido a una pagina externa.');
 });
