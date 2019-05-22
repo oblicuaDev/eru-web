@@ -1,0 +1,55 @@
+uuid: 45aa680d-2e66-4c4c-bc6f-5c617a2f42aa
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+name: project
+label: Project
+group: null
+description: 'Project page details'
+requireAllConditions: true
+disabled: false
+conditions:
+  request_path:
+    id: request_path
+    pages: '/proyectos/details/*'
+    negate: 0
+    uuid: e25309de-865f-4e54-889a-3c45add02632
+    context_mapping: {  }
+reactions:
+  blocks:
+    blocks:
+      3124435f-d851-4f12-89fc-dd8a95d55ed3:
+        id: addtoany_block
+        label: 'AddToAny buttons'
+        provider: addtoany
+        label_display: visible
+        region: header
+        weight: '0'
+        context_mapping: {  }
+        theme: theme_eru
+        css_class: ''
+        unique: 0
+        context_id: project
+        uuid: 3124435f-d851-4f12-89fc-dd8a95d55ed3
+      2b72357f-90c6-4b0b-8b33-e5556d108595:
+        id: 'views_block:duplicate_of_project_desarrollo_urbano-block_2'
+        label: ''
+        provider: views
+        label_display: visible
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: theme_eru
+        css_class: ''
+        unique: 0
+        context_id: project
+        uuid: 2b72357f-90c6-4b0b-8b33-e5556d108595
+    id: blocks
+    saved: false
+    uuid: dd69dfbf-e5f6-4239-a885-43ad0b583ad7
+    include_default_blocks: 0
+weight: 0

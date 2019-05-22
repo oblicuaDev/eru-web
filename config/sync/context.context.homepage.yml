@@ -26,7 +26,7 @@ reactions:
         provider: system
         label_display: 0
         region: content
-        weight: '-1'
+        weight: '-2'
         context_mapping: {  }
         theme: theme_eru
         css_class: ''
@@ -78,6 +78,21 @@ reactions:
         unique: 0
         context_id: homepage
         uuid: cc5e5c9f-ff6e-4b6b-bcfa-5d01517a6fd6
+      7f977701-792b-4152-9bc0-c42e1d073127:
+        id: 'views_block:duplicate_of_project_desarrollo_urbano-block_1'
+        label: ''
+        provider: views
+        label_display: visible
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-1'
+        context_mapping: {  }
+        theme: theme_eru
+        css_class: 'col-12 float-left'
+        unique: 0
+        context_id: homepage
+        uuid: 7f977701-792b-4152-9bc0-c42e1d073127
     id: blocks
     saved: false
     uuid: 59e959d7-aef7-4fa0-bf1d-68e63f45a11c

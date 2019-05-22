@@ -1,4 +1,5 @@
 module:
+  addtoany: 0
   admin_toolbar: 0
   automated_cron: 0
   big_pipe: 0
@@ -49,6 +50,7 @@ module:
   tour: 0
   update: 0
   user: 0
+  views_bootstrap: 0
   views_ui: 0
   webform: 0
   menu_link_content: 1

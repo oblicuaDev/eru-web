@@ -9,14 +9,14 @@ _core:
 id: theme_eru_local_tasks
 theme: theme_eru
 region: content
-weight: -40
+weight: -5
 provider: null
 plugin: local_tasks_block
 settings:
   id: local_tasks_block
   label: Tabs
   provider: core
-  label_display: '0'
+  label_display: visible
   primary: true
   secondary: true
 visibility: {  }
