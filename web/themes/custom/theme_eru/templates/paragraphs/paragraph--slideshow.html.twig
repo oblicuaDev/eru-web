@@ -76,7 +76,9 @@
                     target="_blank" class="alert-leave-page"
                     {% endif %}>
                     {{ item['#paragraph'].field_title.value }}
-                    <span class="element-invisible">Abre en una nueva ventana</span>
+                    {% if item['#paragraph'].field_external_link.value == 1 %}
+                      <span class="element-invisible">Abre en una nueva ventana</span>
+                    {% endif %}
                  </a>
                </h5>
                <p> {{ item['#paragraph'].field_description.value }} </p>
