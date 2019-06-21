@@ -16,6 +16,7 @@ regions:
   content: Content
   page_bottom: Page bottom
   footer: Footer
+  footer_copy: Footer_copy
 
 libraries:
   - radix/style

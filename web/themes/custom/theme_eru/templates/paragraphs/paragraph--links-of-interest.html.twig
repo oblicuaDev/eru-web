@@ -68,13 +68,13 @@
                   <div class="title">
                     {{title_link }}
                   </div>
-                  <div class="description">
-                    {{description_link|raw}}
-                  </div>
-                  {% if  item['#paragraph'].field_external_link_link.value == 1 %}
-                    <span class="element-invisible">Abre en una nueva ventana</span>
-                  {% endif %}
                 </a>
+                <div class="description">
+                  {{description_link|raw}}
+                </div>
+                {% if  item['#paragraph'].field_external_link_link.value == 1 %}
+                  <span class="element-invisible">Abre en una nueva ventana</span>
+                {% endif %}
               </div>
           {% endif %}
         {% endfor %}
