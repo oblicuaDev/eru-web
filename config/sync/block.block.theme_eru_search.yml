@@ -1,6 +1,6 @@
 uuid: 412a99c7-0e99-4c0f-a263-a68e1e0ee790
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - search
@@ -11,12 +11,12 @@ _core:
 id: theme_eru_search
 theme: theme_eru
 region: navbar_branding
-weight: -1
+weight: -6
 provider: null
 plugin: search_form_block
 settings:
   id: search_form_block
   label: Search
   provider: search
-  label_display: visible
+  label_display: '0'
 visibility: {  }

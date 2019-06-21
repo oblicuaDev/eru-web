@@ -1,0 +1,9 @@
+uuid: 962c921e-4b03-426f-a18e-bb3cdf41456c
+langcode: en
+status: true
+dependencies: {  }
+id: general_data_
+label: 'Datas general'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

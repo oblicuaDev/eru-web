@@ -6,6 +6,7 @@ dependencies:
     - field.field.media.video.field_media_video_file
     - media.type.video
   module:
+    - field_formatter_class
     - file
 _core:
   default_config_hash: dQR0mYK5NNg27OigHrxZrHSsnwewnNZcPJKjKIO0cpA
@@ -19,16 +20,19 @@ content:
     weight: 0
     label: visually_hidden
     settings:
-      muted: false
-      width: 640
-      height: 480
       controls: true
+      multiple_file_display_type: sources
+      width: 800
+      height: 400
       autoplay: false
       loop: false
-      multiple_file_display_type: tags
-    third_party_settings: {  }
+      muted: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
     region: content
 hidden:
+  addtoany: true
   created: true
   name: true
   thumbnail: true

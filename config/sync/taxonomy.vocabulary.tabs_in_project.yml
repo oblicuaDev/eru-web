@@ -1,0 +1,9 @@
+uuid: da6b2b18-ffb4-4352-b929-0b167a48ef74
+langcode: en
+status: true
+dependencies: {  }
+name: 'Tabs in project'
+vid: tabs_in_project
+description: 'Titles of project for tabs'
+hierarchy: 0
+weight: 0

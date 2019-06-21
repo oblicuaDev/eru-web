@@ -1,15 +1,17 @@
 uuid: 6c11bb76-db10-405e-8c56-56c56d474961
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - field.storage.node.body
+    - field.storage.node.field_image_main
     - field.storage.node.field_slider
     - field.storage.node.field_tags
     - node.type.news
     - taxonomy.vocabulary.tags_of_news
   module:
     - entity_reference_revisions
+    - image
     - node
     - taxonomy
     - text
@@ -340,69 +342,6 @@ display:
         row: false
         css_class: false
       fields:
-        field_slider:
-          id: field_slider
-          table: node__field_slider
-          field: field_slider
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: true
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: display-none-controllers
-          element_default_classes: false
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_revisions_entity_view
-          settings:
-            view_mode: default
-          group_column: ''
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
         title:
           id: title
           table: node_field_data
@@ -579,6 +518,70 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+        field_image_main:
+          id: field_image_main
+          table: node__field_image_main
+          field: field_image_main
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: image
+          settings:
+            image_style: ''
+            image_link: ''
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
       pager:
         type: some
         options:
@@ -619,7 +622,7 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_slider'
+        - 'config:field.storage.node.field_image_main'
   block_2:
     display_plugin: block
     id: block_2
@@ -671,7 +674,7 @@ display:
           element_label_class: ''
           element_label_colon: false
           element_wrapper_type: ''
-          element_wrapper_class: display-none-controllers
+          element_wrapper_class: 'display-none-controllers col-4 float-left'
           element_default_classes: true
           empty: ''
           hide_empty: false
@@ -857,7 +860,7 @@ display:
   page_1:
     display_plugin: page
     id: page_1
-    display_title: Page
+    display_title: 'Page News'
     position: 3
     display_options:
       display_extenders: {  }
@@ -1522,10 +1525,11 @@ display:
           empty: false
           tokenize: false
           content:
-            value: "<h2>noticias</h2>\r\n\r\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley"
-            format: basic_html
+            value: "<div class=\"text-center\">\r\n<h2>noticias</h2>\r\n\r\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley\r\n</div>"
+            format: full_html
           plugin_id: text
       use_ajax: true
+      display_description: ''
     cache_metadata:
       max-age: -1
       contexts:

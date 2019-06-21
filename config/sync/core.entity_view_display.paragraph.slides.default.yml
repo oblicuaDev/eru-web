@@ -7,6 +7,7 @@ dependencies:
     - field.field.paragraph.slides.field_external_link
     - field.field.paragraph.slides.field_image
     - field.field.paragraph.slides.field_link
+    - field.field.paragraph.slides.field_media
     - field.field.paragraph.slides.field_title
     - paragraphs.paragraphs_type.slides
   module:
@@ -17,7 +18,7 @@ bundle: slides
 mode: default
 content:
   field_description:
-    weight: 2
+    weight: 3
     label: hidden
     settings:
       link_to_entity: false
@@ -25,7 +26,7 @@ content:
     type: string
     region: content
   field_external_link:
-    weight: 4
+    weight: 5
     label: hidden
     settings:
       format: default
@@ -39,12 +40,14 @@ content:
     weight: 0
     label: hidden
     settings:
-      view_mode: default
+      view_mode: image_news
       link: false
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
     region: content
   field_link:
-    weight: 3
+    weight: 4
     label: hidden
     settings:
       trim_length: null
@@ -55,12 +58,22 @@ content:
     third_party_settings: {  }
     type: link
     region: content
-  field_title:
+  field_media:
+    type: entity_reference_entity_view
     weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_title:
+    weight: 2
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
-hidden: {  }
+hidden:
+  addtoany: true

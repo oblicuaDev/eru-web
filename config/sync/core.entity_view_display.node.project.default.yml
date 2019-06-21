@@ -5,9 +5,18 @@ dependencies:
   config:
     - field.field.node.project.body
     - field.field.node.project.field_benefits_of_project
+    - field.field.node.project.field_class_location
     - field.field.node.project.field_description
+    - field.field.node.project.field_externa
+    - field.field.node.project.field_external_link
+    - field.field.node.project.field_general_data
     - field.field.node.project.field_image
     - field.field.node.project.field_image_evento_hover
+    - field.field.node.project.field_infografia
+    - field.field.node.project.field_labels
+    - field.field.node.project.field_links_of_interest
+    - field.field.node.project.field_location
+    - field.field.node.project.field_media_solo
     - field.field.node.project.field_regulatory_framework
     - field.field.node.project.field_scope_of_project
     - field.field.node.project.field_slider
@@ -15,8 +24,11 @@ dependencies:
     - field.field.node.project.field_type_of_project
     - node.type.project
   module:
+    - entity_class_formatter
     - entity_reference_revisions
+    - field_formatter_class
     - image
+    - link
     - text
     - user
 id: node.project.default
@@ -25,34 +37,70 @@ bundle: project
 mode: default
 content:
   addtoany:
-    weight: 3
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
   body:
     label: hidden
     type: text_default
-    weight: 4
+    weight: 5
     settings: {  }
     third_party_settings: {  }
     region: content
   field_benefits_of_project:
-    weight: 9
+    weight: 16
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
+    region: content
+  field_class_location:
+    weight: 7
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: entity_class_formatter
     region: content
   field_description:
-    weight: 5
+    weight: 6
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
+  field_externa:
+    weight: 18
+    label: hidden
+    settings:
+      format: default
+      format_custom_true: ''
+      format_custom_false: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_external_link:
+    weight: 11
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_general_data:
+    type: entity_reference_revisions_entity_view
+    weight: 9
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
   field_image:
-    weight: 1
-    label: above
+    weight: 2
+    label: hidden
     settings:
       image_style: ''
       image_link: ''
@@ -60,7 +108,7 @@ content:
     type: image
     region: content
   field_image_evento_hover:
-    weight: 2
+    weight: 3
     label: above
     settings:
       image_style: ''
@@ -68,22 +116,73 @@ content:
     third_party_settings: {  }
     type: image
     region: content
-  field_regulatory_framework:
+  field_infografia:
     weight: 10
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_labels:
+    weight: 14
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_links_of_interest:
+    weight: 19
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_location:
+    weight: 8
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_media_solo:
+    type: entity_reference_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    region: content
+  field_regulatory_framework:
+    weight: 17
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_scope_of_project:
-    weight: 7
+    weight: 13
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_slider:
-    weight: 6
+    weight: 12
     label: above
     settings:
       view_mode: default
@@ -92,14 +191,14 @@ content:
     type: entity_reference_revisions_entity_view
     region: content
   field_status_of_project:
-    weight: 8
+    weight: 15
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_type_of_project:
-    weight: 11
+    weight: 20
     label: above
     settings:
       link: true

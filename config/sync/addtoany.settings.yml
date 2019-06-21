@@ -1,23 +1,23 @@
 buttons_size: 32
-additional_html: "<span>Compartir:</span>\r\n<a class=\"a2a_button_facebook\"></a>\r\n<a class=\"a2a_button_twitter\"></a>\r\n\r\n"
-additional_css: 'a2a_config.icon_color = "transparent";'
-additional_js: ''
+additional_html: "Compartir \r\n<a class=\"a2a_button_facebook\"></a>\r\n<a class=\"a2a_button_twitter\"></a>\r\n\r\n\r\n\r\n"
+additional_css: ''
+additional_js: "a2a_config.overlays.push({\r\n    html: '<div class=\"a2a_kit a2a_kit_size_50 a2a_overlay_style a2a_vertical_style\" data-a2a-icon-color=\"seashell,midnightblue\"><a class=\"a2a_button_pinterest\"></a><a class=\"a2a_button_facebook\"></a></div>'\r\n});"
 universal_button: none
 custom_universal_button: ''
 universal_button_placement: before
-no_3p: false
+no_3p: true
 entities:
   media: 1
   node: 1
-  comment: 1
-  block_content: 1
+  comment: 0
+  block_content: 0
   contact_message: 0
-  file: 0
+  file: 1
   shortcut: 0
   taxonomy_term: 0
   user: 0
   webform_submission: 0
   menu_link_content: 0
-  paragraph: 1
+  paragraph: 0
 _core:
   default_config_hash: 9YPlBuinIKLe5jVEf-aIhZvKFn77i18yD4CrNR0BbVQ

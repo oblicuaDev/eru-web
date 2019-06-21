@@ -1,0 +1,9 @@
+uuid: f1202cd2-b454-4b71-9667-04393d0464a6
+langcode: en
+status: true
+dependencies: {  }
+id: data
+label: Datas
+icon_uuid: null
+description: Data
+behavior_plugins: {  }
