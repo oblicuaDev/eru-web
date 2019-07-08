@@ -1,5 +1,5 @@
 uuid: fea0b990-c1e0-41c8-8e1e-9c61cb08fb29
-langcode: en
+langcode: es
 status: true
 dependencies:
   config:
@@ -27,4 +27,5 @@ content:
       image_link: content
     third_party_settings: {  }
     label: hidden
-hidden: {  }
+hidden:
+  langcode: true

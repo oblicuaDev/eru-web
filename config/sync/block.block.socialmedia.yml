@@ -11,7 +11,7 @@ dependencies:
 id: socialmedia
 theme: theme_eru
 region: navbar_branding
-weight: -8
+weight: -4
 provider: null
 plugin: 'system_menu_block:social-media'
 settings:

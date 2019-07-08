@@ -59,3 +59,4 @@ content:
 hidden:
   body: true
   field_image_main: true
+  langcode: true

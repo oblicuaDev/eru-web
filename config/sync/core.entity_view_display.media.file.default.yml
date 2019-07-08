@@ -1,5 +1,5 @@
 uuid: 78313cc1-c18a-41e5-82d0-747b3e429e98
-langcode: en
+langcode: es
 status: true
 dependencies:
   config:
@@ -22,7 +22,9 @@ content:
     weight: 1
     region: content
 hidden:
+  addtoany: true
   created: true
+  langcode: true
   name: true
   thumbnail: true
   uid: true

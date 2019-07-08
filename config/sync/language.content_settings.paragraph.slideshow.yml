@@ -1,0 +1,11 @@
+uuid: 91f199cf-b9e0-4b9c-b2bc-5d9412747c38
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.slideshow
+id: paragraph.slideshow
+target_entity_type_id: paragraph
+target_bundle: slideshow
+default_langcode: site_default
+language_alterable: false

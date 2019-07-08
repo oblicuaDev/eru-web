@@ -1,5 +1,5 @@
 uuid: 8fdff0f2-9400-40b7-8161-60c0f3ff4e74
-langcode: en
+langcode: es
 status: true
 dependencies:
   config:
@@ -26,7 +26,9 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  addtoany: true
   created: true
+  langcode: true
   name: true
   thumbnail: true
   uid: true

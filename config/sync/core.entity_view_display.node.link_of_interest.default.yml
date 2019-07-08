@@ -31,3 +31,4 @@ content:
 hidden:
   addtoany: true
   body: true
+  langcode: true

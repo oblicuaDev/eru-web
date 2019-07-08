@@ -1,0 +1,11 @@
+uuid: 7c6c92ef-142f-43f2-bc03-48893a103a04
+langcode: es
+status: true
+dependencies:
+  config:
+    - webform.webform.search
+id: webform_submission.search
+target_entity_type_id: webform_submission
+target_bundle: search
+default_langcode: site_default
+language_alterable: false

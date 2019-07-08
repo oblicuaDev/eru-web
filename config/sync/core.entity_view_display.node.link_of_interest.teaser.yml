@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.link_of_interest.body
+    - field.field.node.link_of_interest.field_content
     - node.type.link_of_interest
   module:
     - text
@@ -29,3 +30,5 @@ content:
     region: content
 hidden:
   addtoany: true
+  field_content: true
+  langcode: true

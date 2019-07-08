@@ -37,3 +37,4 @@ hidden:
   field_tags: true
   field_textual_transcription: true
   field_url_video_yt_: true
+  langcode: true

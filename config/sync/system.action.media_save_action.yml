@@ -1,5 +1,5 @@
 uuid: 2f28caa9-29cd-4d5b-8dab-64755c08e07c
-langcode: en
+langcode: es
 status: true
 dependencies:
   module:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: VVyUA6PIaVeGtcIbgEWqJ6SYDiJdReBeojFswURFpKs
 id: media_save_action
-label: 'Save media'
+label: 'Almacenar media'
 type: media
 plugin: 'entity:save_action:media'
 configuration: {  }

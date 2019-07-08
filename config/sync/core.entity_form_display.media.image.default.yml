@@ -1,5 +1,5 @@
 uuid: f8de9042-ca83-438b-8ab3-5a0988054bd9
-langcode: en
+langcode: es
 status: true
 dependencies:
   config:
@@ -31,6 +31,13 @@ content:
     type: image_image
     weight: 0
     region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
   name:
     type: string_textfield
     weight: -5

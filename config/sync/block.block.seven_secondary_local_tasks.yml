@@ -1,5 +1,5 @@
 uuid: 88c86c8e-0aed-4ba3-9ce5-a66b9390a786
-langcode: en
+langcode: es
 status: true
 dependencies:
   theme:
@@ -14,7 +14,7 @@ provider: null
 plugin: local_tasks_block
 settings:
   id: local_tasks_block
-  label: 'Secondary tabs'
+  label: 'Solapas secundarias'
   provider: core
   label_display: '0'
   primary: false

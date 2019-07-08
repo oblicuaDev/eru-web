@@ -1,5 +1,5 @@
 uuid: 05ddd0e2-4c07-4993-aba5-d8d1cc0a29ee
-langcode: en
+langcode: es
 status: true
 dependencies:
   config:
@@ -58,6 +58,13 @@ content:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
     third_party_settings: {  }
   path:
     type: path

@@ -8,6 +8,7 @@ dependencies:
     - field.field.paragraph.slides.field_external_link
     - field.field.paragraph.slides.field_image
     - field.field.paragraph.slides.field_link
+    - field.field.paragraph.slides.field_media
     - field.field.paragraph.slides.field_title
     - paragraphs.paragraphs_type.slides
   module:
@@ -64,4 +65,5 @@ content:
     third_party_settings: {  }
     type: string
     region: content
-hidden: {  }
+hidden:
+  field_media: true

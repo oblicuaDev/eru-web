@@ -1,0 +1,11 @@
+uuid: f684f630-617a-4bde-91b1-51ffac638126
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.link_of_interest
+id: node.link_of_interest
+target_entity_type_id: node
+target_bundle: link_of_interest
+default_langcode: site_default
+language_alterable: false

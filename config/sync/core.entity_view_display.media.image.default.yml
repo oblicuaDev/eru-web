@@ -1,8 +1,9 @@
 uuid: f7ba2f0c-26f5-4256-9b1c-acce1b9ce25d
-langcode: en
+langcode: es
 status: true
 dependencies:
   config:
+    - field.field.media.image.field_longdesc
     - field.field.media.image.field_media_image
     - media.type.image
   module:
@@ -31,7 +32,9 @@ content:
       link_to_entity: false
     third_party_settings: {  }
 hidden:
+  addtoany: true
   created: true
   field_longdesc: true
+  langcode: true
   thumbnail: true
   uid: true

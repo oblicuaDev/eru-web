@@ -1,5 +1,5 @@
 uuid: e3880ea3-00d6-4043-b509-95a16267a570
-langcode: en
+langcode: es
 status: true
 dependencies:
   module:
@@ -16,7 +16,7 @@ provider: null
 plugin: search_form_block
 settings:
   id: search_form_block
-  label: Search
+  label: Buscar
   provider: search
   label_display: visible
 visibility: {  }

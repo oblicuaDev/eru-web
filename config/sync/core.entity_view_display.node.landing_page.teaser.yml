@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.landing_page.body
+    - field.field.node.landing_page.field_blocks
     - node.type.landing_page
   module:
     - text
@@ -28,4 +29,6 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  addtoany: true
   field_blocks: true
+  langcode: true
