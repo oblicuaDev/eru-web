@@ -22,10 +22,18 @@ import 'bootstrap';
     }
   };
 
+  Drupal.behaviors.pageSearch = {
+    attach: function (context) {
+      //funcionalidades de la pagina de busqueda
+      jQuery('#views-exposed-form-search-page-1').addClass('col-4 float-left')
+        .parents('.page-search').find('.views-view-grid.cols-8').addClass('col-8 float-left');
+
+    }
+  };
+
   Drupal.behaviors.helloWorld = {
     attach: function (context) {
       console.log('Hello World 2');
-      jQuery('.dropdown-toggle').dropdown();
     }
   };
 

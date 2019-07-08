@@ -17567,10 +17567,15 @@ __webpack_require__.r(__webpack_exports__);
       jQuery('.dropdown-toggle').dropdown();
     }
   };
+  Drupal.behaviors.pageSearch = {
+    attach: function attach(context) {
+      //funcionalidades de la pagina de busqueda
+      jQuery('#views-exposed-form-search-page-1').addClass('col-4 float-left').parents('.page-search').find('.views-view-grid.cols-8').addClass('col-8 float-left');
+    }
+  };
   Drupal.behaviors.helloWorld = {
     attach: function attach(context) {
       console.log('Hello World 2');
-      jQuery('.dropdown-toggle').dropdown();
     }
   };
 })(jQuery, Drupal);
