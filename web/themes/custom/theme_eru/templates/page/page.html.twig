@@ -61,11 +61,21 @@
     </footer>
   {% endif %}
 
-  {% if page.footer_copy %}
+  {% if page.footer_light %}
     <footer class="page__footer">
       <div class="container">
         <div class="d-flex justify-content-md-between align-items-md-center">
-          {{ page.footer_copy }}
+          {{ page.footer_light }}
+        </div>
+      </div>
+    </footer>
+  {% endif %}
+
+  {% if page.footer_black %}
+    <footer class="page__footer">
+      <div class="container">
+        <div class="d-flex justify-content-md-between align-items-md-center">
+          {{ page.footer_black }}
         </div>
       </div>
     </footer>

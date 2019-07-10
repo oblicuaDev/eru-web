@@ -15,8 +15,10 @@ regions:
   header: Header
   content: Content
   page_bottom: Page bottom
-  footer: Footer
-  footer_copy: Footer_copy
+  footer: Footer main
+  footer_light: Footer light
+  footer_black: Footer black
+
 
 libraries:
   - radix/style
