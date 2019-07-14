@@ -14,7 +14,7 @@ bundle: project
 label: 'Regulatory framework'
 description: 'Regulatory framework'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

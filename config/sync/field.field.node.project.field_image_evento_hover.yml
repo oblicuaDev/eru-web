@@ -6,7 +6,14 @@ dependencies:
     - field.storage.node.field_image_evento_hover
     - node.type.project
   module:
+    - content_translation
     - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      file: file
+      alt: '0'
+      title: '0'
 id: node.project.field_image_evento_hover
 field_name: field_image_evento_hover
 entity_type: node
@@ -14,7 +21,7 @@ bundle: project
 label: 'Image evento hover'
 description: 'Image evento hover'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
