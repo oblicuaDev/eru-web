@@ -6,7 +6,14 @@ dependencies:
     - field.storage.node.field_image_main
     - node.type.in_the_medios_eru
   module:
+    - content_translation
     - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      file: file
+      alt: '0'
+      title: '0'
 id: node.in_the_medios_eru.field_image_main
 field_name: field_image_main
 entity_type: node

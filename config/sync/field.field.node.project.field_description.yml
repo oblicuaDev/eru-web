@@ -14,7 +14,7 @@ bundle: project
 label: 'Description of project'
 description: 'description of project'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

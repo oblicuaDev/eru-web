@@ -1,6 +1,6 @@
 uuid: 5d4e836c-80fe-4833-abb9-cdedb7f6e5d5
 langcode: en
-status: true
+status: false
 dependencies:
   content:
     - 'block_content:basic:b0320046-326c-420a-a844-c17d029f330d'
@@ -10,7 +10,7 @@ dependencies:
     - theme_eru
 id: terminosycondiciones_2
 theme: theme_eru
-region: footer_copy
+region: navbar_branding
 weight: -10
 provider: null
 plugin: 'block_content:b0320046-326c-420a-a844-c17d029f330d'

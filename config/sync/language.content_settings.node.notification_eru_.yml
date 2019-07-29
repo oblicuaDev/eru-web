@@ -4,6 +4,13 @@ status: true
 dependencies:
   config:
     - node.type.notification_eru_
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
 id: node.notification_eru_
 target_entity_type_id: node
 target_bundle: notification_eru_
