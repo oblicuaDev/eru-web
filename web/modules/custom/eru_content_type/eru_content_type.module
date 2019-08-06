@@ -1,0 +1,47 @@
+<?php
+
+/**
+ * @file
+ * Contains eru_content_type.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function eru_content_type_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the eru_content_type module.
+    case 'help.page.eru_content_type':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Manage content types for ERU portal') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_field_widget_form_alter().
+ */
+function eru_content_type_field_widget_form_alter (&$element, \Drupal\Core\Form\FormStateInterface $form_state, $context) {
+  if ($context['items']->getName() == 'field_slides') {
+    $element['subform']['field_image']['#states'] = [
+      'visible' => [
+        ':input[name="field_blocks[0][subform][field_slides][' . $element['#delta'] . '][subform][field_slides_type]"]' => [
+          'value' => 'image',
+        ],
+      ],
+    ];
+
+    $element['subform']['field_media']['#states'] = [
+      'visible' => [
+        ':input[name="field_blocks[0][subform][field_slides][' . $element['#delta'] . '][subform][field_slides_type]"]' => [
+          'value' => 'video',
+        ],
+      ],
+    ];
+  }
+}
