@@ -69,39 +69,36 @@
             {% set img_alt = item['#paragraph'].field_image.entity.field_media_image.value[0]['alt'] %}
             {% set img_longdesc = item['#paragraph'].field_image.entity.field_longdesc.value %}
             <img src="{{ img_url }}" class="d-block w-100" alt="{{ img_alt }}" {% if img_longdesc %} longdesc="{{ img_longdesc }}" {% endif %}>
-            <div class="carousel-caption d-none d-md-block">
-               <h5>
-                 <a href="{{ item['#paragraph'].field_link.0.url }}"
-                    {% if item['#paragraph'].field_external_link.value == 1 %}
-                    target="_blank" class="alert-leave-page"
-                    {% endif %}>
-                    {{ item['#paragraph'].field_title.value }}
-                    {% if item['#paragraph'].field_external_link.value == 1 %}
-                      <span class="element-invisible">Abre en una nueva ventana</span>
-                    {% endif %}
-                 </a>
-               </h5>
+            <div class="carousel-caption d-none d-md-block">               
+               <h3>{{ item['#paragraph'].field_title.value }}</h3>
                <p> {{ item['#paragraph'].field_description.value }} </p>
+               <a class="btn btn-primary" href="{{ item['#paragraph'].field_link.0.url}}" 
+               {% if item['#paragraph'].field_external_link.value == 1 %}
+                    target="_blank" class="alert-leave-page"
+                    {% endif %}>Leer más <span class="sr-only">sobre{{ item['#paragraph'].field_title.value }}{% if item['#paragraph'].field_external_link.value == 1 %}, Abre en una nueva ventana{% endif %}</span>
+                </a>
             </div>
           </div>
           {% endif %}
         {% endfor %}
       </div>
-      <a class="carousel-control-prev" href="#eru-slide" role="button" {#data-slide="prev"#}>
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#eru-slide" role="button" {#data-slide="next"#}>
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
+      <div class="controles">
+        <a class="carousel-control-prev" href="#eru-slide" role="button" {#data-slide="prev"#}>
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Ir a la imagen Anterior</span>
+        </a>
+        <div id="carouselButtons">
+              <button id="playButton" type="button" class="btn btn-default btn-xs"> Reproducir <i class="far fa-play-circle"></i>
+              </button>
+              <button id="pauseButton" type="button" class="btn btn-default btn-xs"> Pausar
+              </button>
+          </div>
+        <a class="carousel-control-next" href="#eru-slide" role="button" {#data-slide="next"#}>
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Ir a la imagen siguiente</span>
+        </a>
       </div>
-      <div id="carouselButtons">
-            <button id="playButton" type="button" class="btn btn-default btn-xs"> PLAY
-            </button>
-            <button id="pauseButton" type="button" class="btn btn-default btn-xs"> PAUSE
-            </button>
-        </div>
+      </div>      
     {% endblock %}
   </div>
 {% endblock paragraph %}

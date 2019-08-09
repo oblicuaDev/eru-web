@@ -11,3 +11,11 @@ style:
     - core/jquery
     - core/drupal
     - radix/bootstrap
+poppins:
+  css:
+    theme:
+      '//fonts.googleapis.com/css?family=Poppins:400,500,600,700': { type: external, minified: true }
+lato:
+  css:
+    theme:
+      '//fonts.googleapis.com/css?family=Lato:400,700,900': { type: external, minified: true }

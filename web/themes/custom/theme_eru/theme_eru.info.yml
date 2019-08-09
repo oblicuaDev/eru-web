@@ -23,6 +23,8 @@ regions:
 libraries:
   - radix/style
   - theme_eru/style
+  - theme_eru/poppins
+  - theme_eru/lato
 
 libraries-override:
   radix/bootstrap: false
