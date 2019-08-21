@@ -7,9 +7,9 @@
 <div class="page">
   {% embed '@radix/navbar/navbar.twig' with {
     placement: 'sticky-top',
-    container: 'fixed',
-    color: 'light',
-    utility_classes: ['bg-light'],
+    container: 'fluid',
+    color: 'dark',
+    utility_classes: ['bg-light menu-principal'],
   } %}
 
     {% block branding %}
@@ -28,21 +28,30 @@
 
     {% block right %}
       {% if page.navbar_right %}
+      <div class="menu-secundario d-flex flex-row align-items-center">
         {{ page.navbar_right }}
+      </div>
       {% endif %}
     {% endblock %}
   {% endembed %}
 
-  <main class="pt-5 pb-5">
-    {% if page.header %}
+  {% if page.header %}
       <header class="page__header mb-3">
-        <div class="container">
-          {{ page.header }}
-        </div>
-      </header>
+        {% if is_front %}  
+          <div class="container-fluid px-0">
+            {{ page.header }}
+          </div> 
+        {% else %}
+          <div class="container">
+            {{ page.header }}
+          </div>
+        {% endif %}
+      </header>    
     {% endif %}
+    
+  <main title="Contenido principal">  
 
-    {% if page.content %}
+    {% if page.content %}      
       <div class="page__content">
         <div class="container">
           {{ page.content }}

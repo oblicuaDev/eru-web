@@ -35,12 +35,14 @@
 @import "~bootstrap/scss/carousel";
 @import "~bootstrap/scss/utilities";
 
+
 // Base
 // -----------------------------------------------------------------------------
 @import "base/mixins";
 @import "base/functions";
 @import "base/helpers";
 @import "base/elements";
+@import "base/typography";
 
 // Layout
 // -----------------------------------------------------------------------------
@@ -57,7 +59,3 @@
 @import "block/block";
 @import "content/node.page";
 @import "content/node.article";
-
-
-
-

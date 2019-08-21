@@ -1,5 +1,71 @@
 // Page: Content
 // -----------------------------------------------------------------------------
 .page__content {
+	img.img-thumbnail {
+		border: none !important;
+		padding: 0 !important;
+		border-radius: 0;
+	}
 
+	.proyectos-block {
+		.views-field-title{ 
+			margin-top: 15px;
+			a {
+				font-weight: 600;
+				color: #000;
+				text-transform: uppercase;
+				&:hover {color: #0A6EC8 !important;}
+				&:focus {outline: 2px dotted #0A6EC8 !important; padding: 5px;
+	   			left: -5px; position: relative; color: #0A6EC8 !important;}
+			}
+		}
+	}
+
+	.more-link {
+		display: flex;
+    	justify-content: center;
+    	margin-top: 2em;
+		a{
+			color: #fff;
+	    	background-color: #0A6EC8;
+	    	border-color: #0A6EC8;
+	    	border: 1px solid transparent;
+		    padding: 0.375rem 0.75rem;
+		    font-size: 1rem;
+		    line-height: 1.5;
+		    border-radius: 0.25rem;
+		    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+		    &:hover{
+		    	color: #fff;
+	   			background-color: #085aa4;
+	    		border-color: #085397;
+	    		text-decoration: none;
+	   		}
+	  	} 
+	}
+	.transparencia-block{
+		#bkg-transparencia{
+			background: url("http://local.eru.com/sites/default/files/inline-images/bkg-transparencia.png"), #003250;
+		    background-repeat: no-repeat;
+		    padding: 74px 225px;
+		    float: left;		    
+		}
+		.textos {			
+			background-color: #003250;
+			height: 100%;
+			h2 {
+				font-family: $poppins;
+				font-size: 1.5em !important;
+				color: #fff;
+				text-transform: initial;
+				text-align: left;
+				&::after{content: none;}
+			}
+			p {
+				font-family: $poppins;
+				color: #F7931E;
+				font-weight: 500;
+			}
+		}		
+	}	
 }
