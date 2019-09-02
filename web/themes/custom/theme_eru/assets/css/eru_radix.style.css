@@ -10566,6 +10566,17 @@ body {
 
 /* Fonts System*/
 
+.page__header .landing-page h2 {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
 .page__header #eru-slide .carousel-caption {
   left: 10% !important;
   text-align: left !important;
@@ -10600,27 +10611,32 @@ body {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
 }
 
+.page__content h2 {
+  margin-bottom: 2em;
+}
+
 .page__content img.img-thumbnail {
   border: none !important;
   padding: 0 !important;
   border-radius: 0;
 }
 
-.page__content .proyectos-block .views-field-title {
-  margin-top: 15px;
+.page__content .project-block .views-field-title {
+  margin-top: 2rem;
 }
 
-.page__content .proyectos-block .views-field-title a {
-  font-weight: 600;
+.page__content .project-block .views-field-title a {
+  font-weight: 500;
+  font-size: 1.2em;
   color: #000;
   text-transform: uppercase;
 }
 
-.page__content .proyectos-block .views-field-title a:hover {
+.page__content .project-block .views-field-title a:hover {
   color: #0A6EC8 !important;
 }
 
-.page__content .proyectos-block .views-field-title a:focus {
+.page__content .project-block .views-field-title a:focus {
   outline: 2px dotted #0A6EC8 !important;
   padding: 5px;
   left: -5px;
@@ -10631,7 +10647,7 @@ body {
 .page__content .more-link {
   display: flex;
   justify-content: center;
-  margin-top: 2em;
+  margin: 3rem 0;
 }
 
 .page__content .more-link a {
@@ -10653,8 +10669,12 @@ body {
   text-decoration: none;
 }
 
+.page__content .transparencia-block {
+  margin: 5rem 0;
+}
+
 .page__content .transparencia-block #bkg-transparencia {
-  background: url("http://local.eru.com/sites/default/files/inline-images/bkg-transparencia.png"), #003250;
+  background: url("http://local.eru.com/themes/custom/theme_eru/assets/images/bkg-transparencia.png"), #003250;
   background-repeat: no-repeat;
   padding: 74px 225px;
   float: left;
@@ -10663,6 +10683,9 @@ body {
 .page__content .transparencia-block .textos {
   background-color: #003250;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .page__content .transparencia-block .textos h2 {
@@ -10671,6 +10694,7 @@ body {
   color: #fff;
   text-transform: initial;
   text-align: left;
+  margin-bottom: 0;
 }
 
 .page__content .transparencia-block .textos h2::after {
@@ -10683,6 +10707,61 @@ body {
   font-weight: 500;
 }
 
+.page__content .paragraph--type--links-of-interest .link-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3.5rem;
+}
+
+.page__content .paragraph--type--links-of-interest i {
+  padding: 44px;
+}
+
+.page__content .paragraph--type--links-of-interest .fa-one-class {
+  background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/ico-01.png), transparent;
+}
+
+.page__content .paragraph--type--links-of-interest .fa-two-class {
+  background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/ico-02.png), transparent;
+}
+
+.page__content .paragraph--type--links-of-interest .fa-tree-class {
+  background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/ico-03.png), transparent;
+}
+
+.page__content .paragraph--type--links-of-interest .fa-four-class {
+  background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/ico-04.png), transparent;
+}
+
+.page__content .paragraph--type--links-of-interest .fa-five-class {
+  background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/ico-05.png), transparent;
+}
+
+.page__content .paragraph--type--links-of-interest .fa-six-class {
+  background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/ico-06.png), transparent;
+}
+
+.page__content .paragraph--type--links-of-interest .fa-seven-class {
+  background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/ico-07.png), transparent;
+}
+
+.page__content .paragraph--type--links-of-interest .fa-eight-class {
+  background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/ico-08.png), transparent;
+}
+
+.page__content .paragraph--type--links-of-interest .description {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.page__content .paragraph--type--links-of-interest .title {
+  text-transform: uppercase;
+  color: #000;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
 /*!
  * Font Awesome Free 5.10.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -10690,7 +10769,6 @@ body {
 
 .fa,
 .fas,
-.menu-secundario .nav li:first-child a,
 .far,
 .fal,
 .fad,
@@ -10701,16 +10779,6 @@ body {
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
-  line-height: 1;
-}
-
-.menu-secundario .nav li:first-child a {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
   line-height: 1;
 }
 
@@ -10807,7 +10875,6 @@ body {
 
 .fa.fa-pull-left,
 .fas.fa-pull-left,
-.menu-secundario .nav li:first-child a.fa-pull-left,
 .far.fa-pull-left,
 .fal.fa-pull-left,
 .fab.fa-pull-left {
@@ -10816,7 +10883,6 @@ body {
 
 .fa.fa-pull-right,
 .fas.fa-pull-right,
-.menu-secundario .nav li:first-child a.fa-pull-right,
 .far.fa-pull-right,
 .fal.fa-pull-right,
 .fab.fa-pull-right {
@@ -16512,8 +16578,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa,
-.fas,
-.menu-secundario .nav li:first-child a {
+.fas {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
 }
@@ -16558,17 +16623,19 @@ readers do not read off random characters that represent icons */
 .menu-principal {
   background-color: #01293D !important;
   background-blend-mode: multiply;
-  opacity: 0.95;
+  opacity: 0.9;
 }
 
-.menu-principal a {
+.menu-principal a.nav-link,
+.menu-principal a.language-link {
   color: #fff !important;
   margin-left: 1rem !important;
   margin-right: 1rem !important;
   text-transform: uppercase;
 }
 
-.menu-principal a:focus {
+.menu-principal a.nav-link:focus,
+.menu-principal a.language-link:focus {
   outline: 2px dotted #FFF !important;
 }
 
@@ -16576,7 +16643,7 @@ readers do not read off random characters that represent icons */
   margin-right: 30px;
 }
 
-.menu-principal .navbar-nav a::after {
+.menu-principal .navbar-nav a.nav-link::after {
   content: "";
   display: block;
   width: 0;
@@ -16586,18 +16653,54 @@ readers do not read off random characters that represent icons */
   border: none;
 }
 
-.menu-principal .navbar-nav a:hover::after {
+.menu-principal .navbar-nav a.nav-link:hover::after {
   width: 100%;
 }
 
-.menu-secundario .nav li:first-child a {
-  background-color: red;
+.menu-principal .dropdown-menu {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-top: 5px;
 }
 
-.menu-secundario .nav li:first-child a::before {
-  content: "\F007";
-  color: #fff;
-  margin-right: 5px;
-  font-weight: 900;
+.menu-principal .dropdown-menu a {
+  padding: 0.7rem 1rem !important;
+  white-space: normal;
 }
+
+.menu-principal .dropdown-menu a:hover,
+.menu-principal .dropdown-menu a:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: #01293D;
+}
+
+.menu-principal .dropdown-menu::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 0 solid transparent;
+  border-left: 0.5em solid transparent;
+  border-right: 0.5em solid transparent;
+  margin: 0 auto;
+  border-bottom: 0.5em solid #FFF;
+  position: absolute;
+  top: -3%;
+  left: 48%;
+}
+
+/*
+.menu-secundario .nav li:first-child a{
+	background-color: red;
+	@extend %fa-icon;
+  	@extend .fas;
+
+  	&::before {
+    	content: fa-content($fa-var-user);    	
+    	color: #fff;
+    	margin-right: 5px;
+    	font-weight: 900;
+  	}
+
+
+}		*/
 

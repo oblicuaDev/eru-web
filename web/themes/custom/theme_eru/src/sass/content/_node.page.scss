@@ -8,8 +8,8 @@
 .menu-principal {
 	background-color: $bk !important;
 	background-blend-mode: multiply;	
-	opacity: 0.95;
-	a{
+	opacity: 0.9;
+	a.nav-link, a.language-link{
 		color: #fff !important;
 		margin-left: 1rem !important;
 		margin-right: 1rem !important;
@@ -18,7 +18,7 @@
 	}
 	.logo {margin-right: 30px;}
 	.navbar-nav {
-		a{
+		a.nav-link {
 			&::after{
 				content: '';
 				display: block;
@@ -31,7 +31,35 @@
 			&:hover::after{width: 100%;}					
 		}
 	}
+	.dropdown-menu {
+		-webkit-box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+    	box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+    	margin-top: 5px;    	
+    	a{
+    		padding: 0.7rem 1rem !important;
+    		white-space: normal;
+    	}
+    	a:hover, a:focus{
+    		color: #fff;
+    		text-decoration: none;
+    		background-color: $bk;
+    	}
+    	&::before {
+    		content: '';
+    		width: 0;
+    		height: 0;    		
+    		border-top: 0 solid transparent;
+    		border-left: 0.5em solid transparent;
+    		border-right: 0.5em solid transparent;    		
+    		margin: 0 auto;
+    		border-bottom: 0.5em solid #FFF;
+    		position: absolute;
+    		top: -3%;	
+    		left: 48%;
+    	}
+	}
 }
+/*
 .menu-secundario .nav li:first-child a{
 	background-color: red;
 	@extend %fa-icon;
@@ -45,4 +73,4 @@
   	}
 	
 	
-}		
+}		*/
