@@ -2064,11 +2064,6 @@ pre code {
   opacity: 1;
 }
 
-.form-control::-moz-placeholder {
-  color: #6c757d;
-  opacity: 1;
-}
-
 .form-control:-ms-input-placeholder {
   color: #6c757d;
   opacity: 1;
@@ -5005,10 +5000,8 @@ input[type=button].btn-block {
 @media (min-width: 576px) {
   .card-columns {
     -webkit-column-count: 3;
-       -moz-column-count: 3;
             column-count: 3;
     -webkit-column-gap: 1.25rem;
-       -moz-column-gap: 1.25rem;
             column-gap: 1.25rem;
     orphans: 1;
     widows: 1;
@@ -10530,7 +10523,7 @@ a.text-dark:focus {
   display: none !important;
 } */
 
-/* Fonts System*/
+/* ./Fonts System*/
 
 h1,
 h2,
@@ -10564,127 +10557,10 @@ body {
   font-size: 16px;
 }
 
-/* Fonts System*/
-
-.page__header #eru-slide .carousel-caption {
-  left: 10% !important;
-  text-align: left !important;
-  width: 25%;
-}
-
-.page__header #eru-slide .carousel-caption h3 {
-  font-family: "Poppins", Arial, Sans-serif;
-  font-weight: 600;
-}
-
-.page__header #eru-slide .controles {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  left: 16%;
-  bottom: 5%;
-  z-index: 10;
-}
-
-.page__header #eru-slide .controles .carousel-control-prev,
-.page__header #eru-slide .controles .carousel-control-next {
-  opacity: 1 !important;
-  width: 18%;
-  border: 1px solid #fff;
-  border-radius: 50%;
-}
-
-.page__header #eru-slide .controles .carousel-control-prev:hover,
-.page__header #eru-slide .controles .carousel-control-next:hover {
-  background-color: #fff !important;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
-}
-
-.page__content img.img-thumbnail {
-  border: none !important;
-  padding: 0 !important;
-  border-radius: 0;
-}
-
-.page__content .proyectos-block .views-field-title {
-  margin-top: 15px;
-}
-
-.page__content .proyectos-block .views-field-title a {
-  font-weight: 600;
-  color: #000;
-  text-transform: uppercase;
-}
-
-.page__content .proyectos-block .views-field-title a:hover {
-  color: #0A6EC8 !important;
-}
-
-.page__content .proyectos-block .views-field-title a:focus {
-  outline: 2px dotted #0A6EC8 !important;
-  padding: 5px;
-  left: -5px;
-  position: relative;
-  color: #0A6EC8 !important;
-}
-
-.page__content .more-link {
-  display: flex;
-  justify-content: center;
-  margin-top: 2em;
-}
-
-.page__content .more-link a {
-  color: #fff;
-  background-color: #0A6EC8;
-  border-color: #0A6EC8;
-  border: 1px solid transparent;
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  border-radius: 0.25rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-
-.page__content .more-link a:hover {
-  color: #fff;
-  background-color: #085aa4;
-  border-color: #085397;
-  text-decoration: none;
-}
-
-.page__content .transparencia-block #bkg-transparencia {
-  background: url("http://local.eru.com/sites/default/files/inline-images/bkg-transparencia.png"), #003250;
-  background-repeat: no-repeat;
-  padding: 74px 225px;
-  float: left;
-}
-
-.page__content .transparencia-block .textos {
-  background-color: #003250;
-  height: 100%;
-}
-
-.page__content .transparencia-block .textos h2 {
-  font-family: "Poppins", Arial, Sans-serif;
-  font-size: 1.5em !important;
-  color: #fff;
-  text-transform: initial;
-  text-align: left;
-}
-
-.page__content .transparencia-block .textos h2::after {
-  content: none;
-}
-
-.page__content .transparencia-block .textos p {
-  font-family: "Poppins", Arial, Sans-serif;
-  color: #F7931E;
-  font-weight: 500;
-}
+/* ./Fonts System*/
 
 /*!
- * Font Awesome Free 5.10.0 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 5.10.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 
@@ -16498,7 +16374,26 @@ readers do not read off random characters that represent icons */
 }
 
 /*!
- * Font Awesome Free 5.10.0 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 5.10.2 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: url("/font/fa-regular-400.eot");
+  src: url("/font/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("/font/fa-regular-400.woff2") format("woff2"), url("/font/fa-regular-400.woff") format("woff"), url("/font/fa-regular-400.ttf") format("truetype"), url("/font/fa-regular-400.svg#fontawesome") format("svg");
+}
+
+.far {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+}
+
+/*!
+ * Font Awesome Free 5.10.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 
@@ -16507,8 +16402,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 900;
   font-display: auto;
-  src: url(/fonts/fa-solid-900.eot?f9b8a1aa417e318d5be775e14ee3c475);
-  src: url(/fonts/fa-solid-900.eot?f9b8a1aa417e318d5be775e14ee3c475) format("embedded-opentype"), url(/fonts/fa-solid-900.woff2?60ce8cf4dd9fe177abdfeda21e20798e) format("woff2"), url(/fonts/fa-solid-900.woff?55ce8d0ca92adb7c283d6043d0edf46f) format("woff"), url(/fonts/fa-solid-900.ttf?e9809ab6a5a34dc6b7966de82265d6bd) format("truetype"), url(/fonts/fa-solid-900.svg?d42cc8bb088b9bbcb51b1db2d9210976) format("svg");
+  src: url("/font/fa-solid-900.eot");
+  src: url("/font/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("/font/fa-solid-900.woff2") format("woff2"), url("/font/fa-solid-900.woff") format("woff"), url("/font/fa-solid-900.ttf") format("truetype"), url("/font/fa-solid-900.svg#fontawesome") format("svg");
 }
 
 .fa,
@@ -16519,26 +16414,7 @@ readers do not read off random characters that represent icons */
 }
 
 /*!
- * Font Awesome Free 5.10.0 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
- */
-
-@font-face {
-  font-family: "Font Awesome 5 Free";
-  font-style: normal;
-  font-weight: 400;
-  font-display: auto;
-  src: url(/fonts/fa-regular-400.eot?d98ffd73c6b104b42bfe69c987a72924);
-  src: url(/fonts/fa-regular-400.eot?d98ffd73c6b104b42bfe69c987a72924) format("embedded-opentype"), url(/fonts/fa-regular-400.woff2?d90e1b03a9168c0d775a52098423adfb) format("woff2"), url(/fonts/fa-regular-400.woff?f9695ea8029b2975dea6753bf6f1bf1c) format("woff"), url(/fonts/fa-regular-400.ttf?76d069c84f54a63d1bf9e29c76fe65e6) format("truetype"), url(/fonts/fa-regular-400.svg?0234a585809be071bd68db999f27f829) format("svg");
-}
-
-.far {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 400;
-}
-
-/*!
- * Font Awesome Free 5.10.0 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 5.10.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 
@@ -16547,13 +16423,138 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: normal;
   font-display: auto;
-  src: url(/fonts/fa-brands-400.eot?e33a1a54eb0a1e560362fcf5335ac26c);
-  src: url(/fonts/fa-brands-400.eot?e33a1a54eb0a1e560362fcf5335ac26c) format("embedded-opentype"), url(/fonts/fa-brands-400.woff2?4f786efdf6328877ec2448bf265bcc8f) format("woff2"), url(/fonts/fa-brands-400.woff?72f5c754189a296467db59e26e2b4671) format("woff"), url(/fonts/fa-brands-400.ttf?75dae2b62813bc641a9b6a2fc041e4de) format("truetype"), url(/fonts/fa-brands-400.svg?060ea8dd8446c15159ed6ec217ae29b9) format("svg");
+  src: url("/font/fa-brands-400.eot");
+  src: url("/font/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("/font/fa-brands-400.woff2") format("woff2"), url("/font/fa-brands-400.woff") format("woff"), url("/font/fa-brands-400.ttf") format("truetype"), url("/font/fa-brands-400.svg#fontawesome") format("svg");
 }
 
 .fab {
   font-family: "Font Awesome 5 Brands";
 }
+
+/*@import "fonts/fontawesome/scss/solid.scss";
+@import "fonts/fontawesome/scss/brands.scss"; */
+
+.page__header #eru-slide .carousel-caption {
+  left: 10% !important;
+  text-align: left !important;
+  width: 25%;
+}
+
+.page__header #eru-slide .carousel-caption h3 {
+  font-family: "Poppins", Arial, Sans-serif;
+  font-weight: 600;
+}
+
+.page__header #eru-slide .controles {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 16%;
+  bottom: 5%;
+  z-index: 10;
+}
+
+.page__header #eru-slide .controles .carousel-control-prev,
+.page__header #eru-slide .controles .carousel-control-next {
+  opacity: 1 !important;
+  width: 18%;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.page__header #eru-slide .controles .carousel-control-prev:hover,
+.page__header #eru-slide .controles .carousel-control-next:hover {
+  background-color: #fff !important;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
+}
+
+.page__content img.img-thumbnail {
+  border: none !important;
+  padding: 0 !important;
+  border-radius: 0;
+}
+
+.page__content .proyectos-block .views-field-title {
+  margin-top: 15px;
+}
+
+.page__content .proyectos-block .views-field-title a {
+  font-weight: 600;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.page__content .proyectos-block .views-field-title a:hover {
+  color: #0A6EC8 !important;
+}
+
+.page__content .proyectos-block .views-field-title a:focus {
+  outline: 2px dotted #0A6EC8 !important;
+  padding: 5px;
+  left: -5px;
+  position: relative;
+  color: #0A6EC8 !important;
+}
+
+.page__content .more-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.page__content .more-link a {
+  color: #fff;
+  background-color: #0A6EC8;
+  border-color: #0A6EC8;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.page__content .more-link a:hover {
+  color: #fff;
+  background-color: #085aa4;
+  border-color: #085397;
+  text-decoration: none;
+}
+
+.page__content .transparencia-block #bkg-transparencia {
+  background: url("http://local.eru.com/sites/default/files/inline-images/bkg-transparencia.png"), #003250;
+  background-repeat: no-repeat;
+  padding: 74px 225px;
+  float: left;
+}
+
+.page__content .transparencia-block .textos {
+  background-color: #003250;
+  height: 100%;
+}
+
+.page__content .transparencia-block .textos h2 {
+  font-family: "Poppins", Arial, Sans-serif;
+  font-size: 1.5em !important;
+  color: #fff;
+  text-transform: initial;
+  text-align: left;
+}
+
+.page__content .transparencia-block .textos h2::after {
+  content: none;
+}
+
+.page__content .transparencia-block .textos p {
+  font-family: "Poppins", Arial, Sans-serif;
+  color: #F7931E;
+  font-weight: 500;
+}
+
+/* @import "fonts/fontawesome/scss/fontawesome.scss";
+@import "fonts/fontawesome/scss/solid.scss";
+@import "fonts/fontawesome/scss/regular.scss";
+@import "fonts/fontawesome/scss/brands.scss"; */
 
 .menu-principal {
   background-color: #01293D !important;

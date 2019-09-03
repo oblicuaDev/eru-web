@@ -1,13 +1,14 @@
-@import "./fonts/fontawesome.scss";
-@import "./fonts/solid.scss";
-@import "./fonts/regular.scss";
-@import "./fonts/brands.scss";
+/* @import "fonts/fontawesome/scss/fontawesome.scss";
+@import "fonts/fontawesome/scss/solid.scss";
+@import "fonts/fontawesome/scss/regular.scss";
+@import "fonts/fontawesome/scss/brands.scss"; */
+// Todo se importa del principal
 
 // Page
 // -----------------------------------------------------------------------------
 .menu-principal {
 	background-color: $bk !important;
-	background-blend-mode: multiply;	
+	background-blend-mode: multiply;
 	opacity: 0.95;
 	a{
 		color: #fff !important;
@@ -28,21 +29,19 @@
 				transition: width .3s;
 				border: none;
 			}
-			&:hover::after{width: 100%;}					
+			&:hover::after{width: 100%;}
 		}
 	}
 }
 .menu-secundario .nav li:first-child a{
 	background-color: red;
 	@extend %fa-icon;
-  	@extend .fas;
+	@extend .fas;
 
-  	&::before {
-    	content: fa-content($fa-var-user);    	
-    	color: #fff;
-    	margin-right: 5px;
-    	font-weight: 900;
-  	}
-	
-	
-}		
+	&::before {
+		content: fa-content($fa-var-user);
+		color: #fff;
+		margin-right: 5px;
+		font-weight: 900;
+	}
+}
