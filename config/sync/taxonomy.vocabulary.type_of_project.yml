@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'Type of project'
 vid: type_of_project
 description: 'Type of project'
-hierarchy: 0
 weight: 0

@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'Tags of news'
 vid: tags_of_news
 description: 'Tags of news '
-hierarchy: 0
 weight: 0

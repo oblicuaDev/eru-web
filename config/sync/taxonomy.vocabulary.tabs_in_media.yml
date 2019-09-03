@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'Tabs in media'
 vid: tabs_in_media
 description: 'Different media that made the post'
-hierarchy: 0
 weight: 0

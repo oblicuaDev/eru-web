@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'Tabs in project'
 vid: tabs_in_project
 description: 'Titles of project for tabs'
-hierarchy: 0
 weight: 0
