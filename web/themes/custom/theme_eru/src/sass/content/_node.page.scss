@@ -67,6 +67,7 @@
 	@extend .fas;
 
   	&::before {
+
     	content: fa-content($fa-var-user);
     	color: #fff;
     	margin-right: 5px;

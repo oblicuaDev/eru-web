@@ -1,7 +1,7 @@
 buttons_size: 32
 additional_html: "Compartir \r\n<a class=\"a2a_button_facebook\"></a>\r\n<a class=\"a2a_button_twitter\"></a>\r\n\r\n\r\n\r\n"
 additional_css: ''
-additional_js: "a2a_config.overlays.push({\r\n    html: '<div class=\"a2a_kit a2a_kit_size_50 a2a_overlay_style a2a_vertical_style\" data-a2a-icon-color=\"seashell,midnightblue\"><a class=\"a2a_button_pinterest\"></a><a class=\"a2a_button_facebook\"></a></div>'\r\n});"
+additional_js: ''
 universal_button: none
 custom_universal_button: ''
 universal_button_placement: before
@@ -19,6 +19,7 @@ entities:
   webform_submission: 0
   menu_link_content: 0
   paragraph: 0
+  entity_embed_fake_entity: 0
 _core:
   default_config_hash: 9YPlBuinIKLe5jVEf-aIhZvKFn77i18yD4CrNR0BbVQ
 langcode: es
