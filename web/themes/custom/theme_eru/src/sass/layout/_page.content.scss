@@ -1,17 +1,21 @@
 // Page: Content
 // -----------------------------------------------------------------------------
 .page__content {
+	h2{
+		margin-bottom: 2em;
+	}
 	img.img-thumbnail {
 		border: none !important;
 		padding: 0 !important;
 		border-radius: 0;
 	}
 
-	.proyectos-block {
+	.project-block {
 		.views-field-title{ 
-			margin-top: 15px;
+			margin-top: 2rem;
 			a {
-				font-weight: 600;
+				font-weight: 500;
+				font-size: 1.2em;
 				color: #000;
 				text-transform: uppercase;
 				&:hover {color: #0A6EC8 !important;}
@@ -24,7 +28,7 @@
 	.more-link {
 		display: flex;
     	justify-content: center;
-    	margin-top: 2em;
+    	margin: 3rem 0;
 		a{
 			color: #fff;
 	    	background-color: #0A6EC8;
@@ -44,22 +48,27 @@
 	  	} 
 	}
 	.transparencia-block{
+		margin: 5rem 0;
 		#bkg-transparencia{
-			background: url("http://local.eru.com/sites/default/files/inline-images/bkg-transparencia.png"), #003250;
+			background: url("http://local.eru.com/themes/custom/theme_eru/assets/images/bkg-transparencia.png"), #003250;
 		    background-repeat: no-repeat;
 		    padding: 74px 225px;
-		    float: left;		    
+		    float: left;	    
 		}
 		.textos {			
 			background-color: #003250;
 			height: 100%;
+			display: flex;
+    		justify-content: center;
+    		flex-direction: column;
 			h2 {
 				font-family: $poppins;
 				font-size: 1.5em !important;
 				color: #fff;
 				text-transform: initial;
 				text-align: left;
-				&::after{content: none;}
+				margin-bottom: 0;				
+				&::after{content: none;}				
 			}
 			p {
 				font-family: $poppins;
@@ -67,5 +76,24 @@
 				font-weight: 500;
 			}
 		}		
-	}	
+	}
+	.paragraph--type--links-of-interest{
+		.link-item{
+			display: flex;
+    		flex-direction: column;
+    		align-items: center;
+    		margin-bottom: 3.5rem;
+		}
+		i{padding:44px;}
+		.fa-one-class{background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/ico-01.png),transparent;}
+		.fa-two-class{background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/ico-02.png),transparent;}
+		.fa-tree-class{background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/ico-03.png),transparent;}
+		.fa-four-class{background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/ico-04.png),transparent;}
+		.fa-five-class{background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/ico-05.png),transparent;}
+		.fa-six-class{background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/ico-06.png),transparent;}
+		.fa-seven-class{background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/ico-07.png),transparent;}
+		.fa-eight-class{background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/ico-08.png),transparent;}
+		.description{text-align: center; margin-top:1rem;}
+		.title{text-transform: uppercase; color: #000; font-weight: bold; margin-top: 1rem;}
+	}
 }
