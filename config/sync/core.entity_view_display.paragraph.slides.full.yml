@@ -9,6 +9,7 @@ dependencies:
     - field.field.paragraph.slides.field_image
     - field.field.paragraph.slides.field_link
     - field.field.paragraph.slides.field_media
+    - field.field.paragraph.slides.field_slides_type
     - field.field.paragraph.slides.field_title
     - paragraphs.paragraphs_type.slides
   module:
@@ -67,3 +68,4 @@ content:
     region: content
 hidden:
   field_media: true
+  field_slides_type: true

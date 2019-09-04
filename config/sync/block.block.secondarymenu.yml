@@ -10,8 +10,8 @@ dependencies:
     - theme_eru
 id: secondarymenu
 theme: theme_eru
-region: navbar_branding
-weight: -7
+region: navbar_right
+weight: 1
 provider: null
 plugin: 'system_menu_block:secondary-menu'
 settings:

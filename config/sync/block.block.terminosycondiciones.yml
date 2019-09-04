@@ -11,7 +11,7 @@ dependencies:
 id: terminosycondiciones
 theme: theme_eru
 region: navbar_branding
-weight: -5
+weight: -8
 provider: null
 plugin: 'block_content:b0320046-326c-420a-a844-c17d029f330d'
 settings:

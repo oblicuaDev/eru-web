@@ -8,8 +8,8 @@ dependencies:
     - theme_eru
 id: languageswitcher
 theme: theme_eru
-region: navbar_branding
-weight: -8
+region: navbar_right
+weight: 2
 provider: null
 plugin: 'language_block:language_interface'
 settings:

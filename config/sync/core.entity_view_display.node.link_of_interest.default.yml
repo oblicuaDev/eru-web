@@ -7,7 +7,9 @@ dependencies:
     - field.field.node.link_of_interest.field_content
     - node.type.link_of_interest
   module:
+    - ds
     - entity_reference_revisions
+    - field_formatter_class
     - user
 id: node.link_of_interest.default
 targetEntityType: node
@@ -21,7 +23,17 @@ content:
     settings:
       view_mode: default
       link: ''
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ds_limit: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     region: content
   links:
     weight: 0
