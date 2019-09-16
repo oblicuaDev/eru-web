@@ -1,0 +1,24 @@
+uuid: 3cbad186-6a5c-46a9-b551-b95975f026aa
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.gallery_news.field_gallery
+    - paragraphs.paragraphs_type.gallery_news
+  module:
+    - entity_reference_revisions
+id: paragraph.gallery_news.default
+targetEntityType: paragraph
+bundle: gallery_news
+mode: default
+content:
+  field_gallery:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

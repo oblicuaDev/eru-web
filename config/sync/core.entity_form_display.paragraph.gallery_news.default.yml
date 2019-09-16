@@ -1,0 +1,29 @@
+uuid: c1a7a7e9-b1b3-4282-8301-12572c288778
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.gallery_news.field_gallery
+    - paragraphs.paragraphs_type.gallery_news
+  module:
+    - paragraphs
+id: paragraph.gallery_news.default
+targetEntityType: paragraph
+bundle: gallery_news
+mode: default
+content:
+  field_gallery:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

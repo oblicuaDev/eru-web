@@ -1,0 +1,9 @@
+uuid: a45e3a98-dd1a-4b73-85a9-3cf4b4ab32b6
+langcode: es
+status: true
+dependencies: {  }
+id: gallery_news
+label: 'Gallery News'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

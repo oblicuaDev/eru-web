@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.news.body
-    - field.field.node.news.field_slider
+    - field.field.node.news.field_gallery
     - field.field.node.news.field_tags
     - node.type.news
   module:
@@ -31,9 +31,9 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_slider:
+  field_gallery:
     type: entity_reference_paragraphs
-    weight: 9
+    weight: 26
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -94,6 +94,11 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  translation:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   uid:
     type: entity_reference_autocomplete
     weight: 3
