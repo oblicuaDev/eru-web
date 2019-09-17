@@ -1,11 +1,11 @@
-uuid: f9fbd493-5e37-4a0d-ab09-03b997eb2555
+uuid: 4669df06-9f45-4f41-9dce-12f570620eef
 langcode: es
 status: true
 dependencies:
   config:
     - field.storage.node.field_gallery
     - node.type.news
-    - paragraphs.paragraphs_type.gallery_news
+    - paragraphs.paragraphs_type.gallery
   module:
     - entity_reference_revisions
 id: node.news.field_gallery
@@ -23,15 +23,15 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      gallery_news: gallery_news
+      gallery: gallery
     target_bundles_drag_drop:
-      gallery_news:
+      gallery:
         enabled: true
         weight: 9
       data:
         weight: 10
         enabled: false
-      gallery:
+      galleries:
         weight: 11
         enabled: false
       general_data_:

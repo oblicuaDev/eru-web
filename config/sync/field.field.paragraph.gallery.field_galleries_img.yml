@@ -1,18 +1,18 @@
-uuid: 9db7077e-5c6d-4098-a039-86822e025854
+uuid: a4314715-f6ba-4021-ac58-fb3441cb6e76
 langcode: es
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_gallery
+    - field.storage.paragraph.field_galleries_img
+    - paragraphs.paragraphs_type.galleries
     - paragraphs.paragraphs_type.gallery
-    - paragraphs.paragraphs_type.gallery_news
   module:
     - entity_reference_revisions
-id: paragraph.gallery_news.field_gallery
-field_name: field_gallery
+id: paragraph.gallery.field_galleries_img
+field_name: field_galleries_img
 entity_type: paragraph
-bundle: gallery_news
-label: Gallery
+bundle: gallery
+label: Galleries
 description: ''
 required: false
 translatable: false
@@ -23,15 +23,15 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      gallery: gallery
+      galleries: galleries
     target_bundles_drag_drop:
-      gallery_news:
+      gallery:
         weight: 9
         enabled: false
       data:
         weight: 10
         enabled: false
-      gallery:
+      galleries:
         enabled: true
         weight: 11
       general_data_:

@@ -1,9 +1,9 @@
-uuid: a45e3a98-dd1a-4b73-85a9-3cf4b4ab32b6
+uuid: 0bfdada5-3f21-4400-ba53-980bc3bec804
 langcode: es
 status: true
 dependencies: {  }
-id: gallery_news
-label: 'Gallery News'
+id: galleries
+label: Galleries
 icon_uuid: null
 description: ''
 behavior_plugins: {  }
