@@ -49,9 +49,6 @@
 {% block paragraph %}
   <div{{attributes.addClass(classes)}}>
     {% block content %}
-
-
-
       <div id="eru-slide" class="carousel slide" {#data-ride="carousel"#}>
         <ol class="carousel-indicators">
           {% for key, item in content.field_galleries_img %}
@@ -61,11 +58,7 @@
           {% endfor %}
         </ol>
         <div class="carousel-inner">
-
-
-
           {% for key, item in content.field_galleries_img %}
-
             {% if key matches '/^\\d+$/' %}
               {% if key == 0 %}
                 <div class="carousel-item active">
@@ -74,10 +67,8 @@
                   {% endif %}
                     {% set field_galleries_img_type = item['#paragraph'].field_galleries_img_type %}
                     {% set img_url = file_url(item['#paragraph'].field_img.entity.uri.value) %}
-                    {% set img_alt = item['#paragraph'].field_img.entity.value[0]['alt'] %}
+                    {% set img_alt = item['#paragraph'].field_img.value[0]['alt'] %}
                     {% set img_longdesc = item['#paragraph'].field_image.entity.field_longdesc.value %}
-                    {# {{ kint (item['#paragraph'].field_img.entity ) }}
- #}
                     <img src="{{ img_url }}" class="d-block w-100" alt="{{ img_alt }}">
                     <div class="carousel-caption d-none d-md-block">
                       <h3>{{ item['#paragraph'].field_title.value }}</h3>

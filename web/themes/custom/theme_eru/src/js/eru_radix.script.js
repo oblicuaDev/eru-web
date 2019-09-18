@@ -33,7 +33,7 @@ import 'bootstrap';
 
   Drupal.behaviors.helloWorld = {
     attach: function (context) {
-      console.log('Hello World 2');
+      console.log('Hello World example of behaviors');
     }
   };
 
