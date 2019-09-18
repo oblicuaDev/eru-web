@@ -37,7 +37,7 @@ settings:
       data:
         weight: 10
         enabled: false
-      gallery_news:
+      gallery:
         weight: 11
         enabled: false
       general_data_:

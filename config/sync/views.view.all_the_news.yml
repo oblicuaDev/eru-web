@@ -4,13 +4,14 @@ status: true
 dependencies:
   config:
     - field.storage.node.body
-    - field.storage.node.field_gallery
-    - field.storage.node.field_slider
+    - field.storage.node.field_cover_img
     - field.storage.node.field_tags
+    - image.style.project
+    - image.style.thumbnail
     - node.type.news
     - taxonomy.vocabulary.tags_of_news
   module:
-    - entity_reference_revisions
+    - image
     - node
     - taxonomy
     - text
@@ -95,69 +96,6 @@ display:
           separator: ''
           hide_empty: false
       fields:
-        field_gallery:
-          id: field_gallery
-          table: node__field_gallery
-          field: field_gallery
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_revisions_entity_view
-          settings:
-            view_mode: default
-          group_column: ''
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
         title:
           id: title
           table: node_field_data
@@ -385,8 +323,7 @@ display:
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:field.storage.node.field_gallery'
+      tags: {  }
   block_1:
     display_plugin: block
     id: block_1
@@ -438,10 +375,10 @@ display:
       display_description: ''
       css_class: ''
       fields:
-        field_gallery:
-          id: field_gallery
-          table: node__field_gallery
-          field: field_gallery
+        field_cover_img:
+          id: field_cover_img
+          table: node__field_cover_img
+          field: field_cover_img
           relationship: none
           group_type: group
           admin_label: ''
@@ -487,9 +424,10 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: entity_reference_revisions_entity_view
+          type: image
           settings:
-            view_mode: default
+            image_style: project
+            image_link: ''
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -687,7 +625,7 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_gallery'
+        - 'config:field.storage.node.field_cover_img'
   block_2:
     display_plugin: block
     id: block_2
@@ -697,17 +635,17 @@ display:
       display_extenders: {  }
       display_description: ''
       fields:
-        field_slider_1:
-          id: field_slider_1
-          table: node__field_slider
-          field: field_slider
+        field_cover_img:
+          id: field_cover_img
+          table: node__field_cover_img
+          field: field_cover_img
           relationship: none
           group_type: group
           admin_label: ''
           label: ''
           exclude: false
           alter:
-            alter_text: true
+            alter_text: false
             text: ''
             make_link: false
             path: ''
@@ -739,16 +677,17 @@ display:
           element_label_class: ''
           element_label_colon: false
           element_wrapper_type: ''
-          element_wrapper_class: 'display-none-controllers col-4 float-left'
+          element_wrapper_class: ''
           element_default_classes: true
           empty: ''
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: entity_reference_revisions_entity_view
+          type: image
           settings:
-            view_mode: default
+            image_style: thumbnail
+            image_link: ''
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -921,7 +860,7 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_slider'
+        - 'config:field.storage.node.field_cover_img'
   page_1:
     display_plugin: page
     id: page_1
@@ -1210,10 +1149,10 @@ display:
         groups:
           1: AND
       fields:
-        field_slider:
-          id: field_slider
-          table: node__field_slider
-          field: field_slider
+        field_cover_img:
+          id: field_cover_img
+          table: node__field_cover_img
+          field: field_cover_img
           relationship: none
           group_type: group
           admin_label: ''
@@ -1252,16 +1191,17 @@ display:
           element_label_class: ''
           element_label_colon: false
           element_wrapper_type: ''
-          element_wrapper_class: display-none-controllers
+          element_wrapper_class: ''
           element_default_classes: true
           empty: ''
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: entity_reference_revisions_entity_view
+          type: image
           settings:
-            view_mode: full
+            image_style: ''
+            image_link: ''
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -1607,5 +1547,5 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_slider'
+        - 'config:field.storage.node.field_cover_img'
         - 'config:field.storage.node.field_tags'

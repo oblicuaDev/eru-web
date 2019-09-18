@@ -5,5 +5,5 @@ dependencies: {  }
 id: gallery
 label: Gallery
 icon_uuid: null
-description: ''
+description: 'They are used for news galleries'
 behavior_plugins: {  }

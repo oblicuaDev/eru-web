@@ -1,13 +1,13 @@
-uuid: 92929a92-1fb6-4677-98b4-146340cd13db
-langcode: es
+uuid: f94a5269-f27b-41f4-b84a-99e1f0d430c0
+langcode: en
 status: true
 dependencies:
   module:
     - file
     - image
     - paragraphs
-id: paragraph.field_galleries
-field_name: field_galleries
+id: paragraph.field_img
+field_name: field_img
 entity_type: paragraph
 type: image
 settings:
@@ -23,7 +23,7 @@ settings:
   display_default: false
 module: image
 locked: false
-cardinality: -1
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

@@ -3,7 +3,8 @@ langcode: es
 status: true
 dependencies:
   config:
-    - field.field.paragraph.galleries.field_galleries
+    - field.field.paragraph.galleries.field_img
+    - field.field.paragraph.galleries.field_title
     - image.style.thumbnail
     - paragraphs.paragraphs_type.galleries
   module:
@@ -13,13 +14,21 @@ targetEntityType: paragraph
 bundle: galleries
 mode: default
 content:
-  field_galleries:
-    weight: 0
+  field_img:
+    weight: 3
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
 hidden:
   created: true

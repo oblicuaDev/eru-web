@@ -1,17 +1,17 @@
-uuid: 8e850d2d-28c8-40c0-b3b8-f6c79ed5f881
-langcode: es
+uuid: 67f1652b-7d91-47ea-b17f-1a9fdf3ca624
+langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_galleries
+    - field.storage.paragraph.field_img
     - paragraphs.paragraphs_type.galleries
   module:
     - image
-id: paragraph.galleries.field_galleries
-field_name: field_galleries
+id: paragraph.galleries.field_img
+field_name: field_img
 entity_type: paragraph
 bundle: galleries
-label: Galleries
+label: img
 description: ''
 required: false
 translatable: false

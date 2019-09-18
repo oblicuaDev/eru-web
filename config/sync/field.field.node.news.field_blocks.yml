@@ -1,21 +1,21 @@
-uuid: 016a9189-cbf0-4afe-8faf-8412390569fb
+uuid: c777126d-c19e-4616-bd97-1542ac0cf480
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_gallery
+    - field.storage.node.field_blocks
     - node.type.news
     - paragraphs.paragraphs_type.gallery
   module:
     - entity_reference_revisions
-id: node.news.field_gallery
-field_name: field_gallery
+id: node.news.field_blocks
+field_name: field_blocks
 entity_type: node
 bundle: news
-label: Gallery
+label: Blocks
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
@@ -25,12 +25,12 @@ settings:
     target_bundles:
       gallery: gallery
     target_bundles_drag_drop:
-      galleries:
-        weight: -17
-        enabled: false
       gallery:
         enabled: true
+        weight: -17
+      galleries:
         weight: -16
+        enabled: false
       data:
         weight: -15
         enabled: false
