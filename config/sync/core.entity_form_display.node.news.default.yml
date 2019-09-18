@@ -22,7 +22,7 @@ content:
     settings:
       rows: 9
       placeholder: 'Puedes embeber youtube, twitter y soundcloud'
-      summary_rows: 3
+      summary_rows: 2
     third_party_settings: {  }
     region: content
   created:
@@ -93,6 +93,11 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete

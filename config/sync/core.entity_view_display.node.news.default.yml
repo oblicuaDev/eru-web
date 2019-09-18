@@ -8,7 +8,9 @@ dependencies:
     - field.field.node.news.field_tags
     - node.type.news
   module:
+    - ds
     - entity_reference_revisions
+    - field_formatter_class
     - text
     - user
 id: node.news.default
@@ -26,7 +28,16 @@ content:
     type: text_default
     weight: 2
     settings: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     region: content
   field_slider:
     type: entity_reference_revisions_entity_view

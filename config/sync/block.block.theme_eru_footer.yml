@@ -1,6 +1,6 @@
 uuid: a53fc7ab-75be-4d17-9be3-0ce08c94fc2e
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.footer
@@ -13,14 +13,14 @@ _core:
 id: theme_eru_footer
 theme: theme_eru
 region: footer
-weight: -8
+weight: -9
 provider: null
 plugin: 'system_menu_block:footer'
 settings:
   id: 'system_menu_block:footer'
-  label: 'links of interest'
+  label: 'Enlaces de Interés'
   provider: system
-  label_display: visible
+  label_display: '0'
   level: 1
   depth: 0
   expand_all_items: false

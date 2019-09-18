@@ -1,6 +1,6 @@
 uuid: f29bc1de-4314-41d2-8f75-b341946c66b4
 langcode: en
-status: true
+status: false
 dependencies:
   content:
     - 'block_content:basic:2a318f74-bfd9-40b8-a0dd-7ce01d48a32e'
@@ -16,9 +16,9 @@ provider: null
 plugin: 'block_content:2a318f74-bfd9-40b8-a0dd-7ce01d48a32e'
 settings:
   id: 'block_content:2a318f74-bfd9-40b8-a0dd-7ce01d48a32e'
-  label: 'Our mission'
+  label: 'Nuestra Misión'
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full
