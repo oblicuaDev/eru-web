@@ -11,7 +11,7 @@ dependencies:
 id: logo
 theme: theme_eru
 region: navbar_branding
-weight: -10
+weight: -11
 provider: null
 plugin: 'block_content:53a37fe9-8d56-4ac2-9c63-0cb7682a9680'
 settings:

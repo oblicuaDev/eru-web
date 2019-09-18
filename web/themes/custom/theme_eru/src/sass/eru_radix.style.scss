@@ -35,14 +35,6 @@
 @import "~bootstrap/scss/carousel";
 @import "~bootstrap/scss/utilities";
 
-// Base
-// -----------------------------------------------------------------------------
-@import "base/mixins";
-@import "base/functions";
-@import "base/helpers";
-@import "base/elements";
-@import "base/typography";
-
 //fonts
 // -----------------------------------------------------------------------------
 @import "fonts/fontawesome/scss/fontawesome.scss";
@@ -50,6 +42,14 @@
 @import "fonts/fontawesome/scss/solid.scss";
 @import "fonts/fontawesome/scss/brands.scss";
 
+
+// Base
+// -----------------------------------------------------------------------------
+@import "base/mixins";
+@import "base/functions";
+@import "base/helpers";
+@import "base/elements";
+@import "base/typography";
 
 
 /*@import "fonts/fontawesome/scss/solid.scss";

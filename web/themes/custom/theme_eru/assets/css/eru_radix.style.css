@@ -2064,6 +2064,11 @@ pre code {
   opacity: 1;
 }
 
+.form-control::-moz-placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+
 .form-control:-ms-input-placeholder {
   color: #6c757d;
   opacity: 1;
@@ -5000,8 +5005,10 @@ input[type=button].btn-block {
 @media (min-width: 576px) {
   .card-columns {
     -webkit-column-count: 3;
+       -moz-column-count: 3;
             column-count: 3;
     -webkit-column-gap: 1.25rem;
+       -moz-column-gap: 1.25rem;
             column-gap: 1.25rem;
     orphans: 1;
     widows: 1;
@@ -10501,64 +10508,6 @@ a.text-dark:focus {
   visibility: hidden !important;
 }
 
-.display-none-controllers ol,
-.display-none-controllers a {
-  display: none;
-}
-
-.display-none-controllers #carouselButtons {
-  display: none;
-}
-
-.display-none-controllers .d-md-block {
-  display: none !important;
-}
-
-.page__footer {
-  clear: both;
-}
-
-/* .navbar,
-.navbar-expand-lg {
-  display: none !important;
-} */
-
-/* ./Fonts System*/
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Lato", Arial, Sans-serif;
-}
-
-h2 {
-  font-weight: 900;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 2.2;
-  font-size: 1.8em;
-}
-
-h2::after {
-  content: "";
-  width: 40px;
-  height: 52px;
-  border-bottom: 2px solid #0A6EC8;
-  position: absolute;
-  left: 49%;
-}
-
-body {
-  background-color: white;
-  font-family: "Poppins", Arial, Sans-serif;
-  font-size: 16px;
-}
-
-/* ./Fonts System*/
-
 /*!
  * Font Awesome Free 5.10.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -10566,11 +10515,24 @@ body {
 
 .fa,
 .fas,
-.menu-secundario .nav li:first-child a,
+.site-map,
+.horario-ico,
+.mail-ico,
+.phone-ico,
+.address-ico,
+.menu-secundario .nav .opciones,
+.nav .opciones,
+.menu-secundario .nav .accesibilidad,
+.nav .accesibilidad,
 .far,
 .fal,
 .fad,
-.fab {
+.fab,
+.youtube-ico,
+.linkedin-ico,
+.twitter-ico,
+.instagram-ico,
+.facebook-ico {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
@@ -10580,7 +10542,20 @@ body {
   line-height: 1;
 }
 
-.menu-secundario .nav li:first-child a {
+.site-map,
+.youtube-ico,
+.linkedin-ico,
+.twitter-ico,
+.instagram-ico,
+.facebook-ico,
+.horario-ico,
+.mail-ico,
+.phone-ico,
+.address-ico,
+.menu-secundario .nav .opciones,
+.nav .opciones,
+.menu-secundario .nav .accesibilidad,
+.nav .accesibilidad {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -10683,19 +10658,41 @@ body {
 
 .fa.fa-pull-left,
 .fas.fa-pull-left,
-.menu-secundario .nav li:first-child a.fa-pull-left,
+.fa-pull-left.site-map,
+.fa-pull-left.horario-ico,
+.fa-pull-left.mail-ico,
+.fa-pull-left.phone-ico,
+.fa-pull-left.address-ico,
+.nav .fa-pull-left.opciones,
+.nav .fa-pull-left.accesibilidad,
 .far.fa-pull-left,
 .fal.fa-pull-left,
-.fab.fa-pull-left {
+.fab.fa-pull-left,
+.fa-pull-left.youtube-ico,
+.fa-pull-left.linkedin-ico,
+.fa-pull-left.twitter-ico,
+.fa-pull-left.instagram-ico,
+.fa-pull-left.facebook-ico {
   margin-right: 0.3em;
 }
 
 .fa.fa-pull-right,
 .fas.fa-pull-right,
-.menu-secundario .nav li:first-child a.fa-pull-right,
+.fa-pull-right.site-map,
+.fa-pull-right.horario-ico,
+.fa-pull-right.mail-ico,
+.fa-pull-right.phone-ico,
+.fa-pull-right.address-ico,
+.nav .fa-pull-right.opciones,
+.nav .fa-pull-right.accesibilidad,
 .far.fa-pull-right,
 .fal.fa-pull-right,
-.fab.fa-pull-right {
+.fab.fa-pull-right,
+.fa-pull-right.youtube-ico,
+.fa-pull-right.linkedin-ico,
+.fa-pull-right.twitter-ico,
+.fa-pull-right.instagram-ico,
+.fa-pull-right.facebook-ico {
   margin-left: 0.3em;
 }
 
@@ -16408,7 +16405,15 @@ readers do not read off random characters that represent icons */
 
 .fa,
 .fas,
-.menu-secundario .nav li:first-child a {
+.site-map,
+.horario-ico,
+.mail-ico,
+.phone-ico,
+.address-ico,
+.menu-secundario .nav .opciones,
+.nav .opciones,
+.menu-secundario .nav .accesibilidad,
+.nav .accesibilidad {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
 }
@@ -16427,12 +16432,468 @@ readers do not read off random characters that represent icons */
   src: url("/font/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("/font/fa-brands-400.woff2") format("woff2"), url("/font/fa-brands-400.woff") format("woff"), url("/font/fa-brands-400.ttf") format("truetype"), url("/font/fa-brands-400.svg#fontawesome") format("svg");
 }
 
-.fab {
+.fab,
+.youtube-ico,
+.linkedin-ico,
+.twitter-ico,
+.instagram-ico,
+.facebook-ico {
   font-family: "Font Awesome 5 Brands";
 }
 
+/*.menu-secundario .nav .accesibilidad{
+	position: inherit !important; 
+	border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 5px;   
+    overflow: hidden;
+    padding: 0;
+    width: 1px;
+	@extend %fa-icon;
+	@extend .fas;
+
+  	&::before {
+    	content: fa-content($fa-var-universal-access);
+    	color: #fff;
+    	margin-right: 5px;
+    	font-weight: 900;
+    	position: absolute;
+    	font-size: 1.5em;
+  	}
+}*/
+
+.menu-secundario .nav .nav-item,
+.nav .nav-item {
+  margin-right: 3rem;
+}
+
+.menu-secundario .nav .accesibilidad,
+.nav .accesibilidad {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  padding: 0;
+  width: 0;
+}
+
+.menu-secundario .nav .accesibilidad::before,
+.nav .accesibilidad::before {
+  content: "\F29A";
+  color: #FFF;
+  margin-right: 5px;
+  font-weight: 900;
+  position: absolute;
+  font-size: 1.5em;
+  left: "auto";
+}
+
+.menu-secundario .nav .accesibilidad:hover::before,
+.menu-secundario .nav .accesibilidad:focus::before,
+.nav .accesibilidad:hover::before,
+.nav .accesibilidad:focus::before {
+  color: #A0BF4A;
+}
+
+.menu-secundario .nav .opciones,
+.nav .opciones {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  padding: 0;
+  width: 0;
+}
+
+.menu-secundario .nav .opciones::before,
+.nav .opciones::before {
+  content: "\F142";
+  color: #FFF;
+  margin-right: 5px;
+  font-weight: 900;
+  position: absolute;
+  font-size: 1.5em;
+  left: 0;
+}
+
+.menu-secundario .nav .opciones:hover::before,
+.menu-secundario .nav .opciones:focus::before,
+.nav .opciones:hover::before,
+.nav .opciones:focus::before {
+  color: #A0BF4A;
+}
+
+.address-ico {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  padding: 0;
+  width: 0;
+  line-height: 1em;
+}
+
+.address-ico::before {
+  content: "\F124";
+  color: #FFF;
+  margin-right: 5px;
+  font-weight: 900;
+  position: absolute;
+  font-size: 1.5em;
+  left: 10%;
+}
+
+.address-ico:hover::before,
+.address-ico:focus::before {
+  color: #FFF;
+}
+
+.phone-ico {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  padding: 0;
+  width: 0;
+  line-height: 1em;
+  vertical-align: top;
+}
+
+.phone-ico::before {
+  content: "\F095";
+  color: #FFF;
+  margin-right: 5px;
+  font-weight: 900;
+  position: absolute;
+  font-size: 1.5em;
+  left: 10%;
+}
+
+.phone-ico:hover::before,
+.phone-ico:focus::before {
+  color: #FFF;
+}
+
+.mail-ico {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  padding: 0;
+  width: 0;
+  line-height: 1em;
+}
+
+.mail-ico::before {
+  content: "\F0E0";
+  color: #FFF;
+  margin-right: 5px;
+  font-weight: 900;
+  position: absolute;
+  font-size: 1.5em;
+  left: 10%;
+}
+
+.mail-ico:hover::before,
+.mail-ico:focus::before {
+  color: #FFF;
+}
+
+.horario-ico {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  padding: 0;
+  width: 0;
+  line-height: 0;
+}
+
+.horario-ico::before {
+  content: "\F017";
+  color: #FFF;
+  margin-right: 5px;
+  font-weight: 900;
+  position: absolute;
+  font-size: 1.5em;
+  left: 10%;
+}
+
+.horario-ico:hover::before,
+.horario-ico:focus::before {
+  color: #FFF;
+}
+
+.facebook-ico {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  padding: 0;
+  width: 0;
+}
+
+.facebook-ico::before {
+  content: "\F39E";
+  color: #FFF;
+  margin-right: 5px;
+  font-weight: 900;
+  position: absolute;
+  font-size: 2em;
+  left: auto;
+}
+
+.facebook-ico:hover::before,
+.facebook-ico:focus::before {
+  color: #A0BF4A;
+}
+
+.instagram-ico {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  padding: 0;
+  width: 0;
+}
+
+.instagram-ico::before {
+  content: "\F16D";
+  color: #FFF;
+  margin-right: 5px;
+  font-weight: 900;
+  position: absolute;
+  font-size: 2em;
+  left: auto;
+}
+
+.instagram-ico:hover::before,
+.instagram-ico:focus::before {
+  color: #A0BF4A;
+}
+
+.twitter-ico {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  padding: 0;
+  width: 0;
+}
+
+.twitter-ico::before {
+  content: "\F099";
+  color: #FFF;
+  margin-right: 5px;
+  font-weight: 900;
+  position: absolute;
+  font-size: 2em;
+  left: auto;
+}
+
+.twitter-ico:hover::before,
+.twitter-ico:focus::before {
+  color: #A0BF4A;
+}
+
+.linkedin-ico {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  padding: 0;
+  width: 0;
+}
+
+.linkedin-ico::before {
+  content: "\F0E1";
+  color: #FFF;
+  margin-right: 5px;
+  font-weight: 900;
+  position: absolute;
+  font-size: 2em;
+  left: auto;
+}
+
+.linkedin-ico:hover::before,
+.linkedin-ico:focus::before {
+  color: #A0BF4A;
+}
+
+.youtube-ico {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  padding: 0;
+  width: 0;
+}
+
+.youtube-ico::before {
+  content: "\F167";
+  color: #FFF;
+  margin-right: 5px;
+  font-weight: 900;
+  position: absolute;
+  font-size: 2em;
+  left: auto;
+}
+
+.youtube-ico:hover::before,
+.youtube-ico:focus::before {
+  color: #A0BF4A;
+}
+
+.site-map {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  padding: 0;
+  width: 0;
+}
+
+.site-map::before {
+  content: "\F0E8";
+  color: #FFF;
+  margin-right: 5px;
+  font-weight: 900;
+  position: absolute;
+  font-size: 2em;
+  left: 26%;
+}
+
+.site-map:hover::before,
+.site-map:focus::before {
+  color: #A0BF4A;
+}
+
+.display-none-controllers ol,
+.display-none-controllers a {
+  display: none;
+}
+
+.display-none-controllers #carouselButtons {
+  display: none;
+}
+
+.display-none-controllers .d-md-block {
+  display: none !important;
+}
+
+.page__footer {
+  clear: both;
+}
+
+/* .navbar,
+.navbar-expand-lg {
+  display: none !important;
+} */
+
+/* ./Fonts System*/
+
+h1,
+h2 {
+  font-family: "Lato", Arial, Sans-serif;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", Arial, Sans-serif;
+}
+
+h2 {
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 2.2;
+  font-size: 1.8em;
+}
+
+h2::after {
+  content: "";
+  width: 40px;
+  height: 52px;
+  border-bottom: 2px solid #0A6EC8;
+  position: absolute;
+  left: 49%;
+}
+
+body {
+  background-color: white;
+  font-family: "Poppins", Arial, Sans-serif;
+  font-size: 15px;
+}
+
+/* ./Fonts System*/
+
 /*@import "fonts/fontawesome/scss/solid.scss";
 @import "fonts/fontawesome/scss/brands.scss"; */
+
+.menu-principal {
+  background-color: #01293D !important;
+  background-blend-mode: multiply;
+  opacity: 0.9;
+}
+
+.menu-principal .block--theme-eru-main-menu a.nav-link,
+.menu-principal a.language-link,
+.menu-principal .logo a {
+  color: #fff !important;
+  margin-left: 1rem !important;
+  margin-right: 1rem !important;
+  text-transform: uppercase;
+}
+
+.menu-principal .block--theme-eru-main-menu a.nav-link:focus,
+.menu-principal a.language-link:focus,
+.menu-principal .logo a:focus {
+  outline: 2px dotted #FFF !important;
+}
+
+.menu-principal .logo {
+  margin-right: 30px;
+}
+
+.menu-principal .navbar-nav a.nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s;
+  border: none;
+}
+
+.menu-principal .navbar-nav a.nav-link:hover::after {
+  width: 100%;
+}
+
+.menu-principal .dropdown-menu {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-top: 5px;
+}
+
+.menu-principal .dropdown-menu a {
+  padding: 0.7rem 1rem !important;
+  white-space: normal;
+}
+
+.menu-principal .dropdown-menu a:hover,
+.menu-principal .dropdown-menu a:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: #01293D;
+}
+
+.menu-principal .dropdown-menu::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 0 solid transparent;
+  border-left: 0.5em solid transparent;
+  border-right: 0.5em solid transparent;
+  margin: 0 auto;
+  border-bottom: 0.5em solid #FFF;
+  position: absolute;
+  top: -3%;
+  left: 48%;
+}
+
+.menu-secundario .dropdown-menu {
+  top: 150% !important;
+  left: -80px !important;
+}
 
 .page__header .landing-page h2 {
   border: 0;
@@ -16449,6 +16910,7 @@ readers do not read off random characters that represent icons */
   left: 10% !important;
   text-align: left !important;
   width: 25%;
+  bottom: 12%;
 }
 
 .page__header #eru-slide .carousel-caption h3 {
@@ -16461,22 +16923,35 @@ readers do not read off random characters that represent icons */
   align-items: center;
   position: absolute;
   left: 16%;
-  bottom: 5%;
+  bottom: 14%;
   z-index: 10;
+}
+
+.page__header #eru-slide .controles i {
+  font-size: 2em;
+  color: #fff;
 }
 
 .page__header #eru-slide .controles .carousel-control-prev,
 .page__header #eru-slide .controles .carousel-control-next {
   opacity: 1 !important;
-  width: 18%;
-  border: 1px solid #fff;
-  border-radius: 50%;
+  cursor: pointer;
+  margin: 10px;
+  display: contents;
 }
 
-.page__header #eru-slide .controles .carousel-control-prev:hover,
-.page__header #eru-slide .controles .carousel-control-next:hover {
-  background-color: #fff !important;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
+.page__header #eru-slide .controles .carousel-control-prev i:hover,
+.page__header #eru-slide .controles .carousel-control-next i:hover {
+  color: #0A6EC8 !important;
+}
+
+.page__header #eru-slide .controles .btn {
+  display: none;
+}
+
+.page__header #eru-slide .controles .active {
+  display: block;
+  padding-top: 0.4rem;
 }
 
 .page__content h2 {
@@ -16489,19 +16964,25 @@ readers do not read off random characters that represent icons */
   border-radius: 0;
 }
 
+.page__content .views-field-created,
+.page__content .views-field-field-textual-transcription {
+  font-weight: 600;
+}
+
 .page__content .project-block .views-field-title {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .page__content .project-block .views-field-title a {
-  font-weight: 500;
-  font-size: 1.2em;
+  font-size: 0.6em;
+  font-weight: bold;
   color: #000;
   text-transform: uppercase;
 }
 
 .page__content .project-block .views-field-title a:hover {
   color: #0A6EC8 !important;
+  text-decoration: none;
 }
 
 .page__content .project-block .views-field-title a:focus {
@@ -16515,7 +16996,7 @@ readers do not read off random characters that represent icons */
 .page__content .more-link {
   display: flex;
   justify-content: center;
-  margin: 3rem 0;
+  margin: 2rem 0;
 }
 
 .page__content .more-link a {
@@ -16544,7 +17025,7 @@ readers do not read off random characters that represent icons */
 .page__content .transparencia-block #bkg-transparencia {
   background: url("http://local.eru.com/themes/custom/theme_eru/assets/images/bkg-transparencia.png"), #003250;
   background-repeat: no-repeat;
-  padding: 74px 225px;
+  padding: 60px 225px;
   float: left;
 }
 
@@ -16557,22 +17038,73 @@ readers do not read off random characters that represent icons */
 }
 
 .page__content .transparencia-block .textos h2 {
-  font-family: "Poppins", Arial, Sans-serif;
-  font-size: 1.5em !important;
-  color: #fff;
-  text-transform: initial;
+  line-height: 1.5em;
+  margin-bottom: 0.5em;
   text-align: left;
-  margin-bottom: 0;
 }
 
 .page__content .transparencia-block .textos h2::after {
   content: none;
 }
 
+.page__content .transparencia-block .textos h2 a {
+  color: #fff;
+  font-weight: 600;
+  text-transform: initial;
+}
+
 .page__content .transparencia-block .textos p {
-  font-family: "Poppins", Arial, Sans-serif;
   color: #F7931E;
   font-weight: 500;
+}
+
+.page__content .news-home h3 {
+  line-height: 0.6em;
+}
+
+.page__content .news-home h3 a {
+  font-size: 0.55em;
+  font-weight: 600;
+  color: #000;
+}
+
+.page__content .news-home .title-one {
+  margin: 20px 0 30px 0;
+}
+
+.page__content .news-home .title-one::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  border-bottom: 2px solid #0A6EC8;
+  position: absolute;
+  left: 3%;
+}
+
+.page__content .news-home .row-news {
+  display: inline-block;
+}
+
+.page__content .video-home {
+  margin-bottom: 2rem;
+}
+
+.page__content .video-home h3 {
+  font-size: 1.3em;
+  padding: 20px 0;
+}
+
+.page__content .video-home h3 a {
+  color: #000;
+}
+
+.page__content .video-home h3::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  border-bottom: 2px solid #0A6EC8;
+  position: absolute;
+  left: 72%;
 }
 
 .page__content .paragraph--type--links-of-interest .link-item {
@@ -16630,87 +17162,90 @@ readers do not read off random characters that represent icons */
   margin-top: 1rem;
 }
 
+footer {
+  color: #fff;
+  font-size: 0.8em;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: #fff;
+  text-decoration: underline !important;
+}
+
+footer h2 {
+  font-size: 1.5em;
+  font-family: "Poppins", Arial, Sans-serif;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+footer h2::after {
+  /*left: 4%;
+  border-color: #4297E3;
+  height: 40px;	*/
+  content: none;
+}
+
+.page__footer {
+  background-color: #01293D;
+}
+
+.page__footer .nav {
+  flex-direction: column;
+}
+
+.page__footer .nav .nav-link {
+  padding-left: 0;
+}
+
+.page__footer .contact li {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.page__footer .mision-footer,
+.page__footer .links-footer,
+.page__footer .contact {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.page__footer .links-footer {
+  background-color: #075168;
+  padding-left: 4rem;
+}
+
+.page__footer .contact {
+  padding-left: 2rem;
+}
+
+.page__footer_2 {
+  background-color: #075168;
+}
+
+.page__footer_2 .sdqs-footer {
+  background-color: #01293D;
+  padding: 0.8em;
+}
+
+.page__footer_2 .sitemap-block a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.page__footer_3 {
+  background-color: #02161C;
+  padding: 1em;
+}
+
 /* @import "fonts/fontawesome/scss/fontawesome.scss";
 @import "fonts/fontawesome/scss/solid.scss";
 @import "fonts/fontawesome/scss/regular.scss";
 @import "fonts/fontawesome/scss/brands.scss"; */
-
-.menu-principal {
-  background-color: #01293D !important;
-  background-blend-mode: multiply;
-  opacity: 0.9;
-}
-
-.menu-principal a.nav-link,
-.menu-principal a.language-link {
-  color: #fff !important;
-  margin-left: 1rem !important;
-  margin-right: 1rem !important;
-  text-transform: uppercase;
-}
-
-.menu-principal a.nav-link:focus,
-.menu-principal a.language-link:focus {
-  outline: 2px dotted #FFF !important;
-}
-
-.menu-principal .logo {
-  margin-right: 30px;
-}
-
-.menu-principal .navbar-nav a.nav-link::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background: #fff;
-  transition: width 0.3s;
-  border: none;
-}
-
-.menu-principal .navbar-nav a.nav-link:hover::after {
-  width: 100%;
-}
-
-.menu-principal .dropdown-menu {
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
-  margin-top: 5px;
-}
-
-.menu-principal .dropdown-menu a {
-  padding: 0.7rem 1rem !important;
-  white-space: normal;
-}
-
-.menu-principal .dropdown-menu a:hover,
-.menu-principal .dropdown-menu a:focus {
-  color: #fff;
-  text-decoration: none;
-  background-color: #01293D;
-}
-
-.menu-principal .dropdown-menu::before {
-  content: "";
-  width: 0;
-  height: 0;
-  border-top: 0 solid transparent;
-  border-left: 0.5em solid transparent;
-  border-right: 0.5em solid transparent;
-  margin: 0 auto;
-  border-bottom: 0.5em solid #FFF;
-  position: absolute;
-  top: -3%;
-  left: 48%;
-}
-
-.menu-secundario .nav li:first-child a {
-  background-color: red;
-}
-
-.menu-secundario .nav li:first-child a::before {
-  content: "\F007";
-  color: #fff;
-  margin-right: 5px;
-  font-weight: 900;
-}
 

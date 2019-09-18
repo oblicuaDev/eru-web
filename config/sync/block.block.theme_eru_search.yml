@@ -10,8 +10,8 @@ _core:
   default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
 id: theme_eru_search
 theme: theme_eru
-region: navbar_branding
-weight: -6
+region: navbar_right
+weight: 3
 provider: null
 plugin: search_form_block
 settings:
