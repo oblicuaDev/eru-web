@@ -5,5 +5,5 @@ dependencies: {  }
 id: general_data_
 label: 'Datas general'
 icon_uuid: null
-description: ''
+description: 'They are used for project information'
 behavior_plugins: {  }

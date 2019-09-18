@@ -5,5 +5,5 @@ dependencies: {  }
 id: data
 label: Datas
 icon_uuid: null
-description: Data
+description: ''
 behavior_plugins: {  }

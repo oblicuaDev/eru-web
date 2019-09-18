@@ -31,4 +31,22 @@ settings:
       slideshow:
         weight: 4
         enabled: false
+      galleries:
+        weight: 9
+        enabled: false
+      data:
+        weight: 10
+        enabled: false
+      gallery:
+        weight: 11
+        enabled: false
+      general_data_:
+        weight: 12
+        enabled: false
+      links:
+        weight: 13
+        enabled: false
+      links_of_interest:
+        weight: 14
+        enabled: false
 field_type: entity_reference_revisions
