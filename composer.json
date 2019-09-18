@@ -46,6 +46,7 @@
         "drupal/radix": "^4.1",
         "drupal/radix_layouts": "^4.1",
         "drupal/single_datetime": "^1.7",
+        "drupal/sitemap": "^1.5",
         "drupal/token": "^1.5",
         "drupal/video_embed_field": "^2.1",
         "drupal/video_embed_html5": "^1.1",

@@ -35,6 +35,13 @@
 @import "~bootstrap/scss/carousel";
 @import "~bootstrap/scss/utilities";
 
+//fonts
+// -----------------------------------------------------------------------------
+@import "fonts/fontawesome/scss/fontawesome.scss";
+@import "fonts/fontawesome/scss/regular.scss";
+@import "fonts/fontawesome/scss/solid.scss";
+@import "fonts/fontawesome/scss/brands.scss";
+
 
 // Base
 // -----------------------------------------------------------------------------
@@ -43,6 +50,10 @@
 @import "base/helpers";
 @import "base/elements";
 @import "base/typography";
+
+
+/*@import "fonts/fontawesome/scss/solid.scss";
+@import "fonts/fontawesome/scss/brands.scss"; */
 
 // Layout
 // -----------------------------------------------------------------------------
@@ -59,3 +70,14 @@
 @import "block/block";
 @import "content/node.page";
 @import "content/node.article";
+
+
+
+
+
+
+
+
+
+
+

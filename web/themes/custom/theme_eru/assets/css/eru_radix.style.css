@@ -2064,6 +2064,11 @@ pre code {
   opacity: 1;
 }
 
+.form-control::-moz-placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+
 .form-control:-ms-input-placeholder {
   color: #6c757d;
   opacity: 1;
@@ -5000,8 +5005,10 @@ input[type=button].btn-block {
 @media (min-width: 576px) {
   .card-columns {
     -webkit-column-count: 3;
+       -moz-column-count: 3;
             column-count: 3;
     -webkit-column-gap: 1.25rem;
+       -moz-column-gap: 1.25rem;
             column-gap: 1.25rem;
     orphans: 1;
     widows: 1;
@@ -10501,277 +10508,60 @@ a.text-dark:focus {
   visibility: hidden !important;
 }
 
-.display-none-controllers ol,
-.display-none-controllers a {
-  display: none;
-}
-
-.display-none-controllers #carouselButtons {
-  display: none;
-}
-
-.display-none-controllers .d-md-block {
-  display: none !important;
-}
-
-.page__footer {
-  clear: both;
-}
-
-/* .navbar,
-.navbar-expand-lg {
-  display: none !important;
-} */
-
-/* Fonts System*/
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Lato", Arial, Sans-serif;
-}
-
-h2 {
-  font-weight: 900;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 2.2;
-  font-size: 1.8em;
-}
-
-h2::after {
-  content: "";
-  width: 40px;
-  height: 52px;
-  border-bottom: 2px solid #0A6EC8;
-  position: absolute;
-  left: 49%;
-}
-
-body {
-  background-color: white;
-  font-family: "Poppins", Arial, Sans-serif;
-  font-size: 16px;
-}
-
-/* Fonts System*/
-
-.page__header .landing-page h2 {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
-.page__header #eru-slide .carousel-caption {
-  left: 10% !important;
-  text-align: left !important;
-  width: 25%;
-}
-
-.page__header #eru-slide .carousel-caption h3 {
-  font-family: "Poppins", Arial, Sans-serif;
-  font-weight: 600;
-}
-
-.page__header #eru-slide .controles {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  left: 16%;
-  bottom: 5%;
-  z-index: 10;
-}
-
-.page__header #eru-slide .controles .carousel-control-prev,
-.page__header #eru-slide .controles .carousel-control-next {
-  opacity: 1 !important;
-  width: 18%;
-  border: 1px solid #fff;
-  border-radius: 50%;
-}
-
-.page__header #eru-slide .controles .carousel-control-prev:hover,
-.page__header #eru-slide .controles .carousel-control-next:hover {
-  background-color: #fff !important;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
-}
-
-.page__content h2 {
-  margin-bottom: 2em;
-}
-
-.page__content img.img-thumbnail {
-  border: none !important;
-  padding: 0 !important;
-  border-radius: 0;
-}
-
-.page__content .project-block .views-field-title {
-  margin-top: 2rem;
-}
-
-.page__content .project-block .views-field-title a {
-  font-weight: 500;
-  font-size: 1.2em;
-  color: #000;
-  text-transform: uppercase;
-}
-
-.page__content .project-block .views-field-title a:hover {
-  color: #0A6EC8 !important;
-}
-
-.page__content .project-block .views-field-title a:focus {
-  outline: 2px dotted #0A6EC8 !important;
-  padding: 5px;
-  left: -5px;
-  position: relative;
-  color: #0A6EC8 !important;
-}
-
-.page__content .more-link {
-  display: flex;
-  justify-content: center;
-  margin: 3rem 0;
-}
-
-.page__content .more-link a {
-  color: #fff;
-  background-color: #0A6EC8;
-  border-color: #0A6EC8;
-  border: 1px solid transparent;
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  border-radius: 0.25rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-
-.page__content .more-link a:hover {
-  color: #fff;
-  background-color: #085aa4;
-  border-color: #085397;
-  text-decoration: none;
-}
-
-.page__content .transparencia-block {
-  margin: 5rem 0;
-}
-
-.page__content .transparencia-block #bkg-transparencia {
-  background: url("http://local.eru.com/themes/custom/theme_eru/assets/images/bkg-transparencia.png"), #003250;
-  background-repeat: no-repeat;
-  padding: 74px 225px;
-  float: left;
-}
-
-.page__content .transparencia-block .textos {
-  background-color: #003250;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.page__content .transparencia-block .textos h2 {
-  font-family: "Poppins", Arial, Sans-serif;
-  font-size: 1.5em !important;
-  color: #fff;
-  text-transform: initial;
-  text-align: left;
-  margin-bottom: 0;
-}
-
-.page__content .transparencia-block .textos h2::after {
-  content: none;
-}
-
-.page__content .transparencia-block .textos p {
-  font-family: "Poppins", Arial, Sans-serif;
-  color: #F7931E;
-  font-weight: 500;
-}
-
-.page__content .paragraph--type--links-of-interest .link-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 3.5rem;
-}
-
-.page__content .paragraph--type--links-of-interest i {
-  padding: 44px;
-}
-
-.page__content .paragraph--type--links-of-interest .fa-one-class {
-  background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/ico-01.png), transparent;
-}
-
-.page__content .paragraph--type--links-of-interest .fa-two-class {
-  background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/ico-02.png), transparent;
-}
-
-.page__content .paragraph--type--links-of-interest .fa-tree-class {
-  background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/ico-03.png), transparent;
-}
-
-.page__content .paragraph--type--links-of-interest .fa-four-class {
-  background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/ico-04.png), transparent;
-}
-
-.page__content .paragraph--type--links-of-interest .fa-five-class {
-  background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/ico-05.png), transparent;
-}
-
-.page__content .paragraph--type--links-of-interest .fa-six-class {
-  background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/ico-06.png), transparent;
-}
-
-.page__content .paragraph--type--links-of-interest .fa-seven-class {
-  background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/ico-07.png), transparent;
-}
-
-.page__content .paragraph--type--links-of-interest .fa-eight-class {
-  background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/ico-08.png), transparent;
-}
-
-.page__content .paragraph--type--links-of-interest .description {
-  text-align: center;
-  margin-top: 1rem;
-}
-
-.page__content .paragraph--type--links-of-interest .title {
-  text-transform: uppercase;
-  color: #000;
-  font-weight: bold;
-  margin-top: 1rem;
-}
-
 /*!
- * Font Awesome Free 5.10.0 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 5.10.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 
 .fa,
 .fas,
+.site-map,
+.horario-ico,
+.mail-ico,
+.phone-ico,
+.address-ico,
+.menu-secundario .nav .opciones,
+.nav .opciones,
+.menu-secundario .nav .accesibilidad,
+.nav .accesibilidad,
 .far,
 .fal,
 .fad,
-.fab {
+.fab,
+.youtube-ico,
+.linkedin-ico,
+.twitter-ico,
+.instagram-ico,
+.facebook-ico {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
+  line-height: 1;
+}
+
+.site-map,
+.youtube-ico,
+.linkedin-ico,
+.twitter-ico,
+.instagram-ico,
+.facebook-ico,
+.horario-ico,
+.mail-ico,
+.phone-ico,
+.address-ico,
+.menu-secundario .nav .opciones,
+.nav .opciones,
+.menu-secundario .nav .accesibilidad,
+.nav .accesibilidad {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
   line-height: 1;
 }
 
@@ -10868,17 +10658,41 @@ body {
 
 .fa.fa-pull-left,
 .fas.fa-pull-left,
+.fa-pull-left.site-map,
+.fa-pull-left.horario-ico,
+.fa-pull-left.mail-ico,
+.fa-pull-left.phone-ico,
+.fa-pull-left.address-ico,
+.nav .fa-pull-left.opciones,
+.nav .fa-pull-left.accesibilidad,
 .far.fa-pull-left,
 .fal.fa-pull-left,
-.fab.fa-pull-left {
+.fab.fa-pull-left,
+.fa-pull-left.youtube-ico,
+.fa-pull-left.linkedin-ico,
+.fa-pull-left.twitter-ico,
+.fa-pull-left.instagram-ico,
+.fa-pull-left.facebook-ico {
   margin-right: 0.3em;
 }
 
 .fa.fa-pull-right,
 .fas.fa-pull-right,
+.fa-pull-right.site-map,
+.fa-pull-right.horario-ico,
+.fa-pull-right.mail-ico,
+.fa-pull-right.phone-ico,
+.fa-pull-right.address-ico,
+.nav .fa-pull-right.opciones,
+.nav .fa-pull-right.accesibilidad,
 .far.fa-pull-right,
 .fal.fa-pull-right,
-.fab.fa-pull-right {
+.fab.fa-pull-right,
+.fa-pull-right.youtube-ico,
+.fa-pull-right.linkedin-ico,
+.fa-pull-right.twitter-ico,
+.fa-pull-right.instagram-ico,
+.fa-pull-right.facebook-ico {
   margin-left: 0.3em;
 }
 
@@ -16557,27 +16371,7 @@ readers do not read off random characters that represent icons */
 }
 
 /*!
- * Font Awesome Free 5.10.0 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
- */
-
-@font-face {
-  font-family: "Font Awesome 5 Free";
-  font-style: normal;
-  font-weight: 900;
-  font-display: auto;
-  src: url(/fonts/fa-solid-900.eot?f9b8a1aa417e318d5be775e14ee3c475);
-  src: url(/fonts/fa-solid-900.eot?f9b8a1aa417e318d5be775e14ee3c475) format("embedded-opentype"), url(/fonts/fa-solid-900.woff2?60ce8cf4dd9fe177abdfeda21e20798e) format("woff2"), url(/fonts/fa-solid-900.woff?55ce8d0ca92adb7c283d6043d0edf46f) format("woff"), url(/fonts/fa-solid-900.ttf?e9809ab6a5a34dc6b7966de82265d6bd) format("truetype"), url(/fonts/fa-solid-900.svg?d42cc8bb088b9bbcb51b1db2d9210976) format("svg");
-}
-
-.fa,
-.fas {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-}
-
-/*!
- * Font Awesome Free 5.10.0 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 5.10.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 
@@ -16586,8 +16380,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 400;
   font-display: auto;
-  src: url(/fonts/fa-regular-400.eot?d98ffd73c6b104b42bfe69c987a72924);
-  src: url(/fonts/fa-regular-400.eot?d98ffd73c6b104b42bfe69c987a72924) format("embedded-opentype"), url(/fonts/fa-regular-400.woff2?d90e1b03a9168c0d775a52098423adfb) format("woff2"), url(/fonts/fa-regular-400.woff?f9695ea8029b2975dea6753bf6f1bf1c) format("woff"), url(/fonts/fa-regular-400.ttf?76d069c84f54a63d1bf9e29c76fe65e6) format("truetype"), url(/fonts/fa-regular-400.svg?0234a585809be071bd68db999f27f829) format("svg");
+  src: url("/font/fa-regular-400.eot");
+  src: url("/font/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("/font/fa-regular-400.woff2") format("woff2"), url("/font/fa-regular-400.woff") format("woff"), url("/font/fa-regular-400.ttf") format("truetype"), url("/font/fa-regular-400.svg#fontawesome") format("svg");
 }
 
 .far {
@@ -16596,7 +16390,36 @@ readers do not read off random characters that represent icons */
 }
 
 /*!
- * Font Awesome Free 5.10.0 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 5.10.2 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: auto;
+  src: url("/font/fa-solid-900.eot");
+  src: url("/font/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("/font/fa-solid-900.woff2") format("woff2"), url("/font/fa-solid-900.woff") format("woff"), url("/font/fa-solid-900.ttf") format("truetype"), url("/font/fa-solid-900.svg#fontawesome") format("svg");
+}
+
+.fa,
+.fas,
+.site-map,
+.horario-ico,
+.mail-ico,
+.phone-ico,
+.address-ico,
+.menu-secundario .nav .opciones,
+.nav .opciones,
+.menu-secundario .nav .accesibilidad,
+.nav .accesibilidad {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+/*!
+ * Font Awesome Free 5.10.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 
@@ -16605,13 +16428,397 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: normal;
   font-display: auto;
-  src: url(/fonts/fa-brands-400.eot?e33a1a54eb0a1e560362fcf5335ac26c);
-  src: url(/fonts/fa-brands-400.eot?e33a1a54eb0a1e560362fcf5335ac26c) format("embedded-opentype"), url(/fonts/fa-brands-400.woff2?4f786efdf6328877ec2448bf265bcc8f) format("woff2"), url(/fonts/fa-brands-400.woff?72f5c754189a296467db59e26e2b4671) format("woff"), url(/fonts/fa-brands-400.ttf?75dae2b62813bc641a9b6a2fc041e4de) format("truetype"), url(/fonts/fa-brands-400.svg?060ea8dd8446c15159ed6ec217ae29b9) format("svg");
+  src: url("/font/fa-brands-400.eot");
+  src: url("/font/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("/font/fa-brands-400.woff2") format("woff2"), url("/font/fa-brands-400.woff") format("woff"), url("/font/fa-brands-400.ttf") format("truetype"), url("/font/fa-brands-400.svg#fontawesome") format("svg");
 }
 
-.fab {
+.fab,
+.youtube-ico,
+.linkedin-ico,
+.twitter-ico,
+.instagram-ico,
+.facebook-ico {
   font-family: "Font Awesome 5 Brands";
 }
+
+/*.menu-secundario .nav .accesibilidad{
+	position: inherit !important; 
+	border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 5px;   
+    overflow: hidden;
+    padding: 0;
+    width: 1px;
+	@extend %fa-icon;
+	@extend .fas;
+
+  	&::before {
+    	content: fa-content($fa-var-universal-access);
+    	color: #fff;
+    	margin-right: 5px;
+    	font-weight: 900;
+    	position: absolute;
+    	font-size: 1.5em;
+  	}
+}*/
+
+.menu-secundario .nav .nav-item,
+.nav .nav-item {
+  margin-right: 3rem;
+}
+
+.menu-secundario .nav .accesibilidad,
+.nav .accesibilidad {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  padding: 0;
+  width: 0;
+}
+
+.menu-secundario .nav .accesibilidad::before,
+.nav .accesibilidad::before {
+  content: "\F29A";
+  color: #FFF;
+  margin-right: 5px;
+  font-weight: 900;
+  position: absolute;
+  font-size: 1.5em;
+  left: "auto";
+}
+
+.menu-secundario .nav .accesibilidad:hover::before,
+.menu-secundario .nav .accesibilidad:focus::before,
+.nav .accesibilidad:hover::before,
+.nav .accesibilidad:focus::before {
+  color: #A0BF4A;
+}
+
+.menu-secundario .nav .opciones,
+.nav .opciones {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  padding: 0;
+  width: 0;
+}
+
+.menu-secundario .nav .opciones::before,
+.nav .opciones::before {
+  content: "\F142";
+  color: #FFF;
+  margin-right: 5px;
+  font-weight: 900;
+  position: absolute;
+  font-size: 1.5em;
+  left: 0;
+}
+
+.menu-secundario .nav .opciones:hover::before,
+.menu-secundario .nav .opciones:focus::before,
+.nav .opciones:hover::before,
+.nav .opciones:focus::before {
+  color: #A0BF4A;
+}
+
+.address-ico {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  padding: 0;
+  width: 0;
+  line-height: 1em;
+}
+
+.address-ico::before {
+  content: "\F124";
+  color: #FFF;
+  margin-right: 5px;
+  font-weight: 900;
+  position: absolute;
+  font-size: 1.5em;
+  left: 10%;
+}
+
+.address-ico:hover::before,
+.address-ico:focus::before {
+  color: #FFF;
+}
+
+.phone-ico {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  padding: 0;
+  width: 0;
+  line-height: 1em;
+  vertical-align: top;
+}
+
+.phone-ico::before {
+  content: "\F095";
+  color: #FFF;
+  margin-right: 5px;
+  font-weight: 900;
+  position: absolute;
+  font-size: 1.5em;
+  left: 10%;
+}
+
+.phone-ico:hover::before,
+.phone-ico:focus::before {
+  color: #FFF;
+}
+
+.mail-ico {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  padding: 0;
+  width: 0;
+  line-height: 1em;
+}
+
+.mail-ico::before {
+  content: "\F0E0";
+  color: #FFF;
+  margin-right: 5px;
+  font-weight: 900;
+  position: absolute;
+  font-size: 1.5em;
+  left: 10%;
+}
+
+.mail-ico:hover::before,
+.mail-ico:focus::before {
+  color: #FFF;
+}
+
+.horario-ico {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  padding: 0;
+  width: 0;
+  line-height: 0;
+}
+
+.horario-ico::before {
+  content: "\F017";
+  color: #FFF;
+  margin-right: 5px;
+  font-weight: 900;
+  position: absolute;
+  font-size: 1.5em;
+  left: 10%;
+}
+
+.horario-ico:hover::before,
+.horario-ico:focus::before {
+  color: #FFF;
+}
+
+.facebook-ico {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  padding: 0;
+  width: 0;
+}
+
+.facebook-ico::before {
+  content: "\F39E";
+  color: #FFF;
+  margin-right: 5px;
+  font-weight: 900;
+  position: absolute;
+  font-size: 2em;
+  left: auto;
+}
+
+.facebook-ico:hover::before,
+.facebook-ico:focus::before {
+  color: #A0BF4A;
+}
+
+.instagram-ico {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  padding: 0;
+  width: 0;
+}
+
+.instagram-ico::before {
+  content: "\F16D";
+  color: #FFF;
+  margin-right: 5px;
+  font-weight: 900;
+  position: absolute;
+  font-size: 2em;
+  left: auto;
+}
+
+.instagram-ico:hover::before,
+.instagram-ico:focus::before {
+  color: #A0BF4A;
+}
+
+.twitter-ico {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  padding: 0;
+  width: 0;
+}
+
+.twitter-ico::before {
+  content: "\F099";
+  color: #FFF;
+  margin-right: 5px;
+  font-weight: 900;
+  position: absolute;
+  font-size: 2em;
+  left: auto;
+}
+
+.twitter-ico:hover::before,
+.twitter-ico:focus::before {
+  color: #A0BF4A;
+}
+
+.linkedin-ico {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  padding: 0;
+  width: 0;
+}
+
+.linkedin-ico::before {
+  content: "\F0E1";
+  color: #FFF;
+  margin-right: 5px;
+  font-weight: 900;
+  position: absolute;
+  font-size: 2em;
+  left: auto;
+}
+
+.linkedin-ico:hover::before,
+.linkedin-ico:focus::before {
+  color: #A0BF4A;
+}
+
+.youtube-ico {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  padding: 0;
+  width: 0;
+}
+
+.youtube-ico::before {
+  content: "\F167";
+  color: #FFF;
+  margin-right: 5px;
+  font-weight: 900;
+  position: absolute;
+  font-size: 2em;
+  left: auto;
+}
+
+.youtube-ico:hover::before,
+.youtube-ico:focus::before {
+  color: #A0BF4A;
+}
+
+.site-map {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  padding: 0;
+  width: 0;
+}
+
+.site-map::before {
+  content: "\F0E8";
+  color: #FFF;
+  margin-right: 5px;
+  font-weight: 900;
+  position: absolute;
+  font-size: 2em;
+  left: 26%;
+}
+
+.site-map:hover::before,
+.site-map:focus::before {
+  color: #A0BF4A;
+}
+
+.display-none-controllers ol,
+.display-none-controllers a {
+  display: none;
+}
+
+.display-none-controllers #carouselButtons {
+  display: none;
+}
+
+.display-none-controllers .d-md-block {
+  display: none !important;
+}
+
+.page__footer {
+  clear: both;
+}
+
+/* .navbar,
+.navbar-expand-lg {
+  display: none !important;
+} */
+
+/* ./Fonts System*/
+
+h1,
+h2 {
+  font-family: "Lato", Arial, Sans-serif;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", Arial, Sans-serif;
+}
+
+h2 {
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 2.2;
+  font-size: 1.8em;
+}
+
+h2::after {
+  content: "";
+  width: 40px;
+  height: 52px;
+  border-bottom: 2px solid #0A6EC8;
+  position: absolute;
+  left: 49%;
+}
+
+body {
+  background-color: white;
+  font-family: "Poppins", Arial, Sans-serif;
+  font-size: 15px;
+}
+
+/* ./Fonts System*/
+
+/*@import "fonts/fontawesome/scss/solid.scss";
+@import "fonts/fontawesome/scss/brands.scss"; */
 
 .menu-principal {
   background-color: #01293D !important;
@@ -16619,16 +16826,18 @@ readers do not read off random characters that represent icons */
   opacity: 0.9;
 }
 
-.menu-principal a.nav-link,
-.menu-principal a.language-link {
+.menu-principal .block--theme-eru-main-menu a.nav-link,
+.menu-principal a.language-link,
+.menu-principal .logo a {
   color: #fff !important;
   margin-left: 1rem !important;
   margin-right: 1rem !important;
   text-transform: uppercase;
 }
 
-.menu-principal a.nav-link:focus,
-.menu-principal a.language-link:focus {
+.menu-principal .block--theme-eru-main-menu a.nav-link:focus,
+.menu-principal a.language-link:focus,
+.menu-principal .logo a:focus {
   outline: 2px dotted #FFF !important;
 }
 
@@ -16681,19 +16890,362 @@ readers do not read off random characters that represent icons */
   left: 48%;
 }
 
-/*
-.menu-secundario .nav li:first-child a{
-	background-color: red;
-	@extend %fa-icon;
-  	@extend .fas;
+.menu-secundario .dropdown-menu {
+  top: 150% !important;
+  left: -80px !important;
+}
 
-  	&::before {
-    	content: fa-content($fa-var-user);    	
-    	color: #fff;
-    	margin-right: 5px;
-    	font-weight: 900;
-  	}
+.page__header .landing-page h2 {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
 
+.page__header #eru-slide .carousel-caption {
+  left: 10% !important;
+  text-align: left !important;
+  width: 25%;
+  bottom: 12%;
+}
 
-}		*/
+.page__header #eru-slide .carousel-caption h3 {
+  font-family: "Poppins", Arial, Sans-serif;
+  font-weight: 600;
+}
+
+.page__header #eru-slide .controles {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 16%;
+  bottom: 14%;
+  z-index: 10;
+}
+
+.page__header #eru-slide .controles i {
+  font-size: 2em;
+  color: #fff;
+}
+
+.page__header #eru-slide .controles .carousel-control-prev,
+.page__header #eru-slide .controles .carousel-control-next {
+  opacity: 1 !important;
+  cursor: pointer;
+  margin: 10px;
+  display: contents;
+}
+
+.page__header #eru-slide .controles .carousel-control-prev i:hover,
+.page__header #eru-slide .controles .carousel-control-next i:hover {
+  color: #0A6EC8 !important;
+}
+
+.page__header #eru-slide .controles .btn {
+  display: none;
+}
+
+.page__header #eru-slide .controles .active {
+  display: block;
+  padding-top: 0.4rem;
+}
+
+.page__content h2 {
+  margin-bottom: 2em;
+}
+
+.page__content img.img-thumbnail {
+  border: none !important;
+  padding: 0 !important;
+  border-radius: 0;
+}
+
+.page__content .views-field-created,
+.page__content .views-field-field-textual-transcription {
+  font-weight: 600;
+}
+
+.page__content .project-block .views-field-title {
+  margin-top: 1rem;
+}
+
+.page__content .project-block .views-field-title a {
+  font-size: 0.6em;
+  font-weight: bold;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.page__content .project-block .views-field-title a:hover {
+  color: #0A6EC8 !important;
+  text-decoration: none;
+}
+
+.page__content .project-block .views-field-title a:focus {
+  outline: 2px dotted #0A6EC8 !important;
+  padding: 5px;
+  left: -5px;
+  position: relative;
+  color: #0A6EC8 !important;
+}
+
+.page__content .more-link {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.page__content .more-link a {
+  color: #fff;
+  background-color: #0A6EC8;
+  border-color: #0A6EC8;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.page__content .more-link a:hover {
+  color: #fff;
+  background-color: #085aa4;
+  border-color: #085397;
+  text-decoration: none;
+}
+
+.page__content .transparencia-block {
+  margin: 5rem 0;
+}
+
+.page__content .transparencia-block #bkg-transparencia {
+  background: url("http://local.eru.com/themes/custom/theme_eru/assets/images/bkg-transparencia.png"), #003250;
+  background-repeat: no-repeat;
+  padding: 60px 225px;
+  float: left;
+}
+
+.page__content .transparencia-block .textos {
+  background-color: #003250;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.page__content .transparencia-block .textos h2 {
+  line-height: 1.5em;
+  margin-bottom: 0.5em;
+  text-align: left;
+}
+
+.page__content .transparencia-block .textos h2::after {
+  content: none;
+}
+
+.page__content .transparencia-block .textos h2 a {
+  color: #fff;
+  font-weight: 600;
+  text-transform: initial;
+}
+
+.page__content .transparencia-block .textos p {
+  color: #F7931E;
+  font-weight: 500;
+}
+
+.page__content .news-home h3 {
+  line-height: 0.6em;
+}
+
+.page__content .news-home h3 a {
+  font-size: 0.55em;
+  font-weight: 600;
+  color: #000;
+}
+
+.page__content .news-home .title-one {
+  margin: 20px 0 30px 0;
+}
+
+.page__content .news-home .title-one::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  border-bottom: 2px solid #0A6EC8;
+  position: absolute;
+  left: 3%;
+}
+
+.page__content .news-home .row-news {
+  display: inline-block;
+}
+
+.page__content .video-home {
+  margin-bottom: 2rem;
+}
+
+.page__content .video-home h3 {
+  font-size: 1.3em;
+  padding: 20px 0;
+}
+
+.page__content .video-home h3 a {
+  color: #000;
+}
+
+.page__content .video-home h3::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  border-bottom: 2px solid #0A6EC8;
+  position: absolute;
+  left: 72%;
+}
+
+.page__content .paragraph--type--links-of-interest .link-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3.5rem;
+}
+
+.page__content .paragraph--type--links-of-interest i {
+  padding: 44px;
+}
+
+.page__content .paragraph--type--links-of-interest .fa-one-class {
+  background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/ico-01.png), transparent;
+}
+
+.page__content .paragraph--type--links-of-interest .fa-two-class {
+  background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/ico-02.png), transparent;
+}
+
+.page__content .paragraph--type--links-of-interest .fa-tree-class {
+  background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/ico-03.png), transparent;
+}
+
+.page__content .paragraph--type--links-of-interest .fa-four-class {
+  background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/ico-04.png), transparent;
+}
+
+.page__content .paragraph--type--links-of-interest .fa-five-class {
+  background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/ico-05.png), transparent;
+}
+
+.page__content .paragraph--type--links-of-interest .fa-six-class {
+  background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/ico-06.png), transparent;
+}
+
+.page__content .paragraph--type--links-of-interest .fa-seven-class {
+  background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/ico-07.png), transparent;
+}
+
+.page__content .paragraph--type--links-of-interest .fa-eight-class {
+  background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/ico-08.png), transparent;
+}
+
+.page__content .paragraph--type--links-of-interest .description {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.page__content .paragraph--type--links-of-interest .title {
+  text-transform: uppercase;
+  color: #000;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+footer {
+  color: #fff;
+  font-size: 0.8em;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: #fff;
+  text-decoration: underline !important;
+}
+
+footer h2 {
+  font-size: 1.5em;
+  font-family: "Poppins", Arial, Sans-serif;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+footer h2::after {
+  /*left: 4%;
+  border-color: #4297E3;
+  height: 40px;	*/
+  content: none;
+}
+
+.page__footer {
+  background-color: #01293D;
+}
+
+.page__footer .nav {
+  flex-direction: column;
+}
+
+.page__footer .nav .nav-link {
+  padding-left: 0;
+}
+
+.page__footer .contact li {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.page__footer .mision-footer,
+.page__footer .links-footer,
+.page__footer .contact {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.page__footer .links-footer {
+  background-color: #075168;
+  padding-left: 4rem;
+}
+
+.page__footer .contact {
+  padding-left: 2rem;
+}
+
+.page__footer_2 {
+  background-color: #075168;
+}
+
+.page__footer_2 .sdqs-footer {
+  background-color: #01293D;
+  padding: 0.8em;
+}
+
+.page__footer_2 .sitemap-block a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.page__footer_3 {
+  background-color: #02161C;
+  padding: 1em;
+}
+
+/* @import "fonts/fontawesome/scss/fontawesome.scss";
+@import "fonts/fontawesome/scss/solid.scss";
+@import "fonts/fontawesome/scss/regular.scss";
+@import "fonts/fontawesome/scss/brands.scss"; */
 

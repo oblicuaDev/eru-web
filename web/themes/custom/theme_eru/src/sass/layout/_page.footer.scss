@@ -1,5 +1,66 @@
 // Page: Footer
 // -----------------------------------------------------------------------------
-.page__footer {
-
+footer {
+	color: #fff;
+	font-size: 0.8em;
+	a{
+		color: #fff;
+		&:hover{
+			color: #fff;
+			text-decoration: underline !important;
+		}
+	}
+	h2{
+		font-size: 1.5em;
+		font-family: $poppins;
+		font-weight: 500;
+		text-align: left;
+		margin-bottom: 2rem;
+		&::after {
+			/*left: 4%;
+			border-color: #4297E3;
+			height: 40px;	*/
+			content: none;		
+		}
+	}	
+}
+.page__footer {	
+	background-color: #01293D;
+	.nav {
+		flex-direction: column;
+		.nav-link{
+			padding-left: 0;
+		}
+	}
+	.contact li{
+		list-style: none;
+		margin-bottom: 1rem;
+	}
+	.mision-footer, .links-footer, .contact{
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+	.links-footer{
+		background-color: #075168;
+		padding-left: 4rem;
+	}
+	.contact {
+		padding-left: 2rem;
+	}
+}
+.page__footer_2 {
+	background-color: #075168;
+	.sdqs-footer {
+		background-color: #01293D;
+		padding: 0.8em;
+	}
+	.sitemap-block a{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+}
+.page__footer_3 {
+	background-color: #02161C;
+	padding: 1em;
 }
