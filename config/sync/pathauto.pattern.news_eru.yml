@@ -1,0 +1,22 @@
+uuid: 16922501-5793-4504-b80a-1bc3ee17beae
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: news_eru
+label: 'News Eru'
+type: 'canonical_entities:node'
+pattern: 'noticias/[node:title]'
+selection_criteria:
+  e96ada2f-6900-4880-acd8-78c30a2f0e04:
+    id: node_type
+    bundles:
+      news: news
+    negate: false
+    context_mapping:
+      node: node
+    uuid: e96ada2f-6900-4880-acd8-78c30a2f0e04
+selection_logic: and
+weight: -5
+relationships: {  }
