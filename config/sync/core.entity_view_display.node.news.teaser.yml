@@ -30,6 +30,10 @@ content:
     region: content
 hidden:
   addtoany: true
+  field_attach_file: true
+  field_blocks: true
+  field_cover_img: true
+  field_gallery: true
   field_image: true
   field_tags: true
   field_title: true
