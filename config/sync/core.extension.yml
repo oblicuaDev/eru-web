@@ -17,7 +17,6 @@ module:
   context_ui: 0
   contextual: 0
   ctools: 0
-  custom_nid: 0
   datetime: 0
   dblog: 0
   devel: 0
