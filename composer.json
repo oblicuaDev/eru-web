@@ -43,6 +43,7 @@
         "drupal/media_entity": "^1.8",
         "drupal/menu_link_attributes": "^1.0",
         "drupal/paragraphs": "^1.8",
+        "drupal/pathauto": "^1.4",
         "drupal/radix": "^4.1",
         "drupal/radix_layouts": "^4.1",
         "drupal/single_datetime": "^1.7",
