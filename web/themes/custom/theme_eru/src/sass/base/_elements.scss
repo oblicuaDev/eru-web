@@ -11,7 +11,7 @@ h2{
 	font-weight: 900;
 	text-transform: uppercase;
 	text-align: center;
-	line-height: 2.2;
+	line-height: 1.5;
 	font-size: 1.8em;
 	&::after{
 		content: "";
@@ -21,6 +21,12 @@ h2{
 	    position: absolute;
 	    left: 49%;
 	}
+}
+.news h2{
+	font-style: 1.5em;
+	text-transform: none;
+	text-align: left;
+	&::after{ content: none; }
 }
 
 // Text

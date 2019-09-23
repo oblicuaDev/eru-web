@@ -16796,7 +16796,7 @@ h2 {
   font-weight: 900;
   text-transform: uppercase;
   text-align: center;
-  line-height: 2.2;
+  line-height: 1.5;
   font-size: 1.8em;
 }
 
@@ -16807,6 +16807,16 @@ h2::after {
   border-bottom: 2px solid #0A6EC8;
   position: absolute;
   left: 49%;
+}
+
+.news h2 {
+  font-style: 1.5em;
+  text-transform: none;
+  text-align: left;
+}
+
+.news h2::after {
+  content: none;
 }
 
 body {
@@ -16895,7 +16905,7 @@ body {
   left: -80px !important;
 }
 
-.page__header .landing-page h2 {
+.landing-page h2 {
   border: 0;
   clip: rect(0, 0, 0, 0);
   height: 1px;
@@ -16906,19 +16916,19 @@ body {
   width: 1px;
 }
 
-.page__header #eru-slide .carousel-caption {
+#eru-slide .carousel-caption {
   left: 10% !important;
   text-align: left !important;
   width: 25%;
   bottom: 12%;
 }
 
-.page__header #eru-slide .carousel-caption h3 {
+#eru-slide .carousel-caption h3 {
   font-family: "Poppins", Arial, Sans-serif;
   font-weight: 600;
 }
 
-.page__header #eru-slide .controles {
+#eru-slide .controles {
   display: flex;
   align-items: center;
   position: absolute;
@@ -16927,31 +16937,42 @@ body {
   z-index: 10;
 }
 
-.page__header #eru-slide .controles i {
+#eru-slide .controles i {
   font-size: 2em;
   color: #fff;
 }
 
-.page__header #eru-slide .controles .carousel-control-prev,
-.page__header #eru-slide .controles .carousel-control-next {
+#eru-slide .controles .carousel-control-prev,
+#eru-slide .controles .carousel-control-next {
   opacity: 1 !important;
   cursor: pointer;
   margin: 10px;
   display: contents;
 }
 
-.page__header #eru-slide .controles .carousel-control-prev i:hover,
-.page__header #eru-slide .controles .carousel-control-next i:hover {
+#eru-slide .controles .carousel-control-prev i:hover,
+#eru-slide .controles .carousel-control-next i:hover {
   color: #0A6EC8 !important;
 }
 
-.page__header #eru-slide .controles .btn {
+#eru-slide .controles .btn {
   display: none;
 }
 
-.page__header #eru-slide .controles .active {
+#eru-slide .controles .active {
   display: block;
   padding-top: 0.4rem;
+}
+
+.news #eru-slide .carousel-caption {
+  width: 100%;
+  font-size: 1.3em;
+  margin: 20px 0;
+}
+
+.news #eru-slide .controles {
+  left: 10%;
+  bottom: 9%;
 }
 
 .page__content h2 {
@@ -17083,6 +17104,7 @@ body {
 
 .page__content .news-home .row-news {
   display: inline-block;
+  width: 100%;
 }
 
 .page__content .video-home {

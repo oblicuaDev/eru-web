@@ -60,7 +60,7 @@
 }
 // Page: Header
 // -----------------------------------------------------------------------------
-.page__header {
+//.page__header {
 	.landing-page h2{
 		border: 0;
 		clip: rect(0, 0, 0, 0);
@@ -103,4 +103,16 @@
 		    .active {display: block; padding-top: 0.4rem;}
 		}
 	}
-}
+//}
+.news
+	#eru-slide {
+		.carousel-caption {
+			width: 100%;
+			font-size: 1.3em;
+			margin: 20px 0;
+		}
+		.controles {
+			left: 10%;
+			bottom: 9%;
+		}
+	}
