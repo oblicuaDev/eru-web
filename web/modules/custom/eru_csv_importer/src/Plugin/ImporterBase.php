@@ -4,9 +4,12 @@ namespace Drupal\eru_csv_importer\Plugin;
 
 use Drupal\Component\Utility\Unicode;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
+use Drupal\Core\File\FileSystemInterface;
 use Drupal\Core\Plugin\PluginBase;
 use Drupal\Core\StringTranslation\StringTranslationTrait;
 use Drupal\file\Entity\File;
+use Drupal\paragraphs\Entity\Paragraph;
+use Drupal\taxonomy\Entity\Term;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
@@ -29,6 +32,13 @@ abstract class ImporterBase extends PluginBase implements ImporterInterface {
   protected $entityTypeManager;
 
   /**
+   * The file system service.
+   *
+   * @var \Drupal\Core\File\FileSystemInterface
+   */
+  protected $fileSystem;
+
+  /**
    * Constructs ImporterBase object.
    *
    * @param array $configuration
@@ -40,9 +50,16 @@ abstract class ImporterBase extends PluginBase implements ImporterInterface {
    * @param \Drupal\Core\Entity\EntityTypeManagerInterface $entity_type_manager
    *   Entity type manager service.
    */
-  public function __construct(array $configuration, $plugin_id, $plugin_definition, EntityTypeManagerInterface $entity_type_manager) {
+  public function __construct(
+    array $configuration,
+    $plugin_id,
+    $plugin_definition,
+    EntityTypeManagerInterface $entity_type_manager,
+    FileSystemInterface $file_system
+  ) {
     parent::__construct($configuration, $plugin_id, $plugin_definition);
     $this->entityTypeManager = $entity_type_manager;
+    $this->fileSystem = $file_system;
   }
 
   /**
@@ -53,7 +70,8 @@ abstract class ImporterBase extends PluginBase implements ImporterInterface {
       $configuration,
       $plugin_id,
       $plugin_definition,
-      $container->get('entity_type.manager')
+      $container->get('entity_type.manager'),
+      $container->get('file_system')
     );
   }
 
@@ -132,7 +150,6 @@ abstract class ImporterBase extends PluginBase implements ImporterInterface {
     $added = 0;
     $updated = 0;
 
-    $file_system_service = \Drupal::service('file_system');
     foreach ($content['content'] as $key => $data) {
       if ($entity_definition->hasKey('bundle') && $entity_type_bundle) {
         $data[$entity_definition->getKey('bundle')] = $this->configuration['entity_type_bundle'];
@@ -164,32 +181,14 @@ abstract class ImporterBase extends PluginBase implements ImporterInterface {
               && method_exists($definitions[$field], 'getType')
               && $definitions[$field]->getType() === 'image'
             ) {
-              $image_data = file_get_contents($value);
-              if (!empty($image_data)) {
-                $directory = file_default_scheme() . '://importer_images';
-                $prepare_directory = $file_system_service->prepareDirectory($directory, FILE_CREATE_DIRECTORY);
-                if ($prepare_directory) {
-                  $real_path = $directory . '/' . end(explode('/', $value));
-                  $created_file = file_put_contents($real_path, $image_data);
-                  if (!empty($created_file)) {
-                    $file = File::Create([
-                      'uri' => $real_path,
-                    ]);
-                    $file->save();
-                    $new_value = [
-                      'target_id' => $file->id(),
-                      'alt' => $content['content'][$key]['title'] ?? '',
-                      'title' => $content['content'][$key]['title'] ?? '',
-                    ];
-                    $data[$field] = $new_value;
-                  }
-                }
-                continue;
-              }
+              $properties = [
+                'title' => $content['content'][$key]['title'] ?? '',
+              ];
+              $data[$field] = $this->createImage($value, $properties);
             }
 
             // Validate if field is url type.
-            if (empty($definitions[$field])
+            if (!empty($definitions[$field])
               && method_exists($definitions[$field], 'getType')
               && $definitions[$field]->getType() === 'link'
             ) {
@@ -203,18 +202,121 @@ abstract class ImporterBase extends PluginBase implements ImporterInterface {
             }
 
             // Validate if field is url type.
-            if (empty($definitions[$field])
+            if (!empty($definitions[$field])
               && method_exists($definitions[$field], 'getType')
               && $definitions[$field]->getType() === 'text_with_summary'
             ) {
+              $summary = '';
+              if (!empty($data['summary'])) {
+                $summary = $data['summary'];
+              }
               $properties = [
                 'value' => $value,
-                'summary' => '',
+                'summary' => $summary,
                 'format' => 'basic_html',
               ];
               $data[$field] = $properties;
               continue;
             }
+
+            // Validate if field is field_gallery.
+            if ($field === 'field_gallery'
+              && !empty($definitions[$field])
+              && method_exists($definitions[$field], 'getType')
+              && $definitions[$field]->getType() === 'entity_reference_revisions'
+            ) {
+              $values = explode(',', $value);
+              $paragraphs = [];
+              foreach ($values as $key_value => $image_value) {
+                $image_value = str_replace(' ', '', $image_value);
+
+                $title = $content['content'][$key]['title'] ?? '';
+                $properties = [
+                  'title' => $title,
+                ];
+                $value = $this->createImage($image_value, $properties);
+
+                $paragraph = Paragraph::create([
+                  'type' => 'galleries',
+                  'field_img' => $value,
+                  'field_title' => $title,
+                ]);
+                $paragraph->save();
+                $temp_value = [
+                  'target_id' => $paragraph->id(),
+                  'target_revision_id' => $paragraph->getRevisionId(),
+                ];
+                array_push($paragraphs, $temp_value);
+
+                // Add field_cover_img if Apply.
+                if (empty($data['field_cover_img']) && !empty($definitions['field_cover_img'])) {
+                  $value = $this->createImage($image_value, $properties);
+                  $data['field_cover_img'] = $value;
+                }
+              }
+
+              // Create gallery paragraph.
+              $paragraph = Paragraph::create([
+                'type' => 'gallery',
+                'field_galleries_img' => $paragraphs,
+              ]);
+              $paragraph->save();
+
+              $temp_value = [
+                'target_id' => $paragraph->id(),
+                'target_revision_id' => $paragraph->getRevisionId(),
+              ];
+              $data[$field] = $temp_value;
+              continue;
+            }
+
+            // If field is tabs.
+            if (!empty($definitions[$field])
+              && method_exists($definitions[$field], 'getType')
+              && $definitions[$field]->getType() === 'entity_reference'
+              && method_exists($definitions[$field], 'getSettings')
+            ) {
+              $storage_definition = $definitions[$field]->getSettings();
+              if (!empty($storage_definition['target_type'])
+                && $storage_definition['target_type'] === 'taxonomy_term'
+                && !empty($storage_definition['handler_settings']['target_bundles']))
+              {
+                $target_bundles = $storage_definition['handler_settings']['target_bundles'];
+                end($target_bundles);
+                $bundle = key($target_bundles);
+                $values = explode(',', $value);
+                $terms = [];
+                foreach ($values as $key_term => $value_term) {
+                  // Validate if term exist.
+                  $value_term = ltrim($value_term);
+                  $term = $this->entityTypeManager->getStorage('taxonomy_term')->loadByProperties(
+                    [
+                      'name' => $value_term,
+                      'vid' => $bundle,
+                    ]
+                  );
+                  $term = reset($term);
+                  if (empty($term)) {
+                    $term = $this->entityTypeManager->getStorage('taxonomy_term')->create(
+                      [
+                        'name' => $value_term,
+                        'vid' => $bundle,
+                      ]
+                    );
+                    $term->save();
+                  }
+                  $tid = ['target_id' => $term->id()];
+                  array_push($terms, $tid);
+                }
+                $data[$field] = $terms;
+                continue;
+              }
+            }
+          }
+
+          // Delete field summary.
+          if (isset($data['summary'])) {
+            unset($data['summary']);
           }
           $entity = $this->entityTypeManager->getStorage($this->configuration['entity_type'])->create($data);
           
@@ -301,5 +403,39 @@ abstract class ImporterBase extends PluginBase implements ImporterInterface {
    *   The batch context array.
    */
   public function preSave(&$entity, array $content, array &$context) {}
+
+  /**
+   * @param $value
+   * @param $properties
+   * @return array|string
+   * @throws \Drupal\Core\Entity\EntityStorageException
+   */
+  public function createImage($value, $properties) {
+    $image = '';
+    try {
+      $image_data = file_get_contents($value);
+      if (!empty($image_data)) {
+        $directory = file_default_scheme() . '://importer_images';
+        $prepare_directory = $this->fileSystem->prepareDirectory($directory, FILE_CREATE_DIRECTORY);
+        if ($prepare_directory) {
+          $real_path = $directory . '/' . end(explode('/', $value));
+          $created_file = file_put_contents($real_path, $image_data);
+          if (!empty($created_file)) {
+            $file = File::Create([
+              'uri' => $real_path,
+            ]);
+            $file->save();
+            $image = [
+              'target_id' => $file->id(),
+              'alt' => $properties['title'] ?? '',
+              'title' => $properties['title'] ?? '',
+            ];
+          }
+        }
+      }
+    }
+    catch (\Exception $e) {}
+    return $image;
+  }
 
 }
