@@ -17835,7 +17835,7 @@ __webpack_require__.r(__webpack_exports__);
   };
   Drupal.behaviors.helloWorld = {
     attach: function attach(context) {
-      console.log('Hello World 2');
+      console.log('Hello World example of behaviors');
     }
   };
 })(jQuery, Drupal);
