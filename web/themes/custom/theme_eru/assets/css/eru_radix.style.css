@@ -16961,18 +16961,7 @@ body {
 
 #eru-slide .controles .active {
   display: block;
-  padding-top: 0.4rem;
-}
-
-.news #eru-slide .carousel-caption {
-  width: 100%;
-  font-size: 1.3em;
-  margin: 20px 0;
-}
-
-.news #eru-slide .controles {
-  left: 10%;
-  bottom: 9%;
+  padding-top: 0.5rem;
 }
 
 .page__content h2 {
@@ -17270,4 +17259,19 @@ footer h2::after {
 @import "fonts/fontawesome/scss/solid.scss";
 @import "fonts/fontawesome/scss/regular.scss";
 @import "fonts/fontawesome/scss/brands.scss"; */
+
+.news #eru-slide .carousel-caption {
+  width: 100%;
+  font-size: 1.3em;
+  margin: 20px 0;
+}
+
+.news #eru-slide .controles {
+  left: 10%;
+  bottom: 9%;
+}
+
+.news__field-gallery .field__label {
+  display: none;
+}
 
