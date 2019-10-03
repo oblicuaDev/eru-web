@@ -1,5 +1,5 @@
 uuid: 434663d6-c260-4cb4-b004-5e66b5fbb8c5
-langcode: en
+langcode: es
 status: true
 dependencies:
   config:
@@ -310,7 +310,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: Project
+      title: Proyectos
       header:
         area:
           id: area
