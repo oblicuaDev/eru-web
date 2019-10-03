@@ -376,10 +376,10 @@ display:
         options:
           grouping: {  }
           columns: 1
-          automatic_width: true
+          automatic_width: false
           alignment: horizontal
           col_class_default: true
-          col_class_custom: 'col-6 float-left'
+          col_class_custom: col-12
           row_class_default: true
           row_class_custom: ''
       row:
@@ -390,7 +390,7 @@ display:
           separator: ''
           hide_empty: false
       display_description: ''
-      css_class: news-home
+      css_class: 'news-home float-left col-6'
       fields:
         field_cover_img:
           id: field_cover_img

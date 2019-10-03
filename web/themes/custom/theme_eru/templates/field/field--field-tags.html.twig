@@ -4,6 +4,8 @@
  * Template for field_tags.
  */
 #}
+<div class="tags">
+	<i class="tag-ico"></i>
 {% for item in items %}
   {% include '@radix/badge/badge.twig' with {
     type: 'light',
@@ -11,3 +13,4 @@
     url: item.content['#url'],
   } %}
 {% endfor %}
+</div>

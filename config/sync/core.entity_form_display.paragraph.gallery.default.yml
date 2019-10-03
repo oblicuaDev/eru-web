@@ -14,7 +14,7 @@ mode: default
 content:
   field_galleries_img:
     type: entity_reference_paragraphs
-    weight: 0
+    weight: 1
     settings:
       title: Paragraph
       title_plural: Paragraphs
