@@ -1,5 +1,5 @@
 uuid: c55842d6-9b9e-4c75-a376-066ac49e2146
-langcode: en
+langcode: es
 status: true
 dependencies:
   config:
@@ -364,7 +364,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: 'Video Eru home'
+      title: 'Videos Eru'
       header: {  }
       footer: {  }
       empty: {  }
@@ -405,7 +405,7 @@ display:
       link_url: videos
       use_more: true
       use_more_always: true
-      use_more_text: 'all the video'
+      use_more_text: 'Todos los videos'
       fields:
         field_url_video_yt__1:
           id: field_url_video_yt__1
