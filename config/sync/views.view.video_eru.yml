@@ -65,8 +65,21 @@ display:
           offset: 0
       style:
         type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
       row:
         type: fields
+        options:
+          default_field_elements: true
+          inline:
+            title: title
+            created: created
+            field_textual_transcription: field_textual_transcription
+            body: body
+          separator: ''
+          hide_empty: false
       fields:
         title:
           id: title
@@ -364,7 +377,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: 'Videos Eru'
+      title: VIDEO
       header: {  }
       footer: {  }
       empty: {  }
@@ -402,10 +415,11 @@ display:
         use_more_always: false
         use_more_text: false
         fields: false
+        css_class: false
       link_url: videos
       use_more: true
       use_more_always: true
-      use_more_text: 'Todos los videos'
+      use_more_text: 'TODOS LOS VIDEOS'
       fields:
         field_url_video_yt__1:
           id: field_url_video_yt__1
@@ -458,7 +472,7 @@ display:
           click_sort_column: target_id
           type: entity_reference_entity_view
           settings:
-            view_mode: default
+            view_mode: image_news
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -478,7 +492,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
@@ -511,7 +525,7 @@ display:
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
-          element_wrapper_type: ''
+          element_wrapper_type: h3
           element_wrapper_class: text-center
           element_default_classes: true
           empty: ''
@@ -541,7 +555,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
@@ -575,7 +589,7 @@ display:
           element_label_class: ''
           element_label_colon: false
           element_wrapper_type: ''
-          element_wrapper_class: 'float-left col-6 text-right'
+          element_wrapper_class: 'float-left col-3 text-right mb-2'
           element_default_classes: true
           empty: ''
           hide_empty: false
@@ -584,7 +598,7 @@ display:
           click_sort_column: value
           type: timestamp
           settings:
-            date_format: custom
+            date_format: fecha_sitio
             custom_date_format: 'd-F-y '
             timezone: ''
           group_column: value
@@ -608,7 +622,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
@@ -642,7 +656,7 @@ display:
           element_label_class: ''
           element_label_colon: false
           element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_class: 'float-left col-3 text-left mb-2'
           element_default_classes: true
           empty: ''
           hide_empty: false
@@ -677,8 +691,8 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: true
-            text: "<div class=\"wrapper-content \">\r\n      <div class=\"title\">{{ title }}</div>\r\n      <div class=\"created\">\r\n        <div class=\"item-1 col-6 float-left text-right\">\r\n          {{ created }}\r\n        </div>\r\n        <div class=\"item-2 col-6 float-left text-left\">\r\n          {{ field_textual_transcription }}\r\n        </div>\r\n      </div>\r\n      <div class=\"body\">{{ body }}</div>    \r\n    </div>"
+            alter_text: false
+            text: ''
             make_link: false
             path: ''
             absolute: false
@@ -693,14 +707,14 @@ display:
             suffix: ''
             target: ''
             nl2br: false
-            max_length: 700
-            word_boundary: false
-            ellipsis: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
             more_link: false
             more_link_text: ''
             more_link_path: ''
             strip_tags: false
-            trim: true
+            trim: false
             preserve_tags: ''
             html: false
           element_type: ''
@@ -709,15 +723,16 @@ display:
           element_label_class: ''
           element_label_colon: false
           element_wrapper_type: ''
-          element_wrapper_class: 'text-center col-6 float-left'
+          element_wrapper_class: 'text-center d-block'
           element_default_classes: true
           empty: ''
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: value
-          type: text_default
-          settings: {  }
+          click_sort_column: summary
+          type: text_summary_or_trimmed
+          settings:
+            trim_length: 220
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -729,6 +744,7 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+      css_class: video-home
     cache_metadata:
       max-age: -1
       contexts:

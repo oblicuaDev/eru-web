@@ -29,7 +29,7 @@ content:
     settings:
       rows: 9
       placeholder: 'Puedes embeber youtube, twitter y soundcloud'
-      summary_rows: 3
+      summary_rows: 2
     third_party_settings: {  }
     region: content
   created:

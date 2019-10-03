@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.news.field_tags
     - node.type.news
   module:
+    - ds
     - entity_reference_revisions
     - file
     - text
@@ -30,7 +31,16 @@ content:
     type: text_default
     weight: 4
     settings: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     region: content
   field_attach_file:
     weight: 6
