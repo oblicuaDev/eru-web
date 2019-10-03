@@ -60,7 +60,7 @@
 }
 // Page: Header
 // -----------------------------------------------------------------------------
-.page__header {
+//.page__header {
 	.landing-page h2{
 		border: 0;
 		clip: rect(0, 0, 0, 0);
@@ -100,7 +100,7 @@
 		    	}
 		    }
 		    .btn{display: none;}
-		    .active {display: block; padding-top: 0.4rem;}
+		    .active {display: block; padding-top: 0.5rem;}
 		}
 	}
-}
+//}

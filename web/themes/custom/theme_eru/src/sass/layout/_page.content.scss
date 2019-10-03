@@ -89,7 +89,7 @@
 			}			
 		}
 		.title-one {
-			margin: 20px 0 30px 0;
+			margin: 20px 0 30px 0;			
 			&::after {
 				content: "";
 				width: 40px;
@@ -100,7 +100,8 @@
 			}
 		}
 		.row-news {
-			display: inline-block;			
+			display: inline-block;		
+			width: 100%;		
 		}		
 	}
 	.video-home{

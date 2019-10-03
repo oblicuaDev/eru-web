@@ -71,31 +71,34 @@
                     {% set img_longdesc = item['#paragraph'].field_image.entity.field_longdesc.value %}
                     <img src="{{ img_url }}" class="d-block w-100" alt="{{ img_alt }}">
                     <div class="carousel-caption d-none d-md-block">
-                      <h3>{{ item['#paragraph'].field_title.value }}</h3>
+                      <span>{{ item['#paragraph'].field_title.value }}</span>
                     </div>
                   </div>
               {% endif %}
             {% endfor %}
           </div>
           <div class="controles">
-            <a class="carousel-control-prev" role="button" {#data-slide="prev"#}>
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Ir a la imagen Anterior</span>
-            </a>
-            <div id="carouselButtons">
-              <button id="playButton" type="button" class="btn btn-default btn-xs">
-                Reproducir
-                <i class="far fa-play-circle"></i>
+        <a class="carousel-control-prev" role="button" {#data-slide="prev"#}>
+          <i class="fas fa-chevron-circle-left"></i>
+          <!--<span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+          <span class="sr-only">Ir a la imagen Anterior</span>
+        </a>       
+        <div id="carouselButtons">
+              <button id="playButton" type="button" class="btn btn-default btn-xs active"> 
+              <i class="far fa-play-circle"></i>
+              <span class="sr-only">Reproducir</span>
               </button>
               <button id="pauseButton" type="button" class="btn btn-default btn-xs">
-                Pausar
+              <i class="fas fa-pause-circle"></i>
+              <span class="sr-only">Pausar</span>
               </button>
-            </div>
-            <a class="carousel-control-next" role="button" {#data-slide="next"#}>
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Ir a la imagen siguiente</span>
-            </a>
           </div>
+        <a class="carousel-control-next" role="button" {#data-slide="next"#}>
+          <!--<span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+          <i class="fas fa-chevron-circle-right"></i>
+          <span class="sr-only">Ir a la imagen siguiente</span>
+        </a>
+      </div>
         </div>
       {% endblock %}
     </div>

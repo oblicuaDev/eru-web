@@ -59,7 +59,7 @@ reactions:
         weight: '0'
         context_mapping: {  }
         theme: theme_eru
-        css_class: col-12
+        css_class: ''
         unique: 0
         context_id: homepage
         uuid: cc5e5c9f-ff6e-4b6b-bcfa-5d01517a6fd6

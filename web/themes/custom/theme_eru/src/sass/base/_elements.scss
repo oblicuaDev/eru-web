@@ -6,12 +6,13 @@ h1, h2 {
 }
 h3, h4, h5, h6 {
 	font-family: $poppins;
+	margin-bottom: 1em;
 }
 h2{
 	font-weight: 900;
 	text-transform: uppercase;
 	text-align: center;
-	line-height: 2.2;
+	line-height: 1.5;
 	font-size: 1.8em;
 	&::after{
 		content: "";
@@ -22,7 +23,35 @@ h2{
 	    left: 49%;
 	}
 }
-
+.news h2{	
+	text-transform: none;
+	text-align: left;
+	&::after{ content: none; }
+}
+.news h3{
+	font-size: 1.6em;
+	border-bottom: 1px #ddd solid;
+	padding: 0.3em;
+	position: relative;
+	margin-bottom: 1em;
+	&::after {
+		content: "";
+		width: 40px;
+	    height: 40px;
+	    border-bottom: 2px solid #0A6EC8;
+	    position: absolute;
+	    left: 0;
+	    bottom: 0;
+	}
+}
+h4{
+	color: $blue;	
+}
+h6{
+	padding-bottom: 0.3em;
+	border-bottom: 1px dashed #979797;
+	display: inline-block;
+}
 // Text
 // -----------------------------------------------------------------------------
 p {
@@ -73,8 +102,23 @@ strong {
 small {
 
 }
+hr {
+	border-style: dashed;
+	border-color: #979797;
+}
 body {
 	background-color: white;
 	font-family: "Poppins", Arial, Sans-serif;
 	font-size: 15px;
+}
+
+// Botones
+// -----
+
+.btn-primary {
+	cursor: pointer;
+	a{
+		color: #fff !important;
+		&:hover{ text-decoration: none; }
+	}
 }

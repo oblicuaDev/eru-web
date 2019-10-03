@@ -15,6 +15,13 @@ settings:
     rows:
       -
         -
+          name: Actions
+          items:
+            - Undo
+            - Redo
+            - Copy
+            - Cut
+        -
           name: Formatting
           items:
             - Bold
@@ -49,6 +56,7 @@ settings:
           name: 'Block Formatting'
           items:
             - Format
+            - node
         -
           name: Tools
           items:
@@ -58,7 +66,7 @@ settings:
     language:
       language_list: un
     stylescombo:
-      styles: ''
+      styles: "div.align-left|Alinear a la izquierda\r\ndiv.align-right|Alinear a la derecha"
 image_upload:
   status: true
   scheme: public

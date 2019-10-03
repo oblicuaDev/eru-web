@@ -7,12 +7,15 @@ dependencies:
     - field.field.node.news.field_attach_file
     - field.field.node.news.field_blocks
     - field.field.node.news.field_cover_img
+    - field.field.node.news.field_fecha_de_publicacion
     - field.field.node.news.field_gallery
     - field.field.node.news.field_tags
     - node.type.news
   module:
+    - datetime
     - ds
     - entity_reference_revisions
+    - field_formatter_class
     - file
     - text
     - user
@@ -22,14 +25,14 @@ bundle: news
 mode: default
 content:
   addtoany:
-    weight: 3
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
   body:
     label: hidden
     type: text_default
-    weight: 4
+    weight: 5
     settings: {  }
     third_party_settings:
       field_formatter_class:
@@ -43,11 +46,21 @@ content:
             classes: {  }
     region: content
   field_attach_file:
-    weight: 6
-    label: above
+    weight: 7
+    label: visually_hidden
     settings:
       use_description_as_link_text: true
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: 'btn btn-primary'
+      ds:
+        ds_limit: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     type: file_default
     region: content
   field_blocks:
@@ -68,6 +81,24 @@ content:
             classes: {  }
     type: entity_reference_revisions_entity_view
     region: content
+  field_fecha_de_publicacion:
+    weight: 3
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: fecha_sitio
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: 'Publicado el'
+            lb-col: false
+            classes: {  }
+    type: datetime_default
+    region: content
   field_gallery:
     type: entity_reference_revisions_entity_view
     weight: 1
@@ -86,7 +117,7 @@ content:
     type: entity_reference_label
     region: content
   links:
-    weight: 5
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }

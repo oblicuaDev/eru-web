@@ -86,3 +86,6 @@
 .site-map{	
 	@include icono('fas', $fa-var-sitemap, #FFF, 5px, 2em, #A0BF4A, 26%);	
 }
+.tag-ico{	
+	@include icono('fas', $fa-var-tag, $azul-oscuro, 5px, 1em, none, auto);	
+}

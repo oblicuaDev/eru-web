@@ -6,3 +6,33 @@
 
 // Page
 // -----------------------------------------------------------------------------
+.news{
+	#eru-slide {
+		.carousel-caption {
+			width: 100%;
+			font-size: 1.3em;
+			margin: 20px 0;
+		}
+		.controles {
+			left: 10%;
+			bottom: 9%;
+		}
+	}
+	.news__field-gallery .field__label{
+		display: none;
+	}
+}
+.badge{
+	color: $azul-oscuro;
+	font-size: 0.9em;
+	text-transform: uppercase;
+	margin-left: 1em;	
+	&:nth-child(2n) {
+		margin-left: 2em;
+	}	
+}
+.tags{
+	display: flex;
+	justify-content: center;
+	margin-top: 1.5em;	
+}
