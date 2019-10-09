@@ -17820,14 +17820,6 @@ __webpack_require__.r(__webpack_exports__);
       jQuery('#views-exposed-form-search-page-1').addClass('col-4 float-left').parents('.page-search').find('.views-view-grid.cols-8').addClass('col-8 float-left');
     }
   };
-  Drupal.behaviors.breadcrumbsTitle = {
-    attach: function attach(context, settings) {
-      var title = jQuery('article.node h2 span').text(),
-          html = "<li class='breadcrumb-item'><span>" + title + "</span></li>",
-          $ = jQuery(".block--theme-eru-breadcrumbs ol", context);
-      $.append(html);
-    }
-  };
   Drupal.behaviors.helloWorld = {
     attach: function attach(context) {
       console.log('Hello World example of behaviors');

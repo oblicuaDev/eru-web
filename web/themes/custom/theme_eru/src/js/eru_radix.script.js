@@ -42,15 +42,6 @@ import 'bootstrap';
     }
   };
 
-  Drupal.behaviors.breadcrumbsTitle = {
-    attach: function (context, settings ) {
-      const title = jQuery('article.node h2 span').text(),
-            html = "<li class='breadcrumb-item'><span>" + title + "</span></li>",
-            $ = jQuery(".block--theme-eru-breadcrumbs ol", context);
-      $.append(html);
-    }
-  };
-
   Drupal.behaviors.helloWorld = {
     attach: function (context) {
       console.log('Hello World example of behaviors');

@@ -887,7 +887,7 @@ display:
   page_4:
     display_plugin: page
     id: page_4
-    display_title: 'All the project'
+    display_title: Proyectos
     position: 2
     display_options:
       display_extenders: {  }
