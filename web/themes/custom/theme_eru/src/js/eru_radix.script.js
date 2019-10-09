@@ -23,7 +23,7 @@ import 'bootstrap';
         /*jQuery(this).addClass('active');       */
         if (jQuery(this).hasClass('active')) {
           jQuery('.controles button').addClass('active');
-          jQuery(this).removeClass('active');         
+          jQuery(this).removeClass('active');
         } /*else {
           jQuery('.controles button'),removeClass('active');
           jQuery(this).addClass('active');
