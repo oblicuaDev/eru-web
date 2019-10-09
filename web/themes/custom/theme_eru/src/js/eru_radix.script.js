@@ -23,7 +23,7 @@ import 'bootstrap';
         /*jQuery(this).addClass('active');       */
         if (jQuery(this).hasClass('active')) {
           jQuery('.controles button').addClass('active');
-          jQuery(this).removeClass('active');         
+          jQuery(this).removeClass('active');
         } /*else {
           jQuery('.controles button'),removeClass('active');
           jQuery(this).addClass('active');
@@ -39,6 +39,15 @@ import 'bootstrap';
       jQuery('#views-exposed-form-search-page-1').addClass('col-4 float-left')
         .parents('.page-search').find('.views-view-grid.cols-8').addClass('col-8 float-left');
 
+    }
+  };
+
+  Drupal.behaviors.breadcrumbsTitle = {
+    attach: function (context, settings ) {
+      const title = jQuery('article.node h2 span').text(),
+            html = "<li class='breadcrumb-item'><span>" + title + "</span></li>",
+            $ = jQuery(".block--theme-eru-breadcrumbs ol", context);
+      $.append(html);
     }
   };
 
