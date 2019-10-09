@@ -17838,6 +17838,11 @@ __webpack_require__.r(__webpack_exports__);
       console.log('Hello World example of behaviors');
     }
   };
+  Drupal.behaviors.iconLists = {
+    attach: function attach(context) {
+      jQuery('.news ul li').prepend("<i class='icon-lists'></i>");
+    }
+  };
 })(jQuery, Drupal);
 
 /***/ }),

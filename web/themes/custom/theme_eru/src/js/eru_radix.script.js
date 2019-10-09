@@ -48,4 +48,10 @@ import 'bootstrap';
     }
   };
 
+  Drupal.behaviors.iconLists = {
+    attach: function (context){
+      jQuery('.news ul li').prepend("<i class='icon-lists'></i>");
+    }
+  };
+
 })(jQuery, Drupal);

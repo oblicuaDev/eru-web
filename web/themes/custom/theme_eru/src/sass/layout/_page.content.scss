@@ -1,8 +1,9 @@
 // Page: Content
 // -----------------------------------------------------------------------------
 .page__content {
+	margin-bottom: 3em;
 	h2{
-		margin-bottom: 2em;
+		margin-bottom: 1.5em;
 	}
 	img.img-thumbnail {
 		border: none !important;
@@ -142,4 +143,9 @@
 		.description{text-align: center; margin-top:1rem;}
 		.title{text-transform: uppercase; color: #000; font-weight: bold; margin-top: 1rem;}
 	}
+}
+/**Estilos Layout brenham **/
+
+.brenham .panel-panel {
+	margin-bottom: 2em;
 }

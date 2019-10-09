@@ -89,3 +89,9 @@
 .tag-ico{	
 	@include icono('fas', $fa-var-tag, $azul-oscuro, 5px, 1em, none, auto);	
 }
+.icon-lists{	
+	@include icono('fas', $fa-var-check, $blue, 5px, 0.85em, none, -27px);	
+	&::before{
+		top: 5px !important;
+	}
+}

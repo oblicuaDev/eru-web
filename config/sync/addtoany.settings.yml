@@ -1,7 +1,7 @@
-buttons_size: 25
+buttons_size: 35
 additional_html: "Compartir: \r\n<a class=\"a2a_button_facebook\"></a>\r\n<a class=\"a2a_button_twitter\"></a>\r\n\r\n\r\n\r\n"
-additional_css: ".a2a_button_facebook { border: 1px solid #3C3C3B !important; border-radius: 4px;}\r\n.a2a_button_facebook:hover { color: red; }"
-additional_js: "a2a_config.icon_color = \"#fff,#3C3C3B\";\r\na2a_config.icon_color_hover = “red”;"
+additional_css: '.a2a_s_facebook, .a2a_s_twitter { border: 1px solid #3C3C3B !important; border-radius: 50% !important; }'
+additional_js: 'a2a_config.icon_color = "#fff,#3C3C3B";'
 universal_button: none
 custom_universal_button: ''
 universal_button_placement: before

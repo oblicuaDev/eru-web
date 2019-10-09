@@ -7,9 +7,10 @@ dependencies:
     - field.storage.node.field_cover_img
     - field.storage.node.field_slider
     - field.storage.node.field_tags
+    - image.style.project
     - image.style.thumbnail
     - node.type.news
-    - taxonomy.vocabulary.tags_of_news
+    - taxonomy.vocabulary.tags
   module:
     - entity_reference_revisions
     - image
@@ -50,10 +51,10 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Buscar
           reset_button: false
           reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          exposed_sorts_label: 'Filtrar por:'
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -316,7 +317,7 @@ display:
           entity_type: node
           entity_field: created
           plugin_id: date
-      title: 'All the news'
+      title: 'Todas las noticias'
       header: {  }
       footer: {  }
       empty: {  }
@@ -1125,13 +1126,13 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          operator: contains
+          operator: word
           value: ''
           group: 1
           exposed: true
           expose:
             operator_id: title_op
-            label: Title
+            label: 'Buscar por palabras'
             description: ''
             use_operator: false
             operator: title_op
@@ -1162,85 +1163,6 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: string
-        created:
-          id: created
-          table: node_field_data
-          field: created
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: '='
-          value:
-            min: ''
-            max: ''
-            value: ''
-            type: date
-          group: 1
-          exposed: true
-          expose:
-            operator_id: created_op
-            label: 'Authored on'
-            description: ''
-            use_operator: false
-            operator: created_op
-            identifier: created
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-            placeholder: ''
-            min_placeholder: ''
-            max_placeholder: ''
-          is_grouped: false
-          group_info:
-            label: 'Authored on'
-            description: ''
-            identifier: created
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items:
-              1:
-                title: jjjjjjjj
-                operator: '='
-                value:
-                  type: offset
-                  value: date
-                  min: ''
-                  max: ''
-              2:
-                title: kkkkkkk
-                operator: '='
-                value:
-                  type: offset
-                  value: date
-                  min: ''
-                  max: ''
-              3:
-                title: tes
-                operator: '='
-                value:
-                  type: offset
-                  value: date
-                  min: ''
-                  max: ''
-              4:
-                title: lllllllllll
-                operator: '='
-                value:
-                  type: offset
-                  value: date
-                  min: ''
-                  max: ''
-          entity_type: node
-          entity_field: created
-          plugin_id: date
         field_tags_target_id:
           id: field_tags_target_id
           table: node__field_tags
@@ -1254,7 +1176,7 @@ display:
           exposed: true
           expose:
             operator_id: field_tags_target_id_op
-            label: 'Tags (field_tags)'
+            label: 'Categorias:'
             description: ''
             use_operator: false
             operator: field_tags_target_id_op
@@ -1282,10 +1204,57 @@ display:
           reduce_duplicates: false
           type: textfield
           limit: true
-          vid: tags_of_news
+          vid: tags
           hierarchy: false
           error_message: true
           plugin_id: taxonomy_index_tid
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: ''
+            type: date
+          group: 1
+          exposed: true
+          expose:
+            operator_id: created_op
+            label: 'Fecha de Publicación:'
+            description: ''
+            use_operator: false
+            operator: created_op
+            identifier: created
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: created
+          plugin_id: date
       filter_groups:
         operator: AND
         groups:
@@ -1342,7 +1311,7 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: ''
+            image_style: project
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -1517,7 +1486,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: value
+          click_sort_column: summary
           type: text_summary_or_trimmed
           settings:
             trim_length: 135
@@ -1540,7 +1509,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''

@@ -21,6 +21,7 @@
 	.news__field-gallery .field__label{
 		display: none;
 	}
+	li{font-size: 1.1em; margin-bottom: 1.1em;}
 }
 .badge{
 	color: $azul-oscuro;
@@ -36,3 +37,15 @@
 	justify-content: center;
 	margin-top: 1.5em;	
 }
+a.a2a_button_facebook:hover .a2a_s_facebook{
+	fill: #fff !important;
+    background-color: #3b5998 !important;
+    opacity: 1 !important;
+}
+a.a2a_button_twitter:hover .a2a_s_twitter{
+	fill: #fff !important;
+    background-color: #1da1f2 !important;
+    opacity: 1 !important;
+}
+.a2a_button_twitter span, .a2a_button_facebook span {padding: 3px !important;}
+.news__field-fecha-de-publicacion {margin-bottom: 2em; }

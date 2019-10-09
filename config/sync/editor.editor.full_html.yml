@@ -56,6 +56,7 @@ settings:
           name: 'Block Formatting'
           items:
             - Format
+            - Styles
             - node
         -
           name: Tools
@@ -66,7 +67,7 @@ settings:
     language:
       language_list: un
     stylescombo:
-      styles: "div.align-left|Alinear a la izquierda\r\ndiv.align-right|Alinear a la derecha"
+      styles: 'li.span.icon|Alinear a la izquierda'
 image_upload:
   status: true
   scheme: public
