@@ -11,8 +11,8 @@ id: node.project.field_scope_of_project
 field_name: field_scope_of_project
 entity_type: node
 bundle: project
-label: 'Scope of project'
-description: 'scope of project'
+label: 'Alcance del proyecto'
+description: ''
 required: false
 translatable: true
 default_value: {  }

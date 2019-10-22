@@ -51,7 +51,16 @@ import 'bootstrap';
   Drupal.behaviors.iconLists = {
     attach: function (context){
       jQuery('.news ul li').prepend("<i class='icon-lists'></i>");
+      jQuery('.project-content ul li').prepend("<i class='icon-lists'></i>");
     }
   };
+
+  Drupal.behaviors.heightVideo = {
+    attach: function (context){ 
+      jQuery('.video-home iframe').height(300);  
+    }
+  };
+
+   
 
 })(jQuery, Drupal);

@@ -11,8 +11,8 @@ id: node.project.field_description
 field_name: field_description
 entity_type: node
 bundle: project
-label: 'Description of project'
-description: 'description of project'
+label: 'Descripción del proyecto'
+description: ''
 required: false
 translatable: true
 default_value: {  }

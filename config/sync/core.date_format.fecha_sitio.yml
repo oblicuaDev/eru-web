@@ -5,4 +5,4 @@ dependencies: {  }
 id: fecha_sitio
 label: 'Fecha Sitio'
 locked: false
-pattern: 'd F, Y'
+pattern: 'd • F • Y'

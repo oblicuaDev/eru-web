@@ -18,8 +18,8 @@ id: node.project.field_image_evento_hover
 field_name: field_image_evento_hover
 entity_type: node
 bundle: project
-label: 'Image evento hover'
-description: 'Image evento hover'
+label: 'Imagen del Proyecto - Hover'
+description: ''
 required: false
 translatable: true
 default_value: {  }

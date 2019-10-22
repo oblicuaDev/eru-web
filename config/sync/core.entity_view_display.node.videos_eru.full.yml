@@ -11,6 +11,8 @@ dependencies:
     - field.field.node.videos_eru.field_url_video_yt_
     - node.type.videos_eru
   module:
+    - ds
+    - field_formatter_class
     - link
     - user
 id: node.videos_eru.full
@@ -38,9 +40,18 @@ content:
       trim_length: 80
       url_only: false
       url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      field_formatter_class:
+        class: 'btn btn-primary'
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     type: link
     region: content
   field_url_video_yt_:
@@ -48,9 +59,18 @@ content:
     weight: 1
     label: hidden
     settings:
-      view_mode: default
+      view_mode: media_project
       link: false
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     region: content
   links:
     weight: 0

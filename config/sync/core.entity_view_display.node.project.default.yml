@@ -27,7 +27,6 @@ dependencies:
     - entity_class_formatter
     - entity_reference_revisions
     - field_formatter_class
-    - image
     - link
     - text
     - user
@@ -41,53 +40,26 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  body:
-    label: hidden
-    type: text_default
-    weight: 5
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   field_benefits_of_project:
-    weight: 16
+    type: text_default
+    weight: 0
+    region: content
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
-    region: content
   field_class_location:
-    weight: 7
+    weight: 1
     label: above
     settings: {  }
     third_party_settings: {  }
     type: entity_class_formatter
     region: content
   field_description:
-    weight: 6
+    weight: 3
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
-    region: content
-  field_externa:
-    weight: 18
-    label: hidden
-    settings:
-      format: default
-      format_custom_true: ''
-      format_custom_false: ''
-    third_party_settings: {  }
-    type: boolean
-    region: content
-  field_external_link:
-    weight: 11
-    label: hidden
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    type: boolean
     region: content
   field_general_data:
     type: entity_reference_revisions_entity_view
@@ -97,24 +69,6 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    region: content
-  field_image:
-    weight: 2
-    label: hidden
-    settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
-    type: image
-    region: content
-  field_image_evento_hover:
-    weight: 3
-    label: above
-    settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
-    type: image
     region: content
   field_infografia:
     weight: 10
@@ -129,15 +83,17 @@ content:
     type: link
     region: content
   field_labels:
-    weight: 14
+    type: entity_reference_label
+    weight: 0
+    region: content
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
-    region: content
   field_links_of_interest:
-    weight: 19
+    type: link
+    weight: 0
+    region: content
     label: above
     settings:
       trim_length: 80
@@ -146,14 +102,21 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
-    region: content
   field_location:
-    weight: 8
+    weight: 2
     label: above
     settings:
       link_to_entity: false
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: '<h4>'
+            lb-col: false
+            classes: {  }
     type: string
     region: content
   field_media_solo:
@@ -168,47 +131,52 @@ content:
         class: ''
     region: content
   field_regulatory_framework:
-    weight: 17
+    type: text_default
+    weight: 0
+    region: content
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
-    region: content
   field_scope_of_project:
-    weight: 13
+    type: text_default
+    weight: 0
+    region: content
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
-    region: content
   field_slider:
-    weight: 12
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    region: content
     label: above
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    type: entity_reference_revisions_entity_view
-    region: content
   field_status_of_project:
-    weight: 15
+    type: text_default
+    weight: 0
+    region: content
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
-    region: content
   field_type_of_project:
-    weight: 20
+    type: entity_reference_label
+    weight: 0
+    region: content
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
-    region: content
   links:
     weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
+  body: true
+  field_externa: true
+  field_external_link: true
+  field_image: true
+  field_image_evento_hover: true
   langcode: true

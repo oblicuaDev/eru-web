@@ -9,9 +9,9 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: 'Project Eru'
+name: Proyecto
 type: project
-description: 'this content type is project from eru'
+description: 'Tipo de contenido para crear información sobre un proyecto específico de la ERU'
 help: ''
 new_revision: false
 preview_mode: 1
