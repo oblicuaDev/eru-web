@@ -11,8 +11,8 @@ id: node.project.field_regulatory_framework
 field_name: field_regulatory_framework
 entity_type: node
 bundle: project
-label: 'Regulatory framework'
-description: 'Regulatory framework'
+label: 'Marco normativo'
+description: ''
 required: false
 translatable: true
 default_value: {  }

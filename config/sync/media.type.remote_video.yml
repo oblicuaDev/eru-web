@@ -18,3 +18,4 @@ source_configuration:
   source_field: field_media_oembed_video
 field_map:
   width: field_media_oembed_video
+  height: field_media_oembed_video

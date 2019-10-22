@@ -85,10 +85,19 @@ import 'bootstrap';
     }
   };
 
-  Drupal.behaviors.helloWorld = {
-    attach: function (context) {
-      console.log('Hello World example of behaviors');
+  Drupal.behaviors.iconLists = {
+    attach: function (context){
+      jQuery('.news ul li').prepend("<i class='icon-lists'></i>");
+      jQuery('.project-content ul li').prepend("<i class='icon-lists'></i>");
     }
   };
+
+  Drupal.behaviors.heightVideo = {
+    attach: function (context){
+      jQuery('.video-home iframe').height(300);
+    }
+  };
+
+
 
 })(jQuery, Drupal);

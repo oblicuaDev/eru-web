@@ -23,17 +23,18 @@ h2{
 	    left: 49%;
 	}
 }
-.news h2{	
+.news h2, .videos-eru h2{	
 	text-transform: none;
 	text-align: left;
 	&::after{ content: none; }
 }
-.news h3{
+.news h3, .all-news #titulo-busqueda, .project-content h3{
 	font-size: 1.6em;
 	border-bottom: 1px #ddd solid;
 	padding: 0.3em;
 	position: relative;
 	margin-bottom: 1em;
+	line-height: 1.2 !important;
 	&::after {
 		content: "";
 		width: 40px;
@@ -83,7 +84,11 @@ ul,
 dl {
 
 }
-.news ul li {
+.news li, .project-content li {
+	font-size: 1.1em; 
+	margin-bottom: 1.1em;
+}
+.news ul li, .project-content ul li {
 	list-style: none;	
 	position: relative;
 }
@@ -180,4 +185,9 @@ tr:nth-child(even){
 	margin-right: 5px;
 	content: fa-content($fa-var-angle-double-right);
 	font-weight: 900;
+}
+// Forms
+// -------
+form {
+	margin-bottom: 3em;
 }

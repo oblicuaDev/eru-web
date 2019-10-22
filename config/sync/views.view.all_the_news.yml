@@ -6,7 +6,7 @@ dependencies:
     - field.storage.node.body
     - field.storage.node.field_cover_img
     - field.storage.node.field_tags
-    - image.style.project
+    - image.style.noticias_videos_medios
     - image.style.thumbnail
     - node.type.news
     - taxonomy.vocabulary.tags
@@ -50,8 +50,8 @@ display:
         type: basic
         options:
           submit_button: Buscar
-          reset_button: false
-          reset_button_label: Reset
+          reset_button: true
+          reset_button_label: 'Borrar Filtro'
           exposed_sorts_label: 'Filtrar por:'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -85,9 +85,9 @@ display:
           automatic_width: false
           alignment: horizontal
           col_class_default: false
-          col_class_custom: 'col-4 views-col'
+          col_class_custom: 'col-4 views-col mb-5'
           row_class_default: false
-          row_class_custom: float-left
+          row_class_custom: row
       row:
         type: fields
         options:
@@ -369,7 +369,7 @@ display:
       display_extenders: {  }
       link_url: all-the-news
       link_display: custom_url
-      css_class: news-home
+      css_class: 'news-home all-news'
     cache_metadata:
       max-age: -1
       contexts:
@@ -851,6 +851,7 @@ display:
         use_more_text: false
         link_display: false
         link_url: false
+        css_class: false
       style:
         type: grid
         options:
@@ -881,6 +882,7 @@ display:
       link_display: custom_url
       link_url: noticias
       rendering_language: '***LANGUAGE_entity_default***'
+      css_class: news-home
     cache_metadata:
       max-age: -1
       contexts:
@@ -901,6 +903,7 @@ display:
       defaults:
         title: false
         fields: false
+        css_class: false
       display_description: ''
       fields:
         title:
@@ -1106,7 +1109,7 @@ display:
           exposed: true
           expose:
             operator_id: title_op
-            label: 'Buscar por palabras'
+            label: 'Buscar por palabras:'
             description: ''
             use_operator: false
             operator: title_op
@@ -1137,51 +1140,6 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: string
-        field_tags_target_id:
-          id: field_tags_target_id
-          table: node__field_tags
-          field: field_tags_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: or
-          value: {  }
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_tags_target_id_op
-            label: 'Categorias:'
-            description: ''
-            use_operator: false
-            operator: field_tags_target_id_op
-            identifier: field_tags_target_id
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          type: textfield
-          limit: true
-          vid: tags
-          hierarchy: false
-          error_message: true
-          plugin_id: taxonomy_index_tid
         created:
           id: created
           table: node_field_data
@@ -1233,6 +1191,57 @@ display:
           type: textfield
           limit: true
           vid: tags_of_news
+          hierarchy: false
+          error_message: true
+        field_tags_target_id:
+          id: field_tags_target_id
+          table: node__field_tags
+          field: field_tags_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: null
+            max: null
+            value: null
+            type: 0
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_tags_target_id_op
+            label: 'Categorias:'
+            description: ''
+            use_operator: false
+            operator: field_tags_target_id_op
+            identifier: field_tags_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: created
+          plugin_id: taxonomy_index_tid
+          reduce_duplicates: false
+          type: textfield
+          limit: true
+          vid: tags
           hierarchy: false
           error_message: true
         langcode:
@@ -1331,7 +1340,7 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: project
+            image_style: noticias_videos_medios
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -1348,39 +1357,54 @@ display:
           id: title
           table: node_field_data
           field: title
-          entity_type: node
-          entity_field: title
-          label: ''
-          alter:
-            alter_text: false
-            make_link: false
-            absolute: false
-            trim: false
-            word_boundary: false
-            ellipsis: false
-            strip_tags: false
-            html: false
-          hide_empty: false
-          empty_zero: false
-          settings:
-            link_to_entity: true
-          plugin_id: field
           relationship: none
           group_type: group
           admin_label: ''
+          label: ''
           exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: false
+            ellipsis: false
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
           element_type: ''
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_label_colon: false
+          element_wrapper_type: h3
+          element_wrapper_class: 'title-one title-two'
           element_default_classes: true
           empty: ''
+          hide_empty: false
+          empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
           type: string
+          settings:
+            link_to_entity: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -1391,6 +1415,9 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          entity_type: node
+          entity_field: title
+          plugin_id: field
         created:
           id: created
           table: node_field_data
@@ -1484,7 +1511,7 @@ display:
             suffix: ''
             target: ''
             nl2br: false
-            max_length: 132
+            max_length: 120
             word_boundary: true
             ellipsis: true
             more_link: false
@@ -1509,7 +1536,7 @@ display:
           click_sort_column: summary
           type: text_summary_or_trimmed
           settings:
-            trim_length: 135
+            trim_length: 120
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -1584,73 +1611,6 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        created_1:
-          id: created_1
-          table: node_field_data
-          field: created
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: timestamp
-          settings:
-            date_format: html_date
-            custom_date_format: 'CCYY-MM-DD HH:MM:SS '
-            timezone: ''
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          entity_type: node
-          entity_field: created
-          plugin_id: field
       header:
         area:
           id: area
@@ -1662,7 +1622,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: "<div class=\"text-center\">\r\n<h2>noticias</h2>\r\n\r\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley\r\n</div>"
+            value: "<div class=\"text-center\">\r\n<h2>Noticias</h2>\r\n\r\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley\r\n</div>\r\n<h3 id=\"titulo-busqueda\">Búsqueda</h3>"
             format: full_html
           plugin_id: text
       use_ajax: true

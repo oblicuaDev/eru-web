@@ -32,13 +32,18 @@ third_party_settings:
         - field_blocks
         - field_tags
       sidebar:
-        - field_fecha_de_publicacion
+        - 'dynamic_token_field:node-created'
         - addtoany
         - links
       contentmain:
         - body
         - field_attach_file
     fields:
+      'dynamic_token_field:node-created':
+        plugin_id: 'dynamic_token_field:node-created'
+        weight: 0
+        label: hidden
+        formatter: default
       node_title:
         plugin_id: node_title
         weight: 0

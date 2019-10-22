@@ -152,7 +152,7 @@ content:
     weight: 23
     settings: {  }
     third_party_settings: {  }
-    type: options_buttons
+    type: entity_reference_autocomplete
     region: content
   field_links_of_interest:
     weight: 20
@@ -239,10 +239,10 @@ content:
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 0
+    weight: 1
     region: content
     settings:
-      size: 60
+      size: 180
       placeholder: ''
     third_party_settings: {  }
   translation:

@@ -1,18 +1,18 @@
-uuid: f4c38499-0484-41e9-80cd-e32fccfd1ecb
+uuid: 9ba4b350-60c0-45b2-a2b7-4cb12cc6b373
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_general_data
+    - field.storage.node.field_slider
     - node.type.project
-    - paragraphs.paragraphs_type.general_data_
+    - paragraphs.paragraphs_type.slideshow
   module:
     - entity_reference_revisions
-id: node.project.field_general_data
-field_name: field_general_data
+id: node.project.field_slider
+field_name: field_slider
 entity_type: node
 bundle: project
-label: 'Datos Generales'
+label: 'Galeria de Fotos'
 description: ''
 required: false
 translatable: true
@@ -23,17 +23,14 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      general_data_: general_data_
+      slideshow: slideshow
     target_bundles_drag_drop:
-      general_data_:
-        enabled: true
-        weight: 6
       slides:
-        weight: 7
+        weight: 3
         enabled: false
       slideshow:
-        weight: 8
-        enabled: false
+        enabled: true
+        weight: 4
       data:
         weight: 9
         enabled: false
@@ -42,6 +39,9 @@ settings:
         enabled: false
       gallery:
         weight: 11
+        enabled: false
+      general_data_:
+        weight: 12
         enabled: false
       links:
         weight: 13

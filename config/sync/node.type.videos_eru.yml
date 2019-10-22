@@ -9,9 +9,9 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: 'Videos Eru'
+name: Videos
 type: videos_eru
-description: 'Videos Eru of you tube '
+description: 'Subir contenido de videos embebidos desde la cuenta oficial de YouTube @erubogota'
 help: ''
 new_revision: true
 preview_mode: 1

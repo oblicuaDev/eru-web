@@ -12,7 +12,7 @@ id: paragraph.general_data_.field_general_data
 field_name: field_general_data
 entity_type: paragraph
 bundle: general_data_
-label: 'Data General'
+label: 'Datos Generales'
 description: ''
 required: false
 translatable: false
@@ -40,7 +40,13 @@ settings:
       links:
         weight: 9
         enabled: false
+      galleries:
+        weight: 10
+        enabled: false
       links_of_interest:
         weight: 10
+        enabled: false
+      gallery:
+        weight: 11
         enabled: false
 field_type: entity_reference_revisions

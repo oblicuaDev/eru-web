@@ -6,7 +6,6 @@ dependencies:
     - field.storage.node.field_tags
     - node.type.news
     - taxonomy.vocabulary.tags
-    - taxonomy.vocabulary.tags_of_news
 id: node.news.field_tags
 field_name: field_tags
 entity_type: node
@@ -22,7 +21,6 @@ settings:
   handler_settings:
     target_bundles:
       tags: tags
-      tags_of_news: tags_of_news
     sort:
       field: name
       direction: asc

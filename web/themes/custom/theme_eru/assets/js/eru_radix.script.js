@@ -17855,9 +17855,15 @@ __webpack_require__.r(__webpack_exports__);
       jQuery('.display-none-controllers .carousel').removeClass('carousel');
     }
   };
-  Drupal.behaviors.helloWorld = {
+  Drupal.behaviors.iconLists = {
     attach: function attach(context) {
-      console.log('Hello World example of behaviors');
+      jQuery('.news ul li').prepend("<i class='icon-lists'></i>");
+      jQuery('.project-content ul li').prepend("<i class='icon-lists'></i>");
+    }
+  };
+  Drupal.behaviors.heightVideo = {
+    attach: function attach(context) {
+      jQuery('.video-home iframe').height(300);
     }
   };
 })(jQuery, Drupal);

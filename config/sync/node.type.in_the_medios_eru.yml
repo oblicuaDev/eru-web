@@ -9,9 +9,9 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: 'The media Eru'
+name: 'ERU en los Medios'
 type: in_the_medios_eru
-description: 'The media Eru share post  '
+description: 'Noticias sobre la ERU en otros medios de comunicación'
 help: ''
 new_revision: true
 preview_mode: 1

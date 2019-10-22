@@ -6,6 +6,7 @@ dependencies:
     - field.field.media.video.field_media_video_file
     - media.type.video
   module:
+    - ds
     - field_formatter_class
     - file
 _core:
@@ -22,14 +23,21 @@ content:
     settings:
       controls: true
       multiple_file_display_type: sources
-      width: 800
-      height: 400
+      width: 1920
+      height: 950
       autoplay: false
       loop: false
       muted: false
     third_party_settings:
       field_formatter_class:
         class: ''
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     region: content
 hidden:
   addtoany: true
