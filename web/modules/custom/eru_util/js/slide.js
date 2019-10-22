@@ -9,37 +9,39 @@
 
   Drupal.behaviors.paragraphSlideshow = {
     attach: function (context, settings) {
+      console.log('entrols');
+
       window.onload = function () {
-        $('.carousel').carousel('dispose');
-        $('.carousel').carousel({
+        jQuery('.carousel').carousel('dispose');
+        jQuery('.carousel').carousel({
           interval: 5000,
           keyboard: true,
           touch: true,
           pause: 'false',
           ride: false,
         });
-        $('.carousel').carousel('pause');
+        jQuery('.carousel').carousel('pause');
       };
 
-      $('#playButton').click(function () {
-        $('.carousel').carousel('cycle');
+      jQuery('#playButton').click(function () {
+        jQuery('.carousel').carousel('cycle');
       });
 
-      $('#pauseButton').click(function () {
-        $('.carousel').carousel('pause');
+      jQuery('#pauseButton').click(function () {
+        jQuery('.carousel').carousel('pause');
       });
 
-      $('.carousel-control-prev').click(function () {
-        $('.carousel').carousel('prev');
+      jQuery('.carousel-control-prev').click(function () {
+        jQuery('.carousel').carousel('prev');
       });
 
-      $('.carousel-control-next').click(function () {
-        $('.carousel').carousel('next');
+      jQuery('.carousel-control-next').click(function () {
+        jQuery('.carousel').carousel('next');
       });
 
       //Remueve la funcionalidad de slider en las vista news
-      //$('.display-none-controllers .carousel').carousel('dispose');
-      $('.display-none-controllers .carousel').removeClass('carousel');
+      //jQuery('.display-none-controllers .carousel').carousel('dispose');
+      jQuery('.display-none-controllers .carousel').removeClass('carousel');
 
     }
   };

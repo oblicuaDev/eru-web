@@ -9,6 +9,8 @@ dependencies:
     - field.field.node.project.field_description
     - field.field.node.project.field_externa
     - field.field.node.project.field_external_link
+    - field.field.node.project.field_galeria_de_videos
+    - field.field.node.project.field_galleria
     - field.field.node.project.field_general_data
     - field.field.node.project.field_image
     - field.field.node.project.field_image_evento_hover
@@ -16,17 +18,14 @@ dependencies:
     - field.field.node.project.field_labels
     - field.field.node.project.field_links_of_interest
     - field.field.node.project.field_location
-    - field.field.node.project.field_media_solo
     - field.field.node.project.field_regulatory_framework
     - field.field.node.project.field_scope_of_project
-    - field.field.node.project.field_slider
     - field.field.node.project.field_status_of_project
     - field.field.node.project.field_type_of_project
     - node.type.project
   module:
     - entity_class_formatter
     - entity_reference_revisions
-    - field_formatter_class
     - image
     - link
     - text
@@ -88,6 +87,24 @@ content:
       format_custom_true: ''
     third_party_settings: {  }
     type: boolean
+    region: content
+  field_galeria_de_videos:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_galleria:
+    type: entity_reference_revisions_entity_view
+    weight: 21
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
     region: content
   field_general_data:
     type: entity_reference_revisions_entity_view
@@ -156,17 +173,6 @@ content:
     third_party_settings: {  }
     type: string
     region: content
-  field_media_solo:
-    type: entity_reference_entity_view
-    weight: 1
-    label: hidden
-    settings:
-      view_mode: full
-      link: false
-    third_party_settings:
-      field_formatter_class:
-        class: ''
-    region: content
   field_regulatory_framework:
     weight: 17
     label: above
@@ -180,15 +186,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: text_default
-    region: content
-  field_slider:
-    weight: 12
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    type: entity_reference_revisions_entity_view
     region: content
   field_status_of_project:
     weight: 15

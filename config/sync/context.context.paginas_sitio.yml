@@ -51,22 +51,6 @@ reactions:
         unique: 0
         context_id: paginas_sitio
         uuid: 649ff948-1872-4bcd-9f83-ed6988239d7d
-      267607ac-6865-4a76-97db-b56eeefad023:
-        id: 'block_content:6c3f4fcd-5720-49d0-a0ec-31598138d5ed'
-        label: 'Datos de Contacto'
-        provider: block_content
-        label_display: visible
-        status: true
-        info: ''
-        view_mode: full
-        region: footer
-        weight: '3'
-        context_mapping: {  }
-        theme: theme_eru
-        css_class: 'col-md-4 col-lg-4 col-sm-12 contact'
-        unique: 0
-        context_id: paginas_sitio
-        uuid: 267607ac-6865-4a76-97db-b56eeefad023
       6ff1801c-7108-44dd-9cf0-51238606d5c2:
         id: 'system_menu_block:social-media'
         label: 'Redes Sociales Footer'
@@ -179,6 +163,22 @@ reactions:
         unique: 0
         context_id: paginas_sitio
         uuid: 3fbb4dce-3d68-4ab9-821e-1046277d3489
+      b0e5db6d-5374-4d5b-b65f-42549ea43955:
+        id: 'block_content:6c3f4fcd-5720-49d0-a0ec-31598138d5ed'
+        label: 'Datos de Contacto'
+        provider: block_content
+        label_display: visible
+        status: true
+        info: ''
+        view_mode: full
+        region: footer
+        weight: '0'
+        context_mapping: {  }
+        theme: theme_eru
+        css_class: ''
+        unique: 0
+        context_id: paginas_sitio
+        uuid: b0e5db6d-5374-4d5b-b65f-42549ea43955
     id: blocks
     saved: false
     uuid: b9aa694d-6966-4806-aaec-1b88e34faeeb

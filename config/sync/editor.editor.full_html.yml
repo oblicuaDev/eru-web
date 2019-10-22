@@ -64,10 +64,12 @@ settings:
             - ShowBlocks
             - Source
   plugins:
-    language:
-      language_list: un
     stylescombo:
       styles: 'li.span.icon|Alinear a la izquierda'
+    language:
+      language_list: un
+    customconfig:
+      ckeditor_custom_config: ''
 image_upload:
   status: true
   scheme: public

@@ -38,21 +38,21 @@
 
   {% if page.header %}
       <header class="page__header mb-3">
-        {% if is_front %}  
+        {% if is_front %}
           <div class="container-fluid px-0">
             {{ page.header }}
-          </div> 
+          </div>
         {% else %}
           <div class="container">
             {{ page.header }}
           </div>
         {% endif %}
-      </header>    
+      </header>
     {% endif %}
-    
-  <main title="Contenido principal">  
 
-    {% if page.content %}      
+  <main title="Contenido principal">
+
+    {% if page.content %}
       <div class="page__content">
         <div class="container">
           {{ page.content }}
@@ -62,7 +62,7 @@
   </main>
 
   {% if page.footer %}
-    <footer class="page__footer">
+    <footer class="page__footer" {{ attributes }}>
       <div class="container">
         <div class="d-flex">
           {{ page.footer }}
@@ -72,7 +72,7 @@
   {% endif %}
 
   {% if page.footer_light %}
-    <footer class="page__footer_2">
+    <footer class="page__footer_2" {{ attributes }}>
       <div class="container">
         <div class="d-flex justify-content-md-between align-items-md-center">
           {{ page.footer_light }}
@@ -82,7 +82,7 @@
   {% endif %}
 
   {% if page.footer_black %}
-    <footer class="page__footer_3">
+    <footer class="page__footer_3"{{ attributes }}>
       <div class="container">
         <div class="d-flex justify-content-md-between align-items-md-center">
           {{ page.footer_black }}

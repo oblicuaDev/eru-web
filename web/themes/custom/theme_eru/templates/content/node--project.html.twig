@@ -14,13 +14,15 @@
   node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
 ]
 %}
+{# {{ kint(content|keys)}} #}
 <article{{attributes.addClass(classes)}}>
   {% block content %}
-    {{ title_prefix }}
+    {# {{ title_prefix }}
     {{ title_suffix }}
     {{ content.field_banner_video}}
     {{ content.field_test_video_}}
-    {{ content.field_media_solo}}
+    {{ content.field_media_solo}} #}
+    {{ content.field_galeria_de_videos}}
     {{ label }}
     {{ content.body}}
     <h2 class="text-center">{{ label }}</h2>
@@ -48,7 +50,8 @@
       <div aria-labelledby="Description-tab" class="tab-pane fade show active" id="Description" role="tabpanel">
         <div class="row">
           <div class="col-8">
-            {{content.field_location}}
+            <div class="{{attributes.class.0}}"></div>
+            {{ content.field_location}}
             {{ content.field_description }}
           </div>
           <div class="col-4">
@@ -68,7 +71,7 @@
         </div>
       </div>
       <div aria-labelledby="photos-tab" class="tab-pane fade" id="photos" role="tabpanel">
-        {{ content.field_slider }}
+        {{ content.field_galleria }}
       </div>
       <div aria-labelledby="scope-tab" class="tab-pane fade" id="scope" role="tabpanel">
         <div class="row">

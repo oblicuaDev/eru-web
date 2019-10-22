@@ -5,14 +5,12 @@ dependencies:
   config:
     - field.storage.node.body
     - field.storage.node.field_cover_img
-    - field.storage.node.field_slider
     - field.storage.node.field_tags
     - image.style.project
     - image.style.thumbnail
     - node.type.news
     - taxonomy.vocabulary.tags
   module:
-    - entity_reference_revisions
     - image
     - node
     - taxonomy
@@ -970,69 +968,6 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: field
-        field_slider:
-          id: field_slider
-          table: node__field_slider
-          field: field_slider
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: display-none-controllers
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_revisions_entity_view
-          settings:
-            view_mode: default
-          group_column: ''
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
     cache_metadata:
       max-age: -1
       contexts:
@@ -1042,8 +977,7 @@ display:
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:field.storage.node.field_slider'
+      tags: {  }
   page_1:
     display_plugin: page
     id: page_1
@@ -1257,10 +1191,10 @@ display:
           admin_label: ''
           operator: '='
           value:
-            min: ''
-            max: ''
-            value: ''
-            type: date
+            min: null
+            max: null
+            value: null
+            type: 0
           group: 1
           exposed: true
           expose:
@@ -1294,14 +1228,13 @@ display:
             group_items: {  }
           entity_type: node
           entity_field: created
-          plugin_id: date
+          plugin_id: taxonomy_index_tid
           reduce_duplicates: false
           type: textfield
           limit: true
           vid: tags_of_news
           hierarchy: false
           error_message: true
-          plugin_id: taxonomy_index_tid
         langcode:
           id: langcode
           table: node_field_data

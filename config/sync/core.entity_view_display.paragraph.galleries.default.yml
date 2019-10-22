@@ -14,8 +14,8 @@ bundle: galleries
 mode: default
 content:
   field_img:
-    weight: 3
-    label: above
+    weight: 0
+    label: hidden
     settings:
       image_style: ''
       image_link: ''
@@ -24,7 +24,7 @@ content:
     region: content
   field_title:
     weight: 1
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }

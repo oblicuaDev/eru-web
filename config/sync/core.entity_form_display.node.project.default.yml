@@ -9,6 +9,8 @@ dependencies:
     - field.field.node.project.field_description
     - field.field.node.project.field_externa
     - field.field.node.project.field_external_link
+    - field.field.node.project.field_galeria_de_videos
+    - field.field.node.project.field_galleria
     - field.field.node.project.field_general_data
     - field.field.node.project.field_image
     - field.field.node.project.field_image_evento_hover
@@ -16,10 +18,8 @@ dependencies:
     - field.field.node.project.field_labels
     - field.field.node.project.field_links_of_interest
     - field.field.node.project.field_location
-    - field.field.node.project.field_media_solo
     - field.field.node.project.field_regulatory_framework
     - field.field.node.project.field_scope_of_project
-    - field.field.node.project.field_slider
     - field.field.node.project.field_status_of_project
     - field.field.node.project.field_type_of_project
     - image.style.thumbnail
@@ -37,7 +37,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 10
+    weight: 12
     settings:
       rows: 9
       summary_rows: 3
@@ -46,12 +46,12 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 3
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
   field_benefits_of_project:
-    weight: 23
+    weight: 25
     settings:
       rows: 5
       placeholder: ''
@@ -59,7 +59,7 @@ content:
     type: text_textarea
     region: content
   field_class_location:
-    weight: 13
+    weight: 15
     settings:
       size: 60
       placeholder: ''
@@ -67,7 +67,7 @@ content:
     type: string_textfield
     region: content
   field_description:
-    weight: 12
+    weight: 14
     settings:
       rows: 5
       placeholder: ''
@@ -75,22 +75,46 @@ content:
     type: text_textarea
     region: content
   field_externa:
-    weight: 25
+    weight: 27
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
   field_external_link:
-    weight: 17
+    weight: 19
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
+  field_galeria_de_videos:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_galleria:
+    type: entity_reference_paragraphs
+    weight: 21
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
   field_general_data:
     type: entity_reference_paragraphs
-    weight: 15
+    weight: 17
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -101,14 +125,6 @@ content:
     third_party_settings: {  }
     region: content
   field_image:
-    weight: 8
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-    type: image_image
-    region: content
-  field_image_evento_hover:
     weight: 9
     settings:
       progress_indicator: throbber
@@ -116,21 +132,15 @@ content:
     third_party_settings: {  }
     type: image_image
     region: content
-  field_infografia:
-    weight: 16
+  field_image_evento_hover:
+    weight: 10
     settings:
-      placeholder_url: ''
-      placeholder_title: ''
+      progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
-    type: link_default
+    type: image_image
     region: content
-  field_labels:
-    weight: 21
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
-    region: content
-  field_links_of_interest:
+  field_infografia:
     weight: 18
     settings:
       placeholder_url: ''
@@ -138,25 +148,30 @@ content:
     third_party_settings: {  }
     type: link_default
     region: content
+  field_labels:
+    weight: 23
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_links_of_interest:
+    weight: 20
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
   field_location:
-    weight: 14
+    weight: 16
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_media_solo:
-    weight: 1
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
   field_regulatory_framework:
-    weight: 24
+    weight: 26
     settings:
       rows: 5
       placeholder: ''
@@ -164,32 +179,6 @@ content:
     type: text_textarea
     region: content
   field_scope_of_project:
-    weight: 20
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textarea
-    region: content
-  field_slider:
-    weight: 19
-    settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      closed_mode: summary
-      autocollapse: none
-      closed_mode_threshold: 0
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: ''
-      features:
-        duplicate: duplicate
-        collapse_edit_all: collapse_edit_all
-    third_party_settings: {  }
-    type: paragraphs
-    region: content
-  field_status_of_project:
     weight: 22
     settings:
       rows: 5
@@ -197,8 +186,16 @@ content:
     third_party_settings: {  }
     type: text_textarea
     region: content
+  field_status_of_project:
+    weight: 24
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
   field_type_of_project:
-    weight: 11
+    weight: 13
     settings:
       match_operator: CONTAINS
       size: 60
@@ -215,7 +212,7 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 6
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -223,21 +220,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 4
+    weight: 5
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 7
+    weight: 8
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 5
+    weight: 6
     region: content
     third_party_settings: {  }
   title:
@@ -248,9 +245,14 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  translation:
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 2
+    weight: 3
     settings:
       match_operator: CONTAINS
       size: 60

@@ -49,26 +49,18 @@
 {% block paragraph %}
   <div{{attributes.addClass(classes)}}>
     {% block content %}
-   {#  <ol class="carousel-indicators">
-      {% for key, item in content.field_links %}
-        {% if key matches '/^\\d+$/' %}
-          <li data-target="#eru-slide2" data-slide-to="{{ key }}" {% if key == 0 %} class="active" {% endif %}></li>
-        {% endif %}
-      {% endfor %}</ol> #}
       <div class="container row">
-        {% for key, item in content.field_links %}
+        {% for key, item in content.field_general_data %}
           {% if key matches '/^\\d+$/' %}
-            {% set link_url = item['#paragraph'].field_link_link.0.url %}
             {% set class_icon = item['#paragraph'].field_class.value  %}
-            {% set title_link = item['#paragraph'].field_title_link.value %}
-            <div class="col-md-3 col-sm-6 link-item">
-              <a href="{{ link_url }}">
-                <span class="fas {{ class_icon }}"></span>
-                {{title_link }}
-               {#  {% if  item['#paragraph'].field_external_link_link.value == 1 %}
-                  <span class="sr-only">Abre en una nueva ventana</span>
-                {% endif %} #}
-              </a>
+            {% set title = item['#paragraph'].field_title.value %}
+            {% set  description = item['#paragraph'].field_description.value %}
+            <div class="col-md-3 col-sm-6 link-item dato-general">
+              <div class="{{ class_icon }}"></div>
+              <div class="dato-info">
+                <p class="cifra">{{title}}</p>
+                <p class="titulo-cifra">{{description}}</p>
+              </div>
             </div>
           {% endif %}
         {% endfor %}

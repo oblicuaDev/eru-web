@@ -1,20 +1,20 @@
-uuid: c5476b93-da02-4746-9765-d6cc857c52a3
-langcode: en
+uuid: a0a7fbf4-3e11-40cf-99fd-052e9ea7c162
+langcode: es
 status: true
 dependencies:
   module:
     - entity_reference_revisions
     - node
     - paragraphs
-id: node.field_slider
-field_name: field_slider
+id: node.field_galleria
+field_name: field_galleria
 entity_type: node
 type: entity_reference_revisions
 settings:
   target_type: paragraph
 module: entity_reference_revisions
 locked: false
-cardinality: 1
+cardinality: -1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false
