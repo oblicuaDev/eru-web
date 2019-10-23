@@ -1,21 +1,21 @@
-uuid: c777126d-c19e-4616-bd97-1542ac0cf480
-langcode: en
+uuid: ee0b39bd-d160-4309-91ba-5de5c7c2e57f
+langcode: es
 status: true
 dependencies:
   config:
-    - field.storage.node.field_blocks
-    - node.type.news
-    - paragraphs.paragraphs_type.gallery
+    - field.storage.node.field_videos
+    - node.type.project
+    - paragraphs.paragraphs_type.videos
   module:
     - entity_reference_revisions
-id: node.news.field_blocks
-field_name: field_blocks
+id: node.project.field_videos
+field_name: field_videos
 entity_type: node
-bundle: news
-label: Blocks
+bundle: project
+label: Videos
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
@@ -23,30 +23,36 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      gallery: gallery
+      videos: videos
     target_bundles_drag_drop:
-      gallery:
-        enabled: true
-        weight: -17
-      galleries:
-        weight: -16
-        enabled: false
       data:
-        weight: -15
+        weight: 11
+        enabled: false
+      galleries:
+        weight: 12
+        enabled: false
+      gallery:
+        weight: 13
         enabled: false
       general_data_:
-        weight: -14
+        weight: 14
         enabled: false
       links:
-        weight: -13
+        weight: 15
         enabled: false
       links_of_interest:
-        weight: -12
+        weight: 16
         enabled: false
       slides:
-        weight: -11
+        weight: 17
         enabled: false
       slideshow:
-        weight: -10
+        weight: 18
         enabled: false
+      video:
+        weight: 19
+        enabled: false
+      videos:
+        enabled: true
+        weight: 20
 field_type: entity_reference_revisions

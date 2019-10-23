@@ -1,18 +1,18 @@
-uuid: 9ba4b350-60c0-45b2-a2b7-4cb12cc6b373
-langcode: en
+uuid: 4d10d9fe-8e73-4e5e-964b-6f1966435b29
+langcode: es
 status: true
 dependencies:
   config:
-    - field.storage.node.field_slider
+    - field.storage.node.field_gallery
     - node.type.project
-    - paragraphs.paragraphs_type.slideshow
+    - paragraphs.paragraphs_type.gallery
   module:
     - entity_reference_revisions
-id: node.project.field_slider
-field_name: field_slider
+id: node.project.field_gallery
+field_name: field_gallery
 entity_type: node
 bundle: project
-label: 'Galeria de Fotos'
+label: Gallery
 description: ''
 required: false
 translatable: true
@@ -23,30 +23,36 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      slideshow: slideshow
+      gallery: gallery
     target_bundles_drag_drop:
-      slides:
-        weight: 3
-        enabled: false
-      slideshow:
-        enabled: true
-        weight: 4
       data:
-        weight: 9
-        enabled: false
-      galleries:
-        weight: 10
-        enabled: false
-      gallery:
         weight: 11
         enabled: false
-      general_data_:
+      galleries:
         weight: 12
         enabled: false
-      links:
+      gallery:
+        enabled: true
         weight: 13
+      general_data_:
+        weight: 14
+        enabled: false
+      links:
+        weight: 15
         enabled: false
       links_of_interest:
-        weight: 14
+        weight: 16
+        enabled: false
+      slides:
+        weight: 17
+        enabled: false
+      slideshow:
+        weight: 18
+        enabled: false
+      video:
+        weight: 19
+        enabled: false
+      videos:
+        weight: 20
         enabled: false
 field_type: entity_reference_revisions
