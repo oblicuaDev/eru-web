@@ -1,4 +1,4 @@
-uuid: a0a7fbf4-3e11-40cf-99fd-052e9ea7c162
+uuid: aa3337f2-bee3-4e04-9501-dff06d9bf24e
 langcode: es
 status: true
 dependencies:
@@ -6,15 +6,15 @@ dependencies:
     - entity_reference_revisions
     - node
     - paragraphs
-id: node.field_galleria
-field_name: field_galleria
+id: node.field_videos
+field_name: field_videos
 entity_type: node
 type: entity_reference_revisions
 settings:
   target_type: paragraph
 module: entity_reference_revisions
 locked: false
-cardinality: -1
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

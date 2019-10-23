@@ -6,7 +6,9 @@ dependencies:
     - field.field.paragraph.videos.field_videos
     - paragraphs.paragraphs_type.videos
   module:
+    - ds
     - entity_reference_revisions
+    - field_formatter_class
 id: paragraph.videos.default
 targetEntityType: paragraph
 bundle: videos
@@ -15,10 +17,20 @@ content:
   field_videos:
     type: entity_reference_revisions_entity_view
     weight: 0
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: ''
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ds_limit: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     region: content
 hidden: {  }

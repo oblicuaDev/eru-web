@@ -49,4 +49,10 @@ settings:
       slideshow:
         weight: -10
         enabled: false
+      video:
+        weight: 19
+        enabled: false
+      videos:
+        weight: 20
+        enabled: false
 field_type: entity_reference_revisions

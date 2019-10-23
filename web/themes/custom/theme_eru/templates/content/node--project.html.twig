@@ -22,13 +22,12 @@
     {{ content.field_banner_video}}
     {{ content.field_test_video_}}
     {{ content.field_media_solo}} #}
-    {{ content.field_galeria_de_videos}}
-    {{ label }}
+    {# {{ label }} #}
+    {{ content.field_videos}}
     {{ content.body}}
+    {# {{ kint(content|keys)} #}
     <div class="container">
-
       <h2 class="text-center">{{ label }}</h2>
-
       <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item">
           <a aria-controls="description" aria-selected="true" class="nav-link active" data-toggle="tab" href="#description" id="description-tab" role="tab">Descripción</a>
@@ -74,7 +73,7 @@
         </div>
       </div>
       <div aria-labelledby="photos-tab" class="tab-pane fade" id="photos" role="tabpanel">
-        {{ content.field_galleria }}
+        {{ content.field_gallery }}
       </div>
       <div aria-labelledby="scope-tab" class="tab-pane fade project-content" id="scope" role="tabpanel">
         <div class="row">

@@ -12,7 +12,6 @@ style:
     - core/jquery
     - core/drupal
     - radix/bootstrap
-    - core/drupalSettings
 poppins:
   css:
     theme:
