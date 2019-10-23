@@ -61,19 +61,24 @@
             {% set link_url = item['#paragraph'].field_link_link.0.url %}
             {% set class_icon = item['#paragraph'].field_class.value  %}
             {% set title_link = item['#paragraph'].field_title_link.value %}
-            <div class="col-md-3 col-sm-6 link-item">
-              <a href="{{ link_url }}">
-                <span class="fas {{ class_icon }}"></span>
-                {{title_link }}
-               {#  {% if  item['#paragraph'].field_external_link_link.value == 1 %}
-                  <span class="sr-only">Abre en una nueva ventana</span>
-                {% endif %} #}
-              </a>
-            </div>
+            {% set  description_link = item['#paragraph'].field_text.0.value %}
+              <div class="col-md-3 col-sm-6 link-item">
+                <i class="fas {{ class_icon }}"></i>
+                <a href="{{ link_url }}">
+                  <div class="title">
+                    {{title_link }}
+                    {% if  item['#paragraph'].field_external_link_link.value == 1 %}
+                      <span class="sr-only">Abre en una nueva ventana</span>
+                    {% endif %}
+                  </div>
+                </a>
+                <div class="description">
+                  {{description_link|raw}}
+                </div>                
+              </div>
           {% endif %}
         {% endfor %}
       </div>
     {% endblock %}
   </div>
 {% endblock paragraph %}
-
