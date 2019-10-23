@@ -17820,41 +17820,6 @@ __webpack_require__.r(__webpack_exports__);
       jQuery('#views-exposed-form-search-page-1').addClass('col-4 float-left').parents('.page-search').find('.views-view-grid.cols-8').addClass('col-8 float-left');
     }
   };
-  Drupal.behaviors.paragraphSlideshow2 = {
-    attach: function attach(context, settings) {
-      console.log('entrols');
-
-      window.onload = function () {
-        console.log('onload');
-        jQuery('.carousel').carousel('dispose');
-        jQuery('.carousel').carousel({
-          interval: 5000,
-          keyboard: true,
-          touch: true,
-          pause: 'false',
-          ride: false
-        });
-        jQuery('.carousel').carousel('pause');
-      };
-
-      jQuery('#playButton').click(function () {
-        jQuery('.carousel').carousel('cycle');
-      });
-      jQuery('#pauseButton').click(function () {
-        jQuery('.carousel').carousel('pause');
-      });
-      jQuery('.carousel-control-prev').click(function () {
-        jQuery('.carousel').carousel('prev');
-        console.log('click');
-      });
-      jQuery('.carousel-control-next').click(function () {
-        jQuery('.carousel').carousel('next');
-      }); //Remueve la funcionalidad de slider en las vista news
-      //jQuery('.display-none-controllers .carousel').carousel('dispose');
-
-      jQuery('.display-none-controllers .carousel').removeClass('carousel');
-    }
-  };
   Drupal.behaviors.iconLists = {
     attach: function attach(context) {
       jQuery('.news ul li').prepend("<i class='icon-lists'></i>");
