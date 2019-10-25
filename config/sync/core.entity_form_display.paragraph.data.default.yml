@@ -13,7 +13,7 @@ bundle: data
 mode: default
 content:
   field_class:
-    weight: 2
+    weight: 0
     settings:
       size: 60
       placeholder: ''
@@ -29,7 +29,7 @@ content:
     type: string_textfield
     region: content
   field_title:
-    weight: 0
+    weight: 2
     settings:
       size: 60
       placeholder: ''

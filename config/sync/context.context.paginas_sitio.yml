@@ -172,7 +172,7 @@ reactions:
         info: ''
         view_mode: full
         region: footer
-        weight: '0'
+        weight: '3'
         context_mapping: {  }
         theme: theme_eru
         css_class: ''

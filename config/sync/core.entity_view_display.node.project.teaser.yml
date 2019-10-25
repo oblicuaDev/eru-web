@@ -63,4 +63,5 @@ hidden:
   field_scope_of_project: true
   field_status_of_project: true
   field_type_of_project: true
+  field_videos: true
   langcode: true
