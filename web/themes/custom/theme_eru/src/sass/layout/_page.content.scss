@@ -161,3 +161,34 @@
 		margin: 0 20px;
 	}
 }
+
+/** Estilos videos de proyectos**/
+.project__field-videos video{
+	height: 800px !important;
+}
+.container-project {
+	.dato-general {
+		i{padding:32px; background-repeat: no-repeat; background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/proyectos-iconos.png),transparent;}
+		.area-icono{			
+			background-position: -66px 0;			
+		}
+		.inversion-icono{
+			background-position: -136px 0;
+		}
+		.industrias-icono{
+			background-position: -206px 0;
+		}
+		.comercio-icono{
+			background-position: -276px 0;
+		}
+		.educacion-icono{
+			background-position: -346px 0;
+		}
+		.titulo-cifra { font-size: 0.9em; }
+		.cifra { font-weight: 600; }
+	}
+}
+
+/*.container-project h3{
+	margin-bottom: 1.5em;
+}*/

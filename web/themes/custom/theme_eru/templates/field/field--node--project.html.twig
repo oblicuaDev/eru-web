@@ -34,7 +34,7 @@
   {% endif %}
 {% else %}
   <div{{attributes.addClass(classes)}}>
-    <h3{{title_attributes.addClass(title_classes)}}>
+    <h3>
       {{ label }}
       {% if label_display == 'inline' %}
         <span class="field__label__suffix mr-1">:</span>
@@ -44,6 +44,7 @@
       <div class="field__items test">
       {% endif %}
       {% for item in items %}
+        <i class="{{ class_icon }}"></i>
         <p{{item.attributes.addClass('field__item')}}>{{ item.content }}</p>
       {% endfor %}
       {% if multiple %}

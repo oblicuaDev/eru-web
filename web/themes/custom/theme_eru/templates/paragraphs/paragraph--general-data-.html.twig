@@ -55,11 +55,11 @@
             {% set class_icon = item['#paragraph'].field_class.value  %}
             {% set title = item['#paragraph'].field_title.value %}
             {% set  description = item['#paragraph'].field_description.value %}
-            <div class="col-md-3 col-sm-6 link-item dato-general">
-              <div class="{{ class_icon }}"></div>
+            <div class="dato-general d-flex flex-direction-column align-items-center mb-4">
+              <i class="{{ class_icon }}"></i>
               <div class="dato-info">
-                <p class="cifra">{{title}}</p>
-                <p class="titulo-cifra">{{description}}</p>
+                <div class="cifra"><span>{{description}}</span></div>
+                <div class="titulo-cifra"><span>{{title}}</span></div>
               </div>
             </div>
           {% endif %}
