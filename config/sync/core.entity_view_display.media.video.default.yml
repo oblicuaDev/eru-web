@@ -23,8 +23,8 @@ content:
     settings:
       controls: true
       multiple_file_display_type: sources
-      width: 1920
-      height: 950
+      width: 1000
+      height: 800
       autoplay: false
       loop: false
       muted: false

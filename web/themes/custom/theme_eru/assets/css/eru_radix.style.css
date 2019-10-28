@@ -2064,6 +2064,11 @@ pre code {
   opacity: 1;
 }
 
+.form-control::-moz-placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+
 .form-control:-ms-input-placeholder {
   color: #6c757d;
   opacity: 1;
@@ -5000,8 +5005,10 @@ input[type=button].btn-block {
 @media (min-width: 576px) {
   .card-columns {
     -webkit-column-count: 3;
+       -moz-column-count: 3;
             column-count: 3;
     -webkit-column-gap: 1.25rem;
+       -moz-column-gap: 1.25rem;
             column-gap: 1.25rem;
     orphans: 1;
     widows: 1;
@@ -17396,6 +17403,50 @@ form {
 .video_data .item_data {
   margin: 0 20px;
 }
+
+/** Estilos videos de proyectos**/
+
+.project__field-videos video {
+  height: 800px !important;
+}
+
+.container-project .dato-general i {
+  padding: 32px;
+  background-repeat: no-repeat;
+  background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/proyectos-iconos.png), transparent;
+}
+
+.container-project .dato-general .area-icono {
+  background-position: -66px 0;
+}
+
+.container-project .dato-general .inversion-icono {
+  background-position: -136px 0;
+}
+
+.container-project .dato-general .industrias-icono {
+  background-position: -206px 0;
+}
+
+.container-project .dato-general .comercio-icono {
+  background-position: -276px 0;
+}
+
+.container-project .dato-general .educacion-icono {
+  background-position: -346px 0;
+}
+
+.container-project .dato-general .titulo-cifra {
+  font-size: 0.9em;
+}
+
+.container-project .dato-general .cifra {
+  font-weight: 600;
+}
+
+/*.container-project h3{
+	margin-bottom: 1.5em;
+}*/
 
 footer {
   color: #fff;
