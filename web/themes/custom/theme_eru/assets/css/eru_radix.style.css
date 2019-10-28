@@ -16922,6 +16922,23 @@ p {
   font-size: 1.1em;
 }
 
+.btn-secondary {
+  background-color: #0a202e !important;
+  border-color: #0a202e !important;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.btn-secondary:hover {
+  background-color: #0855B6 !important;
+  border-color: #0855B6 !important;
+  color: #fff !important;
+}
+
+.btn-secondary a {
+  color: #fff;
+}
+
 .news__body a {
   border-bottom: 1px solid #0A6EC8;
 }
@@ -17410,6 +17427,20 @@ form {
   height: 800px !important;
 }
 
+.project__field-infografia {
+  display: block;
+  margin: 40px;
+}
+
+.container-project .dato-general {
+  display: flex;
+  align-items: center;
+}
+
+.container-project .dato-general .cifra {
+  font-weight: 600;
+}
+
 .container-project .dato-general i {
   padding: 32px;
   background-repeat: no-repeat;
@@ -17438,10 +17469,6 @@ form {
 
 .container-project .dato-general .titulo-cifra {
   font-size: 0.9em;
-}
-
-.container-project .dato-general .cifra {
-  font-weight: 600;
 }
 
 /*.container-project h3{
@@ -17541,18 +17568,21 @@ footer h2::after {
 @import "fonts/fontawesome/scss/regular.scss";
 @import "fonts/fontawesome/scss/brands.scss"; */
 
-.news #eru-slide .carousel-caption {
+.news #eru-slide .carousel-caption,
+.container-project #eru-slide .carousel-caption {
   width: 100%;
   font-size: 1.3em;
   margin: 20px 0;
 }
 
-.news #eru-slide .controles {
+.news #eru-slide .controles,
+.container-project #eru-slide .controles {
   left: 10%;
   bottom: 9%;
 }
 
-.news .news__field-gallery .field__label {
+.news .news__field-gallery .field__label,
+.container-project .news__field-gallery .field__label {
   display: none;
 }
 

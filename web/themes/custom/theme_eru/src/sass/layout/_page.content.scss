@@ -166,8 +166,15 @@
 .project__field-videos video{
 	height: 800px !important;
 }
-.container-project {
-	.dato-general {
+.project__field-infografia {
+	display: block;
+	margin: 40px;
+}
+.container-project {	
+	.dato-general {	
+		display: flex;		
+		align-items: center;
+		.cifra { font-weight: 600; }
 		i{padding:32px; background-repeat: no-repeat; background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/proyectos-iconos.png),transparent;}
 		.area-icono{			
 			background-position: -66px 0;			
@@ -184,8 +191,7 @@
 		.educacion-icono{
 			background-position: -346px 0;
 		}
-		.titulo-cifra { font-size: 0.9em; }
-		.cifra { font-weight: 600; }
+		.titulo-cifra { font-size: 0.9em; }		
 	}
 }
 

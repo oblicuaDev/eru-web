@@ -47,9 +47,9 @@
   ]
 %}
 {% block paragraph %}
-  <div{{attributes.addClass(classes)}}>
+  <div{{ attributes.addClass(classes) }}>
     {% block content %}
-      <div id="eru-gallery" class="carousel slide" {#data-ride="carousel"#}>
+      <div id="eru-slide" class="carousel slide" {#data-ride="carousel"#}>
         <ol class="carousel-indicators">
           {% for key, item in content.field_galleries_img %}
             {% if key matches '/^\\d+$/' %}

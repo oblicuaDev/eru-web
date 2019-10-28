@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.field.node.project.body
     - field.field.node.project.field_benefits_of_project
-    - field.field.node.project.field_class_location
     - field.field.node.project.field_description
     - field.field.node.project.field_externa
     - field.field.node.project.field_external_link
@@ -57,14 +56,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
-    region: content
-  field_class_location:
-    weight: 14
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
     region: content
   field_description:
     weight: 13

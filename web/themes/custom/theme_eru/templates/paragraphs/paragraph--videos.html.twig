@@ -50,13 +50,15 @@
   <div{{attributes.addClass(classes)}}>
     {% block content %}
       <div id="eru-slide" class="carousel slide" {#data-ride="carousel"#}>
-        <ol class="carousel-indicators">
-          {% for key, item in content.field_videos %}
-            {% if key matches '/^\\d+$/' %}
-              <li data-target="#eru-slide" data-slide-to="{{ key }}" {% if key == 0 %} class="active" {% endif %}></li>
-            {% endif %}
-          {% endfor %}
-        </ol>
+        {% if is_front %}
+          <ol class="carousel-indicators">
+            {% for key, item in content.field_videos %}
+              {% if key matches '/^\\d+$/' %}
+                <li data-target="#eru-slide" data-slide-to="{{ key }}" {% if key == 0 %} class="active" {% endif %}></li>
+              {% endif %}
+            {% endfor %}
+          </ol>
+        {% endif %}
         <div class="carousel-inner">
           {% for key, item in content.field_videos %}
             {% if key matches '/^\\d+$/' %}
@@ -77,30 +79,32 @@
             {% endif %}
           {% endfor %}
           </div>
-          <div class="controles">
-            <a class="carousel-control-prev" role="button" {#data-slide="prev"#}>
-              <i class="fas fa-chevron-circle-left"></i>
-              <!--<span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
-              <span class="sr-only">Ir a la imagen Anterior</span>
-            </a>
-            <div id="carouselButtons">
-              <button id="playButton" type="button" class="btn btn-default btn-xs active">
-                <i class="far fa-play-circle"></i>
-                <span class="sr-only">Reproducir</span>
-              </button>
-              <button id="pauseButton" type="button" class="btn btn-default btn-xs">
-                <i class="fas fa-pause-circle"></i>
-                <span class="sr-only">Pausar</span>
-              </button>
+          {% if is_front %}
+            <div class="controles">
+              <a class="carousel-control-prev" role="button" {#data-slide="prev"#}>
+                <i class="fas fa-chevron-circle-left"></i>
+                <!--<span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+                <span class="sr-only">Ir a la imagen Anterior</span>
+              </a>
+              <div id="carouselButtons">
+                <button id="playButton" type="button" class="btn btn-default btn-xs active">
+                  <i class="far fa-play-circle"></i>
+                  <span class="sr-only">Reproducir</span>
+                </button>
+                <button id="pauseButton" type="button" class="btn btn-default btn-xs">
+                  <i class="fas fa-pause-circle"></i>
+                  <span class="sr-only">Pausar</span>
+                </button>
+              </div>
+              <a
+                class="carousel-control-next" role="button" {#data-slide="next"#}>
+                <!--<span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+                <i class="fas fa-chevron-circle-right"></i>
+                <span class="sr-only">Ir a la imagen siguiente</span>
+              </a>
             </div>
-            <a
-              class="carousel-control-next" role="button" {#data-slide="next"#}>
-              <!--<span class="carousel-control-next-icon" aria-hidden="true"></span>-->
-              <i class="fas fa-chevron-circle-right"></i>
-              <span class="sr-only">Ir a la imagen siguiente</span>
-            </a>
           </div>
-        </div>
+        {% endif %}
       {% endblock %}
     </div>
   {% endblock paragraph %}
