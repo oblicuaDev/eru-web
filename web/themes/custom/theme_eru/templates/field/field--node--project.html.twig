@@ -40,15 +40,12 @@
         <span class="field__label__suffix mr-1">:</span>
       {% endif %}
     </h3>
-    {% if multiple %}
-      <div class="field__items test">
+    {% if multiple %}    
       {% endif %}
-      {% for item in items %}
-        <i class="{{ class_icon }}"></i>
-        <p{{item.attributes.addClass('field__item')}}>{{ item.content }}</p>
+      {% for item in items %}       
+        <div {{item.attributes.addClass('field__item')}}>{{ item.content }}</div>
       {% endfor %}
-      {% if multiple %}
-      </div>
+      {% if multiple %}     
     {% endif %}
   </div>
 {% endif %}

@@ -6,7 +6,6 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.project.body
     - field.field.node.project.field_benefits_of_project
-    - field.field.node.project.field_class_location
     - field.field.node.project.field_description
     - field.field.node.project.field_externa
     - field.field.node.project.field_external_link
@@ -22,6 +21,7 @@ dependencies:
     - field.field.node.project.field_scope_of_project
     - field.field.node.project.field_status_of_project
     - field.field.node.project.field_type_of_project
+    - field.field.node.project.field_videos
     - node.type.project
   module:
     - text
@@ -47,7 +47,6 @@ content:
 hidden:
   addtoany: true
   field_benefits_of_project: true
-  field_class_location: true
   field_description: true
   field_externa: true
   field_external_link: true
