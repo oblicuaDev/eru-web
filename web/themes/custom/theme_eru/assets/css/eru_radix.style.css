@@ -17441,7 +17441,7 @@ tr:nth-child(even) {
 }
 
 .page__content .paragraph--type--links-of-interest .fa-one-class {
-  background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/ico-01.png), transparent;
+  background: url(/../../../assets/images/ico-01.png), transparent;
 }
 
 .page__content .paragraph--type--links-of-interest .fa-two-class {
