@@ -31,10 +31,45 @@
 		margin-left: 2em;
 	}	
 }
+.tag_alcance {
+    background: #EFEFEF;
+    padding: 0.35em;
+    display: inline-block;
+    white-space: nowrap;
+    margin: 0.4em;	
+    a{
+    	color: #3C3C3B;
+    	&:hover {
+    		text-decoration: none !important;
+    		color: #fff !important; 
+    	}
+    }
+    &:hover {
+    	background-color: #0A6EC8;
+    }
+}
 .tags{
 	display: flex;
 	justify-content: center;
 	margin-top: 1.5em;	
+}
+.link-proyecto {
+	display: flex;
+	border: 1px dashed #0A6EC8;
+	margin-bottom: 1em;	
+	&:hover {
+		background-color: $azul-oscuro !important;
+		color: #fff !important;
+		cursor: pointer;
+	}
+	a{
+		margin-left: 1.7em;
+		text-align: left !important;
+		&:hover {
+			text-decoration: none;
+			color: #fff !important;
+		}
+	}
 }
 a.a2a_button_facebook:hover .a2a_s_facebook{
 	fill: #fff !important;

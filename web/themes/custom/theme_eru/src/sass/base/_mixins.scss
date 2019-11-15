@@ -40,7 +40,7 @@
   		color: $colorIcoHover;
   	}
 }
-.menu-secundario .nav, .nav {
+.menu-secundario .nav {
 	.nav-item{
 		margin-right: 3rem;
 	}
@@ -88,6 +88,13 @@
 }
 .tag-ico{	
 	@include icono('fas', $fa-var-tag, $azul-oscuro, 5px, 1em, none, auto);	
+}
+.descargar-ico{	
+	@include icono('fas', $fa-var-download, $azul-oscuro, 5px, 2em, #085aa4, auto);	
+}
+.link-ico{		
+	@include icono('fas', $fa-var-external-link-alt, $azul-oscuro, 5px, 1em, #fff, auto);	
+	margin-top: 0.3em;
 }
 .icon-lists{	
 	@include icono('fas', $fa-var-check, $blue, 5px, 0.85em, none, -27px);	

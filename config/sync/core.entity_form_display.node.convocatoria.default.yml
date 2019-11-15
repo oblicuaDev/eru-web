@@ -1,23 +1,22 @@
-uuid: 299bf3b8-7764-4609-9f8c-a57700684ceb
-langcode: en
+uuid: 9ff690df-b5ca-4005-a723-1dbef29a4158
+langcode: es
 status: true
 dependencies:
   config:
-    - field.field.node.notification_eru_.body
-    - field.field.node.notification_eru_.field_expedition_date
-    - field.field.node.notification_eru_.field_file_download
-    - field.field.node.notification_eru_.field_project
-    - field.field.node.notification_eru_.field_url_of_pdf
-    - node.type.notification_eru_
+    - field.field.node.convocatoria.body
+    - field.field.node.convocatoria.field_expedition_date
+    - field.field.node.convocatoria.field_file_download
+    - field.field.node.convocatoria.field_project
+    - field.field.node.convocatoria.field_type_procurement
+    - node.type.convocatoria
   module:
     - datetime
     - file
-    - link
     - path
     - text
-id: node.notification_eru_.default
+id: node.convocatoria.default
 targetEntityType: node
-bundle: notification_eru_
+bundle: convocatoria
 mode: default
 content:
   body:
@@ -49,18 +48,16 @@ content:
     type: file_generic
     region: content
   field_project:
-    weight: 125
+    weight: 124
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
-  field_url_of_pdf:
-    weight: 124
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
+  field_type_procurement:
+    weight: 125
+    settings: {  }
     third_party_settings: {  }
-    type: link_default
+    type: options_select
     region: content
   langcode:
     type: language_select
@@ -103,11 +100,6 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
-  translation:
-    weight: 10
-    region: content
-    settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete

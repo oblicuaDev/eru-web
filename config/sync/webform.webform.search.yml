@@ -9,7 +9,7 @@ uid: 1
 template: false
 archive: false
 id: search
-title: search
+title: Búsqueda
 description: ''
 category: ''
 elements: null
@@ -17,7 +17,7 @@ css: ''
 javascript: ''
 settings:
   ajax: false
-  ajax_scroll_top: form
+  ajax_scroll_top: ''
   ajax_progress_type: ''
   ajax_effect: ''
   ajax_speed: null

@@ -1,0 +1,11 @@
+uuid: 18fa8855-a9a1-4aee-b6a3-ab0e9a5b8c77
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_contatacion
+id: taxonomy_term.tipo_de_contatacion
+target_entity_type_id: taxonomy_term
+target_bundle: tipo_de_contatacion
+default_langcode: site_default
+language_alterable: false

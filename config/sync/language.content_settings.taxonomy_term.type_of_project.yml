@@ -14,5 +14,5 @@ third_party_settings:
 id: taxonomy_term.type_of_project
 target_entity_type_id: taxonomy_term
 target_bundle: type_of_project
-default_langcode: site_default
+default_langcode: current_interface
 language_alterable: false

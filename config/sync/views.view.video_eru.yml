@@ -1001,7 +1001,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: "<h2 class=\"text-center\">Videos</h2>\r\n\r\n<p class=\"text-center\">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>\r\n<h3 id=\"titulo-busqueda\">Búsqueda</h3>"
+            value: "<h2 class=\"text-center\">Videos</h2>\r\n<h3 id=\"titulo-busqueda\">Búsqueda</h3>"
             format: full_html
           plugin_id: text
       use_ajax: true

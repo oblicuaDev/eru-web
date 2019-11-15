@@ -1,0 +1,8 @@
+uuid: f7592ce4-dc16-4bb3-ad1b-410b31c2ed01
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipo de Contatación'
+vid: tipo_de_contatacion
+description: 'Modalidad de contratación de las convocatorias de la ERU'
+weight: 0

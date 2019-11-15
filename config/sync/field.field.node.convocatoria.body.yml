@@ -1,16 +1,16 @@
-uuid: 716848d4-9a86-4843-9691-8e4004410100
-langcode: en
+uuid: 3982ef06-94a1-4b47-ba51-57bd09145dc3
+langcode: es
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.notification_eru_
+    - node.type.convocatoria
   module:
     - text
-id: node.notification_eru_.body
+id: node.convocatoria.body
 field_name: body
 entity_type: node
-bundle: notification_eru_
+bundle: convocatoria
 label: Descripción
 description: ''
 required: true
@@ -18,5 +18,5 @@ translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  display_summary: false
+  display_summary: true
 field_type: text_with_summary

@@ -28,7 +28,7 @@ conditions:
       node: '@node.node_route_context:node'
   request_path:
     id: request_path
-    pages: "/noticias\r\n/proyectos"
+    pages: "/noticias\r\n/proyectos\r\n/busqueda"
     negate: 0
     uuid: dcd7bc35-1ee4-4c3b-9dc0-578e2e15902f
     context_mapping: {  }
@@ -63,7 +63,7 @@ reactions:
         weight: '1'
         context_mapping: {  }
         theme: theme_eru
-        css_class: col-4
+        css_class: 'col-4 menu-secundario'
         unique: 0
         context_id: paginas_sitio
         uuid: 6ff1801c-7108-44dd-9cf0-51238606d5c2

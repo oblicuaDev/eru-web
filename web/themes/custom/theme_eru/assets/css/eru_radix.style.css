@@ -10517,6 +10517,8 @@ a.text-dark:focus {
 .fas,
 .breadcrumb-item + .breadcrumb-item::before,
 .icon-lists,
+.link-ico,
+.descargar-ico,
 .tag-ico,
 .site-map,
 .horario-ico,
@@ -10524,9 +10526,7 @@ a.text-dark:focus {
 .phone-ico,
 .address-ico,
 .menu-secundario .nav .opciones,
-.nav .opciones,
 .menu-secundario .nav .accesibilidad,
-.nav .accesibilidad,
 .far,
 .fal,
 .fad,
@@ -10546,6 +10546,8 @@ a.text-dark:focus {
 }
 
 .icon-lists,
+.link-ico,
+.descargar-ico,
 .tag-ico,
 .site-map,
 .youtube-ico,
@@ -10558,9 +10560,7 @@ a.text-dark:focus {
 .phone-ico,
 .address-ico,
 .menu-secundario .nav .opciones,
-.nav .opciones,
-.menu-secundario .nav .accesibilidad,
-.nav .accesibilidad {
+.menu-secundario .nav .accesibilidad {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -10665,14 +10665,16 @@ a.text-dark:focus {
 .fas.fa-pull-left,
 .breadcrumb-item + .fa-pull-left.breadcrumb-item::before,
 .fa-pull-left.icon-lists,
+.fa-pull-left.link-ico,
+.fa-pull-left.descargar-ico,
 .fa-pull-left.tag-ico,
 .fa-pull-left.site-map,
 .fa-pull-left.horario-ico,
 .fa-pull-left.mail-ico,
 .fa-pull-left.phone-ico,
 .fa-pull-left.address-ico,
-.nav .fa-pull-left.opciones,
-.nav .fa-pull-left.accesibilidad,
+.menu-secundario .nav .fa-pull-left.opciones,
+.menu-secundario .nav .fa-pull-left.accesibilidad,
 .far.fa-pull-left,
 .fal.fa-pull-left,
 .fab.fa-pull-left,
@@ -10688,14 +10690,16 @@ a.text-dark:focus {
 .fas.fa-pull-right,
 .breadcrumb-item + .fa-pull-right.breadcrumb-item::before,
 .fa-pull-right.icon-lists,
+.fa-pull-right.link-ico,
+.fa-pull-right.descargar-ico,
 .fa-pull-right.tag-ico,
 .fa-pull-right.site-map,
 .fa-pull-right.horario-ico,
 .fa-pull-right.mail-ico,
 .fa-pull-right.phone-ico,
 .fa-pull-right.address-ico,
-.nav .fa-pull-right.opciones,
-.nav .fa-pull-right.accesibilidad,
+.menu-secundario .nav .fa-pull-right.opciones,
+.menu-secundario .nav .fa-pull-right.accesibilidad,
 .far.fa-pull-right,
 .fal.fa-pull-right,
 .fab.fa-pull-right,
@@ -16418,6 +16422,8 @@ readers do not read off random characters that represent icons */
 .fas,
 .breadcrumb-item + .breadcrumb-item::before,
 .icon-lists,
+.link-ico,
+.descargar-ico,
 .tag-ico,
 .site-map,
 .horario-ico,
@@ -16425,9 +16431,7 @@ readers do not read off random characters that represent icons */
 .phone-ico,
 .address-ico,
 .menu-secundario .nav .opciones,
-.nav .opciones,
-.menu-secundario .nav .accesibilidad,
-.nav .accesibilidad {
+.menu-secundario .nav .accesibilidad {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
 }
@@ -16476,13 +16480,11 @@ readers do not read off random characters that represent icons */
   	}
 }*/
 
-.menu-secundario .nav .nav-item,
-.nav .nav-item {
+.menu-secundario .nav .nav-item {
   margin-right: 3rem;
 }
 
-.menu-secundario .nav .accesibilidad,
-.nav .accesibilidad {
+.menu-secundario .nav .accesibilidad {
   border: 0;
   clip: rect(0, 0, 0, 0);
   overflow: hidden;
@@ -16490,8 +16492,7 @@ readers do not read off random characters that represent icons */
   width: 0;
 }
 
-.menu-secundario .nav .accesibilidad::before,
-.nav .accesibilidad::before {
+.menu-secundario .nav .accesibilidad::before {
   content: "\F29A";
   color: #FFF;
   margin-right: 5px;
@@ -16502,14 +16503,11 @@ readers do not read off random characters that represent icons */
 }
 
 .menu-secundario .nav .accesibilidad:hover::before,
-.menu-secundario .nav .accesibilidad:focus::before,
-.nav .accesibilidad:hover::before,
-.nav .accesibilidad:focus::before {
+.menu-secundario .nav .accesibilidad:focus::before {
   color: #A0BF4A;
 }
 
-.menu-secundario .nav .opciones,
-.nav .opciones {
+.menu-secundario .nav .opciones {
   border: 0;
   clip: rect(0, 0, 0, 0);
   overflow: hidden;
@@ -16517,8 +16515,7 @@ readers do not read off random characters that represent icons */
   width: 0;
 }
 
-.menu-secundario .nav .opciones::before,
-.nav .opciones::before {
+.menu-secundario .nav .opciones::before {
   content: "\F142";
   color: #FFF;
   margin-right: 5px;
@@ -16529,9 +16526,7 @@ readers do not read off random characters that represent icons */
 }
 
 .menu-secundario .nav .opciones:hover::before,
-.menu-secundario .nav .opciones:focus::before,
-.nav .opciones:hover::before,
-.nav .opciones:focus::before {
+.menu-secundario .nav .opciones:focus::before {
   color: #A0BF4A;
 }
 
@@ -16793,6 +16788,53 @@ readers do not read off random characters that represent icons */
   color: none;
 }
 
+.descargar-ico {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  padding: 0;
+  width: 0;
+}
+
+.descargar-ico::before {
+  content: "\F019";
+  color: #01293D;
+  margin-right: 5px;
+  font-weight: 900;
+  position: absolute;
+  font-size: 2em;
+  left: auto;
+}
+
+.descargar-ico:hover::before,
+.descargar-ico:focus::before {
+  color: #085aa4;
+}
+
+.link-ico {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  padding: 0;
+  width: 0;
+  margin-top: 0.3em;
+}
+
+.link-ico::before {
+  content: "\F35D";
+  color: #01293D;
+  margin-right: 5px;
+  font-weight: 900;
+  position: absolute;
+  font-size: 1em;
+  left: auto;
+}
+
+.link-ico:hover::before,
+.link-ico:focus::before {
+  color: #fff;
+}
+
 .icon-lists {
   border: 0;
   clip: rect(0, 0, 0, 0);
@@ -16939,12 +16981,15 @@ p {
   color: #fff;
 }
 
-.news__body a {
+.news__body a,
+.project__field-description a {
   border-bottom: 1px solid #0A6EC8;
 }
 
 .news__body a:hover,
-.news__body a:focus {
+.news__body a:focus,
+.project__field-description a:hover,
+.project__field-description a:focus {
   text-decoration: none;
   background-color: #0A6EC8;
   color: #fff;
@@ -17047,7 +17092,7 @@ tr:nth-child(even) {
   font-weight: 900;
 }
 
-form {
+.views-exposed-form {
   margin-bottom: 3em;
 }
 
@@ -17066,8 +17111,6 @@ form {
 .menu-principal a.language-link,
 .menu-principal .logo a {
   color: #fff !important;
-  margin-left: 1rem !important;
-  margin-right: 1rem !important;
   text-transform: uppercase;
 }
 
@@ -17081,7 +17124,12 @@ form {
   margin-right: 30px;
 }
 
-.menu-principal .navbar-nav a.nav-link::after {
+.menu-principal .navbar-nav .nav-item {
+  margin-left: 1rem !important;
+  margin-right: 1rem !important;
+}
+
+.menu-principal .navbar-nav .nav-item::after {
   content: "";
   display: block;
   width: 0;
@@ -17091,7 +17139,7 @@ form {
   border: none;
 }
 
-.menu-principal .navbar-nav a.nav-link:hover::after {
+.menu-principal .navbar-nav .nav-item:hover::after {
   width: 100%;
 }
 
@@ -17122,8 +17170,8 @@ form {
   margin: 0 auto;
   border-bottom: 0.5em solid #FFF;
   position: absolute;
-  top: -3%;
-  left: 48%;
+  top: -8px;
+  left: 45%;
 }
 
 .menu-secundario .dropdown-menu {
@@ -17298,22 +17346,26 @@ form {
   font-weight: 500;
 }
 
-.page__content .news-home h3 {
+.page__content .news-home h3,
+.page__content .page-search h3 {
   line-height: 0.6em;
 }
 
-.page__content .news-home h3 a {
+.page__content .news-home h3 a,
+.page__content .page-search h3 a {
   font-size: 0.55em;
   font-weight: 600;
   color: #000;
 }
 
-.page__content .news-home .title-one {
+.page__content .news-home .title-one,
+.page__content .page-search .title-one {
   margin: 20px 0 30px 0;
   height: 60px;
 }
 
-.page__content .news-home .title-one::after {
+.page__content .news-home .title-one::after,
+.page__content .page-search .title-one::after {
   content: "";
   width: 40px;
   height: 40px;
@@ -17322,9 +17374,37 @@ form {
   left: 3%;
 }
 
-.page__content .news-home .row-news {
+.page__content .news-home .row-news,
+.page__content .page-search .row-news {
   display: inline-block;
   width: 100%;
+}
+
+.page__content .page-search h3 {
+  margin-bottom: 0.5em !important;
+}
+
+.page__content .page-search .views-field-type {
+  text-transform: uppercase;
+  font-weight: 500;
+  float: left;
+  border-right: 2px solid #0A6EC8;
+  padding-right: 1em;
+}
+
+.page__content .page-search .views-field-created {
+  padding-left: 1em;
+  display: flex;
+  font-weight: normal !important;
+}
+
+.page__content .page-search .resultado {
+  border-bottom: 1px solid #C8C8C8;
+  text-align: justify;
+}
+
+.page__content .page-search nav {
+  clear: inline-start;
 }
 
 .page__content .video-home {
@@ -17421,7 +17501,7 @@ form {
   margin: 0 20px;
 }
 
-/** Estilos videos de proyectos**/
+/** Estilos proyectos**/
 
 .project__field-videos video {
   height: 800px !important;
@@ -17432,9 +17512,14 @@ form {
   margin: 40px;
 }
 
+.container-project .nav-link {
+  font-size: 1.1em;
+}
+
 .container-project .dato-general {
   display: flex;
   align-items: center;
+  width: inherit;
 }
 
 .container-project .dato-general .cifra {
@@ -17465,6 +17550,10 @@ form {
 
 .container-project .dato-general .educacion-icono {
   background-position: -346px 0;
+}
+
+.container-project .dato-general .etapas-icono {
+  background-position: -414px 0;
 }
 
 .container-project .dato-general .titulo-cifra {
@@ -17597,10 +17686,53 @@ footer h2::after {
   margin-left: 2em;
 }
 
+.tag_alcance {
+  background: #EFEFEF;
+  padding: 0.35em;
+  display: inline-block;
+  white-space: nowrap;
+  margin: 0.4em;
+}
+
+.tag_alcance a {
+  color: #3C3C3B;
+}
+
+.tag_alcance a:hover {
+  text-decoration: none !important;
+  color: #fff !important;
+}
+
+.tag_alcance:hover {
+  background-color: #0A6EC8;
+}
+
 .tags {
   display: flex;
   justify-content: center;
   margin-top: 1.5em;
+}
+
+.link-proyecto {
+  display: flex;
+  border: 1px dashed #0A6EC8;
+  margin-bottom: 1em;
+}
+
+.link-proyecto:hover {
+  background-color: #01293D !important;
+  color: #fff !important;
+  cursor: pointer;
+}
+
+.link-proyecto a {
+  margin-left: 1.7em;
+  text-align: left !important;
+}
+
+.link-proyecto a:hover {
+  text-decoration: none;
+  color: #fff !important;
 }
 
 a.a2a_button_facebook:hover .a2a_s_facebook {
