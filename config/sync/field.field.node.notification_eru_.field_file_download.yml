@@ -11,7 +11,7 @@ id: node.notification_eru_.field_file_download
 field_name: field_file_download
 entity_type: node
 bundle: notification_eru_
-label: 'File download'
+label: 'Documento Adjunto'
 description: ''
 required: false
 translatable: true

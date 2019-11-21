@@ -6,7 +6,6 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.project.body
     - field.field.node.project.field_benefits_of_project
-    - field.field.node.project.field_description
     - field.field.node.project.field_externa
     - field.field.node.project.field_external_link
     - field.field.node.project.field_gallery
@@ -47,7 +46,6 @@ content:
 hidden:
   addtoany: true
   field_benefits_of_project: true
-  field_description: true
   field_externa: true
   field_external_link: true
   field_gallery: true

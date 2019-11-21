@@ -5,5 +5,5 @@ dependencies: {  }
 id: slideshow
 label: Slideshow
 icon_uuid: null
-description: 'slider del home'
+description: 'Slides in movement'
 behavior_plugins: {  }

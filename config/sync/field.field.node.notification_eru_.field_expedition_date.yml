@@ -11,7 +11,7 @@ id: node.notification_eru_.field_expedition_date
 field_name: field_expedition_date
 entity_type: node
 bundle: notification_eru_
-label: 'Expedition date'
+label: 'Fecha de Expedición'
 description: ''
 required: true
 translatable: true

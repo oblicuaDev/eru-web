@@ -66,7 +66,7 @@ display:
         type: default
         options:
           grouping: {  }
-          row_class: ''
+          row_class: text-center
           default_row_class: true
       row:
         type: fields
@@ -458,7 +458,7 @@ display:
             preserve_tags: ''
             html: false
           element_type: ''
-          element_class: 'col-6 float-left'
+          element_class: 'col-md-6 col-12 float-left px-0 mr-4'
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -589,7 +589,7 @@ display:
           element_label_class: ''
           element_label_colon: false
           element_wrapper_type: ''
-          element_wrapper_class: 'float-left col-3 text-right mb-2'
+          element_wrapper_class: mr-3
           element_default_classes: true
           empty: ''
           hide_empty: false
@@ -656,7 +656,7 @@ display:
           element_label_class: ''
           element_label_colon: false
           element_wrapper_type: ''
-          element_wrapper_class: 'float-left col-3 text-left mb-2'
+          element_wrapper_class: ml-3
           element_default_classes: true
           empty: ''
           hide_empty: false
@@ -723,7 +723,7 @@ display:
           element_label_class: ''
           element_label_colon: false
           element_wrapper_type: ''
-          element_wrapper_class: 'text-center d-block'
+          element_wrapper_class: text-center
           element_default_classes: true
           empty: ''
           hide_empty: false
@@ -1001,7 +1001,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: "<h2 class=\"text-center\">Videos</h2>\r\n\r\n<p class=\"text-center\">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>\r\n<h3 id=\"titulo-busqueda\">Búsqueda</h3>"
+            value: "<h2 class=\"text-center\">Videos</h2>\r\n<h3 id=\"titulo-busqueda\">Búsqueda</h3>"
             format: full_html
           plugin_id: text
       use_ajax: true

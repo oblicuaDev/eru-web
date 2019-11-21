@@ -2,7 +2,8 @@
 // -----------------------------------------------------------------------------
 footer {
 	color: #fff;
-	font-size: 0.8em;
+	font-size: 0.9em;
+	p {font-size: 0.9em;}
 	a{
 		color: #fff;
 		&:hover{
@@ -11,11 +12,11 @@ footer {
 		}
 	}
 	h2{
-		font-size: 1.5em;
+		font-size: 1.4em;
 		font-family: $poppins;
 		font-weight: 500;
 		text-align: left;
-		margin-bottom: 2rem;
+		margin-bottom: 1em;
 		&::after {
 			/*left: 4%;
 			border-color: #4297E3;
@@ -23,6 +24,10 @@ footer {
 			content: none;		
 		}
 	}	
+	img{
+		max-width: 100%;
+		height: auto;
+	}
 }
 .page__footer {	
 	background-color: #01293D;
@@ -32,13 +37,8 @@ footer {
 			padding-left: 0;
 		}
 	}
-	.contact li{
-		list-style: none;
-		margin-bottom: 1rem;
-	}
 	.mision-footer, .links-footer, .contact{
 		padding-top: 1rem;
-		padding-bottom: 1rem;
 	}
 	.links-footer{
 		background-color: #075168;
@@ -46,9 +46,19 @@ footer {
 	}
 	.contact {
 		padding-left: 2rem;
+		ul{
+			padding-left: 2em;
+			li{
+				list-style: none;
+				margin-bottom: 1rem;
+			}
+		}
 	}
 }
 .page__footer_2 {
+	.social-media .nav .nav-item {
+  		margin-right: 3rem;
+	}
 	background-color: #075168;
 	.sdqs-footer {
 		background-color: #01293D;
@@ -59,8 +69,10 @@ footer {
 		flex-direction: row;
 		justify-content: center;
 	}
+	p{ margin: 0; }
 }
 .page__footer_3 {
 	background-color: #02161C;
 	padding: 1em;
+	p{ margin: 0; }
 }

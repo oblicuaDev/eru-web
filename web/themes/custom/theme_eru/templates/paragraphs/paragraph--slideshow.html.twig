@@ -71,7 +71,7 @@
             {% set img_longdesc = item['#paragraph'].field_image.entity.field_longdesc.value %}
 
             {% if field_slides_type.value == 'image' %}
-              <img src="{{ img_url }}" class="d-block w-100" alt="{{ img_alt }}" {% if img_longdesc %} longdesc="{{ img_longdesc }}" {% endif %}>
+              <img src="{{ img_url }}" class="d-block" alt="{{ img_alt }}" {% if img_longdesc %} longdesc="{{ img_longdesc }}" {% endif %}>
             {% elseif field_slides_type.value == 'video'%}
               {% set video = item['#paragraph'].field_media.entity %}
               {{ devel_breakpoint() }}
@@ -84,9 +84,9 @@
                 <iframe width="1300" height="700" src="{{ video.field_media_oembed_video.value }}"></iframe>
               {% endif %}
             {% endif %}
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption">
                <h3>{{ item['#paragraph'].field_title.value }}</h3>
-               <p> {{ item['#paragraph'].field_description.value }} </p>
+               <p class="d-none d-sm-block"> {{ item['#paragraph'].field_description.value }} </p>
                <a class="btn btn-primary" href="{{ item['#paragraph'].field_link.0.url}}"
                {% if item['#paragraph'].field_external_link.value == 1 %}
                     target="_blank" class="alert-leave-page"

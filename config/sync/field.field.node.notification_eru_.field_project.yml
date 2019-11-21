@@ -10,9 +10,9 @@ id: node.notification_eru_.field_project
 field_name: field_project
 entity_type: node
 bundle: notification_eru_
-label: Project
+label: Proyecto
 description: ''
-required: false
+required: true
 translatable: true
 default_value: {  }
 default_value_callback: ''

@@ -53,7 +53,7 @@
         <ol class="carousel-indicators">
           {% for key, item in content.field_galleries_img %}
             {% if key matches '/^\\d+$/' %}
-              <li data-target="#eru-slide" data-slide-to="{{ key }}" {% if key == 0 %} class="active" {% endif %}>a</li>
+              <li data-target="#eru-slide" data-slide-to="{{ key }}" {% if key == 0 %} class="active" {% endif %}></li>
             {% endif %}
           {% endfor %}
         </ol>

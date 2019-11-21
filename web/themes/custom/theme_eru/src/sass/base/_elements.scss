@@ -79,7 +79,7 @@ a {
 	}
 	a { color: #fff; }
 }
-.news__body a {
+.news__body a, .project__field-description a{
 	border-bottom: 1px solid $blue;
 	&:hover, &:focus{
 		text-decoration: none;
@@ -200,6 +200,6 @@ tr:nth-child(even){
 }
 // Forms
 // -------
-form {
+.views-exposed-form {
 	margin-bottom: 3em;
 }

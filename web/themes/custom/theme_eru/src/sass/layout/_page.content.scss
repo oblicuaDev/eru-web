@@ -66,7 +66,7 @@
     		flex-direction: column;
 			h2 {
 				line-height: 1.5em;
-				margin-bottom: 0.5em;
+				margin-bottom: 0.5em !important;
 				text-align: left;
 				&::after {content: none;}
 				a {						
@@ -81,7 +81,7 @@
 			}
 		}		
 	}
-	.news-home {
+	.news-home, .page-search{
 		h3 {
 			line-height: 0.6em;			
 			a {
@@ -107,6 +107,30 @@
 			width: 100%;		
 		}		
 	}
+	.page-search {
+		h3{
+			margin-bottom: 0.5em !important;
+		}
+		.views-field-type {
+			text-transform: uppercase;
+			font-weight: 500;
+			float: left;
+			border-right: 2px solid #0A6EC8;
+			padding-right: 1em;
+		}
+		.views-field-created {
+			padding-left: 1em;
+			display: flex;
+			font-weight: normal !important;
+		}
+		.resultado {
+			border-bottom: 1px solid #C8C8C8;
+			text-align: justify;
+		}
+		nav{
+			clear: inline-start;
+		}
+	}
 	.video-home{
 		margin-bottom: 2rem;
 		h3{
@@ -124,6 +148,10 @@
 			    left: 72%;
 			}
 		}
+		.views-field-body {
+			display: block;
+			margin-top: 1.5em;
+		}
 
 	}
 	.paragraph--type--links-of-interest{
@@ -134,14 +162,14 @@
     		margin-bottom: 3.5rem;
 		}
 		i{padding:44px;}
-		.fa-one-class{background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/ico-01.png),transparent;}
-		.fa-two-class{background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/ico-02.png),transparent;}
-		.fa-tree-class{background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/ico-03.png),transparent;}
-		.fa-four-class{background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/ico-04.png),transparent;}
-		.fa-five-class{background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/ico-05.png),transparent;}
-		.fa-six-class{background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/ico-06.png),transparent;}
-		.fa-seven-class{background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/ico-07.png),transparent;}
-		.fa-eight-class{background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/ico-08.png),transparent;}
+		.fa-one-class{background: url("http://local.eru.com/themes/custom/theme_eru/assets/images/ico-01.png"), transparent;}
+		.fa-two-class{background: url("http://local.eru.com/themes/custom/theme_eru/assets/images/ico-02.png"), transparent;}
+		.fa-tree-class{background: url("http://local.eru.com/themes/custom/theme_eru/assets/images/ico-03.png"), transparent;}
+		.fa-four-class{background: url("http://local.eru.com/themes/custom/theme_eru/assets/images/ico-04.png"), transparent;}
+		.fa-five-class{background: url("http://local.eru.com/themes/custom/theme_eru/assets/images/ico-05.png"), transparent;}
+		.fa-six-class{background: url("http://local.eru.com/themes/custom/theme_eru/assets/images/ico-06.png"), transparent;}
+		.fa-seven-class{background: url("http://local.eru.com/themes/custom/theme_eru/assets/images/ico-07.png"), transparent;}
+		.fa-eight-class{background: url("http://local.eru.com/themes/custom/theme_eru/assets/images/ico-08.png"), transparent;}
 		.description{text-align: center; margin-top:1rem;}
 		.title{text-transform: uppercase; color: #000; font-weight: bold; margin-top: 1rem;}
 	}
@@ -162,7 +190,7 @@
 	}
 }
 
-/** Estilos videos de proyectos**/
+/** Estilos proyectos**/
 .project__field-videos video{
 	height: 800px !important;
 }
@@ -170,10 +198,20 @@
 	display: block;
 	margin: 40px;
 }
-.container-project {	
+.image-project a.active img{
+	display: none;
+}
+.views-field-field-image-evento-hover img{
+	display: none;
+}
+.container-project {
+	.nav-link {
+		font-size: 1.1em;
+	}	
 	.dato-general {	
 		display: flex;		
 		align-items: center;
+		width: inherit;
 		.cifra { font-weight: 600; }
 		i{padding:32px; background-repeat: no-repeat; background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/proyectos-iconos.png),transparent;}
 		.area-icono{			
@@ -190,6 +228,9 @@
 		}
 		.educacion-icono{
 			background-position: -346px 0;
+		}
+		.etapas-icono{
+			background-position: -414px 0;
 		}
 		.titulo-cifra { font-size: 0.9em; }		
 	}

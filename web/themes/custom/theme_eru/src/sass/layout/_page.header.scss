@@ -5,15 +5,14 @@
 	background-blend-mode: multiply;
 	opacity: 0.9;
 	.block--theme-eru-main-menu a.nav-link, a.language-link, .logo a{
-		color: #fff !important;
-		margin-left: 1rem !important;
-		margin-right: 1rem !important;
+		color: #fff !important;		
 		text-transform: uppercase;
 		&:focus { outline: 2px dotted #FFF !important; }
 	}
 	.logo {margin-right: 30px;}
-	.navbar-nav {
-		a.nav-link {
+	.navbar-nav {		
+		.nav-item {
+			margin-right: 1rem !important;
 			&::after{
 				content: '';
 				display: block;
@@ -27,6 +26,7 @@
 		}
 	}
 	.dropdown-menu {
+		font-size: 0.9rem !important;
 		-webkit-box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
     	box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
     	margin-top: 5px;
@@ -49,8 +49,8 @@
     		margin: 0 auto;
     		border-bottom: 0.5em solid #FFF;
     		position: absolute;
-    		top: -3%;
-    		left: 48%;
+    		top: -7px;
+    		left: 45%;
     	}
 	}	
 }
@@ -61,17 +61,23 @@
 // Page: Header
 // -----------------------------------------------------------------------------
 //.page__header {
-	.landing-page h2{
-		border: 0;
-		clip: rect(0, 0, 0, 0);
-		height: 1px;
-		margin: -1px;
-		overflow: hidden;
-		padding: 0;
-		position: absolute;
-		width: 1px;
+	.landing-page {
+		h2{
+			border: 0;
+			clip: rect(0, 0, 0, 0);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute;
+			width: 1px;
+		}
+		span {display: none;}
 	}	
 	#eru-slide {
+		img {
+			width: 100%;
+		}
 		.carousel-caption {
 			left: 10% !important;
 			text-align: left !important;
@@ -104,3 +110,9 @@
 		}
 	}
 //}
+// Buscador
+// -----------------------------------------------------------------------------
+
+#search-block-form > div {
+	justify-content: center;
+}
