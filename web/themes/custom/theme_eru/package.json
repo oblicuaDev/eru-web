@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free-webfonts": "^1.0.9",
+    "cross-env": "^6.0.3",
     "font-awesome": "^4.7.0"
   }
 }
