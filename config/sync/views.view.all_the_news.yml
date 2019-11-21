@@ -429,7 +429,7 @@ display:
           separator: ''
           hide_empty: false
       display_description: ''
-      css_class: 'news-home float-left col-6'
+      css_class: 'news-home news-target float-left col-md-6 col-12 px-0'
       fields:
         field_cover_img:
           id: field_cover_img

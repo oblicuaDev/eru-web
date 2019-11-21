@@ -175,7 +175,7 @@ reactions:
         weight: '3'
         context_mapping: {  }
         theme: theme_eru
-        css_class: ''
+        css_class: 'col-md-4 col-lg-4 col-sm-12'
         unique: 0
         context_id: paginas_sitio
         uuid: b0e5db6d-5374-4d5b-b65f-42549ea43955

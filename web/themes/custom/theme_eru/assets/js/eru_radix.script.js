@@ -17826,6 +17826,20 @@ __webpack_require__.r(__webpack_exports__);
       jQuery('.project-content ul li').prepend("<i class='icon-lists'></i>");
     }
   };
+  /*Drupal.behaviors.hoverProject = {
+    attach: function (context){
+      jQuery('.image-project a').hover(function() {
+        jQuery(this).addClass('active');
+        jQuery('.views-field-field-image-evento-hover img').addClass('d-block'); 
+        jQuery('.views-field-field-image-evento-hover img').removeClass('d-none');   
+      }, function(){
+        jQuery(this).removeClass('active');
+        jQuery('.views-field-field-image-evento-hover img').addClass('d-none');
+        jQuery('.views-field-field-image-evento-hover img').removeClass('d-block');  
+      });
+    }
+  };*/
+
   Drupal.behaviors.heightVideo = {
     attach: function attach(context) {
       jQuery('.video-home iframe').height(300);

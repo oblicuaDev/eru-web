@@ -44,7 +44,7 @@ reactions:
         weight: '1'
         context_mapping: {  }
         theme: theme_eru
-        css_class: 'col-6 float-left'
+        css_class: 'col-md-6 float-left col-12'
         unique: 0
         context_id: homepage
         uuid: e2db2f64-840b-4bbe-815c-78a0351aa154
@@ -152,7 +152,7 @@ reactions:
         weight: '1'
         context_mapping: {  }
         theme: theme_eru
-        css_class: 'col-lg-4 col-md-4 col-sm-12 mision-footer'
+        css_class: 'col-lg-4 col-md-4 col-sm-12 mision-footer d-none d-lg-block'
         unique: 0
         context_id: homepage
         uuid: e9120df0-e92b-4681-adc3-1878a7e998b7
@@ -168,7 +168,7 @@ reactions:
         weight: '3'
         context_mapping: {  }
         theme: theme_eru
-        css_class: 'col-md-4 col-lg-4 col-sm-12 contact'
+        css_class: 'col-md-6 col-lg-4 col-12 contact'
         unique: 0
         context_id: homepage
         uuid: e1371859-22a7-4935-900b-ae7f1bbaf5e6
@@ -248,7 +248,7 @@ reactions:
         weight: '-9'
         context_mapping: {  }
         theme: theme_eru
-        css_class: col-4
+        css_class: 'col-4 social-media'
         unique: 0
         context_id: homepage
         uuid: fa58bb11-743d-4986-90f7-85479ee9265d
@@ -264,7 +264,7 @@ reactions:
         weight: '2'
         context_mapping: {  }
         theme: theme_eru
-        css_class: 'col-md-4 col-lg-4 col-sm-12 links-footer'
+        css_class: 'col-md-6 col-lg-4 links-footer d-none d-sm-block'
         unique: 0
         context_id: homepage
         uuid: 89d23405-1272-49b8-acb4-db0278ca217c
