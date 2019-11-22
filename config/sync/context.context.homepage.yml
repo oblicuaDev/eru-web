@@ -136,7 +136,7 @@ reactions:
         weight: '-7'
         context_mapping: {  }
         theme: theme_eru
-        css_class: 'col-4 sdqs-footer'
+        css_class: 'col-4 sdqs-footer d-md-block d-none'
         unique: 0
         context_id: homepage
         uuid: 96ce7cda-dc8f-406e-aa3c-2d759a1da37b
@@ -184,7 +184,7 @@ reactions:
         weight: '-6'
         context_mapping: {  }
         theme: theme_eru
-        css_class: 'col-4 sitemap-block'
+        css_class: 'col-4 sitemap-block d-md-block d-none'
         unique: 0
         context_id: homepage
         uuid: 9906f5e9-bfd9-43e8-8772-f8b56cb7176a
@@ -200,7 +200,7 @@ reactions:
         weight: '-4'
         context_mapping: {  }
         theme: theme_eru
-        css_class: col-4
+        css_class: 'col-12 col-md-4'
         unique: 0
         context_id: homepage
         uuid: 54d6299d-9f20-42ca-96c9-5acc9fc99820
@@ -216,7 +216,7 @@ reactions:
         weight: '-6'
         context_mapping: {  }
         theme: theme_eru
-        css_class: col-4
+        css_class: 'col-12 col-md-4 terminos'
         unique: 0
         context_id: homepage
         uuid: d7dd4015-b95f-4780-90c1-600ab5a77508
@@ -232,7 +232,7 @@ reactions:
         weight: '-5'
         context_mapping: {  }
         theme: theme_eru
-        css_class: col-4
+        css_class: 'col-12 col-md-4'
         unique: 0
         context_id: homepage
         uuid: fed0e0cd-436d-4fd6-8d7a-7bfb1342503d
@@ -248,7 +248,7 @@ reactions:
         weight: '-9'
         context_mapping: {  }
         theme: theme_eru
-        css_class: 'col-4 social-media'
+        css_class: 'col-md-4 social-media col-12'
         unique: 0
         context_id: homepage
         uuid: fa58bb11-743d-4986-90f7-85479ee9265d
@@ -264,7 +264,7 @@ reactions:
         weight: '2'
         context_mapping: {  }
         theme: theme_eru
-        css_class: 'col-md-6 col-lg-4 links-footer d-none d-sm-block'
+        css_class: 'col-md-6 col-lg-4 links-footer d-none d-md-block'
         unique: 0
         context_id: homepage
         uuid: 89d23405-1272-49b8-acb4-db0278ca217c

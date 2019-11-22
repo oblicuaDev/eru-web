@@ -56,18 +56,22 @@ footer {
 	}
 }
 .page__footer_2 {
-	.social-media .nav .nav-item {
-  		margin-right: 3rem;
+	.social-media, .sitemap-block, .terminos {
+		display: flex;
+		justify-content: center;
+		align-self: center;
+		text-align: center;
 	}
+	.social-media{	
+		padding: 1em 0;	
+		.nav .nav-item {
+  			margin-right: 3rem;
+		}
+	} 
 	background-color: #075168;
 	.sdqs-footer {
 		background-color: #01293D;
 		padding: 0.8em;
-	}
-	.sitemap-block a{
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
 	}
 	p{ margin: 0; }
 }

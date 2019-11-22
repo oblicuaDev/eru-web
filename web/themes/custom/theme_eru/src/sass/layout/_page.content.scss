@@ -191,9 +191,7 @@
 }
 
 /** Estilos proyectos**/
-.project__field-videos video{
-	height: 800px !important;
-}
+
 .project__field-infografia {
 	display: block;
 	margin: 40px;
@@ -205,6 +203,7 @@
 	display: none;
 }
 .container-project {
+	#myTab { margin-bottom: 2em; }
 	.nav-link {
 		font-size: 1.1em;
 	}	
@@ -212,8 +211,9 @@
 		display: flex;		
 		align-items: center;
 		width: inherit;
+		margin-bottom: 1.5rem !important;
 		.cifra { font-weight: 600; }
-		i{padding:32px; background-repeat: no-repeat; background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/proyectos-iconos.png),transparent;}
+		i{padding:32px; background-repeat: no-repeat; background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/proyectos-iconos.png), transparent;}
 		.area-icono{			
 			background-position: -66px 0;			
 		}

@@ -16926,7 +16926,7 @@ h2::after {
 .news h3,
 .all-news #titulo-busqueda,
 .project-content h3 {
-  font-size: 1.6em;
+  font-size: 1.4em;
   border-bottom: 1px #ddd solid;
   padding: 0.3em;
   position: relative;
@@ -16978,14 +16978,14 @@ p {
 }
 
 .news__body a,
-.project__field-description a {
+.project__body a {
   border-bottom: 1px solid #0A6EC8;
 }
 
 .news__body a:hover,
 .news__body a:focus,
-.project__field-description a:hover,
-.project__field-description a:focus {
+.project__body a:hover,
+.project__body a:focus {
   text-decoration: none;
   background-color: #0A6EC8;
   color: #fff;
@@ -17516,10 +17516,6 @@ tr:nth-child(even) {
 
 /** Estilos proyectos**/
 
-.project__field-videos video {
-  height: 800px !important;
-}
-
 .project__field-infografia {
   display: block;
   margin: 40px;
@@ -17533,6 +17529,10 @@ tr:nth-child(even) {
   display: none;
 }
 
+.container-project #myTab {
+  margin-bottom: 2em;
+}
+
 .container-project .nav-link {
   font-size: 1.1em;
 }
@@ -17541,6 +17541,7 @@ tr:nth-child(even) {
   display: flex;
   align-items: center;
   width: inherit;
+  margin-bottom: 1.5rem !important;
 }
 
 .container-project .dato-general .cifra {
@@ -17663,6 +17664,19 @@ footer img {
   background-color: #075168;
 }
 
+.page__footer_2 .social-media,
+.page__footer_2 .sitemap-block,
+.page__footer_2 .terminos {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+}
+
+.page__footer_2 .social-media {
+  padding: 1em 0;
+}
+
 .page__footer_2 .social-media .nav .nav-item {
   margin-right: 3rem;
 }
@@ -17670,12 +17684,6 @@ footer img {
 .page__footer_2 .sdqs-footer {
   background-color: #01293D;
   padding: 0.8em;
-}
-
-.page__footer_2 .sitemap-block a {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
 }
 
 .page__footer_2 p {
@@ -17692,6 +17700,12 @@ footer img {
 }
 
 /*******   MEDIA QUERIES    ********/
+
+@media screen and (min-width: 1200px) {
+  .project__field-videos video {
+    height: auto !important;
+  }
+}
 
 @media screen and (max-width: 1200px) {
   #eru-slide .controles {
@@ -17817,7 +17831,7 @@ footer img {
   }
 
   .page__content .transparencia-block .textos h2 {
-    font-size: 1.5em !important;
+    font-size: 1.3em !important;
   }
 
   .page__content .transparencia-block {
@@ -17891,6 +17905,43 @@ footer img {
   .video-home .views-field-body {
     display: none !important;
   }
+
+  .container-project #myTab {
+    margin-bottom: 1em;
+  }
+
+  .container-project .dato-general {
+    margin-bottom: 0.8rem !important;
+  }
+
+  .container-project .dato-general .area-icono {
+    background-position: -42px 4px;
+  }
+
+  .container-project .dato-general .etapas-icono {
+    background-position: -320px 4px;
+  }
+
+  .container-project .dato-general .inversion-icono {
+    background-position: -97px 0;
+  }
+
+  .container-project .dato-general .educacion-icono {
+    background-position: -320px 0;
+  }
+
+  .container-project .dato-general .location-icon {
+    padding: 26px !important;
+  }
+
+  .container-project .dato-general i {
+    background-size: 380px;
+    background-repeat: no-repeat;
+  }
+
+  footer .contact li i::before {
+    left: 5% !important;
+  }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1280px) {
@@ -17917,33 +17968,33 @@ footer img {
     text-align: center;
   }
 
-  #eru-slide {
+  .landing-page #eru-slide {
     width: 125%;
   }
 
-  #eru-slide .carousel-caption {
+  .carousel-caption {
     width: 70%;
     left: 5% !important;
   }
 
-  #eru-slide .carousel-caption h3 {
+  .carousel-caption h3 {
     font-size: 1.1em !important;
     line-height: 1 !important;
   }
 
-  #eru-slide .carousel-caption .btn {
+  .carousel-caption .btn {
     font-size: 0.8em !important;
   }
 
-  #eru-slide .carousel-caption #eru-slide .controles {
+  .carousel-caption #eru-slide .controles {
     left: 23%;
   }
 
-  #eru-slide .carousel-caption #eru-slide .controles i {
+  .carousel-caption #eru-slide .controles i {
     font-size: 1.8em !important;
   }
 
-  #eru-slide .carousel-indicators {
+  .carousel-indicators {
     display: none;
   }
 
@@ -18017,7 +18068,6 @@ footer img {
   background: #EFEFEF;
   padding: 0.35em;
   display: inline-block;
-  white-space: nowrap;
   margin: 0.4em;
 }
 

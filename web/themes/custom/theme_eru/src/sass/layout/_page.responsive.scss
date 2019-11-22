@@ -1,4 +1,9 @@
 /*******   MEDIA QUERIES    ********/
+@media screen and (min-width: 1200px) {
+	.project__field-videos video{
+		height: auto !important;
+	}
+}
 @media screen and (max-width: 1200px) {		
 	#eru-slide {		
 		.controles {
@@ -105,7 +110,7 @@
 		} 	
 	}
 	.page__content .transparencia-block {
-		.textos h2 { font-size: 1.5em !important; }		
+		.textos h2 { font-size: 1.3em !important; }		
 	}
 	.page__content .transparencia-block {
 		margin: 4rem 0;
@@ -155,6 +160,23 @@
 		&::after { content: none !important; } }
 		.views-field-body {	display: none !important; }	
 	}
+	.container-project {
+		#myTab { margin-bottom: 1em; }	
+		.dato-general {
+		margin-bottom: 0.8rem !important;
+			.area-icono {background-position: -42px 4px;}
+			.etapas-icono {background-position: -320px 4px;}
+			.inversion-icono {background-position: -97px 0;}
+			.educacion-icono {background-position: -320px 0;}
+			.location-icon {padding: 26px !important;}
+			i {
+		   		background-size: 380px;
+		   		background-repeat: no-repeat;
+			} 
+		}
+	}
+
+	footer .contact li i::before { left: 5% !important; }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1280px)  {
@@ -173,27 +195,25 @@
 	.project-block {
 		text-align: center;
 	}
-	#eru-slide{
-		width: 125%;	
-		.carousel-caption {
-				width: 70%;
-				left: 5% !important;
-				h3 {
-					font-size: 1.1em !important;
-					line-height: 1 !important;
-				}	
-				.btn {
-					font-size: 0.8em !important;
-				}  
-				#eru-slide .controles {
-					left: 23%;
-					i { font-size: 1.8em !important; } 
-				} 
+	.landing-page #eru-slide{ width: 125%; }
+	.carousel-caption {
+			width: 70%;
+			left: 5% !important;
+			h3 {
+				font-size: 1.1em !important;
+				line-height: 1 !important;
+			}	
+			.btn {
+				font-size: 0.8em !important;
+			}  
+			#eru-slide .controles {
+				left: 23%;
+				i { font-size: 1.8em !important; } 
 			} 
-		.carousel-indicators {
-			display: none;
-		}
-	}
+		} 
+	.carousel-indicators {
+		display: none;
+	}	
 	.page__content .transparencia-block {
 		#bkg-transparencia { padding: 0; background: none; }	
 		.textos h2 { text-align: center; }

@@ -29,7 +29,7 @@ h2{
 	&::after{ content: none; }
 }
 .news h3, .all-news #titulo-busqueda, .project-content h3{
-	font-size: 1.6em;
+	font-size: 1.4em;
 	border-bottom: 1px #ddd solid;
 	padding: 0.3em;
 	position: relative;
@@ -79,7 +79,7 @@ a {
 	}
 	a { color: #fff; }
 }
-.news__body a, .project__field-description a{
+.news__body a, .project__body a{
 	border-bottom: 1px solid $blue;
 	&:hover, &:focus{
 		text-decoration: none;
