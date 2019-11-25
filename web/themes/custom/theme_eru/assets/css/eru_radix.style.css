@@ -17582,6 +17582,16 @@ tr:nth-child(even) {
   font-size: 0.9em;
 }
 
+.news .date-social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.news .date-social .news__dynamic-token-fieldnode-created {
+  margin-bottom: 0 !important;
+}
+
 /*.container-project h3{
 	margin-bottom: 1.5em;
 }*/
@@ -17665,8 +17675,7 @@ footer img {
 }
 
 .page__footer_2 .social-media,
-.page__footer_2 .sitemap-block,
-.page__footer_2 .terminos {
+.page__footer_2 .sitemap-block {
   display: flex;
   justify-content: center;
   align-self: center;
@@ -17697,6 +17706,13 @@ footer img {
 
 .page__footer_3 p {
   margin: 0;
+}
+
+.page__footer_3 .terminos {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
 }
 
 /*******   MEDIA QUERIES    ********/

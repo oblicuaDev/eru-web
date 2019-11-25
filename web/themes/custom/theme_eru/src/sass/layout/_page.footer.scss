@@ -56,7 +56,7 @@ footer {
 	}
 }
 .page__footer_2 {
-	.social-media, .sitemap-block, .terminos {
+	.social-media, .sitemap-block {
 		display: flex;
 		justify-content: center;
 		align-self: center;
@@ -79,4 +79,10 @@ footer {
 	background-color: #02161C;
 	padding: 1em;
 	p{ margin: 0; }
+	.terminos {
+		display: flex;
+		justify-content: center;
+		align-self: center;
+		text-align: center;
+	}
 }

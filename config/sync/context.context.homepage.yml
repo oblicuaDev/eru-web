@@ -152,7 +152,7 @@ reactions:
         weight: '1'
         context_mapping: {  }
         theme: theme_eru
-        css_class: 'col-lg-4 col-md-4 col-sm-12 mision-footer d-none d-lg-block'
+        css_class: 'col-12 col-md-4 d-none d-lg-block mision-footer'
         unique: 0
         context_id: homepage
         uuid: e9120df0-e92b-4681-adc3-1878a7e998b7
