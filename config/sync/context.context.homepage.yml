@@ -22,7 +22,7 @@ reactions:
     blocks:
       68d825e9-5438-4489-ab97-b92353e59bd4:
         id: system_main_block
-        label: 'Main page content'
+        label: 'Contenido Principal de la Página'
         provider: system
         label_display: 0
         region: header

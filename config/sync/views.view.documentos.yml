@@ -86,6 +86,65 @@ display:
           quantity: 9
       style:
         type: views_bootstrap_table
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          override: 1
+          sticky: 0
+          caption: ''
+          summary: ''
+          description: ''
+          columns:
+            field_expedition_date: field_expedition_date
+            title: title
+            body: body
+            field_project: field_project
+            field_file_download: field_file_download
+          info:
+            field_expedition_date:
+              sortable: 0
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: 0
+              responsive: ''
+            title:
+              sortable: 0
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: 0
+              responsive: ''
+            body:
+              sortable: 0
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: 0
+              responsive: ''
+            field_project:
+              sortable: 0
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: 0
+              responsive: ''
+            field_file_download:
+              sortable: 0
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: 0
+              responsive: ''
+          default: '-1'
+          empty_table: 0
+          responsive: 1
+          bootstrap_styles:
+            striped: 0
+            bordered: 0
+            hover: 0
+            condensed: 0
       row:
         type: fields
       fields:
@@ -676,6 +735,8 @@ display:
         filters: false
         filter_groups: false
         fields: false
+        header: false
+        css_class: false
       filters:
         status:
           value: '1'
@@ -1137,6 +1198,21 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: "<h2>Notificaciones</h2>\r\n<div class=\"news\">\r\n<h3>Filtrar por: </h3>\r\n</div>\r\n"
+            format: full_html
+          plugin_id: text
+      css_class: table-responsive
     cache_metadata:
       max-age: -1
       contexts:
@@ -1304,6 +1380,9 @@ display:
         filter_groups: false
         fields: false
         empty: false
+        style: false
+        row: false
+        css_class: false
       filter_groups:
         operator: AND
         groups:
@@ -1702,6 +1781,79 @@ display:
             value: '<h3>No hay resultados</h3>'
             format: full_html
           plugin_id: text
+      style:
+        type: views_bootstrap_table
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: false
+          override: 1
+          sticky: 0
+          caption: ''
+          summary: ''
+          description: ''
+          columns:
+            field_expedition_date: field_expedition_date
+            field_type_procurement: field_type_procurement
+            title: title
+            body: body
+            field_project: field_project
+            field_file_download: field_file_download
+          info:
+            field_expedition_date:
+              sortable: 0
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: 0
+              responsive: ''
+            field_type_procurement:
+              sortable: 0
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: 0
+              responsive: ''
+            title:
+              sortable: 0
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: 0
+              responsive: ''
+            body:
+              sortable: 0
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: 0
+              responsive: ''
+            field_project:
+              sortable: 0
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: 0
+              responsive: ''
+            field_file_download:
+              sortable: 0
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: 0
+              responsive: ''
+          default: '-1'
+          empty_table: 0
+          responsive: 1
+          bootstrap_styles:
+            striped: 0
+            bordered: 0
+            hover: 0
+            condensed: 0
+      row:
+        type: fields
+        options: {  }
+      css_class: table-responsive
     cache_metadata:
       max-age: -1
       contexts:

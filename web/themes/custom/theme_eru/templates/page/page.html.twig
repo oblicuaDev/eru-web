@@ -37,7 +37,7 @@
   {% endembed %}
 
   {% if page.header %}
-      <header class="page__header mb-3">
+      <header class="page__header mb-3" title="Región Encabezado">
         {% if is_front %}
           <div class="container-fluid px-0">
             {{ page.header }}
@@ -50,7 +50,7 @@
       </header>
     {% endif %}
 
-  <main title="Contenido principal">
+  <main title="Contenido principal" id="main-content">
 
     {% if page.content %}
       <div class="page__content">
@@ -62,7 +62,7 @@
   </main>
 
   {% if page.footer %}
-    <footer class="page__footer" {{ attributes }}>
+    <footer class="page__footer" {{ attributes }} title="Pie de página Misión, enlaces de interés y datos de contacto">
       <div class="container">
         <div class="row">
           {{ page.footer }}
@@ -72,7 +72,7 @@
   {% endif %}
 
   {% if page.footer_light %}
-    <footer class="page__footer_2" {{ attributes }}>
+    <footer class="page__footer_2" {{ attributes }} title="Pie de página, redes sociales, s d q s, mapa del sitio">
       <div class="container">
         <div class="row">
           {{ page.footer_light }}
@@ -82,7 +82,7 @@
   {% endif %}
 
   {% if page.footer_black %}
-    <footer class="page__footer_3"{{ attributes }}>
+    <footer class="page__footer_3"{{ attributes }} title="Pie de página - Términos, condiciones, logos">
       <div class="container">
         <div class="row">
           {{ page.footer_black }}

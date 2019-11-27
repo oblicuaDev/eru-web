@@ -85,9 +85,9 @@ display:
           automatic_width: false
           alignment: horizontal
           col_class_default: false
-          col_class_custom: 'col-4 views-col mb-5'
+          col_class_custom: 'col-12 col-sm-6 col-md-4 views-col mb-5'
           row_class_default: false
-          row_class_custom: row
+          row_class_custom: ''
       row:
         type: fields
         options:
@@ -653,7 +653,7 @@ display:
           element_label_class: ''
           element_label_colon: false
           element_wrapper_type: h3
-          element_wrapper_class: 'title-one title-two'
+          element_wrapper_class: title-one
           element_default_classes: true
           empty: ''
           hide_empty: false
@@ -850,7 +850,7 @@ display:
           element_label_class: ''
           element_label_colon: false
           element_wrapper_type: h3
-          element_wrapper_class: 'title-one title-two'
+          element_wrapper_class: ''
           element_default_classes: true
           empty: ''
           hide_empty: false
