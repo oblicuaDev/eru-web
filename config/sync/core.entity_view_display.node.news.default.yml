@@ -28,7 +28,6 @@ third_party_settings:
       header:
         - node_title
         - field_gallery
-        - field_blocks
         - field_tags
       sidebar:
         - 'dynamic_token_field:node-created'
@@ -38,13 +37,13 @@ third_party_settings:
         - body
         - field_attach_file
     fields:
-      'dynamic_token_field:node-created':
-        plugin_id: 'dynamic_token_field:node-created'
+      node_title:
+        plugin_id: node_title
         weight: 0
         label: hidden
         formatter: default
-      node_title:
-        plugin_id: node_title
+      'dynamic_token_field:node-created':
+        plugin_id: 'dynamic_token_field:node-created'
         weight: 0
         label: hidden
         formatter: default

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.data.field_class
+    - field.field.paragraph.data.field_class_icon
     - field.field.paragraph.data.field_description
     - field.field.paragraph.data.field_title
     - paragraphs.paragraphs_type.data
@@ -19,6 +20,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_class_icon:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   field_description:
     weight: 1

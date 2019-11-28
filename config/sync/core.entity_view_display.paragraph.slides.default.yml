@@ -12,6 +12,8 @@ dependencies:
     - field.field.paragraph.slides.field_title
     - paragraphs.paragraphs_type.slides
   module:
+    - ds
+    - field_formatter_class
     - link
     - options
 id: paragraph.slides.default
@@ -74,7 +76,16 @@ content:
     settings:
       view_mode: default
       link: false
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     region: content
   field_slides_type:
     weight: 6

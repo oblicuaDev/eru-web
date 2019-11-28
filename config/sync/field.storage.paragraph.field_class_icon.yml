@@ -1,0 +1,45 @@
+uuid: 175411c0-c621-49a9-93e4-f319c77bee5c
+langcode: es
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_class_icon
+field_name: field_class_icon
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: area-icono
+    -
+      value: '2'
+      label: etapas-icono
+    -
+      value: '3'
+      label: inversion-icono
+    -
+      value: '4'
+      label: educacion-icono
+    -
+      value: '5'
+      label: vivienda-icono
+    -
+      value: '6'
+      label: poblacion-icono
+    -
+      value: '7'
+      label: predios-icono
+    -
+      value: '8'
+      label: servicios-icono
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
