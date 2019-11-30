@@ -13,28 +13,58 @@ settings:
   allowed_values:
     -
       value: '1'
-      label: area-icono
+      label: ubicacion-icono
     -
       value: '2'
-      label: etapas-icono
+      label: area-icono
     -
       value: '3'
       label: inversion-icono
     -
       value: '4'
-      label: educacion-icono
+      label: arte-icono
     -
       value: '5'
-      label: vivienda-icono
+      label: comercio-icono
     -
       value: '6'
-      label: poblacion-icono
+      label: educacion-icono
     -
       value: '7'
-      label: predios-icono
+      label: vivienda-icono
     -
       value: '8'
-      label: servicios-icono
+      label: espacio-publico-icono
+    -
+      value: '9'
+      label: vias-icono
+    -
+      value: '10'
+      label: cultura-icono
+    -
+      value: '11'
+      label: parques-icono
+    -
+      value: '12'
+      label: area-construida-icono
+    -
+      value: '13'
+      label: recreacion-icono
+    -
+      value: '14'
+      label: deporte-icono
+    -
+      value: '15'
+      label: agua-icono
+    -
+      value: '16'
+      label: transporte-icono
+    -
+      value: '17'
+      label: etapas-icono
+    -
+      value: '18'
+      label: poblacion-icono
   allowed_values_function: ''
 module: options
 locked: false
