@@ -1,22 +1,22 @@
-uuid: 16922501-5793-4504-b80a-1bc3ee17beae
+uuid: 4fec7f50-63eb-450e-8514-682ea50b50d3
 langcode: es
 status: true
 dependencies:
   module:
     - node
-id: news_eru
-label: Noticias
+id: paginas_basicas
+label: 'Páginas Básicas'
 type: 'canonical_entities:node'
-pattern: 'noticias/[node:title]'
+pattern: '/[node:title]'
 selection_criteria:
-  c3c050ed-f864-451a-88b9-d02402563df2:
+  3c84aa1b-052b-4380-9b79-311383b8478f:
     id: node_type
     bundles:
-      news: news
+      page: page
     negate: false
     context_mapping:
       node: node
-    uuid: c3c050ed-f864-451a-88b9-d02402563df2
+    uuid: 3c84aa1b-052b-4380-9b79-311383b8478f
 selection_logic: and
 weight: -5
 relationships: {  }

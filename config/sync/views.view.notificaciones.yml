@@ -732,7 +732,7 @@ display:
       arguments: {  }
       display_extenders: {  }
       css_class: table-responsive
-      use_ajax: true
+      use_ajax: false
     cache_metadata:
       max-age: -1
       contexts:
