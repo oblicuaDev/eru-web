@@ -36,7 +36,10 @@ mix.browserSync({
  | SASS
  |--------------------------------------------------------------------------
  */
-mix.sass('src/sass/eru_radix.style.scss', 'css');
+mix.sass('src/sass/eru_radix.style.scss', 'css')
+	.options({
+        processCssUrls: false
+    });
 
 /*
  |--------------------------------------------------------------------------
