@@ -17835,12 +17835,12 @@ __webpack_require__.r(__webpack_exports__);
     attach: function (context){
       jQuery('.image-project a').hover(function() {
         jQuery(this).addClass('active');
-        jQuery('.views-field-field-image-evento-hover img').addClass('d-block'); 
-        jQuery('.views-field-field-image-evento-hover img').removeClass('d-none');   
+        jQuery('.views-field-field-image-evento-hover img').addClass('d-block');
+        jQuery('.views-field-field-image-evento-hover img').removeClass('d-none');
       }, function(){
         jQuery(this).removeClass('active');
         jQuery('.views-field-field-image-evento-hover img').addClass('d-none');
-        jQuery('.views-field-field-image-evento-hover img').removeClass('d-block');  
+        jQuery('.views-field-field-image-evento-hover img').removeClass('d-block');
       });
     }
   };*/
@@ -17848,6 +17848,41 @@ __webpack_require__.r(__webpack_exports__);
   Drupal.behaviors.heightVideo = {
     attach: function attach(context) {
       jQuery('.video-home iframe').height(300);
+    }
+  };
+  Drupal.behaviors.linkproject = {
+    attach: function attach(context) {
+      function obtenerValorParametro(sParametroNombre) {
+        var sPaginaURL = window.location.search.substring(1);
+        var sURLVariables = sPaginaURL.split('&');
+
+        for (var i = 0; i < sURLVariables.length; i++) {
+          var sParametro = sURLVariables[i].split('=');
+
+          if (sParametro[0] == sParametroNombre) {
+            return sParametro[1];
+          }
+        }
+
+        return null;
+      }
+
+      var valor = obtenerValorParametro('tag');
+
+      if (valor) {
+        jQuery(".form-autocomplete").attr("value", valor.replace("%20", " "));
+        jQuery(document).ready(function () {
+          jQuery("#views-exposed-form-all-the-news-page-1 #edit-submit-all-the-news", context).click();
+        });
+      }
+
+      jQuery(".project .tag_alcance a").on('click', function (e) {
+        e.preventDefault();
+        var $this = jQuery(this);
+        var text = $this.text();
+        var numberTax = $this.attr("href");
+        window.location = "/noticias/?tag=" + text + "%20(" + numberTax.substr(-2) + ")";
+      });
     }
   };
 })(jQuery, Drupal);
@@ -17872,8 +17907,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\eru\web\themes\custom\theme_eru\src\js\eru_radix.script.js */"./src/js/eru_radix.script.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\eru\web\themes\custom\theme_eru\src\sass\eru_radix.style.scss */"./src/sass/eru_radix.style.scss");
+__webpack_require__(/*! /Users/edwinmesa/Documents/myProject/proyect_eru/eru/web/themes/custom/theme_eru/src/js/eru_radix.script.js */"./src/js/eru_radix.script.js");
+module.exports = __webpack_require__(/*! /Users/edwinmesa/Documents/myProject/proyect_eru/eru/web/themes/custom/theme_eru/src/sass/eru_radix.style.scss */"./src/sass/eru_radix.style.scss");
 
 
 /***/ })

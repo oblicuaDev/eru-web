@@ -56,12 +56,12 @@ import 'bootstrap';
     attach: function (context){
       jQuery('.image-project a').hover(function() {
         jQuery(this).addClass('active');
-        jQuery('.views-field-field-image-evento-hover img').addClass('d-block'); 
-        jQuery('.views-field-field-image-evento-hover img').removeClass('d-none');   
+        jQuery('.views-field-field-image-evento-hover img').addClass('d-block');
+        jQuery('.views-field-field-image-evento-hover img').removeClass('d-none');
       }, function(){
         jQuery(this).removeClass('active');
         jQuery('.views-field-field-image-evento-hover img').addClass('d-none');
-        jQuery('.views-field-field-image-evento-hover img').removeClass('d-block');  
+        jQuery('.views-field-field-image-evento-hover img').removeClass('d-block');
       });
     }
   };*/
@@ -72,8 +72,40 @@ import 'bootstrap';
     }
   };
 
+  Drupal.behaviors.linkproject = {
+    attach: function (context) {
 
+      function obtenerValorParametro(sParametroNombre) {
+        var sPaginaURL = window.location.search.substring(1);
+        var sURLVariables = sPaginaURL.split('&');
+        for (var i = 0; i < sURLVariables.length; i++) {
+          var sParametro = sURLVariables[i].split('=');
+          if (sParametro[0] == sParametroNombre) {
+            return sParametro[1];
+          }
+        }
+        return null;
+      }
 
+      var valor = obtenerValorParametro('tag');
+
+      if (valor) {
+        jQuery(".form-autocomplete").attr("value", valor.replace("%20", " "));
+        jQuery(document).ready(function () {
+          jQuery("#views-exposed-form-all-the-news-page-1 #edit-submit-all-the-news", context).click();
+        });
+      }
+
+      jQuery(".project .tag_alcance a").on('click', function (e) {
+        e.preventDefault();
+        var $this = jQuery(this);
+        var text = $this.text();
+        var numberTax = $this.attr("href");
+         window.location = "/noticias/?tag=" + text + "%20(" + numberTax.substr(-2) + ")";
+      });
+
+    }
+  };
 
 
 })(jQuery, Drupal);

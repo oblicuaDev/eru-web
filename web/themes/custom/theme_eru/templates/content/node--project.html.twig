@@ -12,6 +12,7 @@
   not node.isPublished() ? 'node--unpublished',
   node.bundle|clean_class,
   node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
+  'project'
 ]
 %}
 {# {{ kint(content|keys)}} #}
@@ -23,7 +24,7 @@
     {{ content.field_test_video_}}
     {{ content.field_media_solo}} #}
     {# {{ label }} #}
-    {{ content.field_videos}}    
+    {{ content.field_videos}}
     {# {{ kint(content|keys)} #}
     <div class="container container-project mt-5">
       <h2 class="text-center">{{ label }}</h2>
@@ -69,13 +70,13 @@
             {{ content.field_location}}
             {{ content.body}}
           </div>
-          
+
         </div>
       </div>
       <div aria-labelledby="photos-tab" class="tab-pane fade row" id="photos" role="tabpanel">
         <div class="col-12">
-            {{ content.field_gallery }}  
-        </div>        
+            {{ content.field_gallery }}
+        </div>
       </div>
       <div aria-labelledby="scope-tab" class="tab-pane fade project-content" id="scope" role="tabpanel">
         <div class="row">
@@ -90,7 +91,7 @@
       <div aria-labelledby="status-tab" class="tab-pane fade project-content row" id="status" role="tabpanel">
         <div class="col-12">
             {{ content.field_status_of_project}}
-        </div>        
+        </div>
       </div>
       <div aria-labelledby="benefits-tab" class="tab-pane fade project-content" id="benefits" role="tabpanel">
         {{ content.field_benefits_of_project}}

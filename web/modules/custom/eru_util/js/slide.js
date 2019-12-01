@@ -9,8 +9,6 @@
 
   Drupal.behaviors.paragraphSlideshow = {
     attach: function (context, settings) {
-      console.log('custum');
-
       window.onload = function () {
         jQuery('.carousel').carousel('dispose');
         jQuery('.carousel').carousel({
