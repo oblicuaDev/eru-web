@@ -25,9 +25,9 @@ content:
     type: text_textarea_with_summary
     weight: 4
     settings:
-      rows: 9
+      rows: 14
       placeholder: 'Puedes embeber youtube, twitter y soundcloud'
-      summary_rows: 2
+      summary_rows: 5
     third_party_settings: {  }
     region: content
   created:
@@ -111,7 +111,7 @@ content:
     weight: 0
     region: content
     settings:
-      size: 60
+      size: 300
       placeholder: ''
     third_party_settings: {  }
   translation:

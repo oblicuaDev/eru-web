@@ -17812,6 +17812,11 @@ __webpack_require__.r(__webpack_exports__);
         }*/
 
       });
+      jQuery(".navbar-toggler", context).click(function (e) {
+        e.preventDefault();
+        console.log("open");
+        jQuery(".navbar-collapse").toggleClass("show");
+      });
     }
   };
   Drupal.behaviors.pageSearch = {

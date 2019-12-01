@@ -30,6 +30,9 @@ import 'bootstrap';
           alert('hola');
         }*/
       });
+      jQuery( ".navbar-toggler", context ).click(function(e) {
+        e.preventDefault();console.log("open");jQuery( ".navbar-collapse" ).toggleClass( "show" );
+      });
     }
   };
 
@@ -103,4 +106,6 @@ import 'bootstrap';
 
     }
   };
+
+
 })(jQuery, Drupal);

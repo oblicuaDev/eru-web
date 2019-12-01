@@ -11,3 +11,5 @@ settings:
       title: Ancho
 element:
   default_more_title: Más
+mail:
+  default_subject: 'Webform submission from: [webform_submission:source-entity]'

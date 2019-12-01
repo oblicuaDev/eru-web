@@ -53,7 +53,7 @@
 	.transparencia-block{
 		margin: 5rem 0;
 		#bkg-transparencia{ 
-			background: url("http://local.eru.com/themes/custom/theme_eru/assets/images/bkg-transparencia.png"), #003250;
+			background: url("../images/bkg-transparencia.png"), #003250;
 		    background-repeat: no-repeat;
 		    padding: 60px 225px;
 		    float: left;	    
@@ -162,14 +162,14 @@
     		margin-bottom: 3.5rem;
 		}
 		i{padding:44px;}
-		.fa-one-class{background: url("http://local.eru.com/themes/custom/theme_eru/assets/images/ico-01.png"), transparent;}
-		.fa-two-class{background: url("http://local.eru.com/themes/custom/theme_eru/assets/images/ico-02.png"), transparent;}
-		.fa-tree-class{background: url("http://local.eru.com/themes/custom/theme_eru/assets/images/ico-03.png"), transparent;}
-		.fa-four-class{background: url("http://local.eru.com/themes/custom/theme_eru/assets/images/ico-04.png"), transparent;}
-		.fa-five-class{background: url("http://local.eru.com/themes/custom/theme_eru/assets/images/ico-05.png"), transparent;}
-		.fa-six-class{background: url("http://local.eru.com/themes/custom/theme_eru/assets/images/ico-06.png"), transparent;}
-		.fa-seven-class{background: url("http://local.eru.com/themes/custom/theme_eru/assets/images/ico-07.png"), transparent;}
-		.fa-eight-class{background: url("http://local.eru.com/themes/custom/theme_eru/assets/images/ico-08.png"), transparent;}
+		.fa-one-class{background: url("../images/ico-01.png"), transparent;}
+		.fa-two-class{background: url("../images/ico-02.png"), transparent;}
+		.fa-tree-class{background: url("../images/ico-03.png"), transparent;}
+		.fa-four-class{background: url("../images/ico-04.png"), transparent;}
+		.fa-five-class{background: url("../images/ico-05.png"), transparent;}
+		.fa-six-class{background: url("../images/ico-06.png"), transparent;}
+		.fa-seven-class{background: url("../images/ico-07.png"), transparent;}
+		.fa-eight-class{background: url("../images/ico-08.png"), transparent;}
 		.description{text-align: center; margin-top:1rem;}
 		.title{text-transform: uppercase; color: #000; font-weight: bold; margin-top: 1rem;}
 	}
