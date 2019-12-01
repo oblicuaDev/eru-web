@@ -8,10 +8,10 @@ h3, h4, h5, h6 {
 	font-family: $poppins;
 	margin-bottom: 1em;
 }
-h2{
+.home h2, .container-project h2{
 	font-weight: 900;
 	text-transform: uppercase;
-	text-align: center;
+	text-align: center;	
 	line-height: 1.5;
 	font-size: 1.8em;
 	&::after{
@@ -23,12 +23,14 @@ h2{
 	    left: 49%;
 	}
 }
-.news h2, .videos-eru h2{	
+h2{	
+	font-weight: 900;
 	text-transform: none;
 	text-align: left;
-	&::after{ content: none; }
+	line-height: 1.5;
+	font-size: 1.8em;
 }
-.news h3, .all-news #titulo-busqueda, .project-content h3{
+h3{
 	font-size: 1.4em;
 	border-bottom: 1px #ddd solid;
 	padding: 0.3em;
@@ -43,6 +45,13 @@ h2{
 	    position: absolute;
 	    left: 0;
 	    bottom: 0;
+	}
+}
+.home h3 {
+	font-size: 1.75rem;
+	border-bottom: none;
+	&::after {
+		content: none;
 	}
 }
 h4{
@@ -96,15 +105,15 @@ ul,
 dl {
 
 }
-.news li, .project-content li {
+.page li, .news li, .project-content li {
 	font-size: 1.1em; 
 	margin-bottom: 1.1em;
 }
-.news ul li, .project-content ul li {
+.page ul li, .news ul li, .project-content ul li {
 	list-style: none;	
 	position: relative;
 }
-.news ol li {
+.page ol li, .news ol li {
 	padding-left: 5px;
 }
 // Image

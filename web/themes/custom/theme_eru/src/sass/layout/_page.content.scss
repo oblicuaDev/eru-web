@@ -83,12 +83,16 @@
 	}
 	.news-home, .page-search{
 		h3 {
-			line-height: 0.6em;			
+			line-height: 0.6em !important;
+			font-size: 1.75rem;	
+			border-bottom: none;			
 			a {
 				font-size: 0.55em;
 				font-weight: 600;				
 				color: #000;
-			}			
+				&::after {content: none;}
+			}		
+			&::after {content: none;}	
 		}
 		.title-one {
 			margin: 20px 0 45px 0;
