@@ -50,17 +50,30 @@
       </header>
     {% endif %}
 
-  <main title="Contenido principal" id="main-content">
-
-    {% if page.content %}
-      <div class="page__content">
-        <div class="container">
-          {{ page.content }}
+   {% if page.content %}
+      <main title="Contenido principal" id="main-content">
+        <div class="page__content">
+          <div class="container">
+            <div class="row">
+              {% if page.aside %}
+                <div class="col-md-3 col-12">
+                  <aside class="aside">
+                    {{ page.aside }}
+                  </aside>
+                </div>
+                <div class="col-md-9 col-12">
+                 {{ page.content }}
+                </div>
+                {% else %}
+                <div class="col-12">
+                   {{ page.content }}
+                </div>               
+              {% endif %}
+            </div>            
+          </div>
         </div>
-      </div>
+      </main>
     {% endif %}
-  </main>
-
   {% if page.footer %}
     <footer class="page__footer" {{ attributes }} title="Pie de página Misión, enlaces de interés y datos de contacto">
       <div class="container">
