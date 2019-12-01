@@ -245,3 +245,35 @@
 /*.container-project h3{
 	margin-bottom: 1.5em;
 }*/
+aside {
+	background-color: #fbfbfb;
+    padding-top: 1em;
+    box-shadow: 0 3px 4px 0 rgba(0,0,0,.1), 0 6px 10px 0 rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 3px 4px 0 rgba(0,0,0,.1), 0 6px 10px 0 rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 3px 4px 0 rgba(0,0,0,.1), 0 6px 10px 0 rgba(0,0,0,0.1);
+	h2 {
+		font-weight: 700;
+    	margin-left: 15px;
+    	margin-bottom: 0.5em !important;	
+    	font-size: 1.4em;
+    	border-left: 2px solid #0A6EC8;
+   		padding-left: .5em;
+	}
+	ul {
+		display: flex;
+		flex-flow: column;
+		li {
+			margin-bottom: 0 !important;
+			border-bottom: 1px solid #dcdcdc;
+			a {
+				margin: 0.5em 0;
+				color: #212529;
+				margin: 0;
+				padding: 1rem !important;
+				&:hover{
+					background-color: #dcdcdc;
+				}
+			}
+		}
+	}
+}
