@@ -12,7 +12,6 @@ dependencies:
     - node.type.videos_eru
   module:
     - image
-    - link
     - path
     - text
 id: node.videos_eru.default
@@ -22,7 +21,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 8
+    weight: 9
     settings:
       rows: 9
       summary_rows: 3
@@ -31,34 +30,20 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 2
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
   field_image_main:
-    weight: 7
+    weight: 8
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
     region: content
-  field_tags:
-    weight: 26
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
-    region: content
-  field_textual_transcription:
-    weight: 11
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-    type: link_default
-    region: content
   field_url_video_yt_:
-    weight: 9
+    weight: 10
     settings:
       match_operator: CONTAINS
       size: 60
@@ -75,7 +60,7 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 5
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -83,21 +68,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 3
+    weight: 4
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 6
+    weight: 7
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 4
+    weight: 5
     region: content
     third_party_settings: {  }
   title:
@@ -108,6 +93,11 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  translation:
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
     weight: 1
@@ -117,4 +107,6 @@ content:
       placeholder: ''
     region: content
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_tags: true
+  field_textual_transcription: true

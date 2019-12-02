@@ -1169,7 +1169,7 @@ display:
         options:
           items_per_page: 6
           offset: 0
-      css_class: 'news-home all-news'
+      css_class: 'news-home all-news home'
       title: Videos
     cache_metadata:
       max-age: -1
