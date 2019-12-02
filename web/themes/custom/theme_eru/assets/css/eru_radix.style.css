@@ -15577,7 +15577,7 @@ readers do not read off random characters that represent icons */
   font-weight: 900;
   position: absolute;
   font-size: 1.1em;
-  left: 10%;
+  left: -8%;
 }
 .address-ico:hover::before, .address-ico:focus::before {
   color: #FFF;
@@ -15598,7 +15598,7 @@ readers do not read off random characters that represent icons */
   font-weight: 900;
   position: absolute;
   font-size: 1.1em;
-  left: 10%;
+  left: -8%;
 }
 .phone-ico:hover::before, .phone-ico:focus::before {
   color: #FFF;
@@ -15618,7 +15618,7 @@ readers do not read off random characters that represent icons */
   font-weight: 900;
   position: absolute;
   font-size: 1.1em;
-  left: 10%;
+  left: -8%;
 }
 .mail-ico:hover::before, .mail-ico:focus::before {
   color: #FFF;
@@ -15638,7 +15638,7 @@ readers do not read off random characters that represent icons */
   font-weight: 900;
   position: absolute;
   font-size: 1.1em;
-  left: 10%;
+  left: -8%;
 }
 .horario-ico:hover::before, .horario-ico:focus::before {
   color: #FFF;
@@ -15762,6 +15762,9 @@ readers do not read off random characters that represent icons */
 }
 .site-map:hover::before, .site-map:focus::before {
   color: #A0BF4A;
+}
+.site-map::before {
+  top: 0 !important;
 }
 
 .tag-ico {
@@ -16702,6 +16705,10 @@ footer img {
   .project__field-videos video {
     height: auto !important;
   }
+
+  .video-home .media-oembed-content {
+    width: 533px !important;
+  }
 }
 @media screen and (max-width: 1200px) {
   #eru-slide .controles {
@@ -16753,6 +16760,10 @@ footer img {
 
   .page__content .fila1 .link-item, .page__content .fila2 .link-item {
     width: 17%;
+  }
+
+  .video-home .media-oembed-content {
+    width: 450px !important;
   }
 
   footer h2 {
@@ -16825,6 +16836,10 @@ footer img {
 
   .all-news .views-field-body {
     display: none;
+  }
+
+  .video-home .media-oembed-content {
+    width: 385px !important;
   }
 }
 @media screen and (max-width: 768px) {
@@ -16921,6 +16936,10 @@ footer img {
     width: 45%;
   }
 
+  .video-home .media-oembed-content {
+    width: 518px !important;
+  }
+
   .videos-eru iframe {
     max-height: 440px !important;
   }
@@ -17007,6 +17026,10 @@ footer img {
   }
   .video_data .item_data {
     margin: 0.4em;
+  }
+
+  .video-home .media-oembed-content {
+    width: 350px !important;
   }
 
   footer .contact ul {
