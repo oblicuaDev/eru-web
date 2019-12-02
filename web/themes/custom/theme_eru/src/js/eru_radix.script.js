@@ -1,5 +1,5 @@
 import 'popper.js';
-import 'bootstrap';
+//import 'bootstrap';
 
 (function () {
 
@@ -30,9 +30,11 @@ import 'bootstrap';
           alert('hola');
         }*/
       });
-      jQuery( ".navbar-toggler", context ).click(function(e) {
-        e.preventDefault();console.log("open");jQuery( ".navbar-collapse" ).toggleClass( "show" );
-      });
+      /* jQuery( ".navbar-toggler", context ).click(function(e) {
+        e.preventDefault();
+        console.log("open");
+        jQuery( ".navbar-collapse" ).toggleClass( "show" );
+      }); */
     }
   };
 
@@ -101,7 +103,18 @@ import 'bootstrap';
         var $this = jQuery(this);
         var text = $this.text();
         var numberTax = $this.attr("href");
-         window.location = "/noticias/?tag=" + text + "%20(" + numberTax.substr(-2) + ")";
+        var idioma = window.location.pathname;
+        console.log(window.location);
+
+        window.location = "/noticias/?tag=" + text + "%20(" + numberTax.substr(-2) + ")";
+
+        console.log(idioma );
+
+        if (idioma.substr(3) == "en/"){
+          //window.location = "en/noticias/?tag=" + text + "%20(" + numberTax.substr(-2) + ")";
+        }else{
+          //window.location = "/noticias/?tag=" + text + "%20(" + numberTax.substr(-2) + ")";
+        }
       });
 
     }
