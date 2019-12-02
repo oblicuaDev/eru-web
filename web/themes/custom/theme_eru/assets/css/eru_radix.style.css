@@ -16732,6 +16732,10 @@ footer img {
     margin-bottom: 0.3em;
   }
 
+  .page__content .fila1 .link-item, .page__content .fila2 .link-item {
+    width: 17%;
+  }
+
   footer h2 {
     font-size: 1.2em;
   }
@@ -16892,6 +16896,10 @@ footer img {
   .container-project .dato-general i {
     background-size: 380px;
     background-repeat: no-repeat;
+  }
+
+  .page__content .fila1 .link-item, .page__content .fila2 .link-item {
+    width: 45%;
   }
 
   .videos-eru iframe {
