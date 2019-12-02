@@ -50,6 +50,7 @@ import 'bootstrap';
       jQuery('.news ul li').prepend("<i class='icon-lists'></i>");
       jQuery('.project-content ul li').prepend("<i class='icon-lists'></i>");
       jQuery('.page__content .page ul li').prepend("<i class='icon-lists'></i>");
+      jQuery('.listado-transparencia').remove('.icon-lists');
     }
   };
 

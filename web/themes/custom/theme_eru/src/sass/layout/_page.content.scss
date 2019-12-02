@@ -204,6 +204,25 @@
 		.description{text-align: center; margin-top:1rem;}
 		.title{text-transform: uppercase; color: #000; font-weight: bold; margin-top: 1rem;}
 	}
+	.listado-transparencia {
+		i {display: none;}
+		ul {
+			background-color: #f7f7f7ee;
+    		padding-left: 0;
+    		li{
+    			margin-bottom: 0;
+    			a {
+    				display: block;
+   					padding: 1em;
+    				border-bottom: 1px solid #c7c7c7dd;
+    				cursor: pointer;
+    				&:hover{
+    					background-color: #d6d6d6;
+    				}
+    			}
+    		}
+		}
+	}
 }
 /**Estilos Layout brenham **/
 

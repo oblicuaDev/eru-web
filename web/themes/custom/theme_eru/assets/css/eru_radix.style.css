@@ -16467,6 +16467,25 @@ tr:nth-child(even) {
   font-weight: bold;
   margin-top: 1rem;
 }
+.page__content .listado-transparencia i {
+  display: none;
+}
+.page__content .listado-transparencia ul {
+  background-color: #f7f7f7ee;
+  padding-left: 0;
+}
+.page__content .listado-transparencia ul li {
+  margin-bottom: 0;
+}
+.page__content .listado-transparencia ul li a {
+  display: block;
+  padding: 1em;
+  border-bottom: 1px solid #c7c7c7dd;
+  cursor: pointer;
+}
+.page__content .listado-transparencia ul li a:hover {
+  background-color: #d6d6d6;
+}
 
 /**Estilos Layout brenham **/
 .brenham .panel-panel {
