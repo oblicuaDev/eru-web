@@ -4,32 +4,12 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_attach_file
     - node.type.page
   module:
-    - ds
+    - file
     - text
     - user
-third_party_settings:
-  ds:
-    layout:
-      id: radix_boxton
-      library: radix_layouts/radix_layouts
-      disable_css: false
-      entity_classes: all_classes
-      settings:
-        classes: {  }
-        wrappers:
-          contentmain: div
-        outer_wrapper: div
-        attributes: ''
-        link_attribute: ''
-        link_custom: ''
-    regions:
-      contentmain:
-        - langcode
-        - body
-        - addtoany
-        - links
 _core:
   default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
 id: node.page.default
@@ -37,22 +17,26 @@ targetEntityType: node
 bundle: page
 mode: default
 content:
-  addtoany:
-    weight: 101
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   body:
     label: hidden
     type: text_default
-    weight: 100
+    weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_attach_file:
+    weight: 2
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
   links:
-    weight: 101
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
+  addtoany: true
   langcode: true

@@ -15876,14 +15876,14 @@ h3, h4, h5, h6 {
   margin-bottom: 1em;
 }
 
-h2 {
+.home h2, .container-project h2 {
   font-weight: 900;
   text-transform: uppercase;
   text-align: center;
   line-height: 1.5;
   font-size: 1.8em;
 }
-h2::after {
+.home h2::after, .container-project h2::after {
   content: "";
   width: 40px;
   height: 52px;
@@ -15892,15 +15892,15 @@ h2::after {
   left: 49%;
 }
 
-.news h2, .videos-eru h2 {
+h2 {
+  font-weight: 900;
   text-transform: none;
   text-align: left;
-}
-.news h2::after, .videos-eru h2::after {
-  content: none;
+  line-height: 1.5;
+  font-size: 1.8em;
 }
 
-.news h3, .all-news #titulo-busqueda, .project-content h3 {
+h3, #titulo-busqueda {
   font-size: 1.4em;
   border-bottom: 1px #ddd solid;
   padding: 0.3em;
@@ -15908,7 +15908,7 @@ h2::after {
   margin-bottom: 1em;
   line-height: 1.2 !important;
 }
-.news h3::after, .all-news #titulo-busqueda::after, .project-content h3::after {
+h3::after, #titulo-busqueda::after {
   content: "";
   width: 40px;
   height: 40px;
@@ -15916,6 +15916,14 @@ h2::after {
   position: absolute;
   left: 0;
   bottom: 0;
+}
+
+.home h3 {
+  font-size: 1.75rem;
+  border-bottom: none;
+}
+.home h3::after {
+  content: none;
 }
 
 h4 {
@@ -15957,17 +15965,17 @@ p {
   transition: background-color 0.5s;
 }
 
-.news li, .project-content li {
+.page li, .news li, .project-content li {
   font-size: 1.1em;
   margin-bottom: 1.1em;
 }
 
-.news ul li, .project-content ul li {
+.page ul li, .news ul li, .project-content ul li {
   list-style: none;
   position: relative;
 }
 
-.news ol li {
+.page ol li, .news ol li {
   padding-left: 5px;
 }
 
@@ -16136,14 +16144,26 @@ tr:nth-child(even) {
   width: 100%;
 }
 #eru-slide .carousel-caption {
-  left: 10% !important;
+  left: 7% !important;
   text-align: left !important;
-  width: 25%;
+  width: 35%;
   bottom: 12%;
 }
 #eru-slide .carousel-caption h3 {
+  font-size: 1.7em !important;
   font-family: "Poppins", Arial, Sans-serif;
   font-weight: 600;
+  border-bottom: none;
+  padding: 0;
+}
+#eru-slide .carousel-caption h3::after {
+  content: none;
+}
+#eru-slide .carousel-caption p {
+  line-height: 1.2;
+}
+#eru-slide .carousel-caption p, #eru-slide .carousel-caption a {
+  font-size: 1.2em;
 }
 #eru-slide .controles {
   display: flex;
@@ -16269,12 +16289,20 @@ tr:nth-child(even) {
   font-weight: 500;
 }
 .page__content .news-home h3, .page__content .page-search h3 {
-  line-height: 0.6em;
+  line-height: 0.6em !important;
+  font-size: 1.75rem;
+  border-bottom: none;
 }
 .page__content .news-home h3 a, .page__content .page-search h3 a {
   font-size: 0.55em;
   font-weight: 600;
   color: #000;
+}
+.page__content .news-home h3 a::after, .page__content .page-search h3 a::after {
+  content: none;
+}
+.page__content .news-home h3::after, .page__content .page-search h3::after {
+  content: none;
 }
 .page__content .news-home .title-one, .page__content .page-search .title-one {
   margin: 20px 0 45px 0;
@@ -16336,48 +16364,127 @@ tr:nth-child(even) {
   display: block;
   margin-top: 1.5em;
 }
-.page__content .paragraph--type--links-of-interest .link-item {
+.page__content .fila1, .page__content .fila2 {
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+}
+.page__content .fila1 .link-item, .page__content .fila2 .link-item {
+  width: 18%;
+  border: 1px solid #efefef;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 10px;
+}
+.page__content .fila1 .title, .page__content .fila2 .title {
+  text-transform: none !important;
+}
+.page__content .fila1 .title a, .page__content .fila2 .title a {
+  color: #212529 !important;
+}
+.page__content .fila1 i, .page__content .fila2 i {
+  padding: 50px !important;
+}
+.page__content .fila1 .contacto-transparencia-ico, .page__content .fila2 .contacto-transparencia-ico {
+  background: url("../images/iconos-transparencia.png"), transparent;
+}
+.page__content .fila1 .info-transparencia-ico, .page__content .fila2 .info-transparencia-ico {
+  background: url("../images/iconos-transparencia.png"), transparent;
+  background-position: -120px 0;
+}
+.page__content .fila1 .estructura-transparencia-ico, .page__content .fila2 .estructura-transparencia-ico {
+  background: url("../images/iconos-transparencia.png"), transparent;
+  background-position: -230px 0;
+}
+.page__content .fila1 .normatividad-ico, .page__content .fila2 .normatividad-ico {
+  background: url("../images/iconos-transparencia.png"), transparent;
+  background-position: -355px 0;
+}
+.page__content .fila1 .presupuesto-ico, .page__content .fila2 .presupuesto-ico {
+  background: url("../images/iconos-transparencia.png"), transparent;
+  background-position: -480px 0;
+}
+.page__content .fila1 .planeacion-ico, .page__content .fila2 .planeacion-ico {
+  background: url("../images/iconos-transparencia.png"), transparent;
+  background-position: 565px 0;
+}
+.page__content .fila1 .control-ico, .page__content .fila2 .control-ico {
+  background: url("../images/iconos-transparencia.png"), transparent;
+  background-position: 445px 0;
+}
+.page__content .fila1 .contratacion-ico, .page__content .fila2 .contratacion-ico {
+  background: url("../images/iconos-transparencia.png"), transparent;
+  background-position: 330px 0;
+}
+.page__content .fila1 .tramites-ico, .page__content .fila2 .tramites-ico {
+  background: url("../images/iconos-transparencia.png"), transparent;
+  background-position: 210px 0;
+}
+.page__content .fila1 .instrumentos-ico, .page__content .fila2 .instrumentos-ico {
+  background: url("../images/iconos-transparencia.png"), transparent;
+  background-position: 100px 0;
+}
+.page__content .link-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 3.5rem;
 }
-.page__content .paragraph--type--links-of-interest i {
+.page__content .link-item i {
   padding: 44px;
 }
-.page__content .paragraph--type--links-of-interest .fa-one-class {
+.page__content .link-item .fa-one-class {
   background: url("../images/ico-01.png"), transparent;
 }
-.page__content .paragraph--type--links-of-interest .fa-two-class {
+.page__content .link-item .fa-two-class {
   background: url("../images/ico-02.png"), transparent;
 }
-.page__content .paragraph--type--links-of-interest .fa-tree-class {
+.page__content .link-item .fa-tree-class {
   background: url("../images/ico-03.png"), transparent;
 }
-.page__content .paragraph--type--links-of-interest .fa-four-class {
+.page__content .link-item .fa-four-class {
   background: url("../images/ico-04.png"), transparent;
 }
-.page__content .paragraph--type--links-of-interest .fa-five-class {
+.page__content .link-item .fa-five-class {
   background: url("../images/ico-05.png"), transparent;
 }
-.page__content .paragraph--type--links-of-interest .fa-six-class {
+.page__content .link-item .fa-six-class {
   background: url("../images/ico-06.png"), transparent;
 }
-.page__content .paragraph--type--links-of-interest .fa-seven-class {
+.page__content .link-item .fa-seven-class {
   background: url("../images/ico-07.png"), transparent;
 }
-.page__content .paragraph--type--links-of-interest .fa-eight-class {
+.page__content .link-item .fa-eight-class {
   background: url("../images/ico-08.png"), transparent;
 }
-.page__content .paragraph--type--links-of-interest .description {
+.page__content .link-item .description {
   text-align: center;
   margin-top: 1rem;
 }
-.page__content .paragraph--type--links-of-interest .title {
+.page__content .link-item .title {
   text-transform: uppercase;
   color: #000;
   font-weight: bold;
   margin-top: 1rem;
+}
+.page__content .listado-transparencia i {
+  display: none;
+}
+.page__content .listado-transparencia ul {
+  background-color: #f7f7f7ee;
+  padding-left: 0;
+}
+.page__content .listado-transparencia ul li {
+  margin-bottom: 0;
+}
+.page__content .listado-transparencia ul li a {
+  display: block;
+  padding: 1em;
+  border-bottom: 1px solid #c7c7c7dd;
+  cursor: pointer;
+}
+.page__content .listado-transparencia ul li a:hover {
+  background-color: #d6d6d6;
 }
 
 /**Estilos Layout brenham **/
@@ -16458,6 +16565,42 @@ tr:nth-child(even) {
 /*.container-project h3{
 	margin-bottom: 1.5em;
 }*/
+aside {
+  background-color: #fbfbfb;
+  padding-top: 1em;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+}
+aside h2 {
+  font-weight: 700;
+  margin-left: 15px;
+  margin-bottom: 0.5em !important;
+  font-size: 1.4em;
+  border-left: 2px solid #0A6EC8;
+  padding-left: 0.5em;
+}
+aside ul {
+  display: flex;
+  flex-flow: column;
+}
+aside ul li {
+  margin-bottom: 0 !important;
+  border-bottom: 1px solid #dcdcdc;
+}
+aside ul li a {
+  margin: 0.5em 0;
+  color: #212529;
+  margin: 0;
+  padding: 1rem !important;
+}
+aside ul li a:hover {
+  background-color: #dcdcdc;
+}
+aside ul li.active {
+  border-bottom: 2px solid #0A6EC8;
+}
+
 footer {
   color: #fff;
   font-size: 0.9em;
@@ -16608,6 +16751,10 @@ footer img {
     margin-bottom: 0.3em;
   }
 
+  .page__content .fila1 .link-item, .page__content .fila2 .link-item {
+    width: 17%;
+  }
+
   footer h2 {
     font-size: 1.2em;
   }
@@ -16621,13 +16768,6 @@ footer img {
   }
 }
 @media (max-width: 1600px) {
-  #eru-slide .controles {
-    left: 20%;
-  }
-  #eru-slide h3 {
-    font-size: 1.5em !important;
-  }
-
   #search-block-form > input {
     width: 90% !important;
   }
@@ -16775,6 +16915,10 @@ footer img {
   .container-project .dato-general i {
     background-size: 380px;
     background-repeat: no-repeat;
+  }
+
+  .page__content .fila1 .link-item, .page__content .fila2 .link-item {
+    width: 45%;
   }
 
   .videos-eru iframe {

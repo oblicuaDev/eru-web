@@ -14,7 +14,7 @@ disabled: false
 conditions:
   request_path:
     id: request_path
-    pages: proyectos/
+    pages: "/mecanismos-para-la-atencion-al-ciudadano\r\n/mision-y-vision\r\n/procesos-y-procedimientos"
     negate: 0
     uuid: b16c0a93-47bc-4e77-ac1f-a3d1a90eec70
     context_mapping: {  }
@@ -29,22 +29,22 @@ conditions:
 reactions:
   blocks:
     blocks:
-      68c894b5-88e8-473b-a22d-9dea090d58a8:
-        id: 'system_menu_block:main'
-        label: 'Navegación principal'
+      c4a7f0f7-4ef0-4b51-98f8-d3cd35bbde06:
+        id: 'system_menu_block:transparencia'
+        label: Transparencia
         provider: system
         label_display: visible
-        level: '2'
+        level: '1'
         depth: '0'
         expand_all_items: 0
-        region: content
+        region: aside
         weight: '0'
         context_mapping: {  }
         theme: theme_eru
         css_class: ''
         unique: 0
         context_id: transparencia
-        uuid: 68c894b5-88e8-473b-a22d-9dea090d58a8
+        uuid: c4a7f0f7-4ef0-4b51-98f8-d3cd35bbde06
     id: blocks
     saved: false
     uuid: 8fc0029c-bce5-4ed4-a56e-1fae69c85e78

@@ -369,7 +369,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: "<h2 class=\"text-center\">Proyectos ERU</h2>\r\n\r\n<p class=\"text-center\">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>"
+            value: '<h2 class="text-center">Proyectos ERU</h2>'
             format: full_html
           plugin_id: text
       footer: {  }
@@ -378,7 +378,7 @@ display:
       arguments: {  }
       display_extenders: {  }
       use_ajax: true
-      css_class: project-block
+      css_class: 'project-block home'
       filter_groups:
         operator: AND
         groups:
@@ -423,7 +423,7 @@ display:
         use_more_text: false
         use_ajax: false
         header: false
-        css_class: true
+        css_class: false
         filters: false
         filter_groups: false
       row:
@@ -707,6 +707,7 @@ display:
         operator: AND
         groups:
           1: AND
+      css_class: project-block
     cache_metadata:
       max-age: -1
       contexts:
@@ -864,26 +865,10 @@ display:
           separator: ''
           hide_empty: false
       pager:
-        type: full
+        type: some
         options:
-          items_per_page: 6
+          items_per_page: 9
           offset: 0
-          id: 0
-          total_pages: null
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
-          quantity: 6
       menu:
         type: tab
         title: 'Renovación Urbana'
@@ -919,7 +904,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url.query_args
         - user
         - 'user.node_grants:view'
         - user.permissions
@@ -1058,10 +1042,16 @@ display:
       defaults:
         filters: false
         filter_groups: false
+        pager: false
       filter_groups:
         operator: AND
         groups:
           1: AND
+      pager:
+        type: some
+        options:
+          items_per_page: 6
+          offset: 0
     cache_metadata:
       max-age: -1
       contexts:
@@ -1099,7 +1089,13 @@ display:
       defaults:
         fields: true
         css_class: false
-      css_class: project-block
+        pager: false
+      css_class: 'project-block home'
+      pager:
+        type: some
+        options:
+          items_per_page: 9
+          offset: 0
     cache_metadata:
       max-age: -1
       contexts:

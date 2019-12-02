@@ -248,7 +248,7 @@ display:
       display_extenders: {  }
       link_url: all-the-news
       link_display: custom_url
-      css_class: 'news-home all-news'
+      css_class: 'news-home all-news home'
     cache_metadata:
       max-age: -1
       contexts:
