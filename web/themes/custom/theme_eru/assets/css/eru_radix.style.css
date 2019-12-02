@@ -17092,6 +17092,8 @@ footer img {
   background-color: #000 !important;
   padding: 13px !important;
   opacity: 0.8 !important;
+  padding-bottom: 70px !important;
+  margin-bottom: 0 !important;
 }
 
 .news #eru-slide .carousel-caption, .container-project #eru-slide .carousel-caption {
