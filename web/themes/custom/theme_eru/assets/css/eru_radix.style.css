@@ -17088,14 +17088,25 @@ footer img {
 @import "fonts/fontawesome/scss/solid.scss";
 @import "fonts/fontawesome/scss/regular.scss";
 @import "fonts/fontawesome/scss/brands.scss"; */
+.project__field-videos #eru-slide .carousel-caption {
+  background-color: #000 !important;
+  padding: 13px !important;
+  opacity: 0.8 !important;
+}
+
 .news #eru-slide .carousel-caption, .container-project #eru-slide .carousel-caption {
-  width: 100%;
+  width: 80%;
   font-size: 1.3em;
   margin: 20px 0;
+  background-color: #000;
+  opacity: 0.8;
+  padding-bottom: 47px;
+  margin: 0;
+  padding-left: 24px;
 }
 .news #eru-slide .controles, .container-project #eru-slide .controles {
   left: 10%;
-  bottom: 9%;
+  bottom: 12%;
 }
 .news .news__field-gallery .field__label, .container-project .news__field-gallery .field__label {
   display: none;
