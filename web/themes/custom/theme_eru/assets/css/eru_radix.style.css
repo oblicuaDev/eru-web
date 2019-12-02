@@ -16537,25 +16537,58 @@ tr:nth-child(even) {
 .container-project .dato-general i {
   padding: 32px;
   background-repeat: no-repeat;
-  background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/proyectos-iconos.png), transparent;
+  background: url(../images/proyectos-iconos-2.png), transparent;
 }
 .container-project .dato-general .area-icono {
-  background-position: -66px 0;
+  background-position: -72px 0;
 }
 .container-project .dato-general .inversion-icono {
-  background-position: -136px 0;
+  background-position: -140px 0;
 }
-.container-project .dato-general .industrias-icono {
-  background-position: -206px 0;
+.container-project .dato-general .arte-icono {
+  background-position: -212px 0;
 }
 .container-project .dato-general .comercio-icono {
-  background-position: -276px 0;
+  background-position: -282px 0;
 }
 .container-project .dato-general .educacion-icono {
-  background-position: -346px 0;
+  background-position: -350px 0;
+}
+.container-project .dato-general .vivienda-icono {
+  background-position: -422px 0;
+}
+.container-project .dato-general .espacio-publico-icono {
+  background-position: -490px 0;
+}
+.container-project .dato-general .vias-icono {
+  background-position: -562px 0;
+}
+.container-project .dato-general .cultura-icono {
+  background-position: -633px 0;
+}
+.container-project .dato-general .area-construida-icono {
+  background-position: -772px 0;
+}
+.container-project .dato-general .parques-icono {
+  background-position: -702px 0;
+}
+.container-project .dato-general .recreacion-icono {
+  background-position: -842px 0;
+}
+.container-project .dato-general .deporte-icono {
+  background-position: -914px 0;
+}
+.container-project .dato-general .agua-icono {
+  background-position: -984px 0;
+}
+.container-project .dato-general .transporte-icono {
+  background-position: -1052px 0;
 }
 .container-project .dato-general .etapas-icono {
-  background-position: -414px 0;
+  background-position: -1124px 0;
+}
+.container-project .dato-general .poblacion-icono {
+  background-position: -1195px 0;
 }
 .container-project .dato-general .titulo-cifra {
   font-size: 0.9em;
