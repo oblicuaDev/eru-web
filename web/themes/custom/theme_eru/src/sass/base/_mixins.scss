@@ -52,17 +52,17 @@
 	}	
 }
 .address-ico{
-	@include icono('fas', $fa-var-location-arrow, #FFF, 5px, 1.1em, #FFF, 10%);		
+	@include icono('fas', $fa-var-location-arrow, #FFF, 5px, 1.1em, #FFF, -8%);		
 }
 .phone-ico {
-	@include icono('fas', $fa-var-phone, #FFF, 5px, 1.1em, #FFF, 10%);		
+	@include icono('fas', $fa-var-phone, #FFF, 5px, 1.1em, #FFF, -8%);		
 	vertical-align: top;
 }
 .mail-ico {
-	@include icono('fas', $fa-var-envelope, #FFF, 5px, 1.1em, #FFF, 10%);		
+	@include icono('fas', $fa-var-envelope, #FFF, 5px, 1.1em, #FFF, -8%);		
 }
 .horario-ico {
-	@include icono('fas', $fa-var-clock, #FFF, 5px, 1.1em, #FFF, 10%);		
+	@include icono('fas', $fa-var-clock, #FFF, 5px, 1.1em, #FFF, -8%);		
 }
 .facebook-ico{	
 	@include icono('fab', $fa-var-facebook-f, #FFF, 5px, 1.5em, #A0BF4A, auto);		
@@ -81,6 +81,9 @@
 }
 .site-map{	
 	@include icono('fas', $fa-var-sitemap, #FFF, 5px, 1.5em, #A0BF4A, 26%);	
+	&::before{
+		top: 0 !important;
+	}
 }
 .tag-ico{	
 	@include icono('fas', $fa-var-tag, $azul-oscuro, 5px, 1em, none, auto);	

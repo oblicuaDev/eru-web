@@ -15577,7 +15577,7 @@ readers do not read off random characters that represent icons */
   font-weight: 900;
   position: absolute;
   font-size: 1.1em;
-  left: 10%;
+  left: -8%;
 }
 .address-ico:hover::before, .address-ico:focus::before {
   color: #FFF;
@@ -15598,7 +15598,7 @@ readers do not read off random characters that represent icons */
   font-weight: 900;
   position: absolute;
   font-size: 1.1em;
-  left: 10%;
+  left: -8%;
 }
 .phone-ico:hover::before, .phone-ico:focus::before {
   color: #FFF;
@@ -15618,7 +15618,7 @@ readers do not read off random characters that represent icons */
   font-weight: 900;
   position: absolute;
   font-size: 1.1em;
-  left: 10%;
+  left: -8%;
 }
 .mail-ico:hover::before, .mail-ico:focus::before {
   color: #FFF;
@@ -15638,7 +15638,7 @@ readers do not read off random characters that represent icons */
   font-weight: 900;
   position: absolute;
   font-size: 1.1em;
-  left: 10%;
+  left: -8%;
 }
 .horario-ico:hover::before, .horario-ico:focus::before {
   color: #FFF;
@@ -15762,6 +15762,9 @@ readers do not read off random characters that represent icons */
 }
 .site-map:hover::before, .site-map:focus::before {
   color: #A0BF4A;
+}
+.site-map::before {
+  top: 0 !important;
 }
 
 .tag-ico {
@@ -16534,25 +16537,58 @@ tr:nth-child(even) {
 .container-project .dato-general i {
   padding: 32px;
   background-repeat: no-repeat;
-  background: url(http://local.eru.com/themes/custom/theme_eru/assets/images/proyectos-iconos.png), transparent;
+  background: url(../images/proyectos-iconos-2.png), transparent;
 }
 .container-project .dato-general .area-icono {
-  background-position: -66px 0;
+  background-position: -72px 0;
 }
 .container-project .dato-general .inversion-icono {
-  background-position: -136px 0;
+  background-position: -140px 0;
 }
-.container-project .dato-general .industrias-icono {
-  background-position: -206px 0;
+.container-project .dato-general .arte-icono {
+  background-position: -212px 0;
 }
 .container-project .dato-general .comercio-icono {
-  background-position: -276px 0;
+  background-position: -282px 0;
 }
 .container-project .dato-general .educacion-icono {
-  background-position: -346px 0;
+  background-position: -350px 0;
+}
+.container-project .dato-general .vivienda-icono {
+  background-position: -422px 0;
+}
+.container-project .dato-general .espacio-publico-icono {
+  background-position: -490px 0;
+}
+.container-project .dato-general .vias-icono {
+  background-position: -562px 0;
+}
+.container-project .dato-general .cultura-icono {
+  background-position: -633px 0;
+}
+.container-project .dato-general .area-construida-icono {
+  background-position: -772px 0;
+}
+.container-project .dato-general .parques-icono {
+  background-position: -702px 0;
+}
+.container-project .dato-general .recreacion-icono {
+  background-position: -842px 0;
+}
+.container-project .dato-general .deporte-icono {
+  background-position: -914px 0;
+}
+.container-project .dato-general .agua-icono {
+  background-position: -984px 0;
+}
+.container-project .dato-general .transporte-icono {
+  background-position: -1052px 0;
 }
 .container-project .dato-general .etapas-icono {
-  background-position: -414px 0;
+  background-position: -1124px 0;
+}
+.container-project .dato-general .poblacion-icono {
+  background-position: -1195px 0;
 }
 .container-project .dato-general .titulo-cifra {
   font-size: 0.9em;
@@ -16702,6 +16738,10 @@ footer img {
   .project__field-videos video {
     height: auto !important;
   }
+
+  .video-home .media-oembed-content {
+    width: 533px !important;
+  }
 }
 @media screen and (max-width: 1200px) {
   #eru-slide .controles {
@@ -16753,6 +16793,10 @@ footer img {
 
   .page__content .fila1 .link-item, .page__content .fila2 .link-item {
     width: 17%;
+  }
+
+  .video-home .media-oembed-content {
+    width: 450px !important;
   }
 
   footer h2 {
@@ -16825,6 +16869,10 @@ footer img {
 
   .all-news .views-field-body {
     display: none;
+  }
+
+  .video-home .media-oembed-content {
+    width: 385px !important;
   }
 }
 @media screen and (max-width: 768px) {
@@ -16921,6 +16969,10 @@ footer img {
     width: 45%;
   }
 
+  .video-home .media-oembed-content {
+    width: 518px !important;
+  }
+
   .videos-eru iframe {
     max-height: 440px !important;
   }
@@ -17009,6 +17061,10 @@ footer img {
     margin: 0.4em;
   }
 
+  .video-home .media-oembed-content {
+    width: 350px !important;
+  }
+
   footer .contact ul {
     padding: 0 !important;
   }
@@ -17032,14 +17088,27 @@ footer img {
 @import "fonts/fontawesome/scss/solid.scss";
 @import "fonts/fontawesome/scss/regular.scss";
 @import "fonts/fontawesome/scss/brands.scss"; */
+.project__field-videos #eru-slide .carousel-caption {
+  background-color: #000 !important;
+  padding: 13px !important;
+  opacity: 0.8 !important;
+  padding-bottom: 70px !important;
+  margin-bottom: 0 !important;
+}
+
 .news #eru-slide .carousel-caption, .container-project #eru-slide .carousel-caption {
-  width: 100%;
+  width: 80%;
   font-size: 1.3em;
   margin: 20px 0;
+  background-color: #000;
+  opacity: 0.8;
+  padding-bottom: 47px;
+  margin: 0;
+  padding-left: 24px;
 }
 .news #eru-slide .controles, .container-project #eru-slide .controles {
   left: 10%;
-  bottom: 9%;
+  bottom: 12%;
 }
 .news .news__field-gallery .field__label, .container-project .news__field-gallery .field__label {
   display: none;
