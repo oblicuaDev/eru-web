@@ -85,7 +85,7 @@ import 'popper.js';
         for (var i = 0; i < sURLVariables.length; i++) {
           var sParametro = sURLVariables[i].split('=');
           if (sParametro[0] == sParametroNombre) {
-            return sParametro[1];
+            return sParametro[1].replace('%20',' ');
           }
         }
         return null;
@@ -94,7 +94,7 @@ import 'popper.js';
       var valor = obtenerValorParametro('tag');
 
       if (valor) {
-        jQuery(".form-autocomplete").attr("value", valor.replace("%20", " "));
+        jQuery(".form-autocomplete").attr("value", decodeURIComponent(valor));
         jQuery(document).ready(function () {
           jQuery("#views-exposed-form-all-the-news-page-1 #edit-submit-all-the-news", context).click();
         });
@@ -106,16 +106,10 @@ import 'popper.js';
         var text = $this.text();
         var numberTax = $this.attr("href");
         var idioma = window.location.pathname;
-        console.log(window.location);
-
-        window.location = "/noticias/?tag=" + text + "%20(" + numberTax.substr(-2) + ")";
-
-        console.log(idioma );
-
-        if (idioma.substr(3) == "en/"){
-          //window.location = "en/noticias/?tag=" + text + "%20(" + numberTax.substr(-2) + ")";
+        if (idioma.substr(0, 4) == "/en/"){
+          window.location = "/en/noticias/?tag=" + encodeURI(text) + " (" + numberTax.substr(-2) + ")";
         }else{
-          //window.location = "/noticias/?tag=" + text + "%20(" + numberTax.substr(-2) + ")";
+          window.location = "/noticias/?tag=" + encodeURI(text) + " (" + numberTax.substr(-2) + ")";
         }
       });
 
