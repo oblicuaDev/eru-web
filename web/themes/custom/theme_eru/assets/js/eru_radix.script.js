@@ -2804,7 +2804,7 @@ __webpack_require__.r(__webpack_exports__);
           var sParametro = sURLVariables[i].split('=');
 
           if (sParametro[0] == sParametroNombre) {
-            return sParametro[1];
+            return sParametro[1].replace('%20', ' ');
           }
         }
 
@@ -2814,7 +2814,7 @@ __webpack_require__.r(__webpack_exports__);
       var valor = obtenerValorParametro('tag');
 
       if (valor) {
-        jQuery(".form-autocomplete").attr("value", valor.replace("%20", " "));
+        jQuery(".form-autocomplete").attr("value", decodeURIComponent(valor));
         jQuery(document).ready(function () {
           jQuery("#views-exposed-form-all-the-news-page-1 #edit-submit-all-the-news", context).click();
         });
@@ -2826,13 +2826,12 @@ __webpack_require__.r(__webpack_exports__);
         var text = $this.text();
         var numberTax = $this.attr("href");
         var idioma = window.location.pathname;
-        console.log(window.location);
-        window.location = "/noticias/?tag=" + text + "%20(" + numberTax.substr(-2) + ")";
-        console.log(idioma);
 
-        if (idioma.substr(3) == "en/") {//window.location = "en/noticias/?tag=" + text + "%20(" + numberTax.substr(-2) + ")";
-        } else {//window.location = "/noticias/?tag=" + text + "%20(" + numberTax.substr(-2) + ")";
-          }
+        if (idioma.substr(0, 4) == "/en/") {
+          window.location = "/en/noticias/?tag=" + encodeURI(text) + " (" + numberTax.substr(-2) + ")";
+        } else {
+          window.location = "/noticias/?tag=" + encodeURI(text) + " (" + numberTax.substr(-2) + ")";
+        }
       });
     }
   };
@@ -2858,8 +2857,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\eru\web\themes\custom\theme_eru\src\js\eru_radix.script.js */"./src/js/eru_radix.script.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\eru\web\themes\custom\theme_eru\src\sass\eru_radix.style.scss */"./src/sass/eru_radix.style.scss");
+__webpack_require__(/*! /Users/edwinmesa/Documents/myProject/proyect_eru/eru/web/themes/custom/theme_eru/src/js/eru_radix.script.js */"./src/js/eru_radix.script.js");
+module.exports = __webpack_require__(/*! /Users/edwinmesa/Documents/myProject/proyect_eru/eru/web/themes/custom/theme_eru/src/sass/eru_radix.style.scss */"./src/sass/eru_radix.style.scss");
 
 
 /***/ })
