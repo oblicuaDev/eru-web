@@ -1,0 +1,15 @@
+uuid: 42b64d60-e46c-442b-a3eb-acc83a028446
+langcode: es
+status: true
+dependencies: {  }
+name: relacion_4_3
+label: 'Relación 4:3'
+effects:
+  764f993e-8e46-4870-b938-69472cf76b4b:
+    uuid: 764f993e-8e46-4870-b938-69472cf76b4b
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 370
+      height: 220
+      anchor: left-top

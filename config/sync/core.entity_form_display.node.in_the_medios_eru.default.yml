@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.in_the_medios_eru.body
+    - field.field.node.in_the_medios_eru.field_cover_img
     - field.field.node.in_the_medios_eru.field_image_main
     - field.field.node.in_the_medios_eru.field_tabs_media
     - field.field.node.in_the_medios_eru.field_url_of_the_publication
@@ -34,6 +35,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_cover_img:
+    weight: 28
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
   field_image_main:
     weight: 7
     settings:
@@ -101,6 +110,11 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  translation:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   uid:
     type: entity_reference_autocomplete
     weight: 1

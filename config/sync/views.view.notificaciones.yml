@@ -731,7 +731,7 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
-      css_class: table-responsive
+      css_class: 'table-responsive home'
       use_ajax: false
     cache_metadata:
       max-age: -1
@@ -1509,10 +1509,10 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: string
-        field_type_of_project_target_id:
-          id: field_type_of_project_target_id
-          table: node__field_type_of_project
-          field: field_type_of_project_target_id
+        field_project_target_id:
+          id: field_project_target_id
+          table: node__field_project
+          field: field_project_target_id
           relationship: none
           group_type: group
           admin_label: ''
@@ -1523,12 +1523,12 @@ display:
           group: 1
           exposed: true
           expose:
-            operator_id: field_type_of_project_target_id_op
+            operator_id: field_project_target_id_op
             label: Proyecto
             description: ''
             use_operator: false
-            operator: field_type_of_project_target_id_op
-            identifier: field_type_of_project_target_id
+            operator: field_project_target_id_op
+            identifier: field_project_target_id
             required: false
             remember: false
             multiple: false
