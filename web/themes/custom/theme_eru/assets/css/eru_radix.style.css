@@ -16637,6 +16637,12 @@ aside ul li.active {
   border-bottom: 2px solid #0A6EC8;
 }
 
+.eru-medios .views-field-field-image-main img {
+  display: block;
+  height: 220px;
+  overflow: hidden;
+}
+
 footer {
   color: #fff;
   font-size: 0.9em;
