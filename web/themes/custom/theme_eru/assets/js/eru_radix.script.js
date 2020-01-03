@@ -2794,6 +2794,18 @@ __webpack_require__.r(__webpack_exports__);
       jQuery('.video-home iframe').height(300);
     }
   };
+  Drupal.behaviors.googleAnalytics = {
+    attach: function attach(context) {
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag('js', new Date());
+      gtag('config', 'UA-134609174-1');
+    }
+  };
   Drupal.behaviors.linkproject = {
     attach: function attach(context) {
       function obtenerValorParametro(sParametroNombre) {
