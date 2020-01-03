@@ -10,13 +10,9 @@
 		.block--theme-eru-main-menu a.nav-link {
 			font-size: 0.9em !important;
 		}
-		.block--logo img{
-			width: 18%;
-			.logo img {max-width: 100%; height: auto;}
-		}	
 	}
 }
-@media screen and (max-width: 1199px) {		
+@media screen and (max-width: 1200px) {		
 	#eru-slide {		
 		.controles {
 			left: 22%;
@@ -27,7 +23,17 @@
 				font-size: 1.4em !important;
 			}		   
 		} 
-	}	
+	}
+	.menu-principal {
+		.block--theme-eru-main-menu a.nav-link {
+			font-size: 0.9em !important;
+		}
+		.block--logo {
+			width: 18%;
+			.logo img {width: 98%;}
+		}
+	
+	}
 	h2{
 		font-size: 1.5em;
 		&::after{
