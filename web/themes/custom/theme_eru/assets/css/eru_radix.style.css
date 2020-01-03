@@ -16643,6 +16643,12 @@ aside ul li.active {
   overflow: hidden;
 }
 
+.news-home .img-thumbnail-100 img {
+  height: 100px !important;
+  width: 145px !important;
+  overflow: hidden !important;
+}
+
 footer {
   color: #fff;
   font-size: 0.9em;
