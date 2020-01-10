@@ -189,10 +189,19 @@
 	}
 	.link-item{
 		display: flex;
-		flex-direction: column;
-		align-items: center;
-		margin-bottom: 3.5rem;
-		i{padding:44px;}
+    	text-align: center;
+   		margin-bottom: 3rem;   		
+   		a {
+   			color: #212529 !important;
+   			padding: 10px 0 10px 0;
+   			&:hover {
+   				background-color: #ededed;
+   				text-decoration: none;
+   				padding: 10px 0 8px 0;
+   				border-bottom: 2px solid #0A6EC8;
+   			}   			
+   		}
+		.fas {padding:44px;}
 		.fa-one-class{background: url("../images/ico-01.png"), transparent;}
 		.fa-two-class{background: url("../images/ico-02.png"), transparent;}
 		.fa-tree-class{background: url("../images/ico-03.png"), transparent;}
@@ -201,8 +210,12 @@
 		.fa-six-class{background: url("../images/ico-06.png"), transparent;}
 		.fa-seven-class{background: url("../images/ico-07.png"), transparent;}
 		.fa-eight-class{background: url("../images/ico-08.png"), transparent;}
-		.description{text-align: center; margin-top:1rem;}
-		.title{text-transform: uppercase; color: #000; font-weight: bold; margin-top: 1rem;}
+		.description{
+			text-align: center; 
+			margin-top:1rem;
+			&:hover{ text-decoration: none !important; }
+		}
+		.title{display:block; text-transform: uppercase; color: #000; font-weight: bold; margin-top: 1rem;}
 	}
 	.listado-transparencia {
 		i {display: none;}
