@@ -16378,6 +16378,19 @@ tr:nth-child(even) {
   border-radius: 8px;
   margin: 10px;
   padding: 10px;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.page__content .fila1 .link-item:hover, .page__content .fila1 .link-item:focus, .page__content .fila2 .link-item:hover, .page__content .fila2 .link-item:focus {
+  background-color: #ededed;
+}
+.page__content .fila1 .link-item a, .page__content .fila2 .link-item a {
+  padding: unset !important;
+}
+.page__content .fila1 .link-item a:hover, .page__content .fila2 .link-item a:hover {
+  padding: unset !important;
+  background-color: unset !important;
+  border: unset;
 }
 .page__content .fila1 .title, .page__content .fila2 .title {
   text-transform: none !important;
