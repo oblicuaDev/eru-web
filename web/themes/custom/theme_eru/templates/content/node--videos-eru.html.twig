@@ -20,6 +20,7 @@
   <h2{{ title_attributes }}>{{ label }}</h2>
   {% block content %}
   {{ content.field_url_video_yt_ }}
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/knkQ8NLEA80" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   {{ content.field_tags }}  
   <div class="video_data">
     <div class="item_data"><b>Fecha de publicación:  </b> {{ node.created.value|format_date('fecha_sitio') }}</div>   
