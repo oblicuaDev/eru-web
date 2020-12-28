@@ -2794,6 +2794,18 @@ __webpack_require__.r(__webpack_exports__);
       jQuery('.video-home iframe').height(300);
     }
   };
+  Drupal.behaviors.googleAnalytics = {
+    attach: function attach(context) {
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag('js', new Date());
+      gtag('config', 'UA-134609174-1');
+    }
+  };
   Drupal.behaviors.linkproject = {
     attach: function attach(context) {
       function obtenerValorParametro(sParametroNombre) {
@@ -2857,8 +2869,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /var/www/html/eru/web/themes/custom/theme_eru/src/js/eru_radix.script.js */"./src/js/eru_radix.script.js");
-module.exports = __webpack_require__(/*! /var/www/html/eru/web/themes/custom/theme_eru/src/sass/eru_radix.style.scss */"./src/sass/eru_radix.style.scss");
+__webpack_require__(/*! C:\xampp\htdocs\eru\web\themes\custom\theme_eru\src\js\eru_radix.script.js */"./src/js/eru_radix.script.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\eru\web\themes\custom\theme_eru\src\sass\eru_radix.style.scss */"./src/sass/eru_radix.style.scss");
 
 
 /***/ })
