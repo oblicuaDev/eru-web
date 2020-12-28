@@ -47,36 +47,10 @@
   ]
 %}
 {% block paragraph %}
-  <div{{attributes.addClass(classes)}}>
+  <div{{ attributes.addClass(classes) }}>
     {% block content %}
-   {#  <ol class="carousel-indicators">
-      {% for key, item in content.field_links %}     
-        {% if key matches '/^\\d+$/' %}
-          <li data-target="#eru-slide2" data-slide-to="{{ key }}" {% if key == 0 %} class="active" {% endif %}></li>
-        {% endif %}
-      {% endfor %}</ol> #}
-      <div class="row">
-        {% for key, item in content.field_links %}
-          {% if key matches '/^\\d+$/' %}
-            {% set link_url = item['#paragraph'].field_link_link.0.url %}
-            {% set class_icon = item['#paragraph'].field_class.value  %}
-            {% set title_link = item['#paragraph'].field_title_link.value %}
-            {% set  description_link = item['#paragraph'].field_text.0.value %}
-              <div class="col-md-3 col-sm-3 col-6 link-item">                
-                <a href="{{ link_url }}">   
-                    <i class="fas {{ class_icon }}"></i>               
-                    <span class="title">{{title_link }}</span>
-                    {% if  item['#paragraph'].field_external_link_link.value == 1 %}
-                      <span class="sr-only">Abre en una nueva ventana</span>
-                    {% endif %} 
-                <span class="description d-none d-sm-block">
-                  {{description_link|raw}}
-                </span>  
-                </a>              
-              </div>
-          {% endif %}
-        {% endfor %}
-      </div>
+            <a class="" target="_blank" href="{{ content.field_descargable.0 }}">{{ content.field_title}}</a>
+            
     {% endblock %}
   </div>
 {% endblock paragraph %}

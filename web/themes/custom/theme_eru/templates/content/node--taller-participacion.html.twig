@@ -12,34 +12,43 @@
   not node.isPublished() ? 'node--unpublished',
   node.bundle|clean_class,
   node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
-  'project'
+  'participacion'
 ]
 %}
 
 <article{{attributes.addClass(classes)}}>
   {% block content %}
-    {{ content.field_videos}}
-    <div class="container container-project mt-5">
-      <h2 class="text-center">{{ label }}</h2>
-        <div class="row">
-          <div class="col-md-4 col-12">
-            {{ content.body}}
-            <div class="element-invisible d-none {{content.field_external_link.0}}" data-visible="{{content.field_external_link.0}}">Abre en una nueva ventana</div>
-           {#  {% if content.field_external_link.0 == "TRUE" %}
-              <div class="element-invisible" data-visible="{{content.field_external_link.0}}">Abre en una nueva ventana</div>
-            {% endif %}
-            {% if content.field_external_link.0 == 'TRUE' %}
-              <div class="element-invisible">Abre en una nueva ventana</div>
-            {% endif %}
-            {% if content.field_external_link.0 == TRUE %}
-              <div class="element-invisible">Abre en una nueva ventana</div>
-            {% endif %} #}
+    <div class="container mt-5">
+        <div class="row mt-5">
+          <div class="col-md-7 col-12">
+              {{ content.field_cover_img }}
           </div>
-          <div class="col-md-8 col-12">
-            <div class="{{attributes.class.0}}"></div>
-            {{ content.field_image }}
+          <div class="col-md-5 col-12">
+          <div class="align-self-center">
+            <h2 class="text-center">{{ label }}</h2>
+            {{ content.field_fecha}}
+          </div>
+          <div class="align-self-baseline">  
+            {{ content.addtoany }}
+          </div>
           </div>
         </div>
+        <div class="descripcion-taller text-center">
+          {{ content.body}}
+        </div>
+        
+         <div class="documentos-taller mt-5 w-75 mx-auto">
+          <h3 class="text-center">Documentos descargables</h3> 
+          {{content.field_blocks}}
+        </div> 
+        
+        <div class="text-center mt-5 galeria-taller">
+          <h3 >La participación en imagenes</h3>
+          {{ content.field_image }}
+        </div> 
+        
+          
+        
     {% if not page %}
       <h2{{title_attributes}}>
         <a href="{{ url }}" rel="bookmark">{{ label }}</a>

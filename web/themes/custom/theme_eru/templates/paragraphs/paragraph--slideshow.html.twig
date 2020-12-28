@@ -58,20 +58,23 @@
       {% endfor %}
       </ol>
       <div class="carousel-inner">
+      {% set slides_length = 0 %}
         {% for key, item in content.field_slides %}
+        
           {% if key matches '/^\\d+$/' %}
           {% if key == 0 %}
             <div class="carousel-item active">
           {% else %}
             <div class="carousel-item">
           {% endif %}
+          {% set slides_length = slides_length + 1 %}
             {% set field_slides_type = item['#paragraph'].field_slides_type %}
             {% set img_url = file_url(item['#paragraph'].field_image.entity.field_media_image.entity.uri.value) %}
             {% set img_alt = item['#paragraph'].field_image.entity.field_media_image.value[0]['alt'] %}
             {% set img_longdesc = item['#paragraph'].field_image.entity.field_longdesc.value %}
 
             {% if field_slides_type.value == 'image' %}
-              <img src="{{ img_url }}" class="d-block w-100" alt="{{ img_alt }}" {% if img_longdesc %} longdesc="{{ img_longdesc }}" {% endif %}>
+              <img src="{{ img_url }}" class="d-block" alt="{{ img_alt }}" {% if img_longdesc %} longdesc="{{ img_longdesc }}" {% endif %}>
             {% elseif field_slides_type.value == 'video'%}
               {% set video = item['#paragraph'].field_media.entity %}
               {{ devel_breakpoint() }}
@@ -84,22 +87,25 @@
                 <iframe width="1300" height="700" src="{{ video.field_media_oembed_video.value }}"></iframe>
               {% endif %}
             {% endif %}
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption">
                <h3>{{ item['#paragraph'].field_title.value }}</h3>
-               <p> {{ item['#paragraph'].field_description.value }} </p>
-               {% if item['#paragraph'].field_link.value %}
+               <p class="d-none d-sm-block"> {{ item['#paragraph'].field_description.value }} </p>
+              {% if item['#paragraph'].field_link.value %}
                 <a class="btn btn-primary" href="{{ item['#paragraph'].field_link.0.url}}"
-                  {% if item['#paragraph'].field_external_link.value == 1 %}
-                    target="_blank" class="alert-leave-page"
-                    {% endif %}>Leer más <span class="sr-only">sobre {{ item['#paragraph'].field_title.value }}{% if item['#paragraph'].field_external_link.value == 1 %}, Abre en una nueva ventana{% endif %}</span>
-                </a>
+                {% if item['#paragraph'].field_external_link.value == 1 %}
+                      target="_blank" class="alert-leave-page"
+                      {% endif %}>Ver más <span class="sr-only">sobre {{ item['#paragraph'].field_title.value }}{% if item['#paragraph'].field_external_link.value == 1 %}, Abre en una nueva ventana{% endif %}</span>
+                  </a>
               {% endif %}
             </div>
           </div>
           {% endif %}
         {% endfor %}
       </div>
+       {% if slides_length > 1  %}
       <div class="controles">
+      
+      
         <a class="carousel-control-prev" role="button" {#data-slide="prev"#}>
           <i class="fas fa-chevron-circle-left"></i>
           <!--<span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
@@ -114,13 +120,14 @@
               <i class="fas fa-pause-circle"></i>
               <span class="sr-only">Pausar</span>
               </button>
-          </div>
+        </div>
         <a class="carousel-control-next" role="button" {#data-slide="next"#}>
           <!--<span class="carousel-control-next-icon" aria-hidden="true"></span>-->
           <i class="fas fa-chevron-circle-right"></i>
           <span class="sr-only">Ir a la imagen siguiente</span>
         </a>
       </div>
+      {% endif %}
       </div>
     {% endblock %}
   </div>

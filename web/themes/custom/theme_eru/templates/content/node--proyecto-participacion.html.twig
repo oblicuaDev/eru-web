@@ -1,0 +1,131 @@
+{#
+/**
+ * @file
+ * Template for a Node.
+ */
+#}
+{%
+  set classes = [
+  'node',
+  node.isPromoted() ? 'node--promoted',
+  node.isSticky() ? 'node--sticky',
+  not node.isPublished() ? 'node--unpublished',
+  node.bundle|clean_class,
+  node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
+  'participacion proyecto'
+]
+%}
+{# {{ kint(content|keys)}} #}
+<article{{attributes.addClass(classes)}}>
+  {% block content %}
+    <div class="container  mt-5">
+      <div class="row mt-5">
+          <div class="col-md-7 col-12">
+              <div class="{{attributes.class.0}}"></div>
+              {{ content.field_cover_img }}
+          </div>
+          <div class="col-md-5 col-12 pt-4 pl-4">
+            <div class="align-self-center">
+              <h2>{{ label }}</h2>
+              <div class="dato-general mt-3">
+                <i class="location-icon"></i>
+                <div class="cifra"><span>{{ content.field_ubicacion }}</span></div>
+              </div>
+            </div>
+            <div class="align-self-baseline">
+              {{ content.addtoany }}
+            </div>
+          </div>
+      </div>
+    {##}
+    <ul class="nav nav-tabs mb-3 mt-5" id="tabs-proyecto-participacion" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="contexto-tab" data-toggle="tab" href="#contexto" role="tab" aria-controls="contexto" aria-selected="true">Contexto</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="eventos-tab" data-toggle="tab" href="#eventos" role="tab" aria-controls="eventos" aria-selected="false">Eventos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="talleres-tab" data-toggle="tab" href="#talleres" role="tab" aria-controls="talleres" aria-selected="false">Talleres</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="juntos-construimos-tab" data-toggle="tab" href="#juntos-construimos" role="tab" aria-controls="juntos-construimos" aria-selected="false">Juntos Construimos</a>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+    {#Contexto#}
+      <div class="tab-pane fade show active" id="contexto" role="tabpanel" aria-labelledby="contexto-tab">
+        <div class="row mt-5">
+          <div class="col-lg-6 align-self-center">
+            <h3 class="mb-3 text-center">Descripción de proyecto</h3>
+            {{content.body}}
+            <div class="btn btn-proyecto d-flex justify-content-center w-75 mx-auto">{{content.field_url_of_the_publication}}</div>
+            </div>
+          <div class="col-lg-6 align-self-center">
+            {{content.field_video_eru}}
+          </div>
+        </div>
+        <div class="row">
+        <div class="w-75 mx-auto">
+          <h3 class="mb-3 mt-5 text-center">Juntos construimos el San Juan que Soñamos</h3>
+          <p class="mb-5 text-center">Hemos generado este espacio de diálogo para que expreses tú opinión, nos interesa saberqué piensas 
+          respecto del proyecto, te invitamos a comentar sobre los siguientes temas:</p>
+          {{ drupal_entity('webform', 'juntos_construimos_chsjd') }}
+        </div>
+        
+        </div>
+      </div>
+    {#Eventos#}
+      <div class="tab-pane fade" id="eventos" role="tabpanel" aria-labelledby="eventos-tab">
+        <h3 class="mb-5 mt-5 text-center">Eventos para construir juntos</h3>
+        {{content.field_benefits_of_project}}
+      </div>
+      <div class="tab-pane fade" id="talleres" role="tabpanel" aria-labelledby="talleres-tab">
+        <div class="w-75 mx-auto">
+          <h3 class="mb-3 mt-5 text-center">Talleres</h3>
+          <p class="mb-5">A continuación encontrarás toda la información relacionada con los procesos participativos que se están llevando a cabo para que juntos construyamos el San Juan que Soñamos.</p>
+        </div>
+        {% set proyecto = label['#items'].0.value %}
+          {% if proyecto == 'Complejo Hospitalario San Juan de Dios' %}
+            {{ drupal_block('views_block:juntos_construimos-block_1') }}
+          {% endif %}
+        
+      </div>
+      
+      {# #}
+      <div class="tab-pane fade" id="juntos-construimos" role="tabpanel" aria-labelledby="juntos-construimos-tab">
+        <div class="w-90 mx-auto">
+          <h3 class="mb-3 mt-5 text-center">Ideas de nuestros participantes</h3>
+            {{ drupal_block('views_block:juntos_construimos-block_3') }}
+        </div>
+      </div> 
+      {##}
+    </div>
+    {##}
+    {% if not page %}
+      <h2{{title_attributes}}>
+        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+      </h2>
+    {% endif %}
+    
+    <script>
+      
+      (function(val) {
+        console.log(val);
+      })('test');
+    </script> 
+    {% if display_submitted %}
+      <footer>
+        {{ author_picture }}
+        <div{{author_attributes}}>
+          {% trans %}Submitted by
+          {{ author_name }}
+          on
+          {{ date }}{% endtrans %}
+          {{ metadata }}
+        </div>
+      </footer>
+    {% endif %}
+  </div>
+  {% endblock %}
+</article>

@@ -61,7 +61,7 @@
 // Page: Header
 // -----------------------------------------------------------------------------
 //.page__header {
-	.landing-page {
+	.landing-page, .pagina-juntos-construimos{
 		h2{
 			border: 0;
 			clip: rect(0, 0, 0, 0);
@@ -82,7 +82,7 @@
 			left: 7% !important;
 			text-align: left !important;
 			width: 35%;
-			bottom: 12%;
+			bottom: 15%;
 			h3 {
 				font-size: 1.7em !important; 
 				font-family: $poppins; 
