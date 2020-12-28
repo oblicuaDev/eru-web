@@ -116,7 +116,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #343a40;
   text-align: left;
   background-color: #fff;
 }
@@ -1563,7 +1563,7 @@ pre code {
 .table {
   width: 100%;
   margin-bottom: 1rem;
-  color: #212529;
+  color: #343a40;
 }
 .table th,
 .table td {
@@ -1608,7 +1608,7 @@ pre code {
 }
 
 .table-hover tbody tr:hover {
-  color: #212529;
+  color: #343a40;
   background-color: rgba(0, 0, 0, 0.075);
 }
 
@@ -1792,7 +1792,7 @@ pre code {
   border-color: #454d55;
 }
 .table .thead-light th {
-  color: #495057;
+  color: #8e969e;
   background-color: #e9ecef;
   border-color: #dee2e6;
 }
@@ -1879,7 +1879,7 @@ pre code {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #495057;
+  color: #8e969e;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
@@ -1896,7 +1896,7 @@ pre code {
   border: 0;
 }
 .form-control:focus {
-  color: #495057;
+  color: #8e969e;
   background-color: #fff;
   border-color: #5badf7;
   outline: 0;
@@ -1924,7 +1924,7 @@ pre code {
 }
 
 select.form-control:focus::-ms-value {
-  color: #495057;
+  color: #8e969e;
   background-color: #fff;
 }
 
@@ -1963,7 +1963,7 @@ select.form-control:focus::-ms-value {
   padding-bottom: 0.375rem;
   margin-bottom: 0;
   line-height: 1.5;
-  color: #212529;
+  color: #343a40;
   background-color: transparent;
   border: solid transparent;
   border-width: 1px 0;
@@ -2332,7 +2332,7 @@ textarea.form-control {
 .btn {
   display: inline-block;
   font-weight: 400;
-  color: #212529;
+  color: #343a40;
   text-align: center;
   vertical-align: middle;
   -webkit-user-select: none;
@@ -2353,7 +2353,7 @@ textarea.form-control {
   }
 }
 .btn:hover {
-  color: #212529;
+  color: #343a40;
   text-decoration: none;
 }
 .btn:focus, .btn.focus {
@@ -2893,7 +2893,7 @@ input[type=button].btn-block {
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 1rem;
-  color: #212529;
+  color: #343a40;
   text-align: left;
   list-style: none;
   background-color: #fff;
@@ -3296,7 +3296,7 @@ input[type=button].btn-block {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #495057;
+  color: #8e969e;
   text-align: center;
   white-space: nowrap;
   background-color: #e9ecef;
@@ -3507,7 +3507,7 @@ input[type=button].btn-block {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #495057;
+  color: #8e969e;
   vertical-align: middle;
   background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px;
   background-color: #fff;
@@ -3523,7 +3523,7 @@ input[type=button].btn-block {
   box-shadow: 0 0 0 0.2rem rgba(10, 110, 200, 0.25);
 }
 .custom-select:focus::-ms-value {
-  color: #495057;
+  color: #8e969e;
   background-color: #fff;
 }
 .custom-select[multiple], .custom-select[size]:not([size="1"]) {
@@ -3595,7 +3595,7 @@ input[type=button].btn-block {
   padding: 0.375rem 0.75rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #495057;
+  color: #8e969e;
   background-color: #fff;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
@@ -3610,7 +3610,7 @@ input[type=button].btn-block {
   height: calc(1.5em + 0.75rem);
   padding: 0.375rem 0.75rem;
   line-height: 1.5;
-  color: #495057;
+  color: #8e969e;
   content: "Browse";
   background-color: #e9ecef;
   border-left: inherit;
@@ -3805,7 +3805,7 @@ input[type=button].btn-block {
 }
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #495057;
+  color: #8e969e;
   background-color: #fff;
   border-color: #dee2e6 #dee2e6 #fff;
 }
@@ -4849,17 +4849,17 @@ a.badge-dark:focus, a.badge-dark.focus {
 
 .list-group-item-action {
   width: 100%;
-  color: #495057;
+  color: #8e969e;
   text-align: inherit;
 }
 .list-group-item-action:hover, .list-group-item-action:focus {
   z-index: 1;
-  color: #495057;
+  color: #8e969e;
   text-decoration: none;
   background-color: #f8f9fa;
 }
 .list-group-item-action:active {
-  color: #212529;
+  color: #343a40;
   background-color: #e9ecef;
 }
 
@@ -5585,7 +5585,7 @@ a.close.disabled {
 
 .popover-body {
   padding: 0.5rem 0.75rem;
-  color: #212529;
+  color: #343a40;
 }
 
 .carousel {
@@ -9541,7 +9541,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .text-body {
-  color: #212529 !important;
+  color: #343a40 !important;
 }
 
 .text-muted {
@@ -16129,7 +16129,7 @@ tr:nth-child(even) {
   left: -80px !important;
 }
 
-.landing-page h2 {
+.landing-page h2, .pagina-juntos-construimos h2 {
   border: 0;
   clip: rect(0, 0, 0, 0);
   height: 1px;
@@ -16139,7 +16139,7 @@ tr:nth-child(even) {
   position: absolute;
   width: 1px;
 }
-.landing-page span {
+.landing-page span, .pagina-juntos-construimos span {
   display: none;
 }
 
@@ -16150,7 +16150,7 @@ tr:nth-child(even) {
   left: 7% !important;
   text-align: left !important;
   width: 35%;
-  bottom: 12%;
+  bottom: 15%;
 }
 #eru-slide .carousel-caption h3 {
   font-size: 1.7em !important;
@@ -16308,8 +16308,8 @@ tr:nth-child(even) {
   content: none;
 }
 .page__content .news-home .title-one, .page__content .page-search .title-one {
-  margin: 20px 0 45px 0;
-  height: 60px;
+  margin: 20px 0 20px 0;
+  height: 100px;
 }
 .page__content .news-home .title-one::after, .page__content .page-search .title-one::after {
   content: "";
@@ -16675,6 +16675,211 @@ aside ul li.active {
   overflow: hidden !important;
 }
 
+/*Estilos Juntos Construimos*/
+.card-proyect {
+  border: 1px solid #ced4da;
+  padding: 0 0 20px 0;
+}
+.card-proyect .title-one {
+  margin: 20px 0 0 0 !important;
+  padding-left: 25px;
+}
+.card-proyect .title-one::after {
+  content: "";
+  display: none;
+}
+.card-proyect .proyect-type {
+  padding-left: 25px;
+  color: #212529;
+}
+.card-proyect .estado-proyecto div {
+  width: 90%;
+  background: linear-gradient(90deg, #e7d705 80%, #fff 0%);
+  background-repeat: no-repeat;
+  height: 25px;
+  margin: 10px auto;
+  border: 1px solid #ced4da;
+  color: #fff;
+  padding: 12px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-proyect .pry-btn {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.card-proyect .pry-btn a {
+  color: #fff;
+  font-size: 0.8em;
+  background-color: #343a40;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+.bogota-abierta-block {
+  background: url(../images/bogota-abiertaBG.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  padding: 30px 10px;
+  margin: 5rem 0;
+}
+
+.bogota-abierta-block h2 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.my-btn {
+  background: #fff;
+  color: #8e969e;
+  padding: 1px 25px;
+  border-radius: 5px;
+}
+
+/*Pagina Taller*/
+.participacion .addtoany_list {
+  position: absolute;
+  bottom: 15px;
+}
+.participacion h2 {
+  text-align: left !important;
+  margin-bottom: 0;
+}
+.participacion h3 {
+  border-bottom: none;
+}
+.participacion h3::after {
+  border-bottom: 2px solid #009334;
+  left: calc(50% - 20px);
+}
+
+.documentos-taller a {
+  color: #444;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+}
+.documentos-taller .icon-lg {
+  margin-right: 15px;
+  font-size: 40px;
+  color: #009334;
+}
+
+/*Página proyecto participación*/
+#tabs-proyecto-participacion .nav-link {
+  color: #343a40;
+}
+#tabs-proyecto-participacion .nav-link .active {
+  color: #212529;
+  font-weight: 800;
+}
+
+.proyecto h2 {
+  width: 85%;
+  color: #343a40;
+  line-height: 1.2em;
+  font-size: 2em;
+}
+
+.participacion .tab-content {
+  width: 95%;
+  margin: auto;
+}
+
+a.btn-taller {
+  background-color: #ffffff;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+  color: #0e3b2b;
+}
+
+.btn-proyecto {
+  background-color: #e05c12;
+  border: none;
+}
+.btn-proyecto a {
+  color: #fff;
+}
+
+.dato-general {
+  display: flex;
+  align-items: center;
+  width: inherit;
+  margin-bottom: 1.5rem !important;
+}
+.dato-general .cifra {
+  font-weight: 600;
+}
+.dato-general i {
+  padding: 32px;
+  background-repeat: no-repeat;
+  background: url(../images/proyectos-iconos-2.png), transparent;
+}
+
+.talleres h3 {
+  line-height: 0.7em !important;
+  font-size: 1.75rem;
+  border-bottom: none;
+}
+.talleres h3 a {
+  font-size: 0.65em;
+  font-weight: 600;
+  color: #343a40;
+}
+.talleres h3 a::after {
+  content: none;
+}
+.talleres h3::after {
+  content: none;
+}
+.talleres .title-one {
+  margin: 20px 0 25px 0;
+  height: 85px;
+}
+.talleres .title-one::after {
+  content: "";
+  width: 60px;
+  border-bottom: 2px solid #009334;
+  position: absolute;
+  left: 3%;
+}
+
+.ideas-container {
+  -webkit-columns: 2 320px;
+          columns: 2 320px;
+}
+
+.idea-card {
+  width: 100%;
+  background: #e5f4ea;
+  box-shadow: 2px 2px 3px rgba(72, 77, 81, 0.2);
+  box-sizing: border-box;
+  margin: 0;
+  margin-bottom: 30px;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid-column;
+  display: table;
+  float: left;
+  padding: 20px;
+}
+
+.participante {
+  font-size: 1em;
+  text-align: right;
+  color: #343a40;
+}
+
+.webform-juntos-construimos label {
+  font-weight: 700;
+}
+.webform-juntos-construimos input[type=text], .webform-juntos-construimos input[type=tel] {
+  border-radius: 10px;
+}
+
 footer {
   color: #fff;
   font-size: 0.9em;
@@ -16884,13 +17089,20 @@ footer img {
 
   #eru-slide .controles {
     left: 24%;
-    bottom: 16%;
+    bottom: 7%;
+  }
+  #eru-slide .controles i {
+    font-size: 1.5em;
+  }
+  #eru-slide .controles .btn {
+    padding: 0.2rem 5px 0px;
   }
   #eru-slide .carousel-caption {
-    width: 70%;
+    width: 65%;
+    bottom: 0%;
   }
   #eru-slide .carousel-caption h3 {
-    font-size: 1.1em !important;
+    font-size: 1em !important;
     line-height: 1 !important;
   }
   #eru-slide .carousel-caption p {
@@ -16930,7 +17142,7 @@ footer img {
   }
 
   #eru-slide .controles {
-    left: 28%;
+    left: 30%;
   }
 
   .page__content .transparencia-block #bkg-transparencia {
@@ -17044,7 +17256,7 @@ footer img {
   }
 
   .landing-page #eru-slide {
-    width: 125%;
+    width: 100%;
   }
 
   .carousel-caption {
