@@ -16691,7 +16691,10 @@ aside ul li.active {
 .card-proyect .proyect-type {
   padding-left: 25px;
   color: #212529;
+<<<<<<< HEAD
   font-size: 1em;
+=======
+>>>>>>> dd6e1e7d189bccc5ff0a5fa9ffcbbb52114e96e0
 }
 .card-proyect .estado-proyecto div {
   width: 90%;

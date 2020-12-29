@@ -38,6 +38,8 @@ import 'popper.js';
     }
   };
 
+
+
   Drupal.behaviors.pageSearch = {
     attach: function (context) {
       //funcionalidades de la pagina de busqueda
@@ -75,7 +77,14 @@ import 'popper.js';
       jQuery('.video-home iframe').height(300);
     }
   };
-
+  Drupal.behaviors.googleAnalytics = {
+    attach: function (context) {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag ('js', new Date());
+      gtag ('config', 'UA-134609174-1');
+    }
+  }
   Drupal.behaviors.linkproject = {
     attach: function (context) {
 
