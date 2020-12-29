@@ -17,6 +17,7 @@
 %}
 {# {{ kint(content|keys)}} #}
 <article{{attributes.addClass(classes)}}>
+{% set proyecto = label['#items'].0.value %}
   {% block content %}
     <div class="container  mt-5">
       <div class="row mt-5">
@@ -67,10 +68,9 @@
         </div>
         <div class="row">
         <div class="w-75 mx-auto">
-          <h3 class="mb-3 mt-5 text-center">Juntos construimos el San Juan que Soñamos</h3>
-          <p class="mb-5 text-center">Hemos generado este espacio de diálogo para que expreses tú opinión, nos interesa saberqué piensas 
-          respecto del proyecto, te invitamos a comentar sobre los siguientes temas:</p>
-          {{ drupal_entity('webform', 'juntos_construimos_chsjd') }}
+          {% if proyecto == 'Complejo Hospitalario San Juan de Dios' %}
+            {{ drupal_entity('webform', 'juntos_construimos_chsjd') }}
+          {% endif %}
         </div>
         
         </div>
@@ -83,9 +83,8 @@
       <div class="tab-pane fade" id="talleres" role="tabpanel" aria-labelledby="talleres-tab">
         <div class="w-75 mx-auto">
           <h3 class="mb-3 mt-5 text-center">Talleres</h3>
-          <p class="mb-5">A continuación encontrarás toda la información relacionada con los procesos participativos que se están llevando a cabo para que juntos construyamos el San Juan que Soñamos.</p>
         </div>
-        {% set proyecto = label['#items'].0.value %}
+        
           {% if proyecto == 'Complejo Hospitalario San Juan de Dios' %}
             {{ drupal_block('views_block:juntos_construimos-block_1') }}
           {% endif %}
@@ -96,7 +95,10 @@
       <div class="tab-pane fade" id="juntos-construimos" role="tabpanel" aria-labelledby="juntos-construimos-tab">
         <div class="w-90 mx-auto">
           <h3 class="mb-3 mt-5 text-center">Ideas de nuestros participantes</h3>
+            
+            {% if proyecto == 'Complejo Hospitalario San Juan de Dios' %}
             {{ drupal_block('views_block:juntos_construimos-block_3') }}
+          {% endif %}
         </div>
       </div> 
       {##}
