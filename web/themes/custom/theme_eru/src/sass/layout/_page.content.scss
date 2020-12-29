@@ -400,14 +400,12 @@ aside {
 		width: 145px !important;
 		overflow: hidden !important;
 	}
-
 }
 
 
 /*Estilos Juntos Construimos*/
 .card-proyect{
-	border: 1px solid $gray-400;
-	padding: 0 0 20px 0;
+	padding: 0 20px;
 	.title-one {
 		margin: 20px 0 0 0 !important; 
 		padding-left: 25px;
@@ -415,6 +413,9 @@ aside {
 			content: "";
 			display: none;
 		}
+	}
+	.card-container{
+		border: 1px solid $gray-400;
 	}
 	.proyect-type{
 		padding-left: 25px;
@@ -591,6 +592,3 @@ a.btn-taller{
 	
 	} 
 }
-
-}
-
