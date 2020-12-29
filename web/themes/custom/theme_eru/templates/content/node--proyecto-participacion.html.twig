@@ -86,7 +86,28 @@
         </div>
         
           {% if proyecto == 'Complejo Hospitalario San Juan de Dios' %}
-            {{ drupal_block('views_block:juntos_construimos-block_1') }}
+            {{ drupal_block('views_block:juntos_construimos-block_talleres_chsjd') }}
+          {% endif %}
+          {% if proyecto == 'Voto Nacional - La Estanzuela' %}
+            {{ drupal_block('views_block:juntos_construimos-block_talleres_voto') }}
+          {% endif %}
+          {% if proyecto == 'San Bernardo - Tercer Milenio' %}
+            {{ drupal_block('views_block:juntos_construimos-block_talleres_san_bernardo') }}
+          {% endif %}
+          {% if proyecto == 'Centro Internacional de Comercio Mayorista San Victorino' %}
+            {{ drupal_block('views_block:juntos_construimos-block_talleres_san_victorino') }}
+          {% endif %}
+          {% if proyecto == 'Cinemateca de Bogotá' %}
+            {{ drupal_block('views_block:juntos_construimos-block_talleres_cinemateca') }}
+          {% endif %}
+          {% if proyecto == 'Estación Metro 26' %}
+            {{ drupal_block('views_block:juntos_construimos-block_talleres_metro_26') }}
+          {% endif %}
+          {% if proyecto == 'Tres Quebradas - UG1' %}
+            {{ drupal_block('views_block:juntos_construimos-block_talleres_tres_quebradas') }}
+          {% endif %}
+          {% if proyecto == 'El Porvenir' %}
+            {{ drupal_block('views_block:juntos_construimos-block_porvenir') }}
           {% endif %}
         
       </div>
