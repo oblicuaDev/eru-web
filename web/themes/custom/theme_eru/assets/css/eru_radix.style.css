@@ -16677,8 +16677,7 @@ aside ul li.active {
 
 /*Estilos Juntos Construimos*/
 .card-proyect {
-  border: 1px solid #ced4da;
-  padding: 0 0 20px 0;
+  padding: 0 20px;
 }
 .card-proyect .title-one {
   margin: 20px 0 0 0 !important;
@@ -16688,11 +16687,13 @@ aside ul li.active {
   content: "";
   display: none;
 }
+.card-proyect .card-container {
+  border: 1px solid #ced4da;
+}
 .card-proyect .proyect-type {
   padding-left: 25px;
   color: #212529;
   font-size: 1em;
-
 }
 .card-proyect .estado-proyecto div {
   width: 90%;
