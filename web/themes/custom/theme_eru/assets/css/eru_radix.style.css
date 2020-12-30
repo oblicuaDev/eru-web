@@ -16697,8 +16697,6 @@ aside ul li.active {
 }
 .card-proyect .estado-proyecto div {
   width: 90%;
-  background: linear-gradient(90deg, #e7d705 80%, #fff 0%);
-  background-repeat: no-repeat;
   height: 25px;
   margin: 10px auto;
   border: 1px solid #ced4da;
@@ -16707,6 +16705,18 @@ aside ul li.active {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.card-proyect .estado-proyecto .curso {
+  background: linear-gradient(90deg, #e7d705 80%, #fff 0%);
+  background-repeat: no-repeat;
+}
+.card-proyect .estado-proyecto .finalizado {
+  background: #009334;
+}
+.card-proyect .estado-proyecto .proximo {
+  background: linear-gradient(90deg, #077fff 25%, #fff 0%);
+  background-repeat: no-repeat;
+  color: #077fff;
 }
 .card-proyect .pry-btn {
   display: flex;
