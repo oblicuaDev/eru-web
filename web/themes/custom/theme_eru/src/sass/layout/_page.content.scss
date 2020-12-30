@@ -424,8 +424,6 @@ aside {
 	}
 	.estado-proyecto div {
 		width: 90%;
-		background: linear-gradient(90deg, #e7d705 80%, #fff 0%);
-		background-repeat: no-repeat;
 		height: 25px;
 		margin: 10px auto;
 		border: 1px solid $gray-400;
@@ -433,7 +431,22 @@ aside {
 		padding: 12px 0;
 		display: flex;
 		align-items: center;
-		justify-content: center;
+		justify-content: center;	
+	}
+	.estado-proyecto {
+		.curso{
+			background: linear-gradient(90deg, #e7d705 80%, #fff 0%);
+			background-repeat: no-repeat;
+		}
+		.finalizado{
+			background: $verde-claro;
+		}
+		.proximo{
+			
+			background: linear-gradient(90deg, #077fff 25%, #fff 0%);
+			background-repeat: no-repeat;
+			color: #077fff;
+		}
 	}
 	.pry-btn {
 		display: flex;
