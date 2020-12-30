@@ -84,17 +84,20 @@
     {% endif %}
 
     <script>
-  var estadopry = document.getElementById("estado-pry");
-
-    if (estadopry.textContent == "En curso"){
-      estadopry.classList.add("curso");
+  var divTag = document.getElementsByTagName("div");
+  for(var i=0; i < divTag.length; i++){
+    console.log(divTag[i]);
+     if (divTag[i].textContent == "En curso"){
+      divTag[i].classList.add("curso");
     }
-    else if(estadopry.textContent == "Finalizado"){
-      estadopry.classList.add("finalizado");
+     if(divTag[i].textContent  == "Finalizado"){
+      divTag[i].classList.add("finalizado");
     }
-    else{
-      estadopry.classList.add("proximo");
+    if (divTag[i].textContent == "proximo" ){
+      divTag[i].classList.add("proximo");
     }
+  }
+   
 
 </script>
 
