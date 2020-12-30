@@ -82,6 +82,22 @@
         </div>
       </main>
     {% endif %}
+
+    <script>
+  var estadopry = document.getElementById("estado-pry");
+
+    if (estadopry.textContent == "En curso"){
+      estadopry.classList.add("curso");
+    }
+    else if(estadopry.textContent == "Finalizado"){
+      estadopry.classList.add("finalizado");
+    }
+    else{
+      estadopry.classList.add("proximo");
+    }
+
+</script>
+
   {% if page.footer %}
     <footer class="page__footer" {{ attributes }} title="Pie de página Misión, enlaces de interés y datos de contacto">
       <div class="container">
@@ -113,3 +129,4 @@
   {% endif %}
 
 </div>
+
