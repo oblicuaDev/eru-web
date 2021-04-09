@@ -30,7 +30,7 @@ footer {
 	}
 }
 .page__footer {	
-	background-color: #01293D;
+	background-color: $verde-oscuro;
 	.nav {
 		flex-direction: column;
 		.nav-link{
@@ -41,7 +41,7 @@ footer {
 		padding-top: 1rem;
 	}
 	.links-footer{
-		background-color: #075168;
+		background-color: $verde-claro;
 		padding-left: 4rem;
 	}
 	.contact {
@@ -68,9 +68,9 @@ footer {
   			margin-right: 3rem;
 		}
 	} 
-	background-color: #075168;
+	background-color: $verde-claro;
 	.sdqs-footer {
-		background-color: #01293D;
+		background-color: $verde-oscuro;
 		padding: 0.8em;
 	}
 	p{ margin: 0; }

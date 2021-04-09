@@ -18,7 +18,7 @@ h3, h4, h5, h6 {
 		content: "";
 	    width: 40px;
 	    height: 52px;
-	    border-bottom: 2px solid #0A6EC8;
+	    border-bottom: 2px solid $primary;
 	    position: absolute;
 	    left: 49%;
 	}
@@ -41,7 +41,7 @@ h3, #titulo-busqueda{
 		content: "";
 		width: 40px;
 	    height: 40px;
-	    border-bottom: 2px solid #0A6EC8;
+	    border-bottom: 2px solid $naranja;
 	    position: absolute;
 	    left: 0;
 	    bottom: 0;
@@ -55,7 +55,7 @@ h3, #titulo-busqueda{
 	}
 }
 h4{
-	color: $blue;	
+	color: $verde-oscuro;	
 }
 h6{
 	padding-bottom: 0.3em;
@@ -77,22 +77,22 @@ a {
   }
 }
 .btn-secondary {
-    background-color: #0a202e !important;
-	border-color: #0a202e !important;
+    background-color: $verde-claro !important;
+	border-color: $verde-claro !important;
 	padding-right: 40px;
 	padding-left: 40px;	
 	&:hover{
-		background-color: #0855B6 !important;
-		border-color: #0855B6 !important;
+		background-color: $naranja !important;
+		border-color: $naranja !important;
 		color: #fff !important;
 	}
 	a { color: #fff; }
 }
 .news__body a, .project__body a{
-	border-bottom: 1px solid $blue;
+	border-bottom: 1px solid $naranja;
 	&:hover, &:focus{
 		text-decoration: none;
-		background-color: $blue;
+		background-color: $naranja;
 		color: #fff;
 		transition: background-color .5s;
 	}
@@ -162,7 +162,11 @@ body {
 	cursor: pointer;
 	a{
 		color: #fff !important;
-		&:hover{ text-decoration: none; }
+		&:hover{ text-decoration: none; background-color: $naranja !important; }
+	}
+	&:hover, &:focus{
+		background-color: $naranja;
+		border-color: $naranja;
 	}
 }
 // Tablas
@@ -181,8 +185,8 @@ th, td{
 	padding: 20px;
 }
 thead{
-	background-color: $azul-oscuro;
-	border-bottom: solid 5px $blue;
+	background-color: $primary;
+	border-bottom: solid 5px $naranja;
 	color: white;
 	text-align: center;
 }
@@ -211,4 +215,11 @@ tr:nth-child(even){
 // -------
 .views-exposed-form {
 	margin-bottom: 3em;
+}
+//paginador
+.pager__item {
+    display: inline-block;
+    margin: 0;
+    padding: 0 0.4em;
+    font-size: 1.08em;
 }

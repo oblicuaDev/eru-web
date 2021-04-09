@@ -49,7 +49,9 @@ $green:   #28a745 !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
 $azul-oscuro: #01293D !default;
-$verde-claro: #009334 !default;
+$verde-claro: #008e7f !default;
+$verde-oscuro: #006b60 !default;
+$naranja: #db9d36 !default;
 
 //juntos-construimos
 $jc-principal: #009334;
@@ -76,7 +78,7 @@ $colors: map-merge(
   $colors
 );
 
-$primary:       $blue !default;
+$primary:       $verde-oscuro !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -84,7 +86,7 @@ $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-800 !default;
-$bk:            $verde-claro !default;
+$bk:            $verde-oscuro !default;
 
 $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -183,6 +185,7 @@ $body-color:                $gray-800 !default;
 $link-color:                              theme-color("primary") !default;
 $link-decoration:                         none !default;
 $link-hover-color:                        darken($link-color, 15%) !default;
+//$link-hover-color:                        $naranja !default;
 $link-hover-decoration:                   underline !default;
 // Darken percentage for links with `.text-*` class (e.g. `.text-success`)
 $emphasized-link-hover-darken-percentage: 15% !default;

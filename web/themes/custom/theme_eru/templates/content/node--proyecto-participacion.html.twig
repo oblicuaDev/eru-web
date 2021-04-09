@@ -56,6 +56,8 @@
     <div class="tab-content" id="myTabContent">
     {#Contexto#}
       <div class="tab-pane fade show active" id="contexto" role="tabpanel" aria-labelledby="contexto-tab">
+        
+        {% if content.field_video_eru|render %}
         <div class="row mt-5">
           <div class="col-lg-6 align-self-center">
             <h3 class="mb-3 text-center">Descripción de proyecto</h3>
@@ -66,6 +68,16 @@
             {{content.field_video_eru}}
           </div>
         </div>
+        {% else %}
+        <div class="row mt-5">
+          <div class="col-12 align-self-center">
+            <h3 class="mb-3 text-center">Descripción de proyecto</h3>
+            {{content.body}}
+            <div class="btn btn-proyecto d-flex justify-content-center w-50 mx-auto">{{content.field_url_of_the_publication}}</div>
+          </div>
+        </div>
+        {% endif %}
+        
         <div class="row">
         <div class="w-75 mx-auto">
           {% if proyecto == 'Complejo Hospitalario San Juan de Dios' %}
@@ -101,7 +113,7 @@
       <div class="tab-pane fade" id="eventos" role="tabpanel" aria-labelledby="eventos-tab">
         <h3 class="mb-5 mt-5 text-center">Eventos para construir juntos</h3>
         {{content.field_benefits_of_project}}
-        % if proyecto == 'Voto Nacional - La Estanzuela' %}
+        {% if proyecto == 'Voto Nacional - La Estanzuela' %}
             <div class="mt-5 mb-5">
             {{ drupal_entity('webform', 'juntos_construimos_voto_nacional') }}
             </div>
@@ -153,9 +165,9 @@
           {% endif %}
           {% if proyecto == 'San Bernardo - Tercer Milenio' %}
             {{ drupal_block('views_block:juntos_construimos-block_talleres_san_bernardo') }}
-            <div class="mt-5 mb-5">
+            {#<div class="mt-5 mb-5">
             {{ drupal_entity('webform', 'juntos_construimos_san_bernardo') }}
-            </div>
+            </div>#}
           {% endif %}
           {% if proyecto == 'Centro Internacional de Comercio Mayorista San Victorino' %}
             {{ drupal_block('views_block:juntos_construimos-block_talleres_san_victorino') }}

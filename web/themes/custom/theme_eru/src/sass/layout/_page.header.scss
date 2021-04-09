@@ -18,7 +18,7 @@
 				display: block;
 				width: 0;
 				height: 2px;
-				background: #fff;
+				background: $naranja;
 				transition: width .3s;
 				border: none;
 			}
@@ -107,7 +107,7 @@
 		    	font-size: 2em;
 		    	color: #fff;
 		    	&:hover{
-		    		color: #0A6EC8 !important;
+		    		color: $naranja !important;
 		    	}
 		    }
 		    .carousel-control-prev, .carousel-control-next{

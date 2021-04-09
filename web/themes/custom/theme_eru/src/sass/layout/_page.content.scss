@@ -21,8 +21,8 @@
 			font-weight: bold;				
 			color: #000;
 			text-transform: uppercase;							
-			&:hover {color: $blue !important; text-decoration: none;}
-			&:focus {outline: 2px dotted $blue !important; padding: 5px; left: -5px; position: relative; color: $blue !important;}
+			&:hover {color: $primary !important; text-decoration: none;}
+			&:focus {outline: 2px dotted $primary !important; padding: 5px; left: -5px; position: relative; color: $blue !important;}
 			}					
 		}
 	}
@@ -34,8 +34,8 @@
     	text-transform: uppercase;
 		a{
 			color: #fff;
-	    	background-color: $blue;
-	    	border-color: $blue;
+	    	background-color: $verde-claro;
+	    	border-color: $verde-claro;
 	    	border: 1px solid transparent;
 		    padding: 0.375rem 0.75rem;
 		    font-size: 1em;
@@ -44,8 +44,8 @@
 		    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 		    &:hover{
 		    	color: #fff;
-	   			background-color: #085aa4;
-	    		border-color: #085397;
+	   			background-color: $naranja;
+	    		border-color: $naranja;
 	    		text-decoration: none;
 	   		}
 	  	} 
@@ -101,7 +101,7 @@
 				content: "";
 				width: 40px;
 			    height: 40px;
-			    border-bottom: 2px solid #0A6EC8;
+			    border-bottom: 2px solid $verde-oscuro;
 			    position: absolute;
 			    left: 3%;
 			}
@@ -158,9 +158,10 @@
 		}
 
 	}
-.fila1, .fila2 {
+	
+.fila1, .fila2, .fila3 {
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: center;
 		text-align: center;
 		.link-item {
 			width: 18%;
@@ -194,11 +195,14 @@
 		.estructura-transparencia-ico{background: url("../images/iconos-transparencia.png"), transparent; background-position: -230px 0;}
 		.normatividad-ico{background: url("../images/iconos-transparencia.png"), transparent; background-position: -355px 0;}
 		.presupuesto-ico{background: url("../images/iconos-transparencia.png"), transparent; background-position: -480px 0;}
-		.planeacion-ico{background: url("../images/iconos-transparencia.png"), transparent; background-position: 565px 0;}
-		.control-ico{background: url("../images/iconos-transparencia.png"), transparent; background-position: 445px 0;}
-		.contratacion-ico{background: url("../images/iconos-transparencia.png"), transparent; background-position: 330px 0;}
-		.tramites-ico{background: url("../images/iconos-transparencia.png"), transparent; background-position: 210px 0;}
-		.instrumentos-ico{background: url("../images/iconos-transparencia.png"), transparent; background-position: 100px 0;}
+		.planeacion-ico{background: url("../images/iconos-transparencia.png"), transparent; background-position: 917px 0;}
+		.control-ico{background: url("../images/iconos-transparencia.png"), transparent; background-position: 798px 0;}
+		.contratacion-ico{background: url("../images/iconos-transparencia.png"), transparent; background-position: 686px 0;}
+		.tramites-ico{background: url("../images/iconos-transparencia.png"), transparent; background-position: 564px 0;}
+		.instrumentos-ico{background: url("../images/iconos-transparencia.png"), transparent; background-position: 444px 0;}
+		.transparencia-pasiva-ico{background: url("../images/iconos-transparencia.png"), transparent; background-position: 337px 0;}
+		.accesibilidad-ico{background: url("../images/iconos-transparencia.png"), transparent; background-position: 226px 0;}
+		.habeas-data-ico{background: url("../images/iconos-transparencia.png"), transparent; background-position: 117px 0;}
 	}
 	.link-item{
 		display: flex;
@@ -211,7 +215,7 @@
    				background-color: #ededed;
    				text-decoration: none;
    				padding: 10px 0 8px 0;
-   				border-bottom: 2px solid #0A6EC8;
+   				border-bottom: 2px solid $verde-claro;
    			}   			
    		}
 		.fas {padding:44px;}
@@ -223,6 +227,7 @@
 		.fa-six-class{background: url("../images/ico-06.png"), transparent;}
 		.fa-seven-class{background: url("../images/ico-07.png"), transparent;}
 		.fa-eight-class{background: url("../images/ico-08.png"), transparent;}
+		.fa-nine-class{background: url("../images/ico-09.png"), transparent;}
 		.description{
 			text-align: center; 
 			margin-top:1rem;
@@ -361,7 +366,7 @@ aside {
     	margin-left: 15px;
     	margin-bottom: 0.5em !important;	
     	font-size: 1.4em;
-    	border-left: 2px solid #0A6EC8;
+    	border-left: 2px solid $naranja;
    		padding-left: .5em;
 	}
 	ul {
@@ -381,7 +386,7 @@ aside {
 			}
 		}
 		li.active {
-			border-bottom: 2px solid #0A6EC8
+			border-bottom: 2px solid $naranja;
 		}
 	}
 }

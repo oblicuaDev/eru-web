@@ -66,12 +66,16 @@
 }
 .link-proyecto {
 	display: flex;
-	border: 1px dashed #0A6EC8;
+	border: 1px dashed $verde-claro;
 	margin-bottom: 1em;	
 	&:hover {
-		background-color: $azul-oscuro !important;
+		background-color: $verde-claro!important;
 		color: #fff !important;
 		cursor: pointer;
+		a, .link-ico::before{
+			color: #ffffff !important;
+		}
+		
 	}
 	a{
 		margin-left: 1.7em;
