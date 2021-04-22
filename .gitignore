@@ -24,3 +24,4 @@
 /.env
 
 /vm
+.DS_Store
