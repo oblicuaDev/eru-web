@@ -5,18 +5,18 @@ dependencies:
   module:
     - node
 id: news_eru
-label: 'News Eru'
+label: Noticias
 type: 'canonical_entities:node'
 pattern: 'noticias/[node:title]'
 selection_criteria:
-  e96ada2f-6900-4880-acd8-78c30a2f0e04:
+  c3c050ed-f864-451a-88b9-d02402563df2:
     id: node_type
     bundles:
       news: news
     negate: false
     context_mapping:
       node: node
-    uuid: e96ada2f-6900-4880-acd8-78c30a2f0e04
+    uuid: c3c050ed-f864-451a-88b9-d02402563df2
 selection_logic: and
 weight: -5
 relationships: {  }

@@ -16108,9 +16108,12 @@ tr:nth-child(even) {
 .menu-principal .navbar-nav .nav-item:hover::after {
   width: 100%;
 }
+<<<<<<< HEAD
 .menu-principal .dropdown-toggle::after {
   color: #db9d36;
 }
+=======
+>>>>>>> ce27b0fa754ccd6d9c012ba323bab9f119284a3c
 .menu-principal .dropdown-menu {
   font-size: 0.9rem !important;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
@@ -16724,6 +16727,7 @@ aside ul li.active {
   padding-left: 25px;
   color: #212529;
   font-size: 1em;
+<<<<<<< HEAD
 }
 .card-proyect .estado-proyecto div {
   width: 90%;
@@ -16771,6 +16775,55 @@ aside ul li.active {
   margin: 5rem 0;
 }
 
+=======
+}
+.card-proyect .estado-proyecto div {
+  width: 90%;
+  height: 25px;
+  margin: 10px auto;
+  border: 1px solid #ced4da;
+  color: #fff;
+  padding: 12px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-proyect .estado-proyecto .curso {
+  background: linear-gradient(90deg, #e7d705 80%, #fff 0%);
+  background-repeat: no-repeat;
+}
+.card-proyect .estado-proyecto .finalizado {
+  background: #008e7f;
+}
+.card-proyect .estado-proyecto .proximo {
+  background: linear-gradient(90deg, #077fff 25%, #fff 0%);
+  background-repeat: no-repeat;
+  color: #077fff;
+}
+.card-proyect .pry-btn {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.card-proyect .pry-btn a {
+  color: #fff;
+  font-size: 0.8em;
+  background-color: #343a40;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+.bogota-abierta-block {
+  background: url(../images/bogota-abiertaBG.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  padding: 30px 10px;
+  margin: 5rem 0;
+}
+
+>>>>>>> ce27b0fa754ccd6d9c012ba323bab9f119284a3c
 .bogota-abierta-block h2 {
   font-size: 4rem;
   margin: 0;

@@ -3,18 +3,17 @@ langcode: es
 status: true
 dependencies:
   config:
+    - field.storage.node.field_cover_img
     - field.storage.node.field_image_main
     - field.storage.node.field_tabs_media
     - field.storage.node.field_url_of_the_publication
-    - image.style.noticias_videos_medios
+    - image.style.relacion_4_3
     - node.type.in_the_medios_eru
     - node.type.news
-    - taxonomy.vocabulary.tabs_in_media
   module:
     - image
     - link
     - node
-    - taxonomy
     - user
 id: eru_in_the_medios
 label: 'Eru in the media'
@@ -62,12 +61,12 @@ display:
           items_per_page: 6
           offset: 0
           id: 0
-          total_pages: 2
+          total_pages: null
           tags:
             previous: ‹‹
             next: ››
-            first: ''
-            last: ''
+            first: 'Primera página'
+            last: 'Última página'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -76,7 +75,7 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
-          quantity: 9
+          quantity: 6
       style:
         type: grid
         options:
@@ -85,9 +84,9 @@ display:
           automatic_width: false
           alignment: horizontal
           col_class_default: false
-          col_class_custom: 'col-4 views-col mb-5'
+          col_class_custom: 'col-12 col-sm-6 col-md-4 views-col mb-5'
           row_class_default: false
-          row_class_custom: row
+          row_class_custom: ''
       row:
         type: fields
         options:
@@ -248,7 +247,7 @@ display:
       display_extenders: {  }
       link_url: all-the-news
       link_display: custom_url
-      css_class: 'news-home all-news'
+      css_class: 'news-home all-news home eru-medios'
     cache_metadata:
       max-age: -1
       contexts:
@@ -381,7 +380,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          operator: contains
+          operator: word
           value: ''
           group: 1
           exposed: true
@@ -497,51 +496,6 @@ display:
           entity_type: node
           entity_field: created
           plugin_id: date
-        field_tabs_media_target_id:
-          id: field_tabs_media_target_id
-          table: node__field_tabs_media
-          field: field_tabs_media_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: or
-          value: {  }
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_tabs_media_target_id_op
-            label: 'Fuente:'
-            description: ''
-            use_operator: false
-            operator: field_tabs_media_target_id_op
-            identifier: field_tabs_media_target_id
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          type: textfield
-          limit: true
-          vid: tabs_in_media
-          hierarchy: false
-          error_message: true
-          plugin_id: taxonomy_index_tid
       filter_groups:
         operator: AND
         groups:
@@ -557,8 +511,8 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '<img src="{{ field_image_main }}" alt="{{ field_image_main__alt }}" width="100%" />'
             make_link: false
             path: ''
             absolute: false
@@ -583,8 +537,8 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
-          element_class: ''
+          element_type: '0'
+          element_class: imagen-medios
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -596,10 +550,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: image_url
           settings:
-            image_style: noticias_videos_medios
-            image_link: ''
+            image_style: ''
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -653,7 +606,7 @@ display:
           element_label_class: ''
           element_label_colon: false
           element_wrapper_type: h3
-          element_wrapper_class: 'title-one title-two'
+          element_wrapper_class: title-one
           element_default_classes: true
           empty: ''
           hide_empty: false
@@ -850,7 +803,7 @@ display:
           element_label_class: ''
           element_label_colon: false
           element_wrapper_type: h3
-          element_wrapper_class: 'title-one title-two'
+          element_wrapper_class: ''
           element_default_classes: true
           empty: ''
           hide_empty: false
@@ -872,6 +825,70 @@ display:
           field_api_classes: false
           entity_type: node
           entity_field: title
+          plugin_id: field
+        field_cover_img:
+          id: field_cover_img
+          table: node__field_cover_img
+          field: field_cover_img
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: image
+          settings:
+            image_style: relacion_4_3
+            image_link: ''
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
           plugin_id: field
       header:
         area:
@@ -896,10 +913,10 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:field.storage.node.field_cover_img'
         - 'config:field.storage.node.field_image_main'
         - 'config:field.storage.node.field_tabs_media'
         - 'config:field.storage.node.field_url_of_the_publication'

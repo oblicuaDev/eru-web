@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.in_the_medios_eru.body
+    - field.field.node.in_the_medios_eru.field_cover_img
     - field.field.node.in_the_medios_eru.field_image_main
     - field.field.node.in_the_medios_eru.field_tabs_media
     - field.field.node.in_the_medios_eru.field_url_of_the_publication
@@ -24,6 +25,15 @@ content:
     weight: 101
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_cover_img:
+    weight: 106
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
     region: content
   field_image_main:
     weight: 103

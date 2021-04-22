@@ -22,7 +22,7 @@ reactions:
     blocks:
       68d825e9-5438-4489-ab97-b92353e59bd4:
         id: system_main_block
-        label: 'Main page content'
+        label: 'Contenido Principal de la Página'
         provider: system
         label_display: 0
         region: header
@@ -44,7 +44,7 @@ reactions:
         weight: '1'
         context_mapping: {  }
         theme: theme_eru
-        css_class: 'col-6 float-left'
+        css_class: 'col-md-6 float-left col-12'
         unique: 0
         context_id: homepage
         uuid: e2db2f64-840b-4bbe-815c-78a0351aa154
@@ -80,7 +80,7 @@ reactions:
         uuid: e6f815be-9ca8-458d-846b-6611eb368739
       ac852f36-3170-4ce6-aa81-3694bba11657:
         id: 'block_content:03013db1-36d0-433b-936f-5120a7eabd62'
-        label: transparency
+        label: Transparencia
         provider: block_content
         label_display: 0
         status: true
@@ -109,21 +109,6 @@ reactions:
         unique: 0
         context_id: homepage
         uuid: 0f6c9b65-112d-4280-b4dd-f4bf6bec9429
-      0946edbf-2b9e-4e0f-9233-63ec78bc3bfe:
-        id: 'views_block:video_eru-block_1'
-        label: ''
-        provider: views
-        label_display: visible
-        views_label: ''
-        items_per_page: none
-        region: content
-        weight: '2'
-        context_mapping: {  }
-        theme: theme_eru
-        css_class: 'col-12 float-left mb-5'
-        unique: 0
-        context_id: homepage
-        uuid: 0946edbf-2b9e-4e0f-9233-63ec78bc3bfe
       96ce7cda-dc8f-406e-aa3c-2d759a1da37b:
         id: 'block_content:f8076668-d97b-4398-b45e-0dcf0c838f51'
         label: 'Bogota te escucha'
@@ -136,7 +121,7 @@ reactions:
         weight: '-7'
         context_mapping: {  }
         theme: theme_eru
-        css_class: 'col-4 sdqs-footer'
+        css_class: 'col-4 sdqs-footer d-md-block d-none'
         unique: 0
         context_id: homepage
         uuid: 96ce7cda-dc8f-406e-aa3c-2d759a1da37b
@@ -152,7 +137,7 @@ reactions:
         weight: '1'
         context_mapping: {  }
         theme: theme_eru
-        css_class: 'col-lg-4 col-md-4 col-sm-12 mision-footer'
+        css_class: 'col-12 col-md-4 d-none d-lg-block mision-footer'
         unique: 0
         context_id: homepage
         uuid: e9120df0-e92b-4681-adc3-1878a7e998b7
@@ -168,7 +153,7 @@ reactions:
         weight: '3'
         context_mapping: {  }
         theme: theme_eru
-        css_class: 'col-md-4 col-lg-4 col-sm-12 contact'
+        css_class: 'col-md-6 col-lg-4 col-12 contact'
         unique: 0
         context_id: homepage
         uuid: e1371859-22a7-4935-900b-ae7f1bbaf5e6
@@ -184,7 +169,7 @@ reactions:
         weight: '-6'
         context_mapping: {  }
         theme: theme_eru
-        css_class: 'col-4 sitemap-block'
+        css_class: 'col-4 sitemap-block d-md-block d-none'
         unique: 0
         context_id: homepage
         uuid: 9906f5e9-bfd9-43e8-8772-f8b56cb7176a
@@ -200,7 +185,7 @@ reactions:
         weight: '-4'
         context_mapping: {  }
         theme: theme_eru
-        css_class: col-4
+        css_class: 'col-12 col-md-4'
         unique: 0
         context_id: homepage
         uuid: 54d6299d-9f20-42ca-96c9-5acc9fc99820
@@ -216,7 +201,7 @@ reactions:
         weight: '-6'
         context_mapping: {  }
         theme: theme_eru
-        css_class: col-4
+        css_class: 'col-12 col-md-4 terminos'
         unique: 0
         context_id: homepage
         uuid: d7dd4015-b95f-4780-90c1-600ab5a77508
@@ -232,7 +217,7 @@ reactions:
         weight: '-5'
         context_mapping: {  }
         theme: theme_eru
-        css_class: col-4
+        css_class: 'col-12 col-md-4'
         unique: 0
         context_id: homepage
         uuid: fed0e0cd-436d-4fd6-8d7a-7bfb1342503d
@@ -248,7 +233,7 @@ reactions:
         weight: '-9'
         context_mapping: {  }
         theme: theme_eru
-        css_class: col-4
+        css_class: 'col-md-4 social-media col-12'
         unique: 0
         context_id: homepage
         uuid: fa58bb11-743d-4986-90f7-85479ee9265d
@@ -264,7 +249,7 @@ reactions:
         weight: '2'
         context_mapping: {  }
         theme: theme_eru
-        css_class: 'col-md-4 col-lg-4 col-sm-12 links-footer'
+        css_class: 'col-md-6 col-lg-4 links-footer d-none d-md-block'
         unique: 0
         context_id: homepage
         uuid: 89d23405-1272-49b8-acb4-db0278ca217c

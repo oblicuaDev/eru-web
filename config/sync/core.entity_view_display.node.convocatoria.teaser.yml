@@ -29,4 +29,8 @@ content:
     region: content
 hidden:
   addtoany: true
+  field_expedition_date: true
+  field_file_download: true
+  field_project: true
+  field_type_procurement: true
   langcode: true
