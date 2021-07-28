@@ -15973,6 +15973,12 @@ p {
   font-size: 1.1em;
   margin-bottom: 1.1em;
 }
+.news li ul, .project-content li ul {
+  margin-top: 1em;
+}
+.news li ul li, .project-content li ul li {
+  font-size: 1em;
+}
 
 .page ul li, .news ul li, .project-content ul li {
   list-style: none;
@@ -16113,8 +16119,11 @@ tr:nth-child(even) {
 .menu-principal .dropdown-toggle::after {
   color: #db9d36;
 }
-=======
->>>>>>> ce27b0fa754ccd6d9c012ba323bab9f119284a3c
+
+.menu-principal .dropdown-toggle::after {
+  color: #db9d36;
+}
+
 .menu-principal .dropdown-menu {
   font-size: 0.9rem !important;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
@@ -16469,6 +16478,33 @@ tr:nth-child(even) {
 }
 .page__content .fila1 .habeas-data-ico, .page__content .fila2 .habeas-data-ico, .page__content .fila3 .habeas-data-ico {
   background: url("../images/iconos-transparencia.png"), transparent;
+
+  background: url("../images/iconos-transparencia.png"), transparent;
+  background-position: 798px 0;
+}
+.page__content .fila1 .contratacion-ico, .page__content .fila2 .contratacion-ico, .page__content .fila3 .contratacion-ico {
+  background: url("../images/iconos-transparencia.png"), transparent;
+  background-position: 686px 0;
+}
+.page__content .fila1 .tramites-ico, .page__content .fila2 .tramites-ico, .page__content .fila3 .tramites-ico {
+  background: url("../images/iconos-transparencia.png"), transparent;
+  background-position: 564px 0;
+}
+.page__content .fila1 .instrumentos-ico, .page__content .fila2 .instrumentos-ico, .page__content .fila3 .instrumentos-ico {
+  background: url("../images/iconos-transparencia.png"), transparent;
+  background-position: 444px 0;
+}
+.page__content .fila1 .transparencia-pasiva-ico, .page__content .fila2 .transparencia-pasiva-ico, .page__content .fila3 .transparencia-pasiva-ico {
+  background: url("../images/iconos-transparencia.png"), transparent;
+  background-position: 337px 0;
+}
+.page__content .fila1 .accesibilidad-ico, .page__content .fila2 .accesibilidad-ico, .page__content .fila3 .accesibilidad-ico {
+  background: url("../images/iconos-transparencia.png"), transparent;
+  background-position: 226px 0;
+}
+.page__content .fila1 .habeas-data-ico, .page__content .fila2 .habeas-data-ico, .page__content .fila3 .habeas-data-ico {
+  background: url("../images/iconos-transparencia.png"), transparent;
+>>>>>>> 9c85cc42ab899393cb13173baa9da0ca122f8e47
   background-position: 117px 0;
 }
 .page__content .link-item {
@@ -16584,6 +16620,33 @@ tr:nth-child(even) {
 }
 .container-project .nav-link {
   font-size: 1.1em;
+}
+.container-project .caracteristica-general {
+  display: flex;
+  align-items: center;
+  width: inherit;
+  margin-bottom: 1.5rem !important;
+}
+.container-project .caracteristica-general .cifra {
+  font-weight: 600;
+}
+.container-project .caracteristica-general i {
+  margin-right: 15px;
+  padding: 34px;
+  background-repeat: no-repeat;
+  background: url(../images/proyectos-sala-negocios-iconos.png), transparent;
+}
+.container-project .caracteristica-general .acueducto-icono {
+  background-position: 71px 0;
+}
+.container-project .caracteristica-general .obra-gris-icono {
+  background-position: 0;
+}
+.container-project .caracteristica-general .energia-icono {
+  background-position: 138px 0;
+}
+.container-project .caracteristica-general .titulo-cifra {
+  width: 100px;
 }
 .container-project .dato-general {
   display: flex;
@@ -16707,6 +16770,30 @@ aside ul li.active {
   height: 100px !important;
   width: 145px !important;
   overflow: hidden !important;
+}
+
+/*Estilos normatividad*/
+h4.titulo {
+  margin-bottom: 8px;
+}
+h4.titulo a {
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+
+.recuadro .views-field-created {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+ul li.recuadro {
+  list-style: disc;
+}
+ul li.recuadro::marker {
+  color: #ffa800;
+  font-size: 150%;
 }
 
 /*Estilos Juntos Construimos*/
@@ -16975,6 +17062,121 @@ a.btn-taller {
 }
 .webform-juntos-construimos input[type=text], .webform-juntos-construimos input[type=tel] {
   border-radius: 10px;
+}
+
+.infoProyecto {
+  position: relative;
+  left: 0;
+  bottom: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  width: 96%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.infoProyecto .proyectoIconos {
+  display: grid;
+  gap: 0 20px;
+  grid-template-columns: 210px 1fr;
+}
+.infoProyecto .bookmarks {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  border-right: 2px solid white;
+}
+.infoProyecto span a {
+  border: 2px solid #fff;
+  width: 40px;
+  text-align: center;
+  border-radius: 100%;
+  line-height: 1em;
+  height: 40px;
+  align-items: center;
+  display: grid;
+  justify-content: center;
+  color: #fff;
+  font-size: 19px;
+}
+
+.card-project {
+  padding: 0;
+  border-radius: 20px;
+  box-shadow: 0 30px 70px 0 rgba(195, 195, 195, 0.5);
+}
+.card-project .card-project .img-fluid {
+  border-radius: 15px 15px 0 0;
+}
+.card-project h3 {
+  color: #006b60;
+  font-size: 1.7em;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 15px;
+  border: none;
+  line-height: 1 !important;
+  margin-bottom: 0;
+  padding: 0;
+}
+.card-project h3::after {
+  content: none;
+}
+.card-project h4 {
+  text-align: center;
+  color: #006b60;
+  border-bottom: 1px solid #006b60;
+  font-size: 1.1em;
+  font-weight: 300;
+  padding-bottom: 13px;
+}
+.card-project p {
+  font-size: 1em;
+  padding: 3px 20px;
+}
+.card-project p span {
+  font-weight: 600;
+}
+.card-project .more-link {
+  margin: 0;
+  padding-bottom: 2rem;
+}
+
+.proyecto-sala-de-negocios h3 {
+  font-size: 1.8em;
+  border-bottom: none;
+}
+.proyecto-sala-de-negocios .proyectoVideo iframe {
+  border-radius: 40px;
+}
+.proyecto-sala-de-negocios .separador {
+  background-color: #006b60;
+  color: white;
+}
+.proyecto-sala-de-negocios .separador h3 {
+  font-size: 2.5em;
+}
+.proyecto-sala-de-negocios .separador h3::after {
+  content: none;
+}
+.proyecto-sala-de-negocios .separador .icono {
+  /*display: flex;		
+  align-items: center;
+  width: inherit;
+  margin-bottom: 1.5rem !important;*/
+  height: 70px;
+  width: 70px;
+  margin: auto;
+  background-position: 0;
+  background-repeat: no-repeat;
+  background: url(../images/proyectos-sala-negocios-iconos.png), transparent;
+}
+.proyecto-sala-de-negocios .plano h3::after {
+  left: 19%;
+}
+.proyecto-sala-de-negocios .descripcionGeneral i {
+  font-size: 2em;
+  color: #ffa800;
 }
 
 footer {

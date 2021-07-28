@@ -108,6 +108,13 @@ dl {
 .news li, .project-content li {
 	font-size: 1.1em; 
 	margin-bottom: 1.1em;
+	ul{
+		margin-top: 1em;
+		li{
+			font-size: 1em; 
+		}
+	} 
+	
 }
 .page ul li, .news ul li, .project-content ul li {
 	list-style: none;	
