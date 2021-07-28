@@ -42,7 +42,11 @@
 
   {% if page.header %}
       <header class="page__header mb-3" title="Región Encabezado">
-        {% if (is_front) or (url == '/es/juntos-construimos') %}
+        {% if (is_front) %}
+          <div class="container-fluid px-0">
+            {{ page.header }}
+          </div>
+        {% elseif (url == '/es/juntos-construimos') %}
           <div class="container-fluid px-0">
             {{ page.header }}
           </div>
