@@ -293,6 +293,7 @@
 		align-items: center;
 		width: inherit;
 		margin-bottom: 1.5rem !important;
+		margin: auto;
 		.cifra { font-weight: 600; }
 		i{margin-right: 15px; padding:34px; background-repeat: no-repeat; background: url(../images/proyectos-sala-negocios-iconos.png), transparent;}
 		.acueducto-icono{			
@@ -668,62 +669,111 @@ a.btn-taller{
 		grid-template-columns: 210px 1fr;
 	}
 	.bookmarks {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr;
-		align-items: center;
+		display: flex;
+		//display: grid;
+		// grid-template-columns: 1fr 1fr 1fr 1fr;
+		// align-items: center;
 		border-right: 2px solid rgba(255,255,255,1);
+	 		a i {
+				transition: .8s;
+				z-index: 3;
+		  	}
+			a:hover i {
+				transform: rotateY(360deg);
+				color: $verde-oscuro;
+			  }
+			 a:before {
+				content: "";
+				position: absolute;
+				top: 100%;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				transition: .8s;
+			  }
+			  
+			  a:hover:before {
+				top: 0;
+				background: $naranja;
+			  }
+			  
+			  
 	}
 	span a {
-		border: 2px solid #fff;
+		// border: 2px solid #fff;
+		// width: 40px;
+		// text-align: center;
+		// border-radius: 100%;
+		// line-height: 1em;
+		// height: 40px;
+		// align-items: center;
+		// display: grid;
+		// justify-content: center;
+		// color: #fff !important;
+		// font-size: 19px;
+
 		width: 40px;
-		text-align: center;
-		border-radius: 100%;
-		line-height: 1em;
 		height: 40px;
-		align-items: center;
-		display: grid;
-		justify-content: center;
-		color: #fff;
-		font-size: 19px;
+		background-color: transparent;
+		text-align: center;
+		line-height: 40px;
+		font-size: 20px;
+		margin: 0 10px;
+		display: block;
+		border-radius: 50%;
+		position: relative;
+		overflow: hidden;
+		border: 2px solid #fff;
+		color: #fff !important;
+		z-index: 1;
+		
+		&:hover{
+			cursor: pointer;
+		}
+	}
+	.contact{
+		color: #ffffff;
 	}
 }
-.card-project {
-    padding: 0;
-    border-radius: 20px;
-    box-shadow: 0 30px 70px 0 rgb(195 195 195 / 50%);
-	.card-project .img-fluid {
-		border-radius: 15px 15px 0 0;
-	}
-	h3 {
-		color: $verde-oscuro;
-		font-size: 1.7em;
-		font-weight: 500;
-		text-align: center;
-		margin-top: 15px;
-		border: none;
-		line-height: 1 !important;
-		margin-bottom: 0;
+.cardProject{
+	.card-project {
 		padding: 0;
-		&::after {content: none;}
-	}
-	h4 {
-		text-align: center;
-		color: $verde-oscuro;
-		border-bottom: 1px solid $verde-oscuro;
-		font-size: 1.1em;
-		font-weight: 300;
-		padding-bottom: 13px;
-	}
-	p {
-		font-size: 1em;
-		padding: 3px 20px;
-	}
-	p span {
-		font-weight: 600;
-	}
-	.more-link{
-		margin: 0;
-		padding-bottom: 2rem;
+		border-radius: 20px;
+		box-shadow: 0 30px 70px 0 rgb(195 195 195 / 50%);
+		.img-fluid {
+			border-radius: 15px 15px 0 0;
+		}
+		h3 {
+			color: $verde-oscuro;
+			font-size: 1.7em;
+			font-weight: 500;
+			text-align: center;
+			margin-top: 15px;
+			border: none;
+			line-height: 1 !important;
+			margin-bottom: 0;
+			padding: 0;
+			&::after {content: none;}
+		}
+		h4 {
+			text-align: center;
+			color: $verde-oscuro;
+			border-bottom: 1px solid $verde-oscuro;
+			font-size: 1.1em;
+			font-weight: 300;
+			padding-bottom: 13px;
+		}
+		p {
+			font-size: 1em;
+			padding: 3px 20px;
+		}
+		p span {
+			font-weight: 600;
+		}
+		.more-link{
+			margin: 0;
+			padding-bottom: 2rem;
+		}
 	}
 }
 .proyecto-sala-de-negocios{
@@ -765,7 +815,215 @@ a.btn-taller{
 		i{
 			font-size: 2em;
 			color: $naranja;
+			padding-left: 0.5em;
+    		margin-bottom: 15px;
 		}
 	}
+	.contacto i {
+		margin-right: 15px;
+		padding: 34px;
+		background-repeat: no-repeat;
+		background: url(../images/icono-contacto.svg), transparent;
+		background-position: 1px 0;
+	}
+	//Estilos formulario contacto
+	#sala_de_negocios_contacto {
+		border-radius: 41px;
+		box-shadow: 0 30px 70px 0 rgb(166 166 166 / 50%);
+		padding: 20px;
+	}
+	.soliInfoTitulo {
+		display: grid;
+		gap: 0 20px;
+		grid-template-columns: 60px 1fr;
+		align-items: center;
+		padding: 10px 0;
+	}
+	.soliInfoTitulo h3 {
+		font-size: 1.7em;
+		margin: 0;
+		padding: 0;
+	}
+	.soliInfoTitulo h3::after {
+		content: none;
+	}
+	.soliInfoTitulo h4 {
+		color: #343a3f;
+		font-size: 1.5em;
+		margin: 0;
+	}
 }
+//Estilos Bodegas Sala de negocios
+.tooltp {
+	position: relative;
+	display: inline-block;
+  }
+  
+  .tooltp .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: rgba(0, 142, 127, .8);
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -60px;
+	opacity: 0;
+	transition: opacity 0.3s;
+  }
+  
+  .tooltp .tooltiptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: rgba(0, 142, 127, .5) transparent transparent transparent;
+  }
+  
+  .tooltp:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+  }
+.cruces{
+	.planos{
+		background-color: #eaf6fb;
+		}
+}
+.villaJavier{
+	.planos{
+		background-color: #f9af21;
+		}
+}
+.cruces .separadorBodegas{
+	background: $white url("../images/separadorCruces.svg") right top no-repeat;
+	background-size: cover;
 
+	h3 span{
+		font-size: 1.4em;
+	}
+}
+.bodegas {	
+	.caracteristicas{
+		h3{
+			&::after{
+				left: 70px;
+			}
+		}
+	}
+	.separadorBodegas{
+		padding: 75px 0;
+		color: $white;	
+		h3{
+			&::after {content: none;}
+		}
+		.valorComercializacion{
+			width: 60%;
+			.iconoAvaluo{
+				text-align: center;
+				.icono{
+					background: transparent url("../images/iconoAvaluo.svg") center center no-repeat;
+					background-size: contain;
+				}
+				h4{
+					color: $naranja;
+					text-align: center;
+					font-size: 1.5em;
+					line-height: 1em;
+					font-weight: 700;
+					margin-bottom: 0;
+				}
+				.proyecto-sala-de-negocios__field-valor-de-comercializacion {
+					font-size: 1.8em;
+					font-weight: 700;
+				}
+			}	
+		}
+		ol li{
+			margin-bottom: 20px;
+			font-size: 1.3em;
+			font-weight: 600;
+			&::marker{
+				color: $naranja;
+				font-weight: 800;
+				font-size: 1.3em;
+			}
+		}
+	}
+	.usos {
+		color: #343a3f;
+		font-weight: 500;
+		line-height: 1.2em;
+		font-size: 1.1em;
+		h4 {
+			color: #ffa800;
+			font-weight: 700;
+			margin-bottom: 0;
+		}
+		i {
+			margin-right: 15px;
+			padding: 54px;
+			background-repeat: no-repeat;
+			background: url(../images/UsosProyectos-Iconos.png), transparent;
+		}
+		.area-icono{
+			background-position: 0 0 !important;
+		}
+		.altura-icono{
+			background-position: 226px 0 !important;
+		}
+		.fachada-icono{
+			background-position: 108px 0 !important;
+		}
+	}
+ 
+	.dato-general {	
+		i{margin-right: 15px; padding:34px; background-repeat: no-repeat; background: url(../images/iconosBodegas.png), transparent;}
+		.tratamiento-icono{			
+			background-position: 0 0;			
+		}
+		.indiceOcupacion-icono{
+			background-position: 372px 0;	
+		}
+		.indiceConstruccion-icono {
+			background-position: 147px 0;
+		}
+		.alturaMax-icono{
+			background-position: 447px 0;	
+		}
+		.antejardin-icono{
+			background-position: 297px 0;	
+		}
+		.semisotano-icono{
+			background-position: 72px 0;
+		}
+		.usos-icono{
+			background-position: 222px 0;	
+		}		
+
+	}	
+}
+.villaJavier {
+	
+	.separadorBodegas{
+	background: $white url("../images/separadorVillaJavier.svg") right top no-repeat;
+	background-size: cover;
+		h3 span{
+			color: $naranja;
+			font-size: 2em;
+		}
+	}
+	.usos i {
+		background: url(../images/UsosProyectos-IconosMorados.png), transparent !important;
+	}
+	.dato-general {	
+		i{background: url(../images/iconosBodegasMorados.png), transparent;}
+	}
+	
+}

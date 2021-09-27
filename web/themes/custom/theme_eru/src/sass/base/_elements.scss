@@ -197,6 +197,13 @@ thead{
 	color: white;
 	text-align: center;
 }
+.descargar-icn i{
+	color: $verde-claro;
+	font-size: 2em;
+	&:hover{
+		color: $naranja;
+	}
+}
 tr:nth-child(even){
 	background-color: #ddd;
 }
