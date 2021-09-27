@@ -15,6 +15,7 @@
   'normatividad'
 ]
 %}
+{% set createdDate = node.getCreatedTime|date('j/m/Y - H:i') %}
 {# {{ kint(content|keys)}} #}
 <article{{attributes.addClass(classes)}}>
   {% block content %}    
@@ -29,7 +30,7 @@
         </div>  
         <div class="col-md-10 col-12">
           
-          <div class="item_data mb-3"><b>Fecha de publicación:</b>  {{ element['#object'].getCreatedTime | date('d/m/y - H:i:s')  }}</div>
+          <div class="item_data mb-3"><b>Fecha de publicación:</b>  {{ createdDate  }}</div>
             
             {{ content.body}}
 
