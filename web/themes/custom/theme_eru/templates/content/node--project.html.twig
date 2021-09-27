@@ -69,6 +69,7 @@
             <div class="{{attributes.class.0}}"></div>
             {{ content.field_location}}
             {{ content.body}}
+            {{ content.field_formulario }}
           </div>
 
         </div>
@@ -97,6 +98,7 @@
         {{ content.field_benefits_of_project}}
       </div>
       <div aria-labelledby="regulatory-tab" class="tab-pane fade project-content" id="regulatory" role="tabpanel">
+        {% if content.field_links_of_interest|render %}
         <div class="row">
           <div class="col-md-8 col-12">
             {{ content.field_regulatory_framework}}
@@ -106,6 +108,13 @@
             <div class="element-invisible d-none {{content.field_externa.0}}" data-visible="{{content.field_externa.0}}">Abre en una nueva ventana</div>
           </div>
         </div>
+        {% else %}
+        <div class="row">
+          <div class="col-12">
+            {{ content.field_regulatory_framework}}
+          </div>
+        </div>
+        {% endif %}
       </div>
     </div>
     {% if not page %}

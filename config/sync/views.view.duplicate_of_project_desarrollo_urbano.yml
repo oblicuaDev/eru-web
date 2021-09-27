@@ -66,12 +66,12 @@ display:
         options:
           grouping: {  }
           columns: 3
-          automatic_width: true
+          automatic_width: false
           alignment: horizontal
-          col_class_default: true
-          col_class_custom: 'col-4 views-col'
-          row_class_default: true
-          row_class_custom: ''
+          col_class_default: false
+          col_class_custom: 'col-12 col-sm-4 views-col'
+          row_class_default: false
+          row_class_custom: row
       row:
         type: fields
         options:
@@ -84,6 +84,70 @@ display:
           id: field_image
           table: node__field_image
           field: field_image
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: image-project
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: image
+          settings:
+            image_style: project
+            image_link: ''
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_image_evento_hover:
+          id: field_image_evento_hover
+          table: node__field_image_evento_hover
+          field: field_image_evento_hover
           relationship: none
           group_type: group
           admin_label: ''
@@ -131,8 +195,8 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: project
-            image_link: content
+            image_style: ''
+            image_link: ''
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -209,70 +273,6 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: field
-        field_image_evento_hover:
-          id: field_image_evento_hover
-          table: node__field_image_evento_hover
-          field: field_image_evento_hover
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: d-none
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: image
-          settings:
-            image_style: ''
-            image_link: ''
-          group_column: ''
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
       filters:
         status:
           value: '1'
@@ -304,7 +304,13 @@ display:
           admin_label: ''
           operator: in
           value:
+            all: all
+            '***LANGUAGE_site_default***': '***LANGUAGE_site_default***'
             '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+            es: es
+            en: en
+            und: und
+            zxx: zxx
           group: 1
           exposed: false
           expose:
@@ -363,7 +369,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: "<h2 class=\"text-center\">Proyectos ERU</h2>\r\n\r\n<p class=\"text-center\">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>"
+            value: '<h2 class="text-center">Proyectos ERU</h2>'
             format: full_html
           plugin_id: text
       footer: {  }
@@ -372,7 +378,7 @@ display:
       arguments: {  }
       display_extenders: {  }
       use_ajax: true
-      css_class: project-block
+      css_class: 'project-block home'
       filter_groups:
         operator: AND
         groups:
@@ -402,14 +408,14 @@ display:
           automatic_width: false
           alignment: horizontal
           col_class_default: false
-          col_class_custom: 'col-4 views-col'
+          col_class_custom: 'col-12 col-sm-4 views-col'
           row_class_default: false
           row_class_custom: ''
       defaults:
         style: false
         row: false
         pager: false
-        fields: true
+        fields: false
         link_display: false
         link_url: false
         use_more: false
@@ -417,7 +423,9 @@ display:
         use_more_text: false
         use_ajax: false
         header: false
-        css_class: true
+        css_class: false
+        filters: false
+        filter_groups: false
       row:
         type: fields
       link_display: page_4
@@ -433,162 +441,6 @@ display:
           items_per_page: 3
           offset: 0
       display_description: ''
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - 'user.node_grants:view'
-        - user.permissions
-      tags:
-        - 'config:field.storage.node.field_image'
-        - 'config:field.storage.node.field_image_evento_hover'
-  page_1:
-    display_plugin: page
-    id: page_1
-    display_title: 'Project renovación Urbana'
-    position: 3
-    display_options:
-      display_extenders: {  }
-      path: proyectos/renovacion-urbana
-      display_description: ''
-      filters:
-        status:
-          value: '1'
-          table: node_field_data
-          field: status
-          plugin_id: boolean
-          entity_type: node
-          entity_field: status
-          id: status
-          expose:
-            operator: ''
-          group: 1
-        type:
-          id: type
-          table: node_field_data
-          field: type
-          value:
-            project: project
-          entity_type: node
-          entity_field: type
-          plugin_id: bundle
-          group: 1
-        field_type_of_project_target_id:
-          id: field_type_of_project_target_id
-          table: node__field_type_of_project
-          field: field_type_of_project_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: or
-          value:
-            - 3
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          type: textfield
-          limit: true
-          vid: type_of_project
-          hierarchy: false
-          error_message: true
-          plugin_id: taxonomy_index_tid
-        content_translation_source:
-          id: content_translation_source
-          table: node_field_data
-          field: content_translation_source
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: in
-          value:
-            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          entity_type: node
-          entity_field: content_translation_source
-          plugin_id: language
-      defaults:
-        filters: false
-        filter_groups: false
-        style: false
-        row: false
-        fields: false
-        pager: false
-        header: true
-        sorts: false
-      filter_groups:
-        operator: AND
-        groups:
-          1: AND
-      style:
-        type: grid
-        options:
-          grouping: {  }
-          columns: 3
-          automatic_width: false
-          alignment: horizontal
-          col_class_default: false
-          col_class_custom: 'col-4 views-col'
-          row_class_default: false
-          row_class_custom: ''
-      row:
-        type: fields
-        options:
-          default_field_elements: true
-          inline: {  }
-          separator: ''
-          hide_empty: false
       fields:
         field_image:
           id: field_image
@@ -627,7 +479,7 @@ display:
             preserve_tags: ''
             html: false
           element_type: ''
-          element_class: ''
+          element_class: image-project
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -642,7 +494,7 @@ display:
           type: image
           settings:
             image_style: project
-            image_link: ''
+            image_link: content
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -662,7 +514,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -691,7 +543,7 @@ display:
             preserve_tags: ''
             html: false
           element_type: ''
-          element_class: d-none
+          element_class: ''
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -783,27 +635,240 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: field
-      pager:
-        type: full
-        options:
-          items_per_page: 6
-          offset: 0
-          id: 0
-          total_pages: null
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
           expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
-          quantity: 6
+            operator: ''
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            project: project
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          group: 1
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            all: all
+            '***LANGUAGE_site_default***': '***LANGUAGE_site_default***'
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+            es: es
+            en: en
+            und: und
+            zxx: zxx
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      css_class: project-block
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_image'
+        - 'config:field.storage.node.field_image_evento_hover'
+  page_1:
+    display_plugin: page
+    id: page_1
+    display_title: 'Project renovación Urbana'
+    position: 3
+    display_options:
+      display_extenders: {  }
+      path: proyectos/renovacion-urbana
+      display_description: ''
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            project: project
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          group: 1
+        field_type_of_project_target_id:
+          id: field_type_of_project_target_id
+          table: node__field_type_of_project
+          field: field_type_of_project_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            3: 3
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: type_of_project
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            es: es
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+      defaults:
+        filters: false
+        filter_groups: false
+        style: false
+        row: false
+        fields: true
+        pager: false
+        header: true
+        sorts: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      style:
+        type: grid
+        options:
+          grouping: {  }
+          columns: 3
+          automatic_width: false
+          alignment: horizontal
+          col_class_default: false
+          col_class_custom: 'col-12 col-sm-4 views-col'
+          row_class_default: false
+          row_class_custom: row
+      row:
+        type: fields
+        options:
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
+      pager:
+        type: some
+        options:
+          items_per_page: 9
+          offset: 0
       menu:
         type: tab
         title: 'Renovación Urbana'
@@ -839,35 +904,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url.query_args
         - user
-        - 'user.node_grants:view'
-        - user.permissions
-      tags:
-        - 'config:field.storage.node.field_image'
-        - 'config:field.storage.node.field_image_evento_hover'
-  page_2:
-    display_plugin: page
-    id: page_2
-    display_title: 'Página 2'
-    position: 5
-    display_options:
-      display_extenders: {  }
-      menu:
-        type: tab
-        title: 'Página 3'
-        description: ''
-        expanded: false
-        parent: ''
-        weight: 0
-        context: '1'
-        menu_name: main
-      path: proyectos/pagina
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
       tags:
@@ -956,16 +993,22 @@ display:
           hierarchy: false
           error_message: true
           plugin_id: taxonomy_index_tid
-        content_translation_source:
-          id: content_translation_source
+        langcode:
+          id: langcode
           table: node_field_data
-          field: content_translation_source
+          field: langcode
           relationship: none
           group_type: group
           admin_label: ''
           operator: in
           value:
+            all: all
+            '***LANGUAGE_site_default***': '***LANGUAGE_site_default***'
             '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+            es: es
+            en: en
+            und: und
+            zxx: zxx
           group: 1
           exposed: false
           expose:
@@ -994,15 +1037,21 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           entity_type: node
-          entity_field: content_translation_source
+          entity_field: langcode
           plugin_id: language
       defaults:
         filters: false
         filter_groups: false
+        pager: false
       filter_groups:
         operator: AND
         groups:
           1: AND
+      pager:
+        type: some
+        options:
+          items_per_page: 6
+          offset: 0
     cache_metadata:
       max-age: -1
       contexts:
@@ -1040,7 +1089,13 @@ display:
       defaults:
         fields: true
         css_class: false
-      css_class: project-block
+        pager: false
+      css_class: 'project-block home'
+      pager:
+        type: some
+        options:
+          items_per_page: 9
+          offset: 0
     cache_metadata:
       max-age: -1
       contexts:

@@ -7,11 +7,13 @@ dependencies:
     - field.field.node.convocatoria.field_expedition_date
     - field.field.node.convocatoria.field_file_download
     - field.field.node.convocatoria.field_project
-    - field.field.node.convocatoria.field_type_procurement
+    - field.field.node.convocatoria.field_tipo_contratacion
+    - field.field.node.convocatoria.field_url_of_pdf
     - node.type.convocatoria
   module:
     - datetime
     - file
+    - link
     - path
     - text
 id: node.convocatoria.default
@@ -53,11 +55,19 @@ content:
     third_party_settings: {  }
     type: options_select
     region: content
-  field_type_procurement:
+  field_tipo_contratacion:
     weight: 125
     settings: {  }
     third_party_settings: {  }
     type: options_select
+    region: content
+  field_url_of_pdf:
+    weight: 126
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
     region: content
   langcode:
     type: language_select

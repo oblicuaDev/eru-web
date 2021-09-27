@@ -9,7 +9,7 @@ id: paragraph.slides.field_description
 field_name: field_description
 entity_type: paragraph
 bundle: slides
-label: Description
+label: Descripción
 description: ''
 required: true
 translatable: false

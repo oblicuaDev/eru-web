@@ -1,5 +1,5 @@
 import 'popper.js';
-import 'bootstrap';
+//import 'bootstrap';
 
 (function () {
 
@@ -30,8 +30,15 @@ import 'bootstrap';
           alert('hola');
         }*/
       });
+      /* jQuery( ".navbar-toggler", context ).click(function(e) {
+        e.preventDefault();
+        console.log("open");
+        jQuery( ".navbar-collapse" ).toggleClass( "show" );
+      }); */
     }
   };
+
+
 
   Drupal.behaviors.pageSearch = {
     attach: function (context) {
@@ -46,15 +53,77 @@ import 'bootstrap';
     attach: function (context){
       jQuery('.news ul li').prepend("<i class='icon-lists'></i>");
       jQuery('.project-content ul li').prepend("<i class='icon-lists'></i>");
+      jQuery('.page__content .page ul li').prepend("<i class='icon-lists'></i>");
+      jQuery('.listado-transparencia').remove('.icon-lists');
     }
   };
+
+  /*Drupal.behaviors.hoverProject = {
+    attach: function (context){
+      jQuery('.image-project a').hover(function() {
+        jQuery(this).addClass('active');
+        jQuery('.views-field-field-image-evento-hover img').addClass('d-block');
+        jQuery('.views-field-field-image-evento-hover img').removeClass('d-none');
+      }, function(){
+        jQuery(this).removeClass('active');
+        jQuery('.views-field-field-image-evento-hover img').addClass('d-none');
+        jQuery('.views-field-field-image-evento-hover img').removeClass('d-block');
+      });
+    }
+  };*/
 
   Drupal.behaviors.heightVideo = {
     attach: function (context){
       jQuery('.video-home iframe').height(300);
     }
   };
+  Drupal.behaviors.googleAnalytics = {
+    attach: function (context) {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag ('js', new Date());
+      gtag ('config', 'UA-134609174-1');
+    }
+  }
+  Drupal.behaviors.linkproject = {
+    attach: function (context) {
 
+      function obtenerValorParametro(sParametroNombre) {
+        var sPaginaURL = window.location.search.substring(1);
+        var sURLVariables = sPaginaURL.split('&');
+        for (var i = 0; i < sURLVariables.length; i++) {
+          var sParametro = sURLVariables[i].split('=');
+          if (sParametro[0] == sParametroNombre) {
+            return sParametro[1].replace('%20',' ');
+          }
+        }
+        return null;
+      }
+
+      var valor = obtenerValorParametro('tag');
+
+      if (valor) {
+        jQuery(".form-autocomplete").attr("value", decodeURIComponent(valor));
+        jQuery(document).ready(function () {
+          jQuery("#views-exposed-form-all-the-news-page-1 #edit-submit-all-the-news", context).click();
+        });
+      }
+
+      jQuery(".project .tag_alcance a").on('click', function (e) {
+        e.preventDefault();
+        var $this = jQuery(this);
+        var text = $this.text();
+        var numberTax = $this.attr("href");
+        var idioma = window.location.pathname;
+        if (idioma.substr(0, 4) == "/en/"){
+          window.location = "/en/noticias/?tag=" + encodeURI(text) + " (" + numberTax.substr(-2) + ")";
+        }else{
+          window.location = "/noticias/?tag=" + encodeURI(text) + " (" + numberTax.substr(-2) + ")";
+        }
+      });
+
+    }
+  };
 
 
 })(jQuery, Drupal);
