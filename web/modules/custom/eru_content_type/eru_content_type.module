@@ -11,6 +11,70 @@ use Drupal\single_datetime\AttributeHelper;
 use Drupal\views\Plugin\views\query\QueryPluginBase;
 use Drupal\views\ViewExecutable;
 
+/** 
+ * Implements hook_form_alter().
+ */
+function eru_content_type_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id){
+  if(in_array($form_id,['node_proyecto_sala_de_negocios_form','node_proyecto_sala_de_negocios_edit_form'])){
+    
+    //Locales comerciales
+    $form['field_image_main']['#states'] = [
+      'visible' => [
+        ':input[name="field_local_comercial[value]"]' => ['checked' => TRUE], 
+      ]
+    ];
+    $form['field_informacion_adicional_']['#states'] = [
+      'visible' => [
+        ':input[name="field_local_comercial[value]"]' => ['checked' => TRUE], 
+      ]
+    ];
+    $form['field_general_data']['#states'] = [
+      'visible' => [
+        ':input[name="field_local_comercial[value]"]' => ['checked' => TRUE], 
+      ]
+    ];
+    //Bodegas
+    $form['field_datos_generales']['#states'] = [
+      'visible' => [
+        ':input[name="field_bodega[value]"]' => ['checked' => TRUE], 
+      ]
+    ];
+    $form['field_altura']['#states'] = [
+      'visible' => [
+        ':input[name="field_bodega[value]"]' => ['checked' => TRUE], 
+      ]
+    ];
+    
+    $form['field_fachada']['#states'] = [
+      'visible' => [
+        ':input[name="field_bodega[value]"]' => ['checked' => TRUE], 
+      ]
+    ];    
+    $form['field_valor_de_comercializacion']['#states'] = [
+      'visible' => [
+        ':input[name="field_bodega[value]"]' => ['checked' => TRUE], 
+      ]
+    ];
+    $form['field_participante']['#states'] = [
+      'visible' => [
+        ':input[name="field_bodega[value]"]' => ['checked' => TRUE], 
+      ]
+    ];
+    $form['field_benefits_of_project']['#states'] = [
+      'visible' => [
+        ':input[name="field_bodega[value]"]' => ['checked' => TRUE], 
+      ]
+    ];
+    $form['field_scope_of_project']['#states'] = [
+      'visible' => [
+        ':input[name="field_bodega[value]"]' => ['checked' => TRUE], 
+      ]
+    ];
+    
+
+  } 
+  //kint($form); die();
+}
 /**
  * Implements hook_help().
  */
