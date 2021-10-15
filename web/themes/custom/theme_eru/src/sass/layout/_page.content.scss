@@ -911,6 +911,12 @@ a.btn-taller{
 }
 .bodegas {	
 	.caracteristicas{
+		.titleCenter{
+			width: 50%;
+			margin-right: auto;
+			margin-left: auto;
+			text-align: center;
+		}
 		h3{
 			&::after{
 				left: 70px;

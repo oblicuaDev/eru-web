@@ -17221,6 +17221,12 @@ a.btn-taller {
   font-size: 1.4em;
 }
 
+.bodegas .caracteristicas .titleCenter {
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
 .bodegas .caracteristicas h3::after {
   left: 70px;
 }
@@ -17681,6 +17687,35 @@ footer img {
 
   .videos-eru iframe {
     max-height: 440px !important;
+  }
+
+  .cruces .separadorBodegas {
+    background: #3f818a;
+  }
+  .cruces .separadorBodegas h3 {
+    text-align: center;
+  }
+
+  .villaJavier .separadorBodegas {
+    background-color: #513287;
+  }
+  .villaJavier .separadorBodegas h3 {
+    text-align: center;
+  }
+  .villaJavier .separadorBodegas h3 span {
+    font-size: 1.3em;
+  }
+
+  .valorComercializacion {
+    width: 95%;
+    margin: 15px auto;
+  }
+
+  .caracteristicas .titleCenter {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
   }
 
   footer .contact li i::before {

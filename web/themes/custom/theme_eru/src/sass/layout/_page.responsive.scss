@@ -206,6 +206,35 @@
 		width: 518px !important;
 	}
 	.videos-eru iframe { max-height: 440px !important; }
+
+	//Estilos Sala de negocios ERU
+	.cruces .separadorBodegas{
+		background: #3f818a;
+		h3 {
+			text-align: center;
+		}
+	}
+	.villaJavier .separadorBodegas{
+		background-color: #513287;
+		h3 {
+			text-align: center;
+			span{
+				font-size: 1.3em;
+			}
+		}
+	}
+	.valorComercializacion{
+		width: 95%;
+		margin: 15px auto;
+	}
+	.caracteristicas{
+		.titleCenter{
+			width: 90%;
+			margin-right: auto;
+			margin-left: auto;
+			text-align: center;
+		}
+	}
 	footer .contact li i::before { left: 5% !important; }
 }
 
