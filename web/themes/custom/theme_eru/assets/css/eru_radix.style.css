@@ -17697,7 +17697,7 @@ footer img {
   }
 
   .villaJavier .separadorBodegas {
-    background-color: #513287;
+    background: #513287;
   }
   .villaJavier .separadorBodegas h3 {
     text-align: center;
@@ -17707,7 +17707,7 @@ footer img {
   }
 
   .valorComercializacion {
-    width: 95%;
+    width: 95% !important;
     margin: 15px auto;
   }
 
