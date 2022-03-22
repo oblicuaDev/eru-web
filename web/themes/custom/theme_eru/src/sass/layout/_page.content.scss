@@ -652,6 +652,25 @@ a.btn-taller{
 	} 
 }
 //Estilos proyectos sala de negocios
+#block-salaNegocios {
+	.textos-salaNegocios {
+		h2 {
+			margin-bottom: 10px !important;
+			color: #3e8c7f;
+			font-size: 3em !important;
+			line-height: 1;
+			text-align: center;
+		}
+		p {
+			color: #606060;
+			font-size: 1.8em;
+			line-height: 1;
+			text-align: center;
+			width: 70%;
+			margin: auto;
+		}
+	}
+}
 //Iconos header
 .infoProyecto {
     position: relative;

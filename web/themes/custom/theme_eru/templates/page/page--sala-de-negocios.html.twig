@@ -51,6 +51,18 @@
       <div class="page__content">
         <div class="container-fluid px-0">          
           {{ page.content }}
+          {% if page.content_1 and page.content_2 %}
+            <div class="container">
+              <div class="row">
+                <div class="col-md-7 col-sm-7 col-12">
+                  {{ page.content_1}}
+                </div>
+                <div class="col-md-5 col-sm-5 col-12">
+                  {{ page.content_2}}
+                </div>
+              </div>
+            </div>
+          {% endif %}
         </div>
       </div>
     {% endif %}

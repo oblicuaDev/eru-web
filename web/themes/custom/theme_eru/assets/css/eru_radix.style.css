@@ -16989,6 +16989,22 @@ a.btn-taller {
   border-radius: 10px;
 }
 
+#block-salaNegocios .textos-salaNegocios h2 {
+  margin-bottom: 10px !important;
+  color: #3e8c7f;
+  font-size: 3em !important;
+  line-height: 1;
+  text-align: center;
+}
+#block-salaNegocios .textos-salaNegocios p {
+  color: #606060;
+  font-size: 1.8em;
+  line-height: 1;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+}
+
 .infoProyecto {
   position: relative;
   left: 0;
