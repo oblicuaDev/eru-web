@@ -58,7 +58,7 @@
       </header>
     {% endif %}
 
-   {% if page.content %}
+    {% if page.content %}
       <main title="Contenido principal" id="main-content">
         {% if is_front %}
           <div class="page__content home">
@@ -74,11 +74,11 @@
                   </aside>
                 </div>
                 <div class="col-md-9 col-12">
-                 {{ page.content }}
+                  {{ page.content }}
                 </div>
                 {% else %}
                 <div class="col-12">
-                   {{ page.content }}
+                    {{ page.content }}
                 </div>               
               {% endif %}
             </div>            
@@ -90,17 +90,16 @@
     <script>
   var divTag = document.getElementsByTagName("div");
   for(var i=0; i < divTag.length; i++){
-     if (divTag[i].textContent == "En curso"){
+    if (divTag[i].textContent == "En curso"){
       divTag[i].classList.add("curso");
     }
-     if(divTag[i].textContent  == "Finalizado"){
+    if(divTag[i].textContent  == "Finalizado"){
       divTag[i].classList.add("finalizado");
     }
     if (divTag[i].textContent == "proximo" ){
       divTag[i].classList.add("proximo");
     }
   }
-   
 
 </script>
 

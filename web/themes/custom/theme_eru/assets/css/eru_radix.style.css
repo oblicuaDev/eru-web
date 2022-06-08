@@ -16241,7 +16241,8 @@ tr:nth-child(even) {
   padding: 0 !important;
   border-radius: 0;
 }
-.page__content .views-field-created, .page__content .views-field-field-textual-transcription {
+.page__content .views-field-created,
+.page__content .views-field-field-textual-transcription {
   font-weight: 600;
 }
 .page__content .project-block .views-field-title {
@@ -16320,27 +16321,33 @@ tr:nth-child(even) {
   color: #F7931E;
   font-weight: 500;
 }
-.page__content .news-home h3, .page__content .page-search h3 {
+.page__content .news-home h3,
+.page__content .page-search h3 {
   line-height: 0.6em !important;
   font-size: 1.75rem;
   border-bottom: none;
 }
-.page__content .news-home h3 a, .page__content .page-search h3 a {
+.page__content .news-home h3 a,
+.page__content .page-search h3 a {
   font-size: 0.55em;
   font-weight: 600;
   color: #000;
 }
-.page__content .news-home h3 a::after, .page__content .page-search h3 a::after {
+.page__content .news-home h3 a::after,
+.page__content .page-search h3 a::after {
   content: none;
 }
-.page__content .news-home h3::after, .page__content .page-search h3::after {
+.page__content .news-home h3::after,
+.page__content .page-search h3::after {
   content: none;
 }
-.page__content .news-home .title-one, .page__content .page-search .title-one {
+.page__content .news-home .title-one,
+.page__content .page-search .title-one {
   margin: 20px 0 20px 0;
   height: 100px;
 }
-.page__content .news-home .title-one::after, .page__content .page-search .title-one::after {
+.page__content .news-home .title-one::after,
+.page__content .page-search .title-one::after {
   content: "";
   width: 40px;
   height: 40px;
@@ -16348,7 +16355,8 @@ tr:nth-child(even) {
   position: absolute;
   left: 3%;
 }
-.page__content .news-home .row-news, .page__content .page-search .row-news {
+.page__content .news-home .row-news,
+.page__content .page-search .row-news {
   display: inline-block;
   width: 100%;
 }
@@ -16396,12 +16404,16 @@ tr:nth-child(even) {
   display: block;
   margin-top: 1.5em;
 }
-.page__content .fila1, .page__content .fila2, .page__content .fila3 {
+.page__content .fila1,
+.page__content .fila2,
+.page__content .fila3 {
   flex-direction: row;
   justify-content: center;
   text-align: center;
 }
-.page__content .fila1 .link-item, .page__content .fila2 .link-item, .page__content .fila3 .link-item {
+.page__content .fila1 .link-item,
+.page__content .fila2 .link-item,
+.page__content .fila3 .link-item {
   width: 18%;
   border: 1px solid #efefef;
   border-radius: 8px;
@@ -16410,74 +16422,114 @@ tr:nth-child(even) {
   justify-content: center !important;
   align-items: center !important;
 }
-.page__content .fila1 .link-item:hover, .page__content .fila1 .link-item:focus, .page__content .fila2 .link-item:hover, .page__content .fila2 .link-item:focus, .page__content .fila3 .link-item:hover, .page__content .fila3 .link-item:focus {
+.page__content .fila1 .link-item:hover, .page__content .fila1 .link-item:focus,
+.page__content .fila2 .link-item:hover,
+.page__content .fila2 .link-item:focus,
+.page__content .fila3 .link-item:hover,
+.page__content .fila3 .link-item:focus {
   background-color: #ededed;
 }
-.page__content .fila1 .link-item a, .page__content .fila2 .link-item a, .page__content .fila3 .link-item a {
+.page__content .fila1 .link-item a,
+.page__content .fila2 .link-item a,
+.page__content .fila3 .link-item a {
   padding: unset !important;
 }
-.page__content .fila1 .link-item a:hover, .page__content .fila2 .link-item a:hover, .page__content .fila3 .link-item a:hover {
+.page__content .fila1 .link-item a:hover,
+.page__content .fila2 .link-item a:hover,
+.page__content .fila3 .link-item a:hover {
   padding: unset !important;
   background-color: unset !important;
   border: unset;
 }
-.page__content .fila1 .title, .page__content .fila2 .title, .page__content .fila3 .title {
+.page__content .fila1 .title,
+.page__content .fila2 .title,
+.page__content .fila3 .title {
   text-transform: none !important;
 }
-.page__content .fila1 .title a, .page__content .fila2 .title a, .page__content .fila3 .title a {
+.page__content .fila1 .title a,
+.page__content .fila2 .title a,
+.page__content .fila3 .title a {
   color: #212529 !important;
 }
-.page__content .fila1 i, .page__content .fila2 i, .page__content .fila3 i {
+.page__content .fila1 i,
+.page__content .fila2 i,
+.page__content .fila3 i {
   padding: 50px !important;
 }
-.page__content .fila1 .contacto-transparencia-ico, .page__content .fila2 .contacto-transparencia-ico, .page__content .fila3 .contacto-transparencia-ico {
+.page__content .fila1 .contacto-transparencia-ico,
+.page__content .fila2 .contacto-transparencia-ico,
+.page__content .fila3 .contacto-transparencia-ico {
   background: url("../images/iconos-transparencia.png"), transparent;
 }
-.page__content .fila1 .info-transparencia-ico, .page__content .fila2 .info-transparencia-ico, .page__content .fila3 .info-transparencia-ico {
+.page__content .fila1 .info-transparencia-ico,
+.page__content .fila2 .info-transparencia-ico,
+.page__content .fila3 .info-transparencia-ico {
   background: url("../images/iconos-transparencia.png"), transparent;
   background-position: -120px 0;
 }
-.page__content .fila1 .estructura-transparencia-ico, .page__content .fila2 .estructura-transparencia-ico, .page__content .fila3 .estructura-transparencia-ico {
+.page__content .fila1 .estructura-transparencia-ico,
+.page__content .fila2 .estructura-transparencia-ico,
+.page__content .fila3 .estructura-transparencia-ico {
   background: url("../images/iconos-transparencia.png"), transparent;
   background-position: -230px 0;
 }
-.page__content .fila1 .normatividad-ico, .page__content .fila2 .normatividad-ico, .page__content .fila3 .normatividad-ico {
+.page__content .fila1 .normatividad-ico,
+.page__content .fila2 .normatividad-ico,
+.page__content .fila3 .normatividad-ico {
   background: url("../images/iconos-transparencia.png"), transparent;
   background-position: -355px 0;
 }
-.page__content .fila1 .presupuesto-ico, .page__content .fila2 .presupuesto-ico, .page__content .fila3 .presupuesto-ico {
+.page__content .fila1 .presupuesto-ico,
+.page__content .fila2 .presupuesto-ico,
+.page__content .fila3 .presupuesto-ico {
   background: url("../images/iconos-transparencia.png"), transparent;
   background-position: -480px 0;
 }
-.page__content .fila1 .planeacion-ico, .page__content .fila2 .planeacion-ico, .page__content .fila3 .planeacion-ico {
+.page__content .fila1 .planeacion-ico,
+.page__content .fila2 .planeacion-ico,
+.page__content .fila3 .planeacion-ico {
   background: url("../images/iconos-transparencia.png"), transparent;
   background-position: 917px 0;
 }
-.page__content .fila1 .control-ico, .page__content .fila2 .control-ico, .page__content .fila3 .control-ico {
+.page__content .fila1 .control-ico,
+.page__content .fila2 .control-ico,
+.page__content .fila3 .control-ico {
   background: url("../images/iconos-transparencia.png"), transparent;
   background-position: 798px 0;
 }
-.page__content .fila1 .contratacion-ico, .page__content .fila2 .contratacion-ico, .page__content .fila3 .contratacion-ico {
+.page__content .fila1 .contratacion-ico,
+.page__content .fila2 .contratacion-ico,
+.page__content .fila3 .contratacion-ico {
   background: url("../images/iconos-transparencia.png"), transparent;
   background-position: 686px 0;
 }
-.page__content .fila1 .tramites-ico, .page__content .fila2 .tramites-ico, .page__content .fila3 .tramites-ico {
+.page__content .fila1 .tramites-ico,
+.page__content .fila2 .tramites-ico,
+.page__content .fila3 .tramites-ico {
   background: url("../images/iconos-transparencia.png"), transparent;
   background-position: 564px 0;
 }
-.page__content .fila1 .instrumentos-ico, .page__content .fila2 .instrumentos-ico, .page__content .fila3 .instrumentos-ico {
+.page__content .fila1 .instrumentos-ico,
+.page__content .fila2 .instrumentos-ico,
+.page__content .fila3 .instrumentos-ico {
   background: url("../images/iconos-transparencia.png"), transparent;
   background-position: 444px 0;
 }
-.page__content .fila1 .transparencia-pasiva-ico, .page__content .fila2 .transparencia-pasiva-ico, .page__content .fila3 .transparencia-pasiva-ico {
+.page__content .fila1 .transparencia-pasiva-ico,
+.page__content .fila2 .transparencia-pasiva-ico,
+.page__content .fila3 .transparencia-pasiva-ico {
   background: url("../images/iconos-transparencia.png"), transparent;
   background-position: 337px 0;
 }
-.page__content .fila1 .accesibilidad-ico, .page__content .fila2 .accesibilidad-ico, .page__content .fila3 .accesibilidad-ico {
+.page__content .fila1 .accesibilidad-ico,
+.page__content .fila2 .accesibilidad-ico,
+.page__content .fila3 .accesibilidad-ico {
   background: url("../images/iconos-transparencia.png"), transparent;
   background-position: 226px 0;
 }
-.page__content .fila1 .habeas-data-ico, .page__content .fila2 .habeas-data-ico, .page__content .fila3 .habeas-data-ico {
+.page__content .fila1 .habeas-data-ico,
+.page__content .fila2 .habeas-data-ico,
+.page__content .fila3 .habeas-data-ico {
   background: url("../images/iconos-transparencia.png"), transparent;
   background-position: 117px 0;
 }
@@ -16735,7 +16787,8 @@ aside ul li.active {
   border-bottom: 2px solid #ffa800;
 }
 
-.eru-medios .views-field-field-image-main img, .eru-medios .views-field-field-cover-img img {
+.eru-medios .views-field-field-image-main img,
+.eru-medios .views-field-field-cover-img img {
   display: block;
   height: 220px;
   overflow: hidden;
@@ -16985,7 +17038,8 @@ a.btn-taller {
 .webform-juntos-construimos label {
   font-weight: 700;
 }
-.webform-juntos-construimos input[type=text], .webform-juntos-construimos input[type=tel] {
+.webform-juntos-construimos input[type=text],
+.webform-juntos-construimos input[type=tel] {
   border-radius: 10px;
 }
 
@@ -17023,6 +17077,7 @@ a.btn-taller {
 }
 .infoProyecto .bookmarks {
   display: flex;
+  justify-content: center;
   border-right: 2px solid white;
 }
 .infoProyecto .bookmarks a i {
@@ -17337,6 +17392,31 @@ a.btn-taller {
 }
 .bodegas .dato-general .usos-icono {
   background-position: 222px 0;
+}
+
+.lotes .dato-general i {
+  margin-right: 15px;
+  padding: 34px;
+  background-repeat: no-repeat;
+  background: url(../images/iconosLotes.png), transparent;
+}
+.lotes .dato-general .area-icono {
+  background-position: 459px 0;
+}
+.lotes .dato-general .lote-cerramiento-icono {
+  background-position: 382px 0;
+}
+.lotes .dato-general .transporte-icono {
+  background-position: 306px 0;
+}
+.lotes .dato-general .ubicacion-icono {
+  background-position: 230px 0;
+}
+.lotes .dato-general .altura-icono {
+  background-position: 153px 0;
+}
+.lotes .dato-general .parque-icono {
+  background-position: 75px 0;
 }
 
 .villaJavier .separadorBodegas {
