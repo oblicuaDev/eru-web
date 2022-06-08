@@ -17045,7 +17045,7 @@ a.btn-taller {
 
 #block-salaNegocios .textos-salaNegocios h2 {
   margin-bottom: 10px !important;
-  color: #3e8c7f;
+  color: #274D3F;
   font-size: 3em !important;
   line-height: 1;
   text-align: center;
@@ -17134,7 +17134,7 @@ a.btn-taller {
   border-radius: 15px 15px 0 0;
 }
 .cardProject .card-project h3 {
-  color: #006b60;
+  color: #274D3F;
   font-size: 1.7em;
   font-weight: 500;
   text-align: center;
@@ -17147,9 +17147,12 @@ a.btn-taller {
 .cardProject .card-project h3::after {
   content: none;
 }
+.cardProject .card-project h3 span a {
+  color: #274D3F;
+}
 .cardProject .card-project h4 {
   text-align: center;
-  color: #006b60;
+  color: #274D3F;
   border-bottom: 1px solid #006b60;
   font-size: 1.1em;
   font-weight: 300;

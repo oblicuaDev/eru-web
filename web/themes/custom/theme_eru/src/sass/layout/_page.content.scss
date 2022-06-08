@@ -947,7 +947,7 @@ a.btn-taller {
 	.textos-salaNegocios {
 		h2 {
 			margin-bottom: 10px !important;
-			color: #3e8c7f;
+			color: #274D3F;
 			font-size: 3em !important;
 			line-height: 1;
 			text-align: center;
@@ -1064,7 +1064,7 @@ a.btn-taller {
 		}
 
 		h3 {
-			color: $verde-oscuro;
+			color: #274D3F;
 			font-size: 1.7em;
 			font-weight: 500;
 			text-align: center;
@@ -1077,11 +1077,16 @@ a.btn-taller {
 			&::after {
 				content: none;
 			}
+			span{
+				a{
+					color: #274D3F;
+				}
+			}
 		}
 
 		h4 {
 			text-align: center;
-			color: $verde-oscuro;
+			color: #274D3F;
 			border-bottom: 1px solid $verde-oscuro;
 			font-size: 1.1em;
 			font-weight: 300;
