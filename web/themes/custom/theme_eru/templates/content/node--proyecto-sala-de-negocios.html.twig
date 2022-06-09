@@ -7,12 +7,10 @@
 
 {% set url = path('<current>') %}
 
-  {% if 'eduardo' in url %}
-    {% set urlClass = 'lotes' %}
-  {% elseif 'javier' in url %}
+  {% if 'javier' in url %}
     {% set urlClass = 'bodegas villaJavier' %}
   {% else %}
-    {% set urlClass = '' %}
+    {% set urlClass = 'lotes' %}
   {% endif %}
 
 {%
