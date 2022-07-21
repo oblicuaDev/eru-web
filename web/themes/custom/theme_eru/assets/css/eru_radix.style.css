@@ -17929,10 +17929,9 @@ footer img {
 @import "fonts/fontawesome/scss/regular.scss";
 @import "fonts/fontawesome/scss/brands.scss"; */
 .project__field-videos #eru-slide .carousel-caption {
-  background-color: #000 !important;
-  padding: 13px !important;
+  background-color: rgba(37, 92, 86, 0.65) !important;
+  padding: 13px 13px 25px 13px !important;
   opacity: 0.8 !important;
-  padding-bottom: 70px !important;
   margin-bottom: 0 !important;
 }
 
