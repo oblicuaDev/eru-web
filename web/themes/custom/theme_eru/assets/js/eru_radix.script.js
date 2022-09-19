@@ -2724,7 +2724,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var popper_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! popper.js */ "./node_modules/popper.js/dist/esm/popper.js");
  //import 'bootstrap';
 
-(function () {
+(function ($, Drupal) {
   'use strict';
 
   Drupal.behaviors.changeMenuTabs = {
@@ -2845,6 +2845,69 @@ __webpack_require__.r(__webpack_exports__);
           window.location = "/noticias/?tag=" + encodeURI(text) + " (" + numberTax.substr(-2) + ")";
         }
       });
+    }
+  };
+
+  var $eruweb_and = function () {
+    return {
+      accesibilityMenu: function accesibilityMenu() {
+        $('#main-nav > ul > li > a').focus(function () {
+          $('#main-nav > ul > li').removeClass('force-show');
+          $(this).parent().addClass('force-show');
+        });
+        $(document).click(function () {
+          $('#main-nav > ul > li').removeClass('force-show');
+        });
+      }
+    };
+  }();
+
+  $eruweb_and.accesibilityMenu();
+  Drupal.behaviors.eruweb_and = {
+    attach: function attach(context, settings) {
+      // Accesibility functions
+      var contrast_on = false; // Flag for identify status of contrast
+
+      var classes = ["f0", "f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8", "f9", "f10"];
+      var classIndex = 5;
+      $("#contrast-func").click(function () {
+        togleContrast();
+      });
+      /**
+       * Add or remove high contrast class to html on event click
+       * over element with id contrast-funct (block accesibility)
+       */
+
+      function togleContrast() {
+        if (contrast_on) {
+          $("html").removeClass("hight-contrast");
+          contrast_on = false;
+        } else {
+          $("html").addClass("hight-contrast");
+          contrast_on = true;
+        }
+      }
+
+      $("#font-less-func").click(function () {
+        var previousClass = classIndex;
+        classIndex--;
+        classIndex = classIndex < 0 ? 0 : classIndex;
+        changeClass(previousClass, classIndex);
+      });
+      $("#font-plus-func").click(function () {
+        var previousClass = classIndex;
+        classIndex++;
+        classIndex = classIndex == classes.length ? classes.length - 1 : classIndex;
+        changeClass(previousClass, classIndex);
+      });
+
+      function changeClass(previous, next) {
+        if (previous != next) {
+          var htmlElement = $("html");
+          htmlElement.removeClass(classes[previous]);
+          htmlElement.addClass(classes[next]);
+        }
+      }
     }
   };
 })(jQuery, Drupal);

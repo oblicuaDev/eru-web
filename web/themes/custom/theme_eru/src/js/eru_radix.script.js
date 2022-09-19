@@ -1,7 +1,7 @@
 import 'popper.js';
 //import 'bootstrap';
 
-(function () {
+(function ($, Drupal) {
 
   'use strict';
 
@@ -9,7 +9,7 @@ import 'popper.js';
     attach: function (context) {
       jQuery('.project-block').parents('.container').find('.block--theme-eru-local-tasks').appendTo('.project-block header');
       jQuery('#photos .project__field-slider .field__item').append(jQuery('.project__field-slider .carousel-caption').addClass('description-photo'));
-      if (jQuery('.element-invisible').hasClass('TRUE')){
+      if (jQuery('.element-invisible').hasClass('TRUE')) {
         jQuery('.element-invisible.TRUE').removeClass('d-none');
       }
     }
@@ -19,7 +19,7 @@ import 'popper.js';
     attach: function (context) {
       //Inicia funcionalidades de js y jQuery
       jQuery('.dropdown-toggle').dropdown();
-      jQuery('.controles button').on('click', function(e){
+      jQuery('.controles button').on('click', function (e) {
         /*jQuery(this).addClass('active');       */
         if (jQuery(this).hasClass('active')) {
           jQuery('.controles button').addClass('active');
@@ -50,7 +50,7 @@ import 'popper.js';
   };
 
   Drupal.behaviors.iconLists = {
-    attach: function (context){
+    attach: function (context) {
       jQuery('.news ul li').prepend("<i class='icon-lists'></i>");
       jQuery('.project-content ul li').prepend("<i class='icon-lists'></i>");
       jQuery('.page__content .page ul li').prepend("<i class='icon-lists'></i>");
@@ -73,16 +73,16 @@ import 'popper.js';
   };*/
 
   Drupal.behaviors.heightVideo = {
-    attach: function (context){
+    attach: function (context) {
       jQuery('.video-home iframe').height(300);
     }
   };
   Drupal.behaviors.googleAnalytics = {
     attach: function (context) {
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag ('js', new Date());
-      gtag ('config', 'UA-134609174-1');
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'UA-134609174-1');
     }
   }
   Drupal.behaviors.linkproject = {
@@ -94,7 +94,7 @@ import 'popper.js';
         for (var i = 0; i < sURLVariables.length; i++) {
           var sParametro = sURLVariables[i].split('=');
           if (sParametro[0] == sParametroNombre) {
-            return sParametro[1].replace('%20',' ');
+            return sParametro[1].replace('%20', ' ');
           }
         }
         return null;
@@ -115,15 +115,80 @@ import 'popper.js';
         var text = $this.text();
         var numberTax = $this.attr("href");
         var idioma = window.location.pathname;
-        if (idioma.substr(0, 4) == "/en/"){
+        if (idioma.substr(0, 4) == "/en/") {
           window.location = "/en/noticias/?tag=" + encodeURI(text) + " (" + numberTax.substr(-2) + ")";
-        }else{
+        } else {
           window.location = "/noticias/?tag=" + encodeURI(text) + " (" + numberTax.substr(-2) + ")";
         }
       });
 
     }
   };
+  var $eruweb_and = (function () {
+    return {
+      accesibilityMenu: function () {
+        $('#main-nav > ul > li > a').focus(function () {
+          $('#main-nav > ul > li').removeClass('force-show');
+          $(this).parent().addClass('force-show');
+        });
 
+        $(document).click(function () {
+          $('#main-nav > ul > li').removeClass('force-show');
+        });
+      }
+    }
+  }());
+  $eruweb_and.accesibilityMenu();
+
+  Drupal.behaviors.eruweb_and = {
+    attach: function (context, settings) {
+      // Accesibility functions
+
+      var contrast_on = false; // Flag for identify status of contrast
+      var classes = ["f0", "f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8", "f9", "f10"];
+      var classIndex = 5;
+
+      $("#contrast-func").click(function () {
+        togleContrast();
+      });
+
+      /**
+       * Add or remove high contrast class to html on event click
+       * over element with id contrast-funct (block accesibility)
+       */
+      function togleContrast() {
+        if (contrast_on) {
+          $("html").removeClass("hight-contrast");
+          contrast_on = false;
+        } else {
+          $("html").addClass("hight-contrast");
+          contrast_on = true;
+        }
+      }
+
+      $("#font-less-func").click(function () {
+        let previousClass = classIndex;
+        classIndex--;
+        classIndex = classIndex < 0 ? 0 : classIndex;
+        changeClass(previousClass, classIndex);
+      });
+
+      $("#font-plus-func").click(function () {
+        let previousClass = classIndex;
+        classIndex++;
+        classIndex =
+          classIndex == classes.length ? classes.length - 1 : classIndex;
+        changeClass(previousClass, classIndex);
+      });
+
+      function changeClass(previous, next) {
+        if (previous != next) {
+          var htmlElement = $("html");
+          htmlElement.removeClass(classes[previous]);
+          htmlElement.addClass(classes[next]);
+        }
+      }
+    },
+  };
 
 })(jQuery, Drupal);

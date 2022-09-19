@@ -374,6 +374,9 @@
 		.fa-nine-class {
 			background: url("../images/ico-09.png"), transparent;
 		}
+		.fa-ten-class {
+			background: url("../images/ico-10.png"), transparent;
+		}
 
 		.description {
 			text-align: center;
@@ -415,6 +418,13 @@
 						background-color: #d6d6d6;
 					}
 				}
+			}
+		}
+	}
+	.table{
+		thead{
+			th{
+				vertical-align: middle;
 			}
 		}
 	}
