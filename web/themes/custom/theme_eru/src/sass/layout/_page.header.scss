@@ -2,11 +2,12 @@
 // -----------------------------------------------------------------------------
 .menu-principal {
 	background-color: $bk !important;
-	background-blend-mode: multiply;
-	opacity: 0.9;
+	// background-blend-mode: multiply;
+	// opacity: 0.9;
 	.block--theme-eru-main-menu a.nav-link, a.language-link, .logo a{
 		color: #fff !important;		
 		text-transform: uppercase;
+		font-weight: 500;
 		&:focus { outline: 2px dotted #FFF !important; }
 	}
 	.logo {margin-right: 30px;}

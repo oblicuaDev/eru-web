@@ -25,6 +25,7 @@
         "drupal/addtoany": "^1.12",
         "drupal/admin_toolbar": "^1.26",
         "drupal/ckeditor_config": "^2.1",
+        "drupal/clientside_validation": "^3.0",
         "drupal/coder": "^8.3",
         "drupal/components": "^1.0",
         "drupal/console": "^1.0.2",

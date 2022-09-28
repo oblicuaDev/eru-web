@@ -77,6 +77,15 @@
                   </p>
                 </div>
                 {% endif %}
+                {% if item['#paragraph'].field_link.value %}
+                <div class="transcription-caption d-none d-md-block">
+                <a class="btn btn-primary" href="{{ item['#paragraph'].field_link.0.url}}"
+                {% if item['#paragraph'].field_external_link.value == 1 %}
+                      target="_blank" class="alert-leave-page"
+                      {% endif %}><span class="fa fa-download"></span> Descargar transcripción{% if item['#paragraph'].field_external_link.value == 1 %}, Abre en una nueva ventana{% endif %}</span>
+                  </a>  
+                </div>
+                {% endif %}
               </div>
             {% endif %}
           {% endfor %}
@@ -110,4 +119,3 @@
       {% endblock %}
     </div>
   {% endblock paragraph %}
-

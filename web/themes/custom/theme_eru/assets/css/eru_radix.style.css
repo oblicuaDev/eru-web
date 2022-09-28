@@ -15776,7 +15776,7 @@ readers do not read off random characters that represent icons */
 }
 .tag-ico::before {
   content: "\F02B";
-  color: #008e7f;
+  color: #008476;
   margin-right: 5px;
   font-weight: 900;
   position: absolute;
@@ -15796,7 +15796,7 @@ readers do not read off random characters that represent icons */
 }
 .descargar-ico::before {
   content: "\F56D";
-  color: #008e7f;
+  color: #008476;
   margin-right: 5px;
   font-weight: 900;
   position: absolute;
@@ -15804,6 +15804,26 @@ readers do not read off random characters that represent icons */
   left: auto;
 }
 .descargar-ico:hover::before, .descargar-ico:focus::before {
+  color: #ffa800;
+}
+
+.cloudDownload-ico {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  padding: 0;
+  width: 0;
+}
+.cloudDownload-ico::before {
+  content: "\F381";
+  color: #008476;
+  margin-right: 5px;
+  font-weight: 900;
+  position: absolute;
+  font-size: 2em;
+  left: auto;
+}
+.cloudDownload-ico:hover::before, .cloudDownload-ico:focus::before {
   color: #ffa800;
 }
 
@@ -15817,7 +15837,7 @@ readers do not read off random characters that represent icons */
 }
 .link-ico::before {
   content: "\F35D";
-  color: #008e7f;
+  color: #008476;
   margin-right: 5px;
   font-weight: 900;
   position: absolute;
@@ -15952,8 +15972,8 @@ p {
 }
 
 .btn-secondary {
-  background-color: #008e7f !important;
-  border-color: #008e7f !important;
+  background-color: #008476 !important;
+  border-color: #008476 !important;
   padding-right: 40px;
   padding-left: 40px;
 }
@@ -16073,7 +16093,7 @@ thead {
 }
 
 .descargar-icn i {
-  color: #008e7f;
+  color: #008476;
   font-size: 2em;
 }
 .descargar-icn i:hover {
@@ -16182,12 +16202,11 @@ tr:nth-child(even) {
 @import "fonts/fontawesome/scss/brands.scss"; */
 .menu-principal {
   background-color: #006b60 !important;
-  background-blend-mode: multiply;
-  opacity: 0.9;
 }
 .menu-principal .block--theme-eru-main-menu a.nav-link, .menu-principal a.language-link, .menu-principal .logo a {
   color: #fff !important;
   text-transform: uppercase;
+  font-weight: 500;
 }
 .menu-principal .block--theme-eru-main-menu a.nav-link:focus, .menu-principal a.language-link:focus, .menu-principal .logo a:focus {
   outline: 2px dotted #FFF !important;
@@ -16361,8 +16380,8 @@ tr:nth-child(even) {
 }
 .page__content .more-link a {
   color: #fff;
-  background-color: #008e7f;
-  border-color: #008e7f;
+  background-color: #008476;
+  border-color: #008476;
   border: 1px solid transparent;
   padding: 0.375rem 0.75rem;
   font-size: 1em;
@@ -16634,9 +16653,9 @@ tr:nth-child(even) {
   background-color: #ededed;
   text-decoration: none;
   padding: 10px 0 8px 0;
-  border-bottom: 2px solid #008e7f;
+  border-bottom: 2px solid #008476;
 }
-.page__content .link-item .fas, .page__content .link-item .menu-secundario .nav .accesibilidad, .menu-secundario .nav .page__content .link-item .accesibilidad, .page__content .link-item .menu-secundario .nav .opciones, .menu-secundario .nav .page__content .link-item .opciones, .page__content .link-item .address-ico, .page__content .link-item .phone-ico, .page__content .link-item .mail-ico, .page__content .link-item .horario-ico, .page__content .link-item .site-map, .page__content .link-item .tag-ico, .page__content .link-item .descargar-ico, .page__content .link-item .link-ico, .page__content .link-item .icon-lists, .page__content .link-item .breadcrumb-item + .breadcrumb-item::before {
+.page__content .link-item .fas, .page__content .link-item .menu-secundario .nav .accesibilidad, .menu-secundario .nav .page__content .link-item .accesibilidad, .page__content .link-item .menu-secundario .nav .opciones, .menu-secundario .nav .page__content .link-item .opciones, .page__content .link-item .address-ico, .page__content .link-item .phone-ico, .page__content .link-item .mail-ico, .page__content .link-item .horario-ico, .page__content .link-item .site-map, .page__content .link-item .tag-ico, .page__content .link-item .descargar-ico, .page__content .link-item .cloudDownload-ico, .page__content .link-item .link-ico, .page__content .link-item .icon-lists, .page__content .link-item .breadcrumb-item + .breadcrumb-item::before {
   padding: 44px;
 }
 .page__content .link-item .fa-one-class {
@@ -16954,7 +16973,7 @@ ul li.recuadro::marker {
   background-repeat: no-repeat;
 }
 .card-proyect .estado-proyecto .finalizado {
-  background: #008e7f;
+  background: #008476;
 }
 .card-proyect .estado-proyecto .proximo {
   background: linear-gradient(90deg, #077fff 25%, #fff 0%);
@@ -17021,7 +17040,7 @@ ul li.recuadro::marker {
 .documentos-taller .icon-lg {
   margin-right: 15px;
   font-size: 40px;
-  color: #008e7f;
+  color: #008476;
 }
 
 /*Página proyecto participación*/
@@ -17540,6 +17559,7 @@ footer p {
 }
 footer a {
   color: #fff;
+  font-weight: 500;
 }
 footer a:hover {
   color: #fff;
@@ -17576,7 +17596,7 @@ footer img {
   padding-top: 1rem;
 }
 .page__footer .links-footer {
-  background-color: #008e7f;
+  background-color: #008476;
   padding-left: 4rem;
 }
 .page__footer .contact {
@@ -17591,7 +17611,7 @@ footer img {
 }
 
 .page__footer_2 {
-  background-color: #008e7f;
+  background-color: #008476;
 }
 .page__footer_2 .social-media, .page__footer_2 .sitemap-block {
   display: flex;
@@ -18023,13 +18043,18 @@ footer img {
 @import "fonts/fontawesome/scss/regular.scss";
 @import "fonts/fontawesome/scss/brands.scss"; */
 .project__field-videos #eru-slide .carousel-caption {
-  background-color: rgba(37, 92, 86, 0.65) !important;
+  background-color: none;
   padding: 13px 13px 25px 13px !important;
   opacity: 0.8 !important;
   margin-bottom: 0 !important;
 }
+.project__field-videos #eru-slide .transcription-caption {
+  float: right;
+  padding-right: 15px;
+}
 
-.news #eru-slide .carousel-caption, .container-project #eru-slide .carousel-caption {
+.news #eru-slide .carousel-caption,
+.container-project #eru-slide .carousel-caption {
   width: 80%;
   font-size: 1.3em;
   margin: 20px 0;
@@ -18039,11 +18064,13 @@ footer img {
   margin: 0;
   padding-left: 24px;
 }
-.news #eru-slide .controles, .container-project #eru-slide .controles {
+.news #eru-slide .controles,
+.container-project #eru-slide .controles {
   left: 10%;
   bottom: 12%;
 }
-.news .news__field-gallery .field__label, .container-project .news__field-gallery .field__label {
+.news .news__field-gallery .field__label,
+.container-project .news__field-gallery .field__label {
   display: none;
 }
 
@@ -18082,15 +18109,16 @@ footer img {
 
 .link-proyecto {
   display: flex;
-  border: 1px dashed #008e7f;
+  border: 1px dashed #008476;
   margin-bottom: 1em;
 }
 .link-proyecto:hover {
-  background-color: #008e7f !important;
+  background-color: #008476 !important;
   color: #fff !important;
   cursor: pointer;
 }
-.link-proyecto:hover a, .link-proyecto:hover .link-ico::before {
+.link-proyecto:hover a,
+.link-proyecto:hover .link-ico::before {
   color: #ffffff !important;
 }
 .link-proyecto a {
@@ -18114,7 +18142,8 @@ a.a2a_button_twitter:hover .a2a_s_twitter {
   opacity: 1 !important;
 }
 
-.a2a_button_twitter span, .a2a_button_facebook span {
+.a2a_button_twitter span,
+.a2a_button_facebook span {
   padding: 3px !important;
 }
 
@@ -18147,7 +18176,9 @@ a.a2a_button_twitter:hover .a2a_s_twitter {
   padding: 0.3rem 0.5rem 0.3rem 0.5rem;
   position: absolute;
   right: 0.1rem;
+  max-height: 2.375rem;
   height: 2.1875rem;
+  line-height: 1;
   overflow: hidden;
   cursor: pointer;
   text-decoration: none;
@@ -18209,4 +18240,8 @@ a.a2a_button_twitter:hover .a2a_s_twitter {
   color: #fff;
   font-family: "Poppins", Arial, Sans-serif;
   font-size: 0.875rem;
+}
+
+label.error {
+  color: #dc3545;
 }

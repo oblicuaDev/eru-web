@@ -22,40 +22,52 @@
     padding: 0.3rem 0.5rem 0.3rem 0.5rem;
     position: absolute;
     right: 0.1rem;
+    max-height: rem(38px);
     height: rem(35px);
+    line-height: 1;
     overflow: hidden;
     cursor: pointer;
     text-decoration: none;
     border-radius: rem(10px) 0 0 rem(10px);
+
     img {
         width: rem(24px);
         height: rem(24px);
     }
+
     &--contrast {
         margin-top: rem(15px);
     }
+
     &--font-less {
         margin-top: rem(55px);
     }
+
     &--font-plus {
         margin-top: rem(95px);
     }
+
     &--centro-relevo {
         margin-top: rem(135px);
     }
+
     .texto-item {
         color: $white;
     }
+
     &:hover {
         right: 1px;
         background: rgba(0, 107, 96, 0.9);
         text-decoration: none;
+
         .texto-item {
             width: 120px;
             overflow: visible;
         }
+
         .icono {
             right: 0;
+
             .icon-1 {
                 display: none;
             }
@@ -88,4 +100,8 @@
     color: $white;
     font-family: $poppins;
     font-size: rem(14px);
+}
+
+label.error {
+    color: $red;
 }
