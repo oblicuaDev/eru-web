@@ -16,7 +16,7 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
 ]
 %}
 {# {{ kint(content|keys)}} #}
-<article{{attributes.addClass(classes)}}>
+<article {{attributes.addClass(classes)}}>
   {% block content %}
   {# {{ title_prefix }}
   {{ title_suffix }}
@@ -131,23 +131,23 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
       </div>
     </div>
     {% if not page %}
-    <h2{{title_attributes}}>
+    <h2 {{title_attributes}}>
       <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-      </h2>
-      {% endif %}
+    </h2>
+    {% endif %}
 
-      {% if display_submitted %}
-      <footer>
-        {{ author_picture }}
-        <div{{author_attributes}}>
-          {% trans %}Submitted by
-          {{ author_name }}
-          on
-          {{ date }}{% endtrans %}
-          {{ metadata }}
-  </div>
-  </footer>
-  {% endif %}
+    {% if display_submitted %}
+    <footer>
+      {{ author_picture }}
+      <div {{author_attributes}}>
+        {% trans %}Submitted by
+        {{ author_name }}
+        on
+        {{ date }}{% endtrans %}
+        {{ metadata }}
+      </div>
+    </footer>
+    {% endif %}
   </div>
   {% endblock %}
-  </article>
+</article>
