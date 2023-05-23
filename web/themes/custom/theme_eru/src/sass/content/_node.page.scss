@@ -281,3 +281,18 @@ a.a2a_button_twitter:hover .a2a_s_twitter {
     }
   }
 }
+
+/* Estilos para la función de expansión del texto */
+.expandable-text .expanded-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.expandable-text .expand-link {
+  color: blue;
+  cursor: pointer;
+}
+
+.expandable-text .expand-link:hover {
+  text-decoration: underline;
+}
