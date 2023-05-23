@@ -47,7 +47,7 @@
   ]
 %}
 {% block paragraph %}
-  <div{{attributes.addClass(classes)}}>
+  <div{{ attributes.addClass(classes).setAttribute('data-quickedit-entity-id', paragraph.entity.bundle ~ '/' ~ paragraph.id) }}>
     {% block content %}
       <div class="container row">
         {% for key, item in content.field_general_data %}
@@ -55,11 +55,11 @@
             {% set class_icon = item['#paragraph'].field_class.value  %}
             {% set title = item['#paragraph'].field_title.value %}
             {% set  description = item['#paragraph'].field_description.value %}
-            <div class="dato-general mb-4">
+            <div class="dato-general mb-4"{{ item['#attributes'] }}>
               <i class="{{ class_icon }}"></i>
               <div class="dato-info">
-                <div class="cifra"><span>{{description}}</span></div>
-                <div class="titulo-cifra"><span>{{title}}</span></div>
+                <div class="cifra"><span>{{ description }}</span></div>
+                <div class="titulo-cifra"><span>{{ title }}</span></div>
               </div>
             </div>
           {% endif %}
@@ -68,4 +68,3 @@
     {% endblock %}
   </div>
 {% endblock paragraph %}
-
