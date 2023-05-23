@@ -18245,6 +18245,19 @@ a.a2a_button_twitter:hover .a2a_s_twitter {
   content: none;
 }
 
+.nav.nav-pills.nav-fill.nav-tabs-oblicua {
+  background-color: #003937;
+  border-radius: 9px;
+  overflow: hidden;
+}
+.nav.nav-pills.nav-fill.nav-tabs-oblicua .nav-item .nav-link {
+  color: #ffffdc;
+  font-size: 19px;
+  font-family: "Value Serif Pro";
+  font-weight: bold;
+  padding: 15px 0;
+}
+
 .accesibility-block {
   background-color: #006b60;
   border-radius: 10px;
