@@ -20,34 +20,32 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
   {% block content %}
   {# {{ title_prefix }}
   {{ title_suffix }}
-  {{ content.field_banner_video}}
-  {{ content.field_test_video_}}
   {{ content.field_media_solo}} #}
   {# {{ label }} #}
   {{ content.field_videos}}
   {# {{ kint(content|keys)} #}
   <div class="container container-project mt-5">
     <h2 class="text-center">{{ label }}</h2>
-    <ul class="nav nav-pills nav-fill" id="myTab" role="tablist">
+    <ul class="nav nav-pills nav-fill nav-tabs-oblicua" id="myTab" role="tablist">
       <li class="nav-item">
         <a aria-controls="description" aria-selected="true" class="nav-link active" data-toggle="tab"
           href="#description" id="description-tab" role="tab">Descripción</a>
       </li>
       <li class="nav-item">
-        <a aria-controls="photos" aria-selected="false" class="nav-link" data-toggle="tab" href="#photos"
-          id="photos-tab" role="tab">Fotos</a>
-      </li>
-      <li class="nav-item">
-        <a aria-controls="scope" aria-selected="false" class="nav-link" data-toggle="tab" href="#scope" id="scope-tab"
-          role="tab">Alcance</a>
+        <a aria-controls="benefits" aria-selected="false" class="nav-link" data-toggle="tab" href="#benefits"
+          id="benefits-tab" role="tab">Beneficios</a>
       </li>
       <li class="nav-item">
         <a aria-controls="status" aria-selected="false" class="nav-link" data-toggle="tab" href="#status"
           id="status-tab" role="tab">Estado</a>
       </li>
       <li class="nav-item">
-        <a aria-controls="benefits" aria-selected="false" class="nav-link" data-toggle="tab" href="#benefits"
-          id="benefits-tab" role="tab">Beneficios</a>
+        <a aria-controls="scope" aria-selected="false" class="nav-link" data-toggle="tab" href="#scope" id="scope-tab"
+          role="tab">Alcance</a>
+      </li>
+      <li class="nav-item">
+        <a aria-controls="photos" aria-selected="false" class="nav-link" data-toggle="tab" href="#photos"
+          id="photos-tab" role="tab">Multimedia</a>
       </li>
       <li class="nav-item">
         <a aria-controls="regulatory" aria-selected="false" class="nav-link" data-toggle="tab" href="#regulatory"
@@ -57,6 +55,27 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
     <div class="tab-content" id="myTabContent">
       <div aria-labelledby="description-tab" class="tab-pane fade show active project-content" id="description"
         role="tabpanel">
+        <div class="row">
+          <div class="col-md-12 col-12">
+            {{ content.field_general_data }}
+            {{ content.field_infografia }}
+            <div class="element-invisible d-none {{content.field_external_link.0}}"
+              data-visible="{{content.field_external_link.0}}">Abre en una nueva ventana</div>
+            {{ content.field_enlaces_adicionales }}
+            <div class="element-invisible d-none {{content.field_external_link.0}}"
+              data-visible="{{content.field_external_link.0}}">Abre en una nueva ventana</div>
+            {# {% if content.field_external_link.0 == "TRUE" %}
+            <div class="element-invisible" data-visible="{{content.field_external_link.0}}">Abre en una nueva ventana
+            </div>
+            {% endif %}
+            {% if content.field_external_link.0 == 'TRUE' %}
+            <div class="element-invisible">Abre en una nueva ventana</div>
+            {% endif %}
+            {% if content.field_external_link.0 == TRUE %}
+            <div class="element-invisible">Abre en una nueva ventana</div>
+            {% endif %} #}
+          </div>
+        </div>
         <div class="row">
           <div class="col-md-4 col-12">
             {{ content.field_general_data }}
@@ -77,7 +96,7 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
             <div class="element-invisible">Abre en una nueva ventana</div>
             {% endif %} #}
           </div>
-          <div class="col-md-8 col-12">
+          <div class="col-md-12 col-12">
             <div class="{{attributes.class.0}}"></div>
             {{ content.field_location}}
             {{ content.body}}
@@ -89,6 +108,8 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
       <div aria-labelledby="photos-tab" class="tab-pane fade row" id="photos" role="tabpanel">
         <div class="col-12">
           {{ content.field_gallery }}
+          {{ content.field_banner_video}}
+          {{ content.field_test_video_}}
         </div>
       </div>
       <div aria-labelledby="scope-tab" class="tab-pane fade project-content" id="scope" role="tabpanel">
