@@ -222,3 +222,43 @@ a.a2a_button_twitter:hover .a2a_s_twitter {
     }
   }
 }
+
+.container-project .dato-general {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .dato-info {
+    .cifra {
+      span {
+        color: #003031;
+        font-size: 43px;
+        font-family: "Noi Variable Fix";
+        line-height: 56px;
+      }
+    }
+    .titulo-cifra {
+      span {
+        color: #000000;
+        font-size: 43px;
+        font-family: "Noi Variable Fix";
+        line-height: 56px;
+      }
+    }
+  }
+}
+
+.project__field-general-data {
+  h3 {
+    font-size: 60px;
+    border-bottom: 0;
+    font-family: "Value Serif Pro";
+    font-weight: bold;
+    color: #003937;
+    position: relative;
+    margin-bottom: 30px;
+    line-height: 61px !important;
+    &::after {
+      content: none;
+    }
+  }
+}
