@@ -41,6 +41,7 @@
 {%
   set classes = [
     'paragraph',
+    'grid-datos',
     'paragraph--type--' ~ paragraph.bundle|clean_class,
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
     not paragraph.isPublished() ? 'paragraph--unpublished'
@@ -49,7 +50,7 @@
 {% block paragraph %}
   <div {{attributes.addClass(classes)}}>
     {% block content %}
-      <div class="grid-datos>
+      <div>
         {% for key, item in content.field_general_data %}
           {% if key matches '/^\\d+$/' %}
             {% set class_icon = item['#paragraph'].field_class.value  %}
