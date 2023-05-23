@@ -16447,7 +16447,7 @@ tr:nth-child(even) {
   text-transform: initial;
 }
 .page__content .transparencia-block .textos p {
-  color: #F7931E;
+  color: #f7931e;
   font-weight: 500;
 }
 .page__content .news-home h3,
@@ -16496,7 +16496,7 @@ tr:nth-child(even) {
   text-transform: uppercase;
   font-weight: 500;
   float: left;
-  border-right: 2px solid #0A6EC8;
+  border-right: 2px solid #0a6ec8;
   padding-right: 1em;
 }
 .page__content .page-search .views-field-created {
@@ -16505,7 +16505,7 @@ tr:nth-child(even) {
   font-weight: normal !important;
 }
 .page__content .page-search .resultado {
-  border-bottom: 1px solid #C8C8C8;
+  border-bottom: 1px solid #c8c8c8;
   text-align: justify;
 }
 .page__content .page-search nav {
@@ -16525,7 +16525,7 @@ tr:nth-child(even) {
   content: "";
   width: 40px;
   height: 40px;
-  border-bottom: 2px solid #0A6EC8;
+  border-bottom: 2px solid #0a6ec8;
   position: absolute;
   left: 72%;
 }
@@ -16822,7 +16822,6 @@ tr:nth-child(even) {
 .container-project .dato-general i {
   padding: 32px;
   background-repeat: no-repeat;
-  background: url(../images/proyectos-iconos-2.png), transparent;
 }
 .container-project .dato-general .area-icono {
   background-position: -72px 0;
@@ -17180,7 +17179,7 @@ a.btn-taller {
 
 #block-salaNegocios .textos-salaNegocios h2 {
   margin-bottom: 10px !important;
-  color: #274D3F;
+  color: #274d3f;
   font-size: 3em !important;
   line-height: 1;
   text-align: center;
@@ -17269,7 +17268,7 @@ a.btn-taller {
   border-radius: 15px 15px 0 0;
 }
 .cardProject .card-project h3 {
-  color: #274D3F;
+  color: #274d3f;
   font-size: 1.7em;
   font-weight: 500;
   text-align: center;
@@ -17283,11 +17282,11 @@ a.btn-taller {
   content: none;
 }
 .cardProject .card-project h3 span a {
-  color: #274D3F;
+  color: #274d3f;
 }
 .cardProject .card-project h4 {
   text-align: center;
-  color: #274D3F;
+  color: #274d3f;
   border-bottom: 1px solid #006b60;
   font-size: 1.1em;
   font-weight: 300;
@@ -17323,7 +17322,7 @@ a.btn-taller {
   content: none;
 }
 .proyecto-sala-de-negocios .separador .icono {
-  /*display: flex;		
+  /*display: flex;
   align-items: center;
   width: inherit;
   margin-bottom: 1.5rem !important;*/
