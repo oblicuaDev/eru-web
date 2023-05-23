@@ -223,30 +223,6 @@ a.a2a_button_twitter:hover .a2a_s_twitter {
   }
 }
 
-.container-project .dato-general {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  .dato-info {
-    .cifra {
-      span {
-        color: #003031;
-        font-size: 43px;
-        font-family: "Noi Variable Fix";
-        line-height: 56px;
-      }
-    }
-    .titulo-cifra {
-      span {
-        color: #000000;
-        font-size: 43px;
-        font-family: "Noi Variable Fix";
-        line-height: 56px;
-      }
-    }
-  }
-}
-
 .project__field-general-data {
   h3 {
     font-size: 60px;
@@ -259,6 +235,45 @@ a.a2a_button_twitter:hover .a2a_s_twitter {
     line-height: 61px !important;
     &::after {
       content: none;
+    }
+  }
+}
+.grid-datos {
+  div {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    .dato-general {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      img {
+        width: 130px;
+        object-fit: contain;
+        margin: 0 auto 50px;
+        display: block;
+      }
+      i {
+        display: none;
+      }
+      .dato-info {
+        .cifra {
+          span {
+            color: #003031;
+            font-size: 43px;
+            font-family: "Noi Variable Fix";
+            line-height: 56px;
+          }
+        }
+        .titulo-cifra {
+          span {
+            color: #000000;
+            font-size: 43px;
+            font-family: "Noi Variable Fix";
+            line-height: 56px;
+          }
+        }
+      }
     }
   }
 }
