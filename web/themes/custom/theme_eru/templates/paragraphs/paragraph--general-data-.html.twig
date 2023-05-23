@@ -47,7 +47,7 @@
   ]
 %}
 {% block paragraph %}
-  <div{{ attributes.addClass(classes).setAttribute('data-quickedit-entity-id', paragraph.entity.bundle ~ '/' ~ paragraph.id) }}>
+  <div {{ attributes }} {{ attributes.addClass(classes).setAttribute('data-quickedit-entity-id', paragraph.entity.bundle ~ '/' ~ paragraph.id) }}>
     {% block content %}
       <div class="container row">
         {% for key, item in content.field_general_data %}
