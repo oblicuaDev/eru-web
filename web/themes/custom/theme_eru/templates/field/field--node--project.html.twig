@@ -40,12 +40,24 @@
         <span class="field__label__suffix mr-1">:</span>
       {% endif %}
     </h3>
-    {% if multiple %}    
+    {% if multiple %}
       {% endif %}
-      {% for item in items %}       
-        <div {{item.attributes.addClass('field__item')}}>{{ item.content }}</div>
+      {% for item in items %}
+        <div {{item.attributes.addClass('field__item')}}>
+          <div class="content-preview">
+            {{ item.content |striptags|slice(0, 100) }}{% if item.content |length > 100 %}...{% endif %}
+          </div>
+          {% if item.content |length > 100 %}
+          <a href="#" class="expand-link">Leer más</a>
+          {% endif %}
+          <div class="expanded-content">
+            {{ item.content }}
+          </div>
+        </div>
+
+        </div>
       {% endfor %}
-      {% if multiple %}     
+      {% if multiple %}
     {% endif %}
   </div>
 {% endif %}
