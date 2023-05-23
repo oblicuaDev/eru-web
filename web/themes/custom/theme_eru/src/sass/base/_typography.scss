@@ -1,6 +1,30 @@
 /* ./Fonts System*/
 
-$lato:	"Lato", Arial, Sans-serif;
-$poppins:	"Poppins", Arial, Sans-serif;;
+$lato: "Lato", Arial, Sans-serif;
+$poppins: "Poppins", Arial, Sans-serif;
+@font-face {
+  font-family: "Value Serif Pro";
+  src: url("fonts/ValueSerifPro-Bold.woff2") format("woff2"),
+    url("fonts/ValueSerifPro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
 
+@font-face {
+  font-family: "Value Serif Pro";
+  src: url("fonts/ValueSerifPro-Regular.woff2") format("woff2"),
+    url("fonts/ValueSerifPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
+@font-face {
+  font-family: "Noi Variable Fix";
+  src: url("fonts/NoiVariableFix.woff2") format("woff2"),
+    url("fonts/NoiVariableFix.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

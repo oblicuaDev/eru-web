@@ -18175,7 +18175,7 @@ a.a2a_button_twitter:hover .a2a_s_twitter {
 
 .title-projeccts {
   display: flex;
-  flex-direction: column;
+  gap: 35px;
   align-items: center;
   justify-content: center;
 }
@@ -18186,6 +18186,7 @@ a.a2a_button_twitter:hover .a2a_s_twitter {
   margin: 0;
   font-family: "Value Serif Pro";
   font-weight: bold;
+  text-align: left;
 }
 .title-projeccts h2::after {
   content: none;
@@ -18194,8 +18195,54 @@ a.a2a_button_twitter:hover .a2a_s_twitter {
   color: #003937;
   font-family: "Value Serif Pro";
   font-weight: bold;
+  padding: 0;
+  margin: 0;
   font-size: 91px;
-  line-height: 80px;
+  line-height: 80px !important;
+}
+
+.svg {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.clipped {
+  width: 100%;
+  height: 350px;
+  background: turquoise url(https://source.unsplash.com/600x600?summer);
+  background-size: cover;
+  -webkit-clip-path: url(#my-clip-path);
+  clip-path: url(#my-clip-path);
+}
+
+.nav.nav-tabs {
+  background-color: #ffffea;
+  border-bottom: 0;
+}
+.nav.nav-tabs .nav-item .nav-link {
+  color: #6143f1;
+  font-family: "Value Serif Pro";
+  font-weight: bold;
+  position: relative;
+  border: 0;
+}
+.nav.nav-tabs .nav-item .nav-link::after {
+  content: "";
+  background-color: #6143f1;
+  height: 100%;
+  width: 2px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.nav.nav-tabs .nav-item .nav-link.active, .nav.nav-tabs .nav-item .nav-link:hover {
+  color: #1f3637;
+  background: transparent;
+  border: 0;
+}
+.nav.nav-tabs .nav-item:last-of-type .nav-link::after {
+  content: none;
 }
 
 .accesibility-block {
