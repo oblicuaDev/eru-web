@@ -49,7 +49,7 @@
 {% block paragraph %}
   <div {{attributes.addClass(classes)}}>
     {% block content %}
-      <div class="container row">
+      <div class="grid-datos>
         {% for key, item in content.field_general_data %}
           {% if key matches '/^\\d+$/' %}
             {% set class_icon = item['#paragraph'].field_class.value  %}
