@@ -47,7 +47,7 @@
   ]
 %}
 {% block paragraph %}
-  <div {{ attributes }}>
+  <div{{attributes.addClass(classes)}}>
     {% block content %}
       <div class="container row">
         {% for key, item in content.field_general_data %}
@@ -55,11 +55,11 @@
             {% set class_icon = item['#paragraph'].field_class.value  %}
             {% set title = item['#paragraph'].field_title.value %}
             {% set  description = item['#paragraph'].field_description.value %}
-            <div class="dato-general mb-4"{{ item['#attributes'] }}>
+            <div class="dato-general mb-4">
               <i class="{{ class_icon }}"></i>
               <div class="dato-info">
-                <div class="cifra"><span>{{ description }}</span></div>
-                <div class="titulo-cifra"><span>{{ title }}</span></div>
+                <div class="cifra"><span>{{description}}</span></div>
+                <div class="titulo-cifra"><span>{{title}}</span></div>
               </div>
             </div>
           {% endif %}
@@ -68,3 +68,4 @@
     {% endblock %}
   </div>
 {% endblock paragraph %}
+
