@@ -18256,51 +18256,57 @@ a.a2a_button_twitter:hover .a2a_s_twitter {
   padding: 15px 0;
 }
 
-.project__field-general-data h3 {
-  font-size: 60px;
+.container-project h3 {
+  font-size: 35px;
   border-bottom: 0;
   font-family: "Value Serif Pro";
   font-weight: bold;
   color: #003937;
   position: relative;
   margin-bottom: 30px;
-  line-height: 61px !important;
+  line-height: 36px !important;
 }
-.project__field-general-data h3::after {
+.container-project h3::after {
   content: none;
 }
 
-.grid-datos div {
+.grid-datos > div {
   display: grid;
+  gap: 45px;
   grid-template-columns: repeat(5, 1fr);
 }
-.grid-datos div .dato-general {
+.grid-datos > div .dato-general {
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 100%;
 }
-.grid-datos div .dato-general img {
-  width: 130px;
+.grid-datos > div .dato-general img {
+  width: 100%;
+  height: 80px;
+  max-width: 80px;
   -o-object-fit: contain;
      object-fit: contain;
-  margin: 0 auto 50px;
+  margin: 0 auto 30px;
   display: block;
 }
-.grid-datos div .dato-general i {
+.grid-datos > div .dato-general i {
   display: none;
 }
-.grid-datos div .dato-general .dato-info .cifra span {
-  color: #003031;
-  font-size: 43px;
-  font-family: "Noi Variable Fix";
-  line-height: 56px;
+.grid-datos > div .dato-general .dato-info {
+  text-align: center;
 }
-.grid-datos div .dato-general .dato-info .titulo-cifra span {
+.grid-datos > div .dato-general .dato-info .cifra span {
+  color: #003031;
+  font-size: 25px;
+  font-family: "Value Serif Pro";
+  font-weight: bold;
+  line-height: 33px;
+}
+.grid-datos > div .dato-general .dato-info .titulo-cifra span {
   color: #000000;
-  font-size: 43px;
+  font-size: 10px;
   font-family: "Noi Variable Fix";
-  line-height: 56px;
+  line-height: 13px;
+  font-weight: bold;
 }
 
 .accesibility-block {
