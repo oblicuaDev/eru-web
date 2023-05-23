@@ -16,7 +16,7 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
 ]
 %}
 {# {{ kint(content|keys)}} #}
-<article {{attributes.addClass(classes)}}>
+<article {{ attributes.addClass(classes).setAttribute('data-quickedit-entity-id', node.bundle ~ '/' ~ node.id) }}>
   {% block content %}
   {# {{ title_prefix }}
   {{ title_suffix }}
