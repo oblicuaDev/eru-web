@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESTACION METRO CALLE 26</title>
+    <meta name="description" content="SItio web para proponentes proyecto EStacion Metro calle 26" />
+    <meta name="keywords"  content="estaciom, metro, calle 26, Bogota, ERU" />
+    <meta name="Resource-type" content="Document" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/> 
+    <link rel="stylesheet" type="text/css" href="dist/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>  
+    <link rel="stylesheet" href="css/simple-lightbox.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/jquery.i18n.min.js"></script>
+<!--<script src="js/tr-eng.js"></script>-->
+    <script src="js/contact.js"></script>
+<script>
+   $( document ).ready(function() {
+    $("#preloader").delay(1500).fadeOut("slow");
+    $("#overlayer").delay(2300).fadeOut("slow");   
+   });
+</script>
+</head>
+<body>
+<div id="overlayer"></div>
+<div id="preloader"></div>
+
+<div id="mySidepanel" class="sidepanel">
+    <ul id="menulist">
+        <li data-menuanchor="firstPage" class="active"><a id="logosm" href="#firstPage" onclick="closeNav()"><img src="img/Logosm.png"></a></li>
+        <li data-menuanchor="secondPage"><a href="#secondPage" onclick="closeNav()">Sobre EMC26</a></li>
+        <li data-menuanchor="3rdPage"><a href="#3rdPage" onclick="closeNav()">Propuesta urbana</a></li>
+        <li data-menuanchor="photo"><a href="#photo" onclick="closeNav()">La ERU</a></li>
+        <li data-menuanchor="what"><a href="#what" onclick="closeNav()">¿Qué necesitamos?</a></li>
+        <li data-menuanchor="contact"><a href="#contact" onclick="closeNav()">Contáctenos</a></li>
+        <li>
+<!--            <a id="botsupeng" ><img src="img/engbt.png"></a>-->
+            <!--<a id="botsupeng" onclick="translateEng()"><img src="img/engbt.jpg"></a>
+            <a id="botsupest" onclick="translateEst()"><img src="img/estbt.jpg"></a>-->
+        </li>
+        <li><a href="javascript:void(0)" class="closebtn" onclick="closeNavw()">×</a></li>
+    </ul>
+</div>
+<button class="openbtn" id="openbt" onclick="openNav()">☰</button>
+    
+ 
+<div id="fullpage">
+    <div class="section" id="section0">
+        <video autoplay muted id="c26Video">
+          <source poster='img/bg_home.jpg'src="img/bg_home.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+        <video autoplay muted id="c26Videomb">
+          <source poster='img/bg_home_mo.jpg' src="img/bg_home_celu.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+        <div class="intro">
+<!--            <div id="headeria"><img src="img/Logo.png" id="logoc26"></div> -->
+            <h3 id="introtxt"><a href="#secondPage">¡Conozca el proyecto aquí! <br></a></h3><br><br>
+        </div>
+    </div>
+    <div class="section" id="section1">
+        <div class="slide" id="serv0">
+            <h1>Sobre EMC26</h1>
+        </div>
+        <div class="slide" id="serv1">
+            <div class="servbox" id="sb1">
+                <div id="emc26img1">
+                </div>
+                <div class="servboxinfo">
+                    <h2>Localización</h2>
+                    <p id="serv1txt">El Plan Parcial Estación Metro Calle 26 (EMC 26) se localiza al interior de un área estratégica de la ciudad, denominada Reencuentro, en torno a la Avenida Calle 26 vía arteria que conecta los Cerros Orientales y el Río Bogotá, el Aeropuerto El Dorado con el centro histórico y empresarial de Bogotá.  Esta área articula el norte y el sur de la ciudad, convirtiendo la Calle 26 en el elemento principal del espacio público y un corredor ecológico que estructura un gran Bosque Urbano para Bogotá.<br><br>
+                    En el entorno se localizan áreas de interés patrimonial, que evidencian la transición entre la ciudad tradicional, al sur de la Calle 26, con desarrollos como el Barrio Santa Fe y el Cementerio Central, y la ciudad moderna, al norte de esta vía, con desarrollos como del Centro Internacional, el Planetario Distrital o el Parque Central Bavaria. Esta área también se caracteriza por la presencia de usos mixtos, en donde han aparecido usos comerciales e institucionales en barrios originalmente residenciales, pero aún presentan una alta proporción de usos residenciales en algunos barrios como Teusaquillo o Santa Fe. En este sentido, el Plan Parcial se inserta en un área de actividades urbanas diversas y de alto valor histórico.
+                    <br><br></p>
+                </div>
+            </div>
+        </div>
+        <div class="slide" id="serv2">
+            <div class="servbox" id="sb2">
+                <div id="emc26img2">
+                </div>
+                <div class="servboxinfo" id="txtemc262">
+                    <p class="serv2txt">La delimitación del Plan Parcial coincide, además, con el nodo de interconexión de los diferentes sistemas de transporte con que cuenta actualmente y contará la ciudad: la Estación de la Calle 26 de la Primera Línea de Metro y el centro de control de toda la primera línea, la Estación Central del sistema BRT Transmilenio, y la última estación del sistema férreo regional - Regiotram, que conectará el centro de Bogotá con los municipios al occidente de la región.<br><br>El plan parcial concentra suelos de propiedad de empresas del Distrito: los suelos del Metro de Bogotá donde se localizarán los edificios de acceso a la Estación de la Calle 26; suelos de TransMilenio destinados a la localización de la Estación Central con potencial de desarrollo inmobiliario, y suelos propiedad de la Empresa de Renovación y Desarrollo Urbano de Bogotá. Estos lotes suman 39.407,7 m2 y corresponde al 76,8% del área desarrollable del plan parcial. Sobre estos se concentrarán los alcances del Masterplan.</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide" id="serv3">
+            <div class="servbox" id="sb3">
+                <div id="emc26img3">
+                </div>
+                <div class="servboxinfo">
+                    <h2>Generalidades</h2>
+                    <p id="serv3txt">El Plan Parcial Estación Metro Calle 26 tiene un área de 9,29 ha, de las cuales el 77% es de propiedad pública, de entidades distritales como la empresa Transmilenio S.A (25%), Empresa Metro de Bogotá (11,8%) y la Empresa de Renovación y Desarrollo Urbano (40%). En estos suelos se proyecta el desarrollo de las estaciones de cada uno de los sistemas de transporte ya mencionados configurando la estación intermodal más grande del país (se estima un flujo de aproximado de 12.500 en hora pico), así como el desarrollo del nuevo Centro Administrativo Distrital – CAD, complejo de oficinas del gobierno distrital, que alojará aproximadamente 4.700 puestos de trabajo para funcionarios públicos y contribuirá a la estrategia de modernización de la gestión pública, mediante la concentración e interconexión de servicios al ciudadano. <br><br>
+                    Es importante resaltar que la Primera Línea de Metro de Bogotá es elevada; que la Estación Central de BRT Transmilenio es subterránea y que la Estación del Tren de Cercanías Regiotram es a nivel. Además, en el desarrollo se permiten alturas de hasta 140 m de la Avenida Caracas hacía el Oriente y de hasta 120 m de la Avenida Caracas hacía el Occidente.</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide" id="serv3">
+            <div class="servbox" id="sb3">
+                <div id="emc26img4">
+                </div>
+                <div class="servboxinfo">
+                    <h2>Generalidades</h2>
+                    <p id="serv4txt">Para este proyecto se permitirá el desarrollo de usos mixtos, residenciales, comerciales y de servicios, con un potencial de 199.844,7 m2. El espacio público que asciende a 28.123,7 m2 es una gran plataforma integradora de los flujos entre las estaciones de transporte público y el entorno urbano. Esta gran plataforma actúa como la estación intermodal y será el foco del proyecto.<br><br>La plataforma de espacio público además contribuye a concretar la estrategia de Bosque Urbano, aumentando la calidad y cantidad de las coberturas vegetales con especies que presten servicios ecosistémicos, nativas, melíferas y ornitocoras aportando a la provisión de nuevos hábitats y a la conectividad de la fauna local.</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="section" id="section2">
+        <div id="myModala" class="modal">
+          <span class="close cursor" onclick="closeModala()">&times;</span>
+          <div class="modal-contenta">
+
+            <div class="mySlidesa">
+              <div class="numbertext">1 / 6</div>
+              <img src="img/elementos/elem01.jpg">
+                <div class="cajaespec">
+                    <h2>Estación Intermodal</h2>
+                    <p>El Plan Parcial parte de la incorporación de las áreas destinadas a los sistemas de transporte público del Metro de Bogotá, TransMilenio y Regiotram de Occidente, articulando las reservas de suelo necesarias para la ejecución de las estaciones y las infraestructuras asociadas.</p>
+                    <br>
+                </div>
+            </div>
+
+            <div class="mySlidesa">
+              <div class="numbertext">2 / 6</div>
+              <img src="img/elementos/elem02.jpg">
+                <div class="cajaespec">
+                    <h2>Espacio público que integra los flujos</h2>
+                    <p>El plan parcial incorpora amplias áreas para el desarrollo de parques y zonas verdes, proyectadas de manera continua como la plataforma de articulación de los flujos entre los sistemas de transporte público masivo que confluyen en este sector. Propone armonizar las zonas duras destinadas al tráfico peatonal con áreas verdes que permitan una importante masa de árboles, contribuyendo al reverdecimiento y a la consolidación de un Bosque Urbano.</p>
+                    <br>
+                </div>
+            </div>
+
+            <div class="mySlidesa">
+              <div class="numbertext">3 / 6</div>
+              <img src="img/elementos/elem03.jpg">
+                <div class="cajaespec">
+                    <h2>Nuevo CAD</h2>
+                    <p>El plan parcial propone mejorar la oferta institucional de la ciudad, incorporando el Nuevo Centro Administrativo Distrital, propuesto como un desarrollo de aproximadamente 45.000 metros cuadrados para albergar 15 dependencias de la administración pública de la ciudad. Este se propone como el desarrollo prioritario del plan parcial.<br><br>
+                    El Centro Administrativo Distrital se proyecta articulado a la Estación del Metro de Bogotá de la Calle 26, y en cercanía a la Estación de TransMilenio, con el fin de garantizar la accesibilidad desde los sistemas de transporte público masivo, para los funcionarios y usuarios futuros del CAD.</p>
+                    <br>
+                </div>
+            </div>
+
+            <div class="mySlidesa">
+              <div class="numbertext">4 / 6</div>
+              <img src="img/elementos/elem04.jpg">
+                <div class="cajaespec">
+                    <h2>Patrimonio Cultural	</h2>
+                    <p>El Plan Parcial propone un desarrollo en armonía con los bienes patrimoniales en su interior, resaltando sus cualidades estéticas e impulsándolos como áreas de oferta de usos complementarios al desarrollo, y define estrategias para su sostenibilidad.</p>
+                    <br>
+                </div>
+            </div>
+            
+            <div class="mySlidesa">
+              <div class="numbertext">5 / 6</div>
+                <img src="img/elementos/elem05.jpg">
+                <div class="cajaespec">
+                    <h2>Desarrollos de usos mixtos</h2>
+                    <p>El Plan Parcial propone el desarrollo de edificaciones de usos residenciales, comerciales y de servicios en altura, aprovechando el potencial de crecimiento desarrollado en su formulación, sustentado en las ventajas que representa la localización estratégica del plan parcial en la ciudad y la confluencia de los sistemas de transporte público masivos.<br><br>
+                    Busca concretar proyectos con tipologías de desarrollo diverso y piezas arquitectónicas icónicas, articuladas a sistemas de espacios públicos ejecutados con altos estándares, generando un referente de transformación y revitalización urbana en la ciudad y el país.
+                    </p>
+                    
+                </div>
+            </div>
+            <div class="mySlidesa">
+              <div class="numbertext">6 / 6</div>
+              <img src="img/elementos/elem06.jpg">
+                <div class="cajaespec">
+                    <h2>Reencuentro</h2>
+                    <p>El Plan Parcial incorpora el desarrollo de una plataforma de espacio público sobre la Calle 26, que acercará a los usuarios potenciales en el sector del Centro Internacional y el edificio de oficinas más moderno del país que el conjunto Atrio con los sistemas de transporte público masivos en el plan parcial. Esta plataforma es la continuación del proyecto de cobertura de la Avenida 26 que inició con la construcción del Parque de la Independencia hacia el oriente.</p>
+                    <br>
+                </div>
+            </div>
+              <a class="prev" onclick="plusSlidesa(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlidesa(1)">&#10095;</a>
+
+            <div class="caption-container">
+              <h2 id="caption" style="color: #333; font-size: 1.2em; font-weight: 700;"></h2>
+            </div>
+            </div>
+
+            
+        </div>
+        <div class="slide" id="Urb1">
+            <h1>Propuesta urbana</h1>
+        </div>
+        <div class="slide" id="Urb2">
+            <div class="urbinfo">
+            <h2>Elementos del planteamiento urbanístico</h2>
+            <div class="lb-row" id="lb-proys">
+              <div class="lb-columna">
+                <img src="img/elementos/elem01tn.jpg" style="width:100%" onclick="openModala();currentSlidea(1)" >
+                <p onclick="openModala();currentSlidea(1)">Estación Intermodal</p>
+              </div>
+              <div class="lb-columna">
+                <img src="img/elementos/elem02tn.jpg" style="width:100%" onclick="openModala();currentSlidea(2)">
+                  <p onclick="openModala();currentSlidea(2)">Espacio público que integra los flujos</p>
+              </div>
+              <div class="lb-columna">
+                <img src="img/elementos/elem03sm.jpg" style="width:100%" onclick="openModala();currentSlidea(3)" >
+                  <p onclick="openModala();currentSlidea(3)">Nuevo CAD</p>
+              </div>
+              <div class="lb-columna">
+                <img src="img/elementos/elem04tn.jpg" style="width:100%" onclick="openModala();currentSlidea(4)" >
+                <p onclick="openModala();currentSlidea(4)">Patrimonio Cultural<br></p>
+              </div>
+            <div class="lb-columna">
+                <img src="img/elementos/elem05tn.jpg" style="width:100%" onclick="openModala();currentSlidea(5)" >
+                <p onclick="openModala();currentSlidea(5)">Desarrollos de usos mixtos</p>
+              </div>
+            <div class="lb-columna">
+                <img src="img/elementos/elem06tn.jpg" style="width:100%" onclick="openModala();currentSlidea(6)" >
+                <p onclick="openModala();currentSlidea(6)">Reencuentro</p>
+              </div>
+        </div>
+        </div>
+        </div>
+    </div>
+<div class="section" id="section3">
+    <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+
+            <div class="mySlides">
+              <div class="numbertext">1 / 8</div>
+              <img src="img/proy/proy01.jpg">
+                <div class="cajaespec">
+                    <h2>Bronx Distrito creativo</h2>
+                    <p><span>Cliente:</span> Fundación Gilberto Alzate Avendaño (FUGA)</p>
+                    <p><span>Convenios:</span> 109/2019 – 164/2019 – 072/2019.</p>
+                    <p><span>Área:</span> 35.000 m&#178</p>
+                    <p><span>Valor:</span> $176.000 millones.</p>
+                    <p><span>Predios gestionados:</span> 46</p>
+                    <br>
+                </div>
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">2 / 8</div>
+              <img src="img/proy/proy02.jpg">
+                <div class="cajaespec">
+                    <h2>Alcaldia local de Los Mártires (Etapa 2)</h2>
+                    <p><span>Cliente:</span> Fondo de Desarrollo Local de Los Mártires</p>
+                    <p><span>Convenios:</span> 134/2016</p>
+                    <p><span>Área:</span> 6.500 m&#178</p>
+                    <p><span>Valor:</span> $36.051 millones.+ 2.468 m&#178 plazoleta (APAUP).</p>
+                    <p><span>Predios gestionados:</span> 15</p>
+                    <br>
+                </div>
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">3 / 8</div>
+              <img src="img/proy/proy03.jpg">
+                <div class="cajaespec">
+                    <h2>Centro de talento creativo (etapa 3)</h2>
+                    <p><span>Cliente:</span> Secretaría Distrital de Desarrollo Económico.</p>
+                    <p><span>Convenios:</span> 2621/2019 - 299/2019</p>
+                    <p><span>Área:</span> 9.600m&#178 + 3.851 m&#178 plazoleta (APAUP).</p>
+                    <p><span>Valor:</span> $82.400 millones.</p>
+                    <p><span>Predios gestionados:</span> 30</p>
+                    <br>
+                </div>
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">4 / 8</div>
+              <img src="img/proy/proy04.jpg">
+                <div class="cajaespec">
+                    <h2>San Bernardo Tercer milenio</h2>
+                    <p><span>Área:</span> 35.000 m&#178</p>
+                    <p><span>Espacio público:</span> 1.5 hectáreas.</p>
+                    <p><span>Comercio: 5.000 m2.</span> 5.000 m&#178</p>
+                    <p><span>Viviendas:</span> 3.946 unidades.</p>
+                    <p><span>Predios gestionados:</span> 267</p>
+                    <br>
+                </div>
+            </div>
+            
+            <div class="mySlides">
+              <div class="numbertext">5 / 8</div>
+              <img src="img/proy/proy05.jpg">
+                <div class="cajaespec">
+                    <h2>Complejo hospitalario San Juan De Dios</h2>
+                    <p><span>Área:</span> 13 hectáreas</p>
+                    <p><span>24 edificios.</span></p>
+                    <p><span>17 edificios</span> con grado de conservación integral y arquitectónica.</p>
+                    <br>
+                </div>
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">6 / 8</div>
+              <img src="img/proy/proy06.jpg">
+                <div class="cajaespec">
+                    <h2>Centro Internacional de Comercio San Victorino</h2>
+                    <p><span>Área: </span>2.4 hectáreas.</p>
+                    <p><span>Área potencial: </span>92.290 m&#178</p>
+                    <p><span>Espacio público: </span>8.000 &#178</p>
+                    <p><span>Acceso al transporte a la primera línea del Metro y TransMilenio.</span></p>
+                    <br>
+                </div>
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">7 / 8</div>
+              <img src="img/proy/proy07.jpg">
+                <div class="cajaespec">
+                    <h2>Tres Quebradas - UG1</h2>
+                    <p><span>Área:</span> 71 hectáreas de intervención.</p>
+                    <p><span>Espacio público: </span>8 hectáreas</p>
+                    <p><span>Equipamientos: </span>42.000 m&#178.</p>
+                    <p><span>Comercio: </span>4.8 hectáreas .</p>
+                    <p><span>Viviendas: </span> Más de 8.000 unidades VIS/VIP.</p>
+                    <br>
+                </div>
+            </div>
+              <div class="mySlides">
+              <div class="numbertext">8 / 8</div>
+              <img src="img/proy/proy08.jpg">
+                <div class="cajaespec">
+                    <h2>Cinemateca distrital de Bogotá</h2>
+                    <p><span>Cliente:</span> Fondo de Desarrollo Local de Los Mártires</p>
+                    <p><span>Convenios:</span> 134/2016</p>
+                    <p><span>Área:</span> 6.500 m&#178</p>
+                    <p><span>Valor:</span> $36.051 millones.+ 2.468 m&#178 plazoleta (APAUP).</p>
+                    <p><span>Predios gestionados:</span> 15</p>
+                    <br>
+                </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+              <h2 id="caption" style="color: #333; font-size: 1.2em; font-weight: 700;"></h2>
+            </div>
+
+        </div>
+    </div>
+    <div class="slide" id="ERU1">
+        <h1>La ERU</h1>
+        
+    </div>
+    <div class="slide" id="eru2">
+        <div class="eruinfo">
+                    <div id="eruimg1"></div>
+                    <h2>La Empresa de Renovación y Desarrollo Urbano de Bogotá</h2><br>
+                    <ul class="c26list">
+                        <li>Una empresa industrial y comercial del Estado.</li>
+                        <li>100% propiedad de Bogotá y de los bogotanos.</li>
+                        <li>Pertenece al sector Hábitat.</li>
+                        <li>Con 23 años de experiencia en desarrollo de proyectos inmobiliarios.</li>
+                        <li>Banco de suelo y banco inmobiliario de Bogotá.</li>
+                        <li>Operador urbano.</li>
+                    </ul>
+                </div>
+    </div>
+    <div class="slide" id="eru3">
+        <div class="eruinfo">
+        <h2>Proyectos</h2>
+        <div class="lb-row" id="lb-proys">
+              <div class="lb-column">
+                <img src="img/proy/proy01tn.jpg" style="width:100%" onclick="openModal();currentSlide(1)" >
+                <p onclick="openModal();currentSlide(1)">Bronx Distrito creativo</p>
+              </div>
+              <div class="lb-column">
+                <img src="img/proy/proy02tn.jpg" style="width:100%" onclick="openModal();currentSlide(2)" >
+                  <p onclick="openModal();currentSlide(2)">Alcaldia local de Los Mártires </p>
+              </div>
+              <div class="lb-column">
+                <img src="img/proy/proy03tn.jpg" style="width:100%" onclick="openModal();currentSlide(3)" >
+                  <p onclick="openModal();currentSlide(3)">Centro de Talento Creativo</p>
+              </div>
+              <div class="lb-column">
+                <img src="img/proy/proy04tn.jpg" style="width:100%" onclick="openModal();currentSlide(4)" >
+                <p onclick="openModal();currentSlide(4)">San Bernardo Tercer Milenio</p>
+              </div>
+            <div class="lb-column">
+                <img src="img/proy/proy05tn.jpg" style="width:100%" onclick="openModal();currentSlide(5)" >
+                <p onclick="openModal();currentSlide(5)">Complejo hospitalario San Juan De Dios</p>
+              </div>
+            <div class="lb-column">
+                <img src="img/proy/proy06tn.jpg" style="width:100%" onclick="openModal();currentSlide(6)" >
+                <p onclick="openModal();currentSlide(6)">Centro Internacional de Comercio San Victorino</p>
+              </div>
+            <div class="lb-column">
+                <img src="img/proy/proy07tn.jpg" style="width:100%" onclick="openModal();currentSlide(7)" >
+                <p onclick="openModal();currentSlide(7)">Tres Quebradas</p>
+              </div>
+            <div class="lb-column">
+                <img src="img/proy/proy08tn.jpg" style="width:100%" onclick="openModal();currentSlide(8)" >
+                <p onclick="openModal();currentSlide(8)">Cinemateca distrital de Bogotá</p>
+              </div>
+        </div>
+        </div>
+   </div>             
+</div>
+<div class="section" id="section4">
+    <div class="slide" id="req1">
+        <h1>¿Qué necesitamos?</h1>
+    </div>
+    <div class="slide" id="req2">
+        <div class="servboxinfo" id="reqtxt2">
+                <div class="col-der">
+                        <img src="img/masterplan.jpg">
+                </div>
+                <div class="col-izq">
+                <h2 id="req1tt">Alcances específicos del Masterplan:</h2>
+                <p>La formulación del Masterplan debe contener el desarrollo de los siguientes componentes, que hacen parte integral de la visión de desarrollo urbanístico de este sector:</p>
+                    <ul class="c26list" id="reqlist">
+                    <li><span class="boldreq">Espacio público:</span> diseño de la estrategia de conectividad, de los tipos de espacio público con relación a las dinámicas de usos y conexiones peatonales entre los sistemas de transporte público y los usos propuestos, y el diseño de tipos y localización de mobiliario. Es muy importante diseñar el espacio público en función de la integración e intercambio de los flujos de peatones entre las distintas estaciones de transporte presentes en el proyecto, con las dimensiones adecuadas y en relación con los usos del primer piso garantizando siempre una circulación segura por el espacio.</li><br>
+                    <li><span class="boldreq">Usos: </span>propuesta de localización de usos residenciales, comercio, oficinas, hoteles, y demás usos del suelo posibles en el marco de la norma adoptada con el instrumento de plan parcial.</li><br>
+                    <li><span class="boldreq">Edificaciones:</span> propuesta de localización precisa de los edificios, tipologías edificatorias y volumetrías de acuerdo con los usos propuestos y su relación con los sistemas de transporte público, espacios públicos y sistema de conectividad. </li><br>
+                    </ul>
+                </div>
+                
+        </div>
+    </div>
+    <div class="slide" id="req3">
+        <div class="servboxinfo" id="reqtxt3">
+                <div class="col-der">
+                        <img src="img/fotoreq3.jpg">
+                </div>
+                <div class="col-izq">
+                <ul class="c26list" id="reqlist">
+                    <li><span class="boldreq">Paisajismo:</span> una propuesta relacionada con el manejo de materiales que permitan la permeabilidad y retención de escorrentías; selección, localización y densidad de las coberturas vegetales que contribuya a la consolidación del Bosque Urbano; sistemas urbanos de drenaje sostenible; estrategias para la disminución de la isla de calor urbano y mejoramiento de la calidad del aire y ruido; propuesta de espacios activos  e icónicos de disfrute diurno y nocturno; que incluyan las Soluciones Basadas en la Naturaleza enfocadas a la mitigación y adaptación al cambio climático. Los principios, criterios, estrategias o metas de sostenibilidad del proyecto serán cuantificables y medibles, en atención al impacto ambiental, económico y el bienestar humano</li><br>
+                    <li><span class="boldreq">Manejo bioclimático:</span> apuesta por el confort climático en el espacio público, manejo de la ventilación, asoleamiento e iluminación entre los espacios construidos y los espacios vacíos con un enfoque de confort y ahorro energético. </li><br>
+                    <li><span class="boldreq">Tecnologías de construcción:</span> propuesta y recomendación de tecnologías constructivas al alcance del contexto colombiano y con un enfoque de sostenibilidad y adaptación al cambio climático.</li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section5">
+        <div id="contbox">
+            <h2>Contáctenos</h2>
+            <div id="compinfo">
+                <h2>Datos de Contacto</h2><br>
+                <h3><span class="material-icons-outlined">mail</span> gerencia@eru.gov.co / gsperav@eru.gov.co</h3>
+                <h3><span class="material-icons-outlined">phone</span>  (+57)(+60 1) 359 94 94 - Ext. 500</h3>
+                <h3><span class="material-icons-outlined">send</span>  Autopista Norte # 97 - 70 Edificio Porto 100. Código postal: 110221 - Bogotá, Colombia</h3>
+                <div id="social">
+                
+                    <a href="https://www.instagram.com/erubogota/" target="_blank"><img src="img/igbot.png" ></a>
+                    <a href="https://www.facebook.com/ERUBogota/" target="_blank"><img src="img/fbbot.png" ></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="dist/fullpage.js"></script>
+
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        menu: '#menu',
+        anchors: ['firstPage', 'secondPage', '3rdPage', 'photo', 'what', 'contact'],
+        sectionsColor: ['#FFF', '#FFF', '#FFF', '#FFF', '#FFF', '#077f7e'],
+        slidesNavigation: true,
+        autoScrolling: false,
+        licenseKey: '7741E37D-DFC24FA7-B5E9F1C1-1EF8000C'
+        
+    });
+</script>
+
+<script>
+function openNav() {
+    if (screen.width <= 640){
+        document.getElementById("mySidepanel").style.width= "100%";
+    }
+    document.getElementById("openbt").style.top = "-100px";
+    document.getElementById("menulist").style.display = "block";
+}
+
+function closeNav() {
+    if (screen.width <= 640){
+        document.getElementById("mySidepanel").style.width = "0";
+        document.getElementById("openbt").style.top = "15px";
+        document.getElementById("menulist").style.display = "none";
+    }
+}
+function closeNavw() {
+    if (screen.width <= 640){
+        document.getElementById("mySidepanel").style.width = "0";
+    }
+    document.getElementById("openbt").style.top = "15px";
+    document.getElementById("menulist").style.display = "none";
+}
+    
+</script>
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+    
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<script>
+function openModala() {
+  document.getElementById("myModala").style.display = "block";
+}
+
+function closeModala() {
+  document.getElementById("myModala").style.display = "none";
+}
+    
+var slideIndexa = 1;
+showSlidesa(slideIndexa);
+
+function plusSlidesa(n) {
+  showSlidesa(slideIndexa += n);
+}
+
+function currentSlidea(n) {
+  showSlidesa(slideIndexa = n);
+}
+
+function showSlidesa(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlidesa");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndexa = 1}
+  if (n < 1) {slideIndexa = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndexa-1].style.display = "block";
+  dots[slideIndexa-1].className += " active";
+  captionText.innerHTML = dots[slideIndexa-1].alt;
+}
+</script>
+<script src="js/simple-lightbox.min.js"></script>
+<script>
+    (function() {
+        var $gallery = new SimpleLightbox('.gallery a', {});
+    })();
+</script>
+
+<script>
+document.querySelector('#btserv1').addEventListener('click', function(e){
+		e.preventDefault();
+		fullpage_api.moveTo(2, 1);
+	});
+document.querySelector('#btserv2').addEventListener('click', function(e){
+		e.preventDefault();
+		fullpage_api.moveTo(2, 2);
+	});
+document.querySelector('#btserv3').addEventListener('click', function(e){
+		e.preventDefault();
+		fullpage_api.moveTo(2, 3);
+	});
+document.querySelector('#btserv4').addEventListener('click', function(e){
+		e.preventDefault();
+		fullpage_api.moveTo(2, 4);
+	});
+</script>
+<script type="text/javascript"> //SCRIPT CORREO
+var allowed_file_size 	= "1048576"; //1 MB allowed file size
+var allowed_file_types 	= ['image/png', 'image/gif', 'image/jpeg', 'image/pjpeg', 'application/x-zip-compressed', 'application/pdf']; //Allowed file types
+var border_color 		= "#C2C2C2"; //initial input border color
+var maximum_files 		= 2; //Maximum number of files allowed
+
+$("#contact_body").submit(function(e){
+    e.preventDefault(); //prevent default action 
+	proceed = true;
+	
+	//simple input validation
+	$($(this).find("input[data-required=true], textarea[data-required=true]")).each(function(){
+            if(!$.trim($(this).val())){ //if this field is empty 
+                $(this).css('border-color','red'); //change border color to red   
+                proceed = false; //set do not proceed flag
+            }
+            //check invalid email
+            var email_reg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/; 
+            if($(this).attr("type")=="email" && !email_reg.test($.trim($(this).val()))){
+                $(this).css('border-color','red'); //change border color to red   
+                proceed = false; //set do not proceed flag              
+            }   
+	}).on("input", function(){ //change border color to original
+		 $(this).css('border-color', border_color);
+	});
+	
+	//check file size and type before upload, works in modern browsers
+	if(window.File && window.FileReader && window.FileList && window.Blob){
+		var total_files_size = 0;
+		if(this.elements['file_attach[]'].files.length > maximum_files){
+            alert( "Can not select more than "+maximum_files+" file(s)");
+            proceed = false;			
+		}
+		$(this.elements['file_attach[]'].files).each(function(i, ifile){
+			if(ifile.value !== ""){ //continue only if file(s) are selected
+                if(allowed_file_types.indexOf(ifile.type) === -1){ //check unsupported file
+                    alert( ifile.name + " is unsupported file type!");
+                    proceed = false;
+                }
+             total_files_size = total_files_size + ifile.size; //add file size to total size
+			}
+		}); 
+       if(total_files_size > allowed_file_size){ 
+            alert( "Make sure total file size is less than 1 MB!");
+            proceed = false;
+        }
+	}
+	
+	//if everything's ok, continue with Ajax form submit
+	if(proceed){ 
+		var post_url = $(this).attr("action"); //get form action url
+		var request_method = $(this).attr("method"); //get form GET/POST method
+		var form_data = new FormData(this); //Creates new FormData object
+		
+		$.ajax({ //ajax form submit
+			url : post_url,
+			type: request_method,
+			data : form_data,
+			dataType : "json",
+			contentType: false,
+			cache: false,
+			processData:false
+		}).done(function(res){ //fetch server "json" messages when done
+			if(res.type == "error"){
+				$("#contact_results").html('<div class="error">'+ res.text +"</div>");
+			}
+			if(res.type == "done"){
+				$("#contact_results").html('<div class="success">'+ res.text +"</div>");
+			}
+		});
+	}
+});
+</script>
+<script>
+    const file = document.querySelector('#file');
+file.addEventListener('change', (e) => {
+  // Get the selected file
+  const [file] = e.target.files;
+  // Get the file name and size
+  const { name: fileName, size } = file;
+  // Convert size in bytes to kilo bytes
+  const fileSize = (size / 1000).toFixed(2);
+  // Set the text content
+  const fileNameAndSize = `${fileName} - ${fileSize}KB`;
+  document.querySelector('.file-name').textContent = fileNameAndSize;
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+#Protect Directory
+AuthName "Dialog prompt"
+AuthType Basic
+AuthUserFile /var/www/html/eru/web/calle26/.htpasswd
+Require valid-user
