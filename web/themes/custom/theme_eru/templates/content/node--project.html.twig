@@ -62,7 +62,7 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
         </div>
 
         <div class="row">
-          <div class="col-md-6 col-12">
+          <div class="col-md-12 col-12">
             <div class="expandable-text">
               <div class="content-preview">
                 {{ content.body|striptags|slice(0, 100) }}{% if content.body|length > 100 %}...{% endif %}
@@ -74,9 +74,6 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
                 {{ content.body }}
               </div>
             </div>
-          </div>
-          <div class="col-md-6 col-12">
-            <!-- Aquí puedes agregar otro contenido adicional para la segunda columna si lo deseas -->
           </div>
         </div>
         <div class="row">
