@@ -49,14 +49,15 @@
 {% block paragraph %}
   <div{{attributes.addClass(classes)}}>
     {% block content %}
-      <div class="container row">
+      <div class="container row oblicua-list-datos-generales">
         {% for key, item in content.field_general_data %}
           {% if key matches '/^\\d+$/' %}
             {% set class_icon = item['#paragraph'].field_class.value  %}
             {% set title = item['#paragraph'].field_title.value %}
             {% set  description = item['#paragraph'].field_description.value %}
-            <div class="dato-general mb-4">
-              <i class="{{ class_icon }}"></i>
+            <div class="oblicua-dato-general mb-4">
+              {% comment %} <img src="/sites/default/files/2023-05/{{ class_icon }}.png" alt="{{title}}" /> {% endcomment %}
+              <img src="/sites/default/files/2023-05/area-terreno.png" alt="{{title}}" />
               <div class="dato-info">
                 <div class="cifra"><span>{{description}}</span></div>
                 <div class="titulo-cifra"><span>{{title}}</span></div>
