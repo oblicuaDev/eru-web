@@ -20,11 +20,11 @@
   {% block content %}
     {# {{ title_prefix }}
     {{ title_suffix }}
-    {{ content.field_banner_video}}
+
     {{ content.field_test_video_}}
     {{ content.field_media_solo}} #}
     {# {{ label }} #}
-    {{ content.field_videos}}
+
     {# {{ kint(content|keys)} #}
     <div class="container container-project mt-5">
       <h2 class="text-center">{{ label }}</h2>
@@ -79,6 +79,8 @@
       <div aria-labelledby="photos-tab" class="tab-pane fade row" id="photos" role="tabpanel">
         <div class="col-12">
             {{ content.field_gallery }}
+            {{ content.field_banner_video}}
+            {{ content.field_videos}}
         </div>
       </div>
       <div aria-labelledby="scope-tab" class="tab-pane fade project-content" id="scope" role="tabpanel">
