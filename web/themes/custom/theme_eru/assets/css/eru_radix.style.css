@@ -3821,7 +3821,7 @@ input[type=button].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #006b60;
+  background-color: #FF9900;
 }
 
 .nav-fill .nav-item {
@@ -15502,10 +15502,10 @@ readers do not read off random characters that represent icons */
 }
 
 /*.menu-secundario .nav .accesibilidad{
-	position: inherit !important; 
+	position: inherit !important;
 	border: 0;
     clip: rect(0, 0, 0, 0);
-    height: 5px;   
+    height: 5px;
     overflow: hidden;
     padding: 0;
     width: 1px;
@@ -17301,7 +17301,7 @@ a.btn-taller {
   content: none;
 }
 .proyecto-sala-de-negocios .separador .icono {
-  /*display: flex;		
+  /*display: flex;
   align-items: center;
   width: inherit;
   margin-bottom: 1.5rem !important;*/
