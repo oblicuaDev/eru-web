@@ -18324,6 +18324,13 @@ a.a2a_button_twitter:hover .a2a_s_twitter {
   text-decoration: underline;
 }
 
+.project__field-benefits-of-project h3 {
+  font-size: 64px;
+  max-width: 430px;
+  width: 100%;
+  line-height: 64px !important;
+}
+
 .accesibility-block {
   background-color: #006b60;
   border-radius: 10px;
