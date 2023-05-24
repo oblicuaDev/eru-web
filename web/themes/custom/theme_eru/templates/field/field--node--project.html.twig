@@ -46,14 +46,14 @@
         <div {{ item.attributes.addClass('field__item') }}>
           <div class="expandable-text">
             <div class="content-preview">
-              {% set contentPreview = node.body.value|striptags|slice(0, 100) %}
+              {% set contentPreview = node.field_body.value|striptags|slice(0, 100) %}
               {{ contentPreview }}{% if contentPreview|length > 100 %}...{% endif %}
             </div>
-            {% if node.body.value|length > 100 %}
+            {% if node.field_body.value|length > 100 %}
               <a href="#" class="expand-link">Leer más</a>
             {% endif %}
             <div class="expanded-content">
-              {{ node.body.value }}
+              {{ node.field_body.value }}
             </div>
           </div>
         </div>
