@@ -1,22 +1,28 @@
 {#
-  /**
-   * @file
-   * Theme template for a field within a specific node type.
-   *
-   * Available variables:
-   * - element: The field element containing all data for the field.
-   * - item: An individual item within the field.
-   *   - content: The field item's content.
-   */
-  #}
+/**
+* @file
+* Theme template for a field within a specific node type.
+*
+* Available variables:
+* - element: The field element containing all data for the field.
+* - item: An individual item within the field.
+* - content: The field item's content.
+*/
+#}
 
-  {% if element['#items']|length > 0 %}
-    <div class="field field--name-{{ element['#field_name'] }} field--type-{{ element['#field_type'] }} field--label-inline">
+{% if element['#items']|length > 0 %}
+<div
+  class="field field--name-{{ element['#field_name'] }} field--type-{{ element['#field_type'] }} field--label-inline">
+  <div class="row">
+    <div class="col-md-6 col-12">
       <h3 class="field__label">{{ element['#title'] }}</h3>
       <div class="field__items">
         {% for item in items %}
         <div class="field__item">{{ item.content }}</div>
-      {% endfor %}
+        {% endfor %}
       </div>
     </div>
+    <div class="col-md-6 col-12">
+    </div>
+  </div>
   {% endif %}
