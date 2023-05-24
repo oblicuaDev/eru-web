@@ -1,0 +1,8 @@
+name: Custom Nid
+type: module
+description: 'Provide custom nid field on node create page.'
+core: 8.x
+# Information added by Drupal.org packaging script on 2019-09-04
+version: '8.x-1.2'
+project: 'custom_nid'
+datestamp: 1567582686
