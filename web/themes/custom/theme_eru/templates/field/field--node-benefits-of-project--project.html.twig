@@ -1,0 +1,22 @@
+{#
+  /**
+   * @file
+   * Theme template for a field within a specific node type.
+   *
+   * Available variables:
+   * - element: The field element containing all data for the field.
+   * - item: An individual item within the field.
+   *   - content: The field item's content.
+   */
+  #}
+
+  {% if item.content is not empty %}
+    <div class="field field--name-{{ element['#field_name'] }} field--type-{{ element['#field_type'] }} field--label-inline">
+      <div class="field__label">{{ element['#title'] }}</div>
+      <div class="field__items">
+        {% for item in element['#items'] %}
+          <div class="field__item">{{ item.content }}</div>
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
