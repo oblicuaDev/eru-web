@@ -13,7 +13,7 @@
 {% if element['#items']|length > 0 %}
 <div
   class="field field--name-{{ element['#field_name'] }} field--type-{{ element['#field_type'] }} field--label-inline">
-  < class="row">
+  <div class="row">
     <div class="col-md-6 col-12">
       <h3 class="field__label">{{ element['#title'] }}</h3>
       <div class="field__items">
@@ -24,5 +24,6 @@
     </div>
     <div class="col-md-6 col-12">
     </div>
+  </div>
 </div>
 {% endif %}

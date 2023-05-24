@@ -64,8 +64,8 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
           <div class="col-md-12 col-12">
             <h3>Descripción</h3>
             <div {{ item.attributes.addClass('field__item') }}>
-                    {{ item.content }}
-              </div>
+              {{ item.content }}
+            </div>
             <div class="expandable-text">
               <div class="content-preview">
                 {{ item.body|striptags|slice(0, 100) }}{% if content.body|length > 100 %}...{% endif %}
@@ -122,7 +122,7 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
         </div>
       </div>
       <div aria-labelledby="status-tab" class="tab-pane fade project-content row" id="status" role="tabpanel">
-          {{ content.field_status_of_project}}
+        {{ content.field_status_of_project}}
       </div>
       <div aria-labelledby="benefits-tab" class="tab-pane fade project-content" id="benefits" role="tabpanel">
         {{ content.field_benefits_of_project}}
@@ -140,7 +140,7 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
           </div>
         </div>
         {% else %}
-          {{ content.field_regulatory_framework}}
+        {{ content.field_regulatory_framework}}
         {% endif %}
       </div>
     </div>
