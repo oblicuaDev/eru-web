@@ -10,7 +10,7 @@
    */
   #}
 
-  {% if item.content is not empty %}
+  {% if element['#items']|length > 0 %}
     <div class="field field--name-{{ element['#field_name'] }} field--type-{{ element['#field_type'] }} field--label-inline">
       <div class="field__label">{{ element['#title'] }}</div>
       <div class="field__items">
