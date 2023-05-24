@@ -44,11 +44,23 @@
         {% endif %}
         {% for item in items %}
         <div {{ item.attributes.addClass('field__item') }}>
-              {{ item.content }}
+          <div class="expandable-text">
+            <div class="content-preview">
+              {% set contentPreview = node.field_body.value|striptags|slice(0, 100) %}
+              {{ contentPreview }}{% if contentPreview|length > 100 %}...{% endif %}
+            </div>
+            {% if node.field_body.value|length > 100 %}
+              <a href="#" class="expand-link">Leer más</a>
+            {% endif %}
+            <div class="expanded-content">
+              {{ node.field_body.value }}
+            </div>
+          </div>
         </div>
         {% endfor %}
         {% if multiple %}
       {% endif %}
     </div>
   {% endif %}
+
 

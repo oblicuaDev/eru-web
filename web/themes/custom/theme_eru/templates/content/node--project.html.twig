@@ -62,15 +62,19 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
         </div>
         <div class="row">
           <div class="col-md-12 col-12">
+            <h3>Descripción</h3>
+            <div {{ item.attributes.addClass('field__item') }}>
+                    {{ item.content }}
+              </div>
             <div class="expandable-text">
               <div class="content-preview">
-                {{ content.body|striptags|slice(0, 100) }}{% if content.body|length > 100 %}...{% endif %}
+                {{ item.body|striptags|slice(0, 100) }}{% if content.body|length > 100 %}...{% endif %}
               </div>
-              {% if content.body|length > 100 %}
+              {% if item.body|length > 100 %}
               <a href="#" class="expand-link">Leer más</a>
               {% endif %}
               <div class="expanded-content">
-                {{ content.body }}
+                {{ item.body }}
               </div>
             </div>
           </div>
