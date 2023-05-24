@@ -119,15 +119,10 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
           <div class="col-12">
             {{ content.field_scope_of_project}}
           </div>
-          <!-- <div class="col-md-4 col-12">
-            {{ content.field_labels}}
-          </div> -->
         </div>
       </div>
       <div aria-labelledby="status-tab" class="tab-pane fade project-content row" id="status" role="tabpanel">
-        <div class="col-12">
           {{ content.field_status_of_project}}
-        </div>
       </div>
       <div aria-labelledby="benefits-tab" class="tab-pane fade project-content" id="benefits" role="tabpanel">
         {{ content.field_benefits_of_project}}
@@ -145,11 +140,7 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
           </div>
         </div>
         {% else %}
-        <div class="row">
-          <div class="col-12">
-            {{ content.field_regulatory_framework}}
-          </div>
-        </div>
+          {{ content.field_regulatory_framework}}
         {% endif %}
       </div>
     </div>
